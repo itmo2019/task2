@@ -1,0 +1,49 @@
+@import url(src/YandexSansText-Bold/style.css);
+@import url(src/YandexSansDisplay-Thin/style.css);
+
+#container {
+    padding: 10px;
+    background-color: #e5eaf0;
+    font-family: HelveticaNeue;
+}
+
+#header {
+    height: 65px;
+    display: table-cell;
+}
+
+.Rectangle {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+}
+
+#hamburger {
+    display: inline-block;
+    margin-top: 19px;
+    margin-left:  22px;
+    margin-right: 11px;
+    vertical-align: middle;
+}
+
+#hamburger > .Rectangle:not(:first-child) {
+    margin-top: 4.8px;
+}
+
+.top-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 12px;
+}
+
+.word-yandex {
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'Yandex Sans Bold';
+}
+
+.word-after-yandex {
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'Yandex Sans Thin';
+}
