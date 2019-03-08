@@ -8,8 +8,21 @@ body {
     float: right;
 }
 
+.LogoPicture {
+    float: left;
+    margin: 19px 11px 0 22px ;
+}
+
+.Rectangle {
+    margin-bottom: 4.8px;
+    clear: right;
+    width: 20px;
+    height: 2.4px;
+    background-color: #000000;
+}
+
 .YandexMailLogo {
-    margin: 12px 30% 13px 53px;
+    margin-right: 30%;
     width: 153px;
     height: 31px;
     float: left;
@@ -28,16 +41,14 @@ body {
 .Search {
     float: left;
     margin: 0;
-    padding: 2% 50% 1% 5%;
+    padding: 1.5% 50% 2% 5%;
 }
 
 .Cross {
-    /*padding: 1% 50% 1% 5%;*/
-    float: left;
-    width: 9px;
-    height: 9px;
-    opacity: 0.15;
-    background-color: #000000;
+    float: right;
+    margin: 0;
+    padding: 1.5% 2% 2% 0;
+
 }
 
 .Logo {
@@ -266,7 +277,6 @@ a {
 .SiteInformation {
     float: right;
     margin: 1% 1% 0 0;
-    /*padding: 8.5px 0 10px;*/
     width: 345px;
     height: 12px;
     font-family: HelveticaNeue;
@@ -384,7 +394,6 @@ li {
 #PopupEssay {
     float: left;
     position: fixed;
-    font-family: arial,helvetica, sans-serif;
     top: -8.5%;
     right: 0;
     bottom: 0;
@@ -425,7 +434,6 @@ li {
     float: left;
     margin-right:2rem;
     border-radius: 50%;
-    -webkit-shape-outside:circle();
     shape-outside:circle();
 }
 .EssayHeader {
