@@ -1,0 +1,510 @@
+body {
+    background-color: #e5eaf0;
+}
+
+.Header {
+    width: 100%;
+    height: 56px;
+    float: right;
+}
+
+.YandexMailLogo {
+    margin: 12px 30% 13px 53px;
+    width: 153px;
+    height: 31px;
+    float: left;
+}
+
+.SearchBar {
+    float: left;
+    margin: 11px 0 13px;
+    width: 30%;
+    height: 60%;
+    opacity: 0.5;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.Search {
+    float: left;
+    margin: 0;
+    padding: 2% 50% 1% 5%;
+}
+
+.Cross {
+    /*padding: 1% 50% 1% 5%;*/
+    float: left;
+    width: 9px;
+    height: 9px;
+    opacity: 0.15;
+    background-color: #000000;
+}
+
+.Logo {
+    font-family: 'Yandex Sans Text';
+    font-size: 20px ;
+}
+
+.WriteMessage {
+    margin: 0;
+    padding: 7px 45px 10px 46px;
+    width: 56px;
+    height: 15px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.IncomingMessages {
+    margin: 0;
+    padding: 4px 81px 5px 10px;
+    width: 56px;
+    height: 13px;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #555555;
+}
+
+.Sidebar {
+    margin: 0 22px 8px 22px;
+    width: 147px;
+    border-radius: 3px;
+    float: left;
+}
+
+.Content {
+    position: relative;
+    width: 70%;
+    height: 90vh;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+    background-color: #ffffff;
+    float: left;
+}
+
+.Actions {
+    height: 37px;
+}
+
+.ContentFooter {
+    bottom: 0;
+    height: 33px;
+}
+
+.ContentMain {
+    height: 90%;
+}
+
+.ActionElem {
+    margin: 11px 10px;
+    float: left;
+}
+
+.SeparateLine {
+    margin: 0;
+    width: 100%;
+    height: 2px;
+    border: solid 1px #e2e2e2;
+    float: right;
+}
+
+a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.HeaderOption {
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #cccccc;
+}
+
+.Choose {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;    
+}
+
+.Checkbox {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.MailElem {
+    margin: 11px 10px 11px 20px;
+    float: left;
+}
+
+
+.MailAuthor {
+    width: 155px;
+    height: 16px;
+    margin: 10.5px 20px 13px 0;
+    float: left;
+}
+
+.MessageBody {
+    width: 213px;
+    height: 16px;
+    margin: 12px 44px 10.5px 0px;
+    float: left;
+}
+
+.MessageDate {
+    width: 36px;
+    height: 15px;
+    margin: 13px 20px 11px;
+    float: right;
+}
+
+.PassportDate {
+    margin: 0;
+    width: 36px;
+    height: 15px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.PassportBody {
+    margin: 0;
+    width: 213px;
+    height: 16px;
+    font-weight: bold;
+}
+
+.YandexTeam {
+    margin: 0;
+    width: 155px;
+    height: 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.YandexTeam-2 {
+    margin: 0;
+    width: 145px;
+    height: 15px;
+}
+
+.TeamBody-2 {
+    margin: 0;
+    width: 192px;
+    height: 15px;
+}
+
+.TeamBody {
+    margin: 0;
+    width: 204px;
+    height: 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.MessageStyle {
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    color: #000000;
+}
+
+.Yandex {
+    margin: 0;
+    width: 45px;
+    height: 15px;
+}
+
+
+.TextOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.YandexBody {
+    margin: 0;
+    width: 201px;
+    height: 15px;
+}
+
+.YandexPassport {
+    margin: 0;
+    width: 106px;
+    height: 16px;
+    font-weight: bold;
+}
+
+.ReadStatus {
+    margin: 14px 10px 14.5px 0;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6287bd;
+}
+
+.SiteInformation {
+    float: right;
+    margin: 1% 1% 0 0;
+    /*padding: 8.5px 0 10px;*/
+    width: 345px;
+    height: 12px;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #9b9b9b;
+}
+
+.NotRead {
+    visibility: visible;
+}
+
+.AlreadyRead {
+    visibility: hidden;
+}
+
+.Oval {
+    margin: 5px 10px 4px 10px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff3333;
+}
+
+.Ya {
+    margin: 0;
+    padding: 5px 10.9px 6.4px 9.5px;
+    width: 9.5px;
+    height: 18.6px;
+    font-weight: bold;
+    font-family: 'Yandex Sans Text';
+    color: #ffffff;
+}
+
+.Resend {
+    margin-right: 26px;
+    width: 70px;
+    height: 16px;
+
+}
+
+.Delete {
+    margin-right: 24px;
+    width: 54px;
+    height: 16px;
+}
+
+.Spam {
+    margin-right: 25px;
+    width: 62px;
+    height: 16px;
+}
+
+.Read {
+    width: 70px;
+    height: 16px;
+}
+
+.ContentFooter {
+    width:100%;
+    bottom: 0;
+    height: 5%;
+    position: absolute;
+    /*height: 33px;*/
+}
+
+.MailSend {
+    width: 147px;
+    height: 32px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    background-color: #6287bd;
+}
+
+.CurrentItem {
+    width: 147px;
+    height: 22px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    background-color: #cdd6e4;
+}
+
+.ItemsList {
+    margin-left: 0;
+    padding-left: 10px;
+}
+
+li {
+    width: 81px;
+    height: 13px;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #707070;
+    list-style-type: none;
+}
+
+.CloseEssay {
+    float: right;
+    position: fixed;
+}
+
+
+#PopupEssay {
+    float: left;
+    position: fixed;
+    font-family: arial,helvetica, sans-serif;
+    top: -8.5%;
+    right: 0;
+    bottom: 0;
+    left: -3.5%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 400ms linear;
+    pointer-events: none;
+}
+
+
+#PopupEssay:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+#PopupEssay  > div {
+    float: right;
+    width: 65%;
+    height: 72%;
+    position: relative;
+    margin: 10% 19% 0 0 ;
+    padding: 20px 20px 13px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #f5f5dc;
+    overflow-y: auto;
+}
+
+
+/*CSS block from previous task*/
+
+
+.paragraph .Avatar {
+    width: 33%; height: auto;
+    min-width: 150px;
+    float: left;
+    margin-right:2rem;
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+}
+.EssayHeader {
+    font-style: italic;
+
+}
+
+.timestamp {
+    margin: unset;
+    text-indent: unset;
+    font-size: 20px;
+}
+
+address {
+    font-size: 20px;
+}
+
+.ideas_summary {
+    text-decoration: underline;
+}
+
+.paragraph {
+    border: thin solid #000;
+    outline-style: solid;
+}
+
+.EssayH1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 34px;
+}
+
+
+.EssayParagraph {
+    text-indent: 25px;
+    margin: 1% 2%;
+    font-size: 18px;
+    font-family: "Times New Roman", serif;
+}
+
+
+.EssayH2 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.EssayMain {
+    text-align: center;
+}
+
+.EssaySection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: justify;
+    font-family:  serif;
+    position:  relative;
+}
+
+abbr {
+    border-bottom: 1px;
+}
+
+.EssayOl {
+    margin-left: 48px;
+}
+
+
+
+.programming_language_link:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.programming_language_link:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.EssayLink {
+    text-decoration: none;
+}
