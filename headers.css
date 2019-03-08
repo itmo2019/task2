@@ -1,10 +1,25 @@
 .yandex-logo {
-    display: inline-block;
+    display: inline;
+    height: 50px;
+}
+
+.yandex-logo .multy-lines {
+    display: inline;
+    float: left;
+}
+
+.yandex-logo .yandex-name {
+    display: inline;
+    float: left;
+}
+
+.yandex-logo .yandex-name * {
+    display: inline;
+    float: left;
 }
 
 .search {
-    display: inline-block;
-    position: relative;
+    display: inline;
 }
 
 .line-black {

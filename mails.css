@@ -36,6 +36,7 @@
     display: block;
     width: 100%;
     height: max-content;
+    min-height: 530px;
 }
 
 .list-inner .mail {
@@ -112,10 +113,9 @@
 }
 
 .list-footer {
-    position: absolute;
-    bottom: 10px;
-    padding-left: 162px;
-    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
     color: #9b9b9b;
     border-style: solid;
     border-width: 1px 0 0 0;
@@ -123,11 +123,10 @@
 
 .list-footer div {
     display: inline;
-    float: left;
+    float: right;
     margin: 10px 20px 0 0;
     font-family: HelveticaNeueLight;
     font-size: 11px;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
