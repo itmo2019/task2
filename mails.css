@@ -37,15 +37,19 @@
     width: 100%;
     height: max-content;
     min-height: 530px;
+    position: relative;
 }
 
 .list-inner .mail {
     width: 100%;
     display: block;
     clear: both;
+    position: relative;
     border: 0 solid #9b9b9b;
     border-bottom-width: 1px;
     height: 40px;
+    z-index: 1000000;
+    background-color: white
 }
 
 .list-inner .mail * {
@@ -131,4 +135,28 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 140px;
+}
+
+#is-active-essay:checked ~ .mail {
+    background-color: red;
+    display: none;
+    z-index: -100;
+
+}
+
+.essay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#circle {
+    float: left;
+    shape-outside: circle();
+}
+
+#label-for-is-active-essay {
+    float: right;
+    background-color: red;
 }
