@@ -10,20 +10,156 @@
     </head>
     <body id="container">
         <header id="header">
-            <div id="hamburger">
-                <div class="Rectangle"></div>
-                <div class="Rectangle"></div>
-                <div class="Rectangle"></div>
+            <div id="hamburger-and-logo-container">
+                <div id="hamburger">
+                    <div class="Rectangle"></div>
+                    <div class="Rectangle"></div>
+                    <div class="Rectangle"></div>
+                </div>
+                <div id="top-logo">
+                    <span class="word-yandex">Яндекс</span>
+                    <span class="word-after-yandex">Почта</span>
+                </div>
             </div>
-            <div class="top-logo">
-                <span class="word-yandex">Яндекс</span>
-                <span class="word-after-yandex">Почта</span>
+            <div id="search-bar-container">
+                <div class="search-bar">
+                    <div class="search-request">Поиск</span>
+                    <div class="search-cancel">&#x2715;</span>
+                </div>
             </div>
         </header>
         <main id="content">
             <nav id="mail-folders">
+                <section class="new-message">
+                    <div class="new-message-text">
+                        Написать
+                    </div>
+                </section>
+                <section class="folders">
+                    <div class="folder-wrapper">
+                        <div class="folder selected-folder">
+                            Входящие
+                        </div>
+                    </div>
+                    <div class="folder-wrapper">
+                        <div class="folder">
+                            Отправленные
+                        </div>
+                    </div>
+                    <div class="folder-wrapper">
+                        <div class="folder">
+                            Удалённые
+                        </div>
+                    </div>
+                    <div class="folder-wrapper">
+                        <div class="folder">
+                            Спам
+                        </div>
+                    </div>
+                    <div class="folder-wrapper">
+                        <div class="folder">
+                            Черновики
+                        </div>
+                    </div>
+                    <div class="folder-wrapper">
+                        <div class="folder">
+                            Создать папку
+                        </div>
+                    </div>
+                </section>
             </nav>
             <section id="mail-screen">
+               <div class="mail-screen-row-wrapper">
+                    <nav class="mail-row mail-row-top">
+                        <span class="select-mail-row">
+                            <input type="checkbox" />
+                        </span>
+                        <span class="nav-mail-screen-action">
+                            Переслать
+                        </span>
+                        <span class="nav-mail-screen-action">
+                            Удалить
+                        </span>
+                        <span class="nav-mail-screen-action">
+                            Это спам!
+                        </span>
+                        <span class="nav-mail-screen-action">
+                            Прочитано
+                        </span>
+                    </nav>
+                </div>
+                 <div class="mail-screen-row-wrapper">
+                    <section class="mail-row">
+                        <span class="select-mail-row">
+                            <input type="checkbox" />
+                        </span>
+                        <span>
+                            <img class="sender-photo" src="./yandex-logo.png" />
+                        </span>
+                        <div class="sender-name">
+                            Яндекс.Паспорт
+                        </div>
+                        <div class="unread-flag">
+                        </div>
+                        <div class="mail-title">
+                            Доступ к аккаунту восстановлен
+                        </div>
+                    </section>
+                </div> 
+                <div class="mail-screen-row-wrapper">
+                    <section class="mail-row">
+                        <span class="select-mail-row">
+                            <input type="checkbox" />
+                        </span>
+                        <span>
+                            <img class="sender-photo" src="./yandex-logo.png" />
+                        </span>
+                        <div class="sender-name">
+                            Команда Яндекс.Почты
+                        </div>
+                        <div class="unread-flag">
+                        </div>
+                        <div class="mail-title">
+                            Как читать почту с мобильного
+                        </div>
+                    </section>
+                </div>
+                <div class="mail-screen-row-wrapper">
+                    <section class="mail-row read">
+                        <span class="select-mail-row">
+                            <input type="checkbox" />
+                        </span>
+                        <span>
+                            <img class="sender-photo" src="./yandex-logo.png" />
+                        </span>
+                        <div class="sender-name">
+                            Команда Яндекс.Почты
+                        </div>
+                        <div class="unread-flag">
+                        </div>
+                        <div class="mail-title">
+                            Как читать почту с мобильного
+                        </div>
+                    </section>
+                </div>
+                <div class="mail-screen-row-wrapper">
+                    <section class="mail-row read">
+                        <span class="select-mail-row">
+                            <input type="checkbox" />
+                        </span>
+                        <span>
+                            <img class="sender-photo" src="./yandex-logo.png" />
+                        </span>
+                        <div class="sender-name">
+                            Яндекс
+                        </div>
+                        <div class="unread-flag">
+                        </div>
+                        <div class="mail-title">
+                            Соберите всю почту в этот ящик
+                        </div>
+                    </section>
+                </div>   
             </section>
         </main>
     </body>
