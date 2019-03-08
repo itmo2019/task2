@@ -230,9 +230,8 @@ html, body {
     color: #000000;
 }
 
-.message-snippet:focus {
+.bold {
     font-weight: bold;
-    outline-width: 0;
 }
 
 .message-snippet * {
@@ -246,7 +245,6 @@ html, body {
 }
 
 .avatar {
-    flex: left;
     width: 30px;
     height: 30px;
     left: 46px;
@@ -283,6 +281,7 @@ html, body {
     right: 20px;
     text-align: right;
     color: #9b9b9b;
+    font-weight: normal;
 }
 
 #footer-wrapper {
@@ -309,4 +308,53 @@ footer {
 
 footer nav a, footer span {
     margin-left: 15px;
+}
+
+#article {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 463px;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 20px 0 20px 20px;
+    display: none;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#moon {
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    shape-outside:circle();
+}
+
+#cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    font-family: HelveticaNeueLight;
+    font-weight: 100;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+#cross:hover {
+    background-color: #cdd6e4;
+}
+
+#first-message-tick:checked + #article {
+    display: block;
+}
+
+#first-message-label {
+    position: unset;
 }
