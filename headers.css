@@ -1,27 +1,3 @@
-.yandex-logo {
-    display: inline;
-    height: 50px;
-}
-
-.yandex-logo .multy-lines {
-    display: inline;
-    float: left;
-}
-
-.yandex-logo .yandex-name {
-    display: inline;
-    float: left;
-}
-
-.yandex-logo .yandex-name * {
-    display: inline;
-    float: left;
-}
-
-.search {
-    display: inline;
-}
-
 .line-black {
     width: 20px;
     height: 3px;
@@ -33,6 +9,63 @@
     height: 3px;
 }
 
-.multy-lines {
-    padding-top: 10px;
+.yandex-logo {
+    float: left;
+}
+
+.search {
+    overflow: hidden;
+}
+
+.input-placeholder {
+    margin: 7px 70px 0;
+    width: 310px;
+    height: 30px;
+    background-color: #f2f5f8;
+    border: 1px solid #d9dbde;
+
+    color: #737578;
+    font-family: "YS Text - Regular", serif;
+    font-size: 15px;
+}
+
+.input-placeholder input {
+    float: left;
+    display: inline;
+    width: 290px;
+    height: 30px;
+    background-color: #f2f5f8;
+    outline: none;
+    border: none;
+}
+
+.input-placeholder div {
+    float: left;
+    display: inline;
+    margin: 5px 0 0 -5px ;
+
+}
+
+.yandex-logo .multy-lines {
+    float: left;
+    margin: 11px 10px 0 0;
+}
+
+.yandex-logo .yandex-name * {
+    margin: 0;
+    display: inline;
+}
+
+.yandex-logo .yandex-name *:first-child {
+    font-family: YandexSansBold;
+    font-size: 31px;
+}
+
+.yandex-logo .yandex-name *:last-child {
+    font-family: YandexSansThin;
+    font-size: 31px;
+}
+
+.yandex-logo .yandex-name {
+    overflow: hidden;
 }
