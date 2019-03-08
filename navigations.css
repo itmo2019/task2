@@ -24,6 +24,7 @@
     font-weight: 500;
     float: left;
     margin: 10px 46px 10px 45px;
+
 }
 
 .hover-select {
@@ -45,11 +46,13 @@
 .hover-select div, .hover-select:hover div {
     color: #707070;
     font-size: 12px;
-    text-indent: 0.5em;
     font-family: HelveticaNeueMedium;
     float: left;
     margin: 4px 0 4px 0;
+     text-indent: 1em;
+}
 
+.not-more-147px {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

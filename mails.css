@@ -2,27 +2,121 @@
     position: relative;
     width: 530px;
     height: 589px;
+    float: top;
 }
 
 .list-header {
-    position: absolute;
+    float: left;
+    display: block;
+
+    border: 0 solid #9b9b9b;
+    border-bottom-width: 1px;;
+    width: 100%;
 }
 
 .list-header * {
     display: inline;
     float: left;
-    margin: 10px 20px 0 0;
+
+    margin: 11px 26px 5px 0;
     color: #9b9b9b;
-    font-family: HelveticaNeueLight;
+
+    font-family: HelveticaNeueMedium;
     font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60px;
+
+}
+
+.list-inner {
+    float: left;
+    display: block;
+    width: 100%;
+    height: max-content;
+}
+
+.list-inner .mail {
+    width: 100%;
+    display: block;
+    clear: both;
+    border: 0 solid #9b9b9b;
+    border-bottom-width: 1px;
+    height: 40px;
+}
+
+.list-inner .mail * {
+    display: inline;
+    float: left;
+    margin: 10px 10px 0 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.list-inner .mail .mail-checkbox {
+    margin: 16px 10px 0 20px;
+}
+
+.list-inner .mail *:nth-child(n + 3) {
+    margin-top: 13px;
+}
+
+.list-inner .not-readed *:nth-child(n + 3) {
+    font-size: 14px;
+    font-family: HelveticaNeueMedium;
+}
+
+.list-inner .readed *:nth-child(n + 3) {
+    font-size: 14px;
+    font-family: HelveticaNeueLight;
+}
+
+.list-inner .not-readed .mail-message:before {
+    font-size: 14px;
+    color: #6287bd;
+    content: ' \25CF';
+}
+
+.list-inner .mail .mail-message {
+    margin-top: 10px;
+    width: 215px;
+}
+
+.list-inner .readed .mail-message {
+    margin-top: 13px;
+    padding-left: 10px;
+    width: 205px;
+
+}
+
+.list-inner .mail .mail-arrived {
+    font-family: HelveticaNeueLight;
+    color: #9b9b9b;
+    width: 40px;
+}
+
+.list-inner .mail .mail-from {
+    width: 160px;
+}
+
+.list-inner .mail .mail-image {
+    width: 30px;
+    height: 30px;
+    background-image: url(//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg);
+    margin-top: 5px;
 }
 
 .list-footer {
-    color: #9b9b9b;
-    padding-left: 162px;
-    padding-right: 20px;
     position: absolute;
     bottom: 10px;
+    padding-left: 162px;
+    padding-right: 20px;
+    color: #9b9b9b;
     border-style: solid;
     border-width: 1px 0 0 0;
 }
@@ -33,4 +127,9 @@
     margin: 10px 20px 0 0;
     font-family: HelveticaNeueLight;
     font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
 }
