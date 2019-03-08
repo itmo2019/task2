@@ -1,0 +1,371 @@
+@font-face {
+    font-family: YandexSans-Bold;
+    src: url("../resources/fonts/YandexSansDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: YandexSans-Thin;
+    src: url("../resources/fonts/YandexSansDisplay-Thin.ttf");
+}
+
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url("../resources/fonts/HelveticaNeueCyr-Light.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("../resources/fonts/HelveticaNeueCyr-Medium.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url("../resources/fonts/HelveticaNeueCyr-Bold.ttf");
+}
+
+header {
+    position: absolute;
+    left: 22px;
+    top: 11px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    position: absolute;
+    background-color: #e5eaf0;
+}
+
+main {
+    position: absolute;
+}
+
+#search-cross {
+    left: 580px;
+    position: absolute;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    opacity: 0.15;
+}
+
+#all-letters {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 463px;
+    position: absolute;
+    top: 38px;
+}
+
+#search {
+    font-family: YandexSanThin;
+    font-size: 15px;
+    padding-left: 16px;
+    opacity: 0.5;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    line-height: 2.13;
+    left: 300px;
+    position: absolute;
+    width: 301px;
+    height: 32px;
+}
+
+.folders-choosing {
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 0;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 22px;
+    width: 137px;
+    height: 22px;
+}
+
+.folders-choosing:hover {
+    background-color: #cdd6e4;
+}
+
+#folders {
+    position: absolute;
+    top: 40px;
+    margin-top: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+#make-new-letter {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    width: 147px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+#main-menu {
+    position: absolute;
+    top: 56px;
+    color: #707070;
+    width: 200px;
+}
+
+#main-screen {
+    left: 191px;
+    top: 56px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+    background-color: #ffffff;
+    width: 589px;
+    height: 530px;
+    position: absolute;
+}
+
+.ps {
+    left: 10px;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    font-size: 1px;
+    position: absolute;
+}
+
+#p1 {
+    top: 10px;
+}
+
+#p2 {
+    top: 15px;
+}
+
+#p3 {
+    top: 20px;
+}
+
+
+#letter-actions {
+    border-bottom: solid 1px #e2e2e2;
+    height: 37px;
+    position: static;
+}
+
+.mail-option {
+    color: #cccccc;
+    top: 16px;
+    position: absolute;
+    display: inline;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.letter {
+    border-bottom: solid 1px #e2e2e2;
+    position: relative;
+    height: 37px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+}
+
+
+.choose-letter {
+    left: 20px;
+    display: inline;
+    position: absolute;
+    top: 12px;
+}
+
+.pic {
+    left: 46px;
+    top: 4px;
+    display: inline;
+    position: absolute;
+}
+
+.sender {
+    left: 86px;
+    max-width: 170px;
+    max-height: 16px;
+    display: inline;
+    position: absolute;
+    top: 12px;
+    font-family: HelveticaNeue-Bold;
+}
+
+.sender-read {
+    left: 86px;
+    max-width: 170px;
+    max-height: 16px;
+    overflow: hidden;
+    position: absolute;
+    top: 12px;
+    font-family: HelveticaNeue-Light;
+}
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #6287bd;
+    border-radius: 10px;
+    left: 261px;
+    display: inline;
+    top: 12px;
+}
+
+.description {
+    left: 281px;
+    max-width: 250px;
+    max-height: 16px;
+    display: inline;
+    position: absolute;
+    top: 12px;
+    font-family: HelveticaNeue-Bold;
+}
+
+.description-read {
+    left: 281px;
+    max-width: 250px;
+    max-height: 16px;
+    display: inline;
+    position: absolute;
+    top: 12px;
+    font-family: HelveticaNeue-Light;
+}
+
+.date {
+    right: 20px;
+    text-align: right;
+    color: #9b9b9b;
+    display: inline;
+    position: absolute;
+    top: 12px;
+}
+
+#bottom-links {
+    width: 345px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-family: HelveticaNeue-Light;
+    font-size: 11px;
+    color: #9b9b9b;
+}
+
+footer {
+    position: absolute;
+    top: 499px;
+    border-top: solid 1px #e2e2e2;
+    width: 100%;
+    height: 30px;
+}
+
+.footer-link {
+    display: inline;
+    margin-left: 15px;
+}
+
+.first-message-label {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 463px;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 20px 0 20px 20px;
+    display: none;
+    font-weight: 300;
+}
+
+.yoba {
+    float: right;
+    shape-outside:circle();
+}
+
+#make-yoba-choose:checked + label {
+    display: block;
+}
+
+.cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 20px;
+    width: 22px;
+    height: 22px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cross:hover {
+    background-color: crimson;
+}
+
+#ya-services-popup {
+    display: inline;
+}
+
+#logo {
+    position: absolute;
+    left: 37px;
+    font-size: 25px;
+}
+
+#yandex-part {
+    width: 100%;
+    font-family: YandexSans-Bold;
+    margin-right: 4px;
+    margin-left: 3px;
+}
+
+#mail-part {
+    width: 100%;
+    font-family: YandexSans-Thin;
+}
+
+#top-selector {
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    display: inline;
+}
+
+#letter-options {
+    display: inline;
+    position: static;
+}
+
+#forward {
+    left: 56px;
+}
+
+#delete {
+    left: 150px;
+}
+
+#spam {
+    left: 228px;
+}
+
+#mark-as-read {
+    left: 315px;
+}
