@@ -1,0 +1,23 @@
+.yandex-logo {
+    display: inline-block;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.line-black {
+    width: 20px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.line-white {
+    width: 20px;
+    height: 3px;
+}
+
+.multy-lines {
+    padding-top: 10px;
+}

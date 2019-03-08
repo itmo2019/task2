@@ -1,0 +1,20 @@
+@font-face {
+    font-family: YandexSansBold;
+    src: url("fonts/YandexSansDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: YandexSansThin;
+    src: url("fonts/YandexSansDisplay-Thin.ttf");
+}
+
+@font-face {
+    font-family: HelveticaNeueLight;
+    src: url("fonts/HelveticaNeueCyr-Light.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeueMedium;
+    src: url("fonts/HelveticaNeueCyr-Medium.otf");
+}
+

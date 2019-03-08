@@ -1,0 +1,57 @@
+
+.navigate {
+    width: 20%;
+    height: 598px;
+    float: left;
+    display: inline;
+    text-overflow: ellipsis;
+}
+
+.navigate .new-mail {
+    display: block;
+    width: 147px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    margin: 0 auto;
+    float: left;
+}
+
+.navigate .new-mail div {
+    color: #ffffff;
+    font-family: HelveticaNeueMedium;
+    font-size: 12px;
+    font-weight: 500;
+    float: left;
+    margin: 10px 46px 10px 45px;
+}
+
+.hover-select {
+    width: 147px;
+    height: 22px;
+    margin: 10px 20px 0 0;
+    float: left;
+}
+
+.hover-select:hover {
+    border-radius: 3px;
+    background-color: #cdd6e4;
+    width: 147px;
+    height: 22px;
+    margin: 10px 20px 0 0;
+    float: left;
+}
+
+.hover-select div, .hover-select:hover div {
+    color: #707070;
+    font-size: 12px;
+    text-indent: 0.5em;
+    font-family: HelveticaNeueMedium;
+    float: left;
+    margin: 4px 0 4px 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 147px;
+}
