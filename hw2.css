@@ -1,0 +1,319 @@
+
+@font-face {
+    font-family: YSText;
+    src: url("../fonts/YandexSansDisplay.ttf");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("../fonts/HelveticaNeueCyr.otf");
+}
+
+body {
+    background-color: #e5eaf0;
+}
+
+header {
+    margin-top: 1%;
+}
+
+#yandex-mail {
+    
+    color: #010101;
+}
+
+.inline {
+    display: inline;
+}
+
+.rectangle {
+    width: 2%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #000;
+}
+
+#close {
+    font-size: 25px;
+    position: absolute;
+    top: 3%;
+    right: 40%;
+    color: #9b9b9b;
+
+}
+
+#menu-react {
+    display: inline-block;  
+}
+
+#yandex-mail {
+    position: absolute;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+#actions {
+    position: absolute;
+    top: 9.3%;
+    left: 2.8%;
+    right: 78.9%;
+    font-size: 18px;
+}
+
+#write-button {
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    text-align: center;
+    padding-top: 9px;
+}
+
+#write {
+    font-size: 17px;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#search {
+    position: absolute;
+    margin-left: 35%;
+    padding-left: 10px;
+    width: 25%;
+    height: 5%;
+    opacity: 0.5;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: YSText;
+    font-size: 17px;
+}
+
+.act {
+    font-family: HelveticaNeue;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #707070;
+}
+
+.actions-without-writing {
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    padding-left: 7%;
+    color: #707070;
+}
+
+.actions-without-writing:hover {
+    background-color: #cdd6e4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bottom-borders {
+    border-bottom: solid 1px #e2e2e2;   
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding-top: 0.1%;
+}
+
+#inner-block {
+    background-color: #ffffff;
+    position: absolute;
+    width: 73.6%;
+    height: 88.3%;
+    bottom: 2.3%;
+    right: 2.5%;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+}
+
+#letters {
+    margin-left: -4%;
+    margin-top: -1%;
+}
+
+#sq {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.square {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 4%;
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.pic {
+    position: relative;
+    left: 4%;
+}
+
+.date {
+    font-family: HelveticaNeue;
+    position: absolute;
+    font-size: 17px;
+    top: 9.6%;  
+    right: 5%;
+}
+
+.sender {
+    font-family: HelveticaNeue;
+    position: absolute;
+    font-weight: bold;
+    top: 9.6%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.message {
+    font-family: HelveticaNeue;
+    position: absolute;
+    font-weight: bold;
+    top: 9.6%;
+    left: 45%;
+    font-size: 17px;
+}
+
+.sender-nb {
+    font-family: HelveticaNeue;
+    position: absolute;
+    top: 9.6%;
+    left: 10%;
+    font-size: 17px;
+}
+
+.message-nb {
+    font-family: HelveticaNeue;
+    position: absolute;
+    top: 9.6%;
+    left: 45%;
+    font-size: 17px;
+}
+
+.resend {
+    font-family: HelveticaNeue;
+    position: absolute;
+    display: inline;
+    left: 9.5%;
+    color: #cccccc;
+}
+
+.delete {
+    font-family: HelveticaNeue;
+    position: absolute;
+    display: inline;
+    left: 25.5%;
+    color: #cccccc;
+}
+
+.spam {
+    font-family: HelveticaNeue;
+    position: absolute;
+    display: inline;
+    left: 38.7%;
+    color: #cccccc;
+}
+
+.read {
+    font-family: HelveticaNeue;
+    position: absolute;
+    display: inline;
+    left: 53.5%;
+    color: #cccccc;
+}
+
+#footer {
+    bottom: 1.5%;
+    position: absolute;
+    border-top: solid 1px #e2e2e2;
+    width: 100%;
+    max-width: 100%;
+    right: 0%;
+    text-align: right;
+    padding-right: 3%;
+    padding-top: 0.5%;
+}
+
+.footer-links {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+
+#help {
+    position: relative;
+    right: 20%;
+}
+
+#advertising {
+    position: relative;
+    right: 10%;
+}
+
+.snowman {
+    float: right;
+    shape-outside:circle();
+}
+
+#choose:checked + label {
+    display: block;
+}
+
+#close2 {
+    position: absolute;
+    margin: 20px;
+    font-size: 25px;
+    top: 7px;
+    right: 7px;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    width: 96%;
+    background-color: white;
+    z-index: 1;
+    font-size: 14px;
+    padding: 20px 20px 20px 30px;
+    display: none;
+}
+
+#text {
+    font-family: HelveticaNeue;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.point {
+    position: absolute;
+    top: 20%;
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: #6287bd;
+    left: 43%;
+}
