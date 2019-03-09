@@ -1,0 +1,355 @@
+@font-face {
+    font-family: YandexSansBold;
+    src: url("fonts/YandexSansDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: YandexSansThin;
+    src: url("fonts/YandexSansDisplay-Thin.ttf");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("fonts/HelveticaNeueCyr-Medium.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeueLight;
+    src: url("fonts/HelveticaNeueCyr-Light.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 600px;
+    background: #e5eaf0;
+}
+
+.burger,.logo, .search {
+    float: left;
+    margin: 0;
+}
+
+.burger {
+    margin-top: 12px;
+}
+
+.line {
+    width: 20px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 4px;
+}
+
+.header {
+    margin-top: 7px;
+    margin-left: 22px;
+
+}
+
+.logo {
+    margin-left: 11px;    
+    margin-top: 7px;
+
+}
+
+.search {
+    width: 37%;
+    margin-left: 114px;
+    height: 32px;
+    margin-top: 11px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background: #f2f5f8;
+
+}
+
+.form-search_bar {
+    border: none;
+    width: calc(100% - 50px);
+    margin-left: 16px;
+    height: 27px;
+    outline:none;
+    background: #f2f5f8;
+}
+
+.search>form>button {
+    margin-top: 10px;
+    margin-right: 9px;
+    border: none;
+    background: #f2f5f8;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1em;
+    font-family: "HelveticaNeue";
+}
+::-moz-placeholder {
+    font-size: 1em;
+    font-family: "HelveticaNeue";
+}/* Firefox 19+ */
+:-moz-placeholder           {
+    font-size: 1em;
+    font-family: "HelveticaNeue";
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+    font-size: 1em;
+    font-family: "HelveticaNeue";
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-sidebar {
+    width: 147px;
+    float: left;
+}
+.container-bnt_write {
+    width: 147px;
+    height: 32px;
+    color: #fff;
+    font-family: "HelveticaNeue", sans-serif;;
+    font-size: 0.8em;
+    font-weight: 500;
+    background: #6287bd;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.container-bnt_write:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.sidebar-nav>li {
+    list-style: none;
+}
+
+.sidebar-nav>li>a {
+    text-decoration: none;
+    color: #555555;
+    font-family: "HelveticaNeue", sans-serif;;
+    font-size: 0.7em;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+.sidebar-nav>li:hover {
+    background: #cdd6e4;
+}
+
+.container {
+    width: calc(100% - 44px);
+    height: calc(100% - 100px);
+    margin: 13px auto 0;    
+}
+
+.container-content {
+    width: calc(100% - 169px);
+    height: calc(100vh - 100px);
+    min-height: 400px;
+    margin-bottom: 22px;
+    float: right;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: scroll;
+}
+.check {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-left: 3.7%;
+    float: left;
+}
+
+.content-func {
+    padding: 11px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+
+.content-func>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.content-func>ul>li>a {
+    text-decoration: none;
+    color: #cccccc;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.content-func>ul>li>a:hover {
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.message {
+    border-bottom: 2px solid #e2e2e2;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height: 40px;
+}
+
+.logo-yandex {
+    text-align: center;
+    float: left;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: -9px;
+}
+
+.message-type {
+    float: left;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 0.8em;
+    height: 16px;
+    margin-left: 2%;
+    width: 29%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.blue-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6287bd;
+    margin-left: 10px;
+    margin-top: 2px;
+    float: left;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.letter {
+    color: #000000;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 0.8em;
+    margin-left: 2%;
+    margin-right: 8%;
+    width: 30%;
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+
+.date {
+    color: #9b9b9b;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 0.8em;
+    float: right;
+    margin-right: 3.7%;
+    width: 40px;
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.check-percent {
+    margin-left: 3.7%;
+}
+
+.indent {
+    margin-top: 13px;
+}
+
+.my-letter {
+    display: none;
+    position: absolute;
+    background: #fff;
+    padding: 10px 2%; 
+    shape-outside: circle();
+    float: left;
+    color: #555555;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: calc(100% - 80px);
+    overflow: scroll;
+}
+
+.my-letter>p {
+    margin-top: 10px;
+}
+
+input[type=checkbox]:checked + label {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .message {
+    display: none;
+    
+}
+
+input[type=checkbox]:checked ~ .my-letter {
+    display: block;
+    
+}
+
+.monkey {
+    border-radius: 50%;
+    shape-outside: ellipse();
+    float: right;
+}
+
+.letter-close {
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 31px;
+    color: #9b9b9b;
+    font-family: "HelveticaNeueLight";
+    font-size: 0.7em;
+}
+
+.footer {
+    float: right;
+    margin-right: 3.7%;
+}
+
+.footer-link>a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #9b9b9b; 
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .date, .letter, .yandex {
+        margin-right: 0;
+    }
+}
