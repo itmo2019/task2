@@ -1,0 +1,98 @@
+* { margin: 0 }
+
+body {overflow-x: hidden; background-color: white}
+
+.intro {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.midsection {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  width: 100%;
+}
+
+.container {
+	--n: 1;
+  margin: auto;
+	display: flex;
+  vertical-align: middle;
+	align-items: center;
+	/* overflow-y: hidden; */
+	width: 100%;
+	width: calc(var(--n) * 100%);
+	height: 40%;
+  max-height: 90%;
+	transform: translate(calc(var(--i, 0)/var(--n)*-100%));
+}
+
+.container > img {
+  width: 100%;
+  width: calc(100% / var(--n));
+  user-select: none;
+  pointer-events: none
+}
+
+.container > section {
+  display: flex;
+  width: calc(100%/var(--n));
+  user-select: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 40%;
+  max-width: 250px;
+  transition: 0.3s;
+  border-radius: 20px;
+  padding: 1px;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: #ffff33;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_container {
+  padding: 2px 16px;
+}
+
+#interface-table {
+  margin: auto;
+  border: 1px solid blue;
+  display: inline-table;
+}
+
+#interface-table th, td {
+  border: 1px solid black;
+}
+
+#interface-table ul {
+  list-style-type: none;
+}
+
+#table-div {
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+.cat-column {
+  min-width: 320px;
+  min-height: 252px;
+  float: left;
+  overflow: hidden;
+  font: 16px;
+}
+
+.cat-right {
+  background: url(http://effects1.ru/png/kartinka/1/koty/1/kitten_cat_4-320.png) no-repeat left top;
+  text-align: justify;
+}
