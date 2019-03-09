@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Куриленко Влад">
+		<link rel="stylesheet" href="styles.css" charset="utf-8">
+		<title>Яндекс.Почта</title>
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div id="pochta">
+				<span id="yandex">Яндекс</span><span id="mail">Почта</span>
+			</div>
+			<div id="search_wrap">
+				<input id="search" placeholder="Поиск">
+			</div>
+		</div>
+		<div id="folders">
+			<div id="new_letter">Написать</div>
+			<div class="option">Входящие</div>
+			<div class="option">Отправленные</div>
+			<div class="option">Удалённые</div>
+			<div class="option">Спам</div>
+			<div class="option">Черновики</div>
+			<div class="option">Создать папку</div>
+		</div>
+		<div id="letters">
+			<div id="top_row">
+				<div class="top_row_option">
+					<input class="checkbox" type="checkbox">
+				</div>
+				<div class="top_row_option">Переслать</div>
+				<div class="top_row_option">Удалить</div>
+				<div class="top_row_option">Это спам!</div>
+				<div class="top_row_option">Прочитано</div>
+			</div>
+			<div class="separator"></div>
+			<ul id="lettersbox">
+				<input id="show_art" type="checkbox">
+				<div id="article">
+					<label for="show_art" id="close">x</label>
+					<img class="planet" src="./planet.png">
+					<p>На самом деле, здесь не будет моей первой домашки. В основном из-за того, что там использовались прямоугольные изображения, а ими здесь пользоваться будет как-то уж очень скучно. Поэтому лучше я впихну сюда одну из текстурок Земли, которую мой одноклассник написал в школьные годы. По его словам, рендеринг этой штуки сжирал порядка 4 ГБ оперативной памяти, но качество там точно было достаточно высокое. Как-то так, ква.
+				</div>
+				<li class="single_letter">
+					<div class="letter_checkbox_img">
+						<input class="checkbox" type="checkbox">
+					</div>
+					<div class="letter_checkbox_img">
+						<img class="ya_logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
+					</div>
+					<div class="letter_header highlighted">
+						Жабба
+					</div>
+					<div class="letter_checkbox_img">
+						<div class="bullet"></div>
+					</div>
+					<div class="letter_header highlighted letter_text">
+						<label id="show_article" for="show_art">Какая-то статья</label>
+					</div>
+					<div class="date">23 фев</div>
+				</li>
+				<li class="single_letter">
+					<div class="letter_checkbox_img">
+						<input class="checkbox" type="checkbox">
+					</div>
+					<div class="letter_checkbox_img">
+						<img class="ya_logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
+					</div>
+					<div class="letter_header highlighted">
+						Яндекс.Паспорт
+					</div>
+					<div class="letter_checkbox_img">
+						<div class="bullet"></div>
+					</div>
+					<div class="letter_header highlighted letter_text">
+						Доступ к аккаунту восстановлен
+					</div>
+					<div class="date">11 янв</div>
+				</li>
+				<li class="single_letter">
+					<div class="letter_checkbox_img">
+						<input class="checkbox" type="checkbox">
+					</div>
+					<div class="letter_checkbox_img">
+						<img class="ya_logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
+					</div>
+					<div class="letter_header">
+						А это мы уже прочитали
+					</div>
+					<div class="letter_checkbox_img">
+						<div class="bullet empty"></div>
+					</div>
+					<div class="letter_header letter_text">
+						Очень длинный текст, чтобы посмотреть, что он действительно не будет просто переноситься на следующую строку, а заменится на многоточие в самом конце
+					</div>
+					<div class="date">27 дек</div>
+				</li>
+				<li class="single_letter">
+					<div class="letter_checkbox_img">
+						<input class="checkbox" type="checkbox">
+					</div>
+					<div class="letter_checkbox_img">
+						<img class="ya_logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
+					</div>
+					<div class="letter_header">
+						И ето тоже
+					</div>
+					<div class="letter_checkbox_img">
+						<div class="bullet empty"></div>
+					</div>
+					<div class="letter_header letter_text">
+						..........
+					</div>
+					<div class="date">9 ноя</div>
+				</li>
+			</div>
+		</div>
+	</body>
+</html>
