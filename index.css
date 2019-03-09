@@ -7,6 +7,7 @@
     padding: 11px 22px 14px 22px;
     background-color: #e5eaf0;
     font-family: HelveticaNeue;
+    min-width: 960px;
 }
 
 #header {
@@ -103,6 +104,13 @@
     height: 100%;
 }
 
+.select-mail-row input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.19);
+}
+
 .new-message {
     position: relative;
     width: 95%;
@@ -153,6 +161,7 @@
 }
 
 #mail-screen {
+    position: relative;
     height: 93%;
     margin-left: 33px;
     border-radius: 3px;
@@ -163,19 +172,46 @@
     background-color: #ffffff;
 }
 
+#first-email {
+    padding: 3px;
+    position: relative;
+    margin-left: 33px;
+    border-radius: 3px;
+    display: none;
+    border: #000000 1px solid;
+    width: calc(100% - 260px);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+#cat-image {
+    margin-top: 5px;
+    float: right;
+    border-radius: 50%;
+    shape-outside:circle();
+    height: 250px;
+    width: 250px;
+    content: url("cat.png");
+}
+
 .mail-row {
     height: 65px;
+    position: relative;
     display: table-cell;
     vertical-align: middle;
-    border: solid 1px #e2e2e2;
+    border-bottom: solid 1px #e2e2e2;
+    overflow: hidden;
+}
+
+.close-email {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .mail-row-top {
     height: 45px;
-}
-
-.mail-row + .mail-row {
-    border-top: 0px;
 }
 
 .nav-mail-screen-action {
@@ -217,12 +253,16 @@
 
 .sender-name {
     display: inline-block;
+    vertical-align: middle;
     font-size: 19px;
     font-weight: bold;
     color: #000000;
     margin-left: 9px;
     min-width: 160px;
     width: 25%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .read > .sender-name {
@@ -230,12 +270,18 @@
 }
 
 .mail-title {
+    position: relative;
     display: inline-block;
     font-size: 17px;
+    
     font-weight: bold;
     color: #000000;
     margin-left: 5px;
-    width: 45%;
+    width: 43%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 .read > .mail-title {
@@ -244,8 +290,53 @@
 }
 
 .mail-date {
-    font-size: 19px;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 13px;
+    font-size: 16px;
     font-weight: 500;
     color: #ccccdd;
+    white-space: nowrap;
+    overflow: hidden;
+    float: right;
+}
+
+.footer-items {
+    list-style-type: none;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    text-align: right;
+}
+
+.footer-item {
+    padding: 21px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
+.mail-footer {
+    padding-top: 5px;
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    bottom: 0;
+    border-top: 1px solid #cccccc;
+    background-color: ffff;
+}
+
+#toggle-first-mail {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#toggle-first-mail:checked ~ #first-email {
     display: inline-block;
+}
+
+#toggle-first-mail:checked ~ #mail-screen {
+    display: none;
 }
