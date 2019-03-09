@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Входящие - Яндекс.Почта</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="main-header">
+        <div id="mail-yandex-logo">
+            <a href="#">
+                <img src="img/icons/hamburger-menu.png" width="16" height="16" id="logo-hamburger-icon" alt=""/>
+            </a>
+            <a href="https://yandex.ru" id="logo-yandex" class="logo-text">Яндекс</a>
+            <a href="index.html" id="logo-mail" class="logo-text">Почта</a>
+        </div>
+
+        <div id="search">
+            <input id="search-area" type="text" placeholder="Поиск">
+            <img src="img/icons/cross.png" width="10" height="10" id="cross-icon" alt="">
+        </div>
+    </header>
+
+    <div id="main-window">
+        <aside id="left-column">
+            <a href="#">
+                <button id="write-letter-button">Написать</button>
+            </a>
+
+            <nav id="navigation">
+                <ul>
+                    <li class="active"><a href="#">Входящие</a></li>
+                    <li><a href="#">Отправленные</a></li>
+                    <li><a href="#">Удалённые</a></li>
+                    <li><a href="#">Спам</a></li>
+                    <li><a href="#">Черновики</a></li>
+                    <li><a href="#">Создать папку</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div id="incoming-letters-window">
+            <header id="letter-actions">
+                <div class="my-checkbox"></div>
+
+                <div id="actions-box">
+                    <button class="action">Переслать</button>
+                    <button class="action">Удалить</button>
+                    <button class="action">Это спам!</button>
+                    <button class="action">Прочитано</button>
+                </div>
+            </header>
+
+            <main id="incoming-letters-list">
+                <input type="checkbox" id="change-content">
+                <ul>
+                    <li class="letter unread">
+                        <div class="my-checkbox"></div>
+                        <label id="change-content-label" for="change-content">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <span class="letter-from">Яндекс.Паспорт</span>
+                            <span class="unread-flag"></span>
+                            <span class="letter-subject">Доступ к аккаунту восстановлен</span>
+                            <time class="letter-date" datetime="2018-08-06">6 авг</time>
+                        </label>
+                    </li>
+                    <li class="letter unread">
+                        <div class="my-checkbox"></div>
+                        <a href="#" class="letter-link">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <span class="letter-from">Команда Яндекс.Почты</span>
+                            <span class="unread-flag"></span>
+                            <span class="letter-subject">Как читать почту с мобильного</span>
+                            <time class="letter-date" datetime="2018-08-06">6 июл</time>
+                        </a>
+                    </li>
+                    <li class="letter read">
+                        <div class="my-checkbox"></div>
+                        <a href="#" class="letter-link">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <span class="letter-from">Команда Яндекс.Почты</span>
+                            <span class="unread-flag"></span>
+                            <span class="letter-subject">Как читать почту с мобильного</span>
+                            <time class="letter-date" datetime="2018-08-06">6 июл</time>
+                        </a>
+                    </li>
+                    <li class="letter read">
+                        <div class="my-checkbox"></div>
+                        <a href="#" class="letter-link">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <span class="letter-from">Яндекс</span>
+                            <span class="unread-flag"></span>
+                            <span class="letter-subject">Соберите всю почту в этот ящик</span>
+                            <time class="letter-date" datetime="2018-08-06">6 июл</time>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="article-content">
+                    <label id="close-article-label" for="change-content">
+                        <img class="close-article" src="img/icons/cross.png" width="16" height="16" alt="">
+                    </label>
+
+                    <!-- Article -->
+                    <main class="article-main-window">
+                        <section class="content">
+                            <header class="user-info">
+                                <div class="col1 user-image">
+                                    <img src="img/profile-photo100.jpg" alt="" width="100" height="100"/>
+                                </div>
+                                <div class="col2">
+                                    <span class="user-name"><b>Никита Волошин</b></span>
+                                    <span class="publication-date"><time datetime="2019-02-21T02:12+03:00"></time>21 февраля 2:12</span>
+                                </div>
+                                <address class="col3 contacts">
+                                    <a href="https://github.com/nikvoloshin">
+                                        <img src="img/github-icon.png" alt="" width="32" height="32"/>
+                                    </a>
+                                    <a href="mailto:nik.volosh@yandex.ru">
+                                        <img src="img/email-icon.png" alt="" width="32" height="32"/>
+                                    </a>
+                                    <a href="https://vk.com/crash_urban">
+                                        <img src="img/vk-icon.png" alt="" width="32" height="32"/>
+                                    </a>
+                                </address>
+                            </header>
+
+                            <h1>Чего я жду от курса по фронтенду?</h1>
+
+                            <article class="paragraph">
+                                <h2>Почему фронтенд нужен</h2>
+                                <img id="floating-img" src="img/node.png" width="100" height="100" alt="">
+                                <p>
+                                    На сегодняшний день направление <i>web-development</i> развивается с огромной скоростью и, более того,
+                                    уже
+                                    активно выходит за рамки браузера, например, популярные сервисы все чаще портируются на <i>desktop</i>
+                                    при
+                                    помощи <i>Electron</i>, а <i>JavaFX</i> позволяет описывать стили на <i>CSS</i>-подобном языке. В связи
+                                    с
+                                    этим напрашивается вывод, что в современных реалиях даже <i>desktop</i> разработчику практически
+                                    <strong>
+                                        необходимо знать основы <i>web-разработки</i> и, в частности, <i>фронтенда.</i></strong> И
+                                    полноценный
+                                    учебный курс - это как раз то, что нужно.
+                                </p>
+                            </article>
+                            <article class="paragraph">
+                                <h2>О чем хотелось бы узнать в рамках курса</h2>
+                                <ol class="with-background">
+                                    <li>
+                                        <h3>React.js</h3>
+                                        <p>
+                                            Хотелось бы на достаточном уровне познакомиться с <i>React.js</i>, так как это один из самых
+                                            популярных
+                                            <i>JavaScript</i> фреймворков.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>AngularJS</h3>
+                                        <p>
+                                            Также, наравне с <i>React.js</i> хотелось бы послушать про <i>AngularJS</i>, про области
+                                            применения
+                                            каждого из двух фреймворков, примеры решения одной задачи разными фреймворками и подобное.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3><abbr title="HyperText Transfer Protocol">HTTP</abbr></h3>
+                                        <p>
+                                            Знание протокола <i>HTTP</i>, на мой взгляд, <em>must
+                                            have</em> для любого <i>web</i>-разработчика.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Препроцессоры, генераторы и прочие утилиты</h3>
+                                        <p>
+                                            Скорость и удобство разработки также играют огромную роль, поэтому хотя бы беглый обзор наиболее
+                                            популярных утилит был бы весьма кстати.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>misc</h3>
+                                        <p>
+                                            Дополнительно, если останутся свободные лекции, было бы интересно послушать про <i>web</i> в <i>desktop</i>
+                                            приложениях, например <i>Electron</i>.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </article>
+                            <article class="paragraph">
+                                <h2>Мои ожидания</h2>
+                                <p>
+                                    Я уверен, что этот курс будет очень классным и полезным, за что огромное спасибо ИТМО и преподователям
+                                    курса. Надеюсь, этот эксперимент удастся и все останутся довольны. <em>Best wishes for all of us</em>.
+                                </p>
+                            </article>
+                        </section>
+                    </main>
+                </div>
+            </main>
+
+            <footer id="main-footer">
+                <a href="#">Помощь и обратная связь</a>
+                <a href="#">Реклама</a>
+                <span id="copyright">© 2001-2018, Яндекс</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
