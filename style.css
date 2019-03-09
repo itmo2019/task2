@@ -1,0 +1,212 @@
+body {
+    background-color: rgba(216,239,255,0.86);
+}
+.stripe {
+    width: 1.75em;
+    height: 0.33em;
+    background-color: black;
+    display: block;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+.threeStripes {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    position: absolute;
+    display: inline-block;
+}
+.yandex {
+    padding-left: 2em;
+    padding-top: 0.25em;
+    /*position: absolute;*/
+    /*top: 0.25em;*/
+    /*left: 10px;*/
+    font-size: 36px;
+    font-family: yandexFont, sans-serif;
+    display: inline-block;
+}
+.search {
+    position: absolute;
+    display: inline-block;
+    /*margin-left: 7em;*/
+    width: 20em;
+    /*height: 2em;*/
+    /*margin-top: 1em;*/
+    top: 1.5em;
+    left: 27em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background-color: rgba(212,226,224,0.86);
+    border: 1px solid grey;
+    /*text-align: left;*/
+    /*margin-top: 2em;*/
+}
+
+main {
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.mail {
+    font-size: 32px;
+    font-family: mailFont, sans-serif;
+    display: inline-block;
+}
+.write {
+    background-color: rgba(88,139,255,0.86);
+    font-family: Callibri, sans-serif;
+    width: 6em;
+    text-align: center;
+    color:white;
+    /*height: 3em;*/
+    padding: 1em;
+}
+.categories {
+    margin-left: -2em;
+}
+.leftList{
+    list-style-type: none;
+    width: 7.5em;
+}
+.leftButtons {
+    display: inline-block;
+}
+.marked {
+    list-style-type: none;
+    width: 7.5em;
+    background-color: rgba(179,208,226,0.86);
+}
+.messageBox {
+    background-color: aliceblue;
+    position: absolute;
+    display: inline-block;
+    margin-left: 1em;
+    width: 80%;
+    height: 40rem;
+}
+.firstRow {
+    border-bottom: 1px solid rgba(113,122,122,0.86);
+    margin-top: 2em;
+}
+.otherRows {
+    border-bottom: 1px solid rgba(113,122,122,0.86);
+    margin-top: 1em;
+}
+.img1{
+    margin-left: 1em;
+}
+.img2{
+    margin-left: 1em;
+}
+.readName {
+    margin-left: 3%;
+    width: 12em;
+    font-size: 16px;
+    font-family: Callibri, sans-serif;
+    display:inline-block;
+}
+.unreadName {
+    font-size: 16px;
+    width: 12em;
+    margin-left: 3%;
+    font-weight: bold;
+    font-family: Callibri, sans-serif;
+    display:inline-block;
+}
+.read {
+    margin-left: 3%;
+    width: 22em;
+    font-size: 16px;
+    font-family: Callibri, sans-serif;
+    display:inline-block;
+}
+.unread {
+    font-size: 16px;
+    width: 22em;
+    margin-left: 3%;
+    font-weight: bold;
+    font-family: Callibri, sans-serif;
+    display:inline-block;
+}
+.date {
+    position: absolute;
+    float:right;
+    margin-top: 1em;
+    display:inline-block;
+    color: rgba(157,170,170,0.86);
+    font-family: Callibri, sans-serif;
+}
+.messageResend {
+    margin-left: 1em;
+    text-align: center;
+    display:inline-block;
+}
+.messageDelete {
+    margin-left: 1em;
+    display:inline-block;
+}
+.messageSpam {
+    margin-left: 1em;
+    display:inline-block;
+}
+.messageRead {
+    margin-left: 1em;
+    display:inline-block;
+}
+.manulImg {
+    width: 65%;
+    height: 65%;
+    float:left;
+    shape-margin: 10%;
+    shape-outside: url('manul.png');
+}
+.manulImgCirc {
+    width: 45%;
+    height: 45%;
+    float:left;
+    /*margin: 10px;*/
+    shape-margin: 0.5em;
+    margin-right: 0.5em;
+    shape-outside: url('manulCirc.png');
+    /*shape-outside: circle();*/
+    /*border-radius: 50%;*/
+    shape-image-threshold: 0.2;
+}
+.kittenPage {
+    top:0;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: white;
+}
+.closePage {
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    margin: 0.5em;
+}
+#hideMailPage {
+    display: none;
+}
+#hideMailPage:checked + .kittenPage {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    margin-top: 19em;
+    margin-bottom: 1em;
+}
+@font-face {
+    font-family: yandexFont;
+    src: url("YandexSansDisplay-Bold.woff");
+}
+@font-face {
+    font-family: mailFont;
+    src: url("YandexSansDisplay-Light.woff");
+}
