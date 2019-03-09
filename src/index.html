@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Dmitriy Ionov">
+    <title>Яндекс.почта</title>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="ln ln1"></div>
+        <div class="ln ln2"></div>
+        <div class="ln ln3"></div>
+        <div class="description"><label class="yandex">Яндекс</label> Почта</div>
+        <div class="search">
+            <div class="search_text">Поиск</div>
+            <img src="images/cancel.png" class="cancel_icon" alt="cancel">
+        </div>
+    </div>
+    <ul class="left_buttons">
+        <li class="write">
+            <div class="write_text">Написать</div>
+        </li>
+        <li class="inbox">
+            <div class="inbox_text">Входящие</div>
+        </li>
+        <li class="letter_text sent">Отправленные</li>
+        <li class="letter_text deleted">Удалённые</li>
+        <li class="letter_text spam">Спам</li>
+        <li class="letter_text drafts">Черновики</li>
+        <li class="letter_text folder">Создать папку</li>
+    </ul>
+    <div class="mail_box" id="show">
+        <ul class="mail_box_buttons">
+            <li class="white_square"></li>
+            <li class="upper_text forward">Переслать</li>
+            <li class="upper_text delete">Удалить</li>
+            <li class="upper_text this_is_spam">Это спам!</li>
+            <li class="upper_text read">Прочитано</li>
+        </ul>
+        <div class="line"></div>
+        <div id="my_article">
+            <a href="#hide" id="close_article">
+                <img src="images/cancel.png" class="article_cancel" alt="art_cancel">
+            </a>
+            <ul>
+                <li><p class="main_text">Фронтендом я интересовался еще в школе. В 9
+                    классе на уроках информатики одним из заданий было написание собственного сайта. <br>
+                    К сожалению те файлы не сохранились, но тогда ничего сложного я не писал, просто несколько html
+                    страничек,
+                    связанных между собой ссылками, <br>
+                    никакого css там не использовалось. Однако после этого мне стало интересно, как сайты работают
+                    изнутри.
+                    <br>
+                    Это и было одной из причин, по которой я выбрал изучать курс фронтенда. <br>
+                </p></li>
+                <img src="images/cat.jpeg" class="cat_picture" alt="cat">
+                <li><p class="main_text">
+                    Другой причиной является то, что этот курс является практическим, то есть тут
+                    можно
+                    получить много
+                    навыков, которые затем можно использовать. <br>
+                    Это мне нравится куда больше, чем учить большое количество теории, без возможности применить её на
+                    практике.
+                    <br>
+                    К тому же практические знания редко бывают лишними, ведь никогда не знаешь когда они могут
+                    пригодится
+                    <br>
+                </p></li>
+                <li><p class="main_text">
+                    Прежде всего я надеюсь, что к концу курса научусь писать сайты так, <b>чтобы на них можно было
+                    нормально
+                    смотреть</b>. То есть хочется научиться <br>
+                    использовать возможности <i>html</i> и <em>css</em> для создания приятного для глаз дизайна. Также
+                    интересно
+                    узнать, чем отличается работа веб-программистов <br>
+                    от обычных программистов. Возможно веб-программирование понравится мне даже больше, чем обычные
+                    языки
+                    программирования. <br>
+                </p></li>
+            </ul>
+        </div>
+        <ul class="letters" id="hidden">
+            <li>
+                <div class="white_square"></div>
+                <img src="images/avapic.png" class="sender_avatar" alt="avatar">
+                <a href="#show" class="open_article">
+                    <div class="inmail_text sender_name unreaded">Дмитрий Ионов</div>
+                </a>
+                <div class="unreaded_circle"></div>
+                <a href="#show" class="open_article">
+                    <div class="inmail_text mail_text unreaded">Моё эссе из ДЗ 1</div>
+                    <div class="inmail_text date">27 фев</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="white_square"></div>
+                <div class="ya_avatar">
+                    <div class="ya_letter">Я</div>
+                </div>
+                <div class="inmail_text sender_name unreaded">Команда Яндекс.Почты</div>
+                <div class="unreaded_circle"></div>
+                <div class="inmail_text mail_text unreaded">Как читать почту с мобильного</div>
+                <div class="inmail_text date">6 июл</div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="white_square"></div>
+                <div class="ya_avatar">
+                    <div class="ya_letter">Я</div>
+                </div>
+                <div class="inmail_text sender_name readed">Команда Яндекс.Почты</div>
+                <div class="readed_circle"></div>
+                <div class="inmail_text mail_text readed">Как читать почту с мобильного</div>
+                <div class="inmail_text date">6 июл</div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="white_square"></div>
+                <div class="ya_avatar">
+                    <div class="ya_letter">Я</div>
+                </div>
+                <div class="inmail_text sender_name readed">Яндекс</div>
+                <div class="readed_circle"></div>
+                <div class="inmail_text mail_text readed">Соберите всю почту в этот ящик</div>
+                <div class="inmail_text date">6 июл</div>
+                <div class="line"></div>
+            </li>
+            <li>
+                <div class="bottom_line"></div>
+                <ul class="footer">
+                    <li class="copyright"> &copy; 2001-2019, Яндекс</li>
+                    <li class="copyright"> Реклама</li>
+                    <li class="copyright"> Помощь и обратная связь</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
