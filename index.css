@@ -1,0 +1,211 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1048px;
+}
+
+body {
+    background-color: #e5eaf0;
+}
+
+.header {
+    display: inline-block;
+}
+
+.search-box {
+    margin: 10px;
+    vertical-align: top;
+    margin-left: calc(50% - 300px);
+}
+
+.search-box-text {
+    opacity: 0.5;
+    background-color: #ffffff;
+    height: 31px;
+    width: 301px;
+    font-size: 15px;
+    padding-left: 16px;
+    color: #000000;
+}
+
+.yandex-logo {
+    color: #010101;
+    margin: 10px;
+}
+
+.menu-icon {
+    margin: 10px 10px 10px 22px;
+}
+
+.yandex-icon-svg {
+    height: 31px;
+    width: 153px;
+}
+
+.menu-icon-svg {
+    width: 31px;
+}
+
+.left-menu {
+    margin: 1px 22px;
+    float: left;
+}
+
+.in-button {
+    vertical-align: top;
+    width: 147px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    color: white;
+    font-size: 12px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.left-menu-line {
+    cursor: pointer;
+    font-size: 11px;
+    vertical-align: center;
+    margin: 6px 0;
+    color: #707070;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-left: 10px;
+}
+
+.left-menu-line-light {
+    width: 137px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #cdd6e4;
+    color: #555555;
+    font-weight: bold;
+}
+
+.left-menu-link {
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle; /* ..по вертикали */
+}
+
+main {
+    vertical-align: top;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+    background-color: #ffffff;
+    min-height: 600px;
+    min-width: 800px;
+    overflow: hidden;
+}
+
+.main-header-button {
+    display: inline-block;
+    vertical-align: top;
+    height: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #cccccc;
+    margin: 11px 13px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.mail-discription {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 13px;
+}
+
+img.mail-discription {
+    height: 30px;
+    border-radius: 30px;
+}
+
+h2.mail-discription, h3.mail-discription, p {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+h2.bold, h3.bold {
+    font-weight: bold;
+}
+
+h3.mail-discription {
+    float: right;
+}
+
+div.unchecked {
+    width: 10px;
+    height: 10px;
+    background-color: #6287bd;
+    border-radius: 10px;
+}
+
+p.mail-discription {
+    color: #9b9b9b;
+    font-weight: normal;
+    float: right;
+    margin-left: 30px;
+}
+
+footer {
+    text-align: right;
+    margin-top: 350px;
+}
+
+.footer {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+small {
+    color: #9b9b9b;
+}
+
+.line {
+    height: 1px;
+    border-top: solid 1px #e2e2e2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden-text{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+
+}
+
+#check-label{
+    display: none;
+}
+
+#check-label:checked ~ .hidden-text{
+}
