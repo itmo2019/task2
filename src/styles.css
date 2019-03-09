@@ -169,14 +169,14 @@ a {
 .MailAuthor {
     width: 155px;
     height: 16px;
-    margin: 10.5px 20px 13px 0;
+    margin: 10px 20px 13px 0;
     float: left;
 }
 
 .MessageBody {
     width: 213px;
     height: 16px;
-    margin: 12px 44px 10.5px 0px;
+    margin: 12px 44px 10px 0;
     float: left;
 }
 
@@ -187,7 +187,7 @@ a {
     float: right;
 }
 
-.PassportDate {
+.Date {
     margin: 0;
     width: 36px;
     height: 15px;
