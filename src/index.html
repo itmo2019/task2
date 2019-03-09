@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="fonts/yandex-font/stylesheet.css" type="text/css">
+	<title>Яндекс Почта</title>
+</head>
+<body>
+<div class="container">
+	<header>
+		<button class="hamburger">
+			<img src="images/hamburger.svg" width="25px" height="25px">
+		</button>
+		<div class="header-text"><span class="stretch"><span class="header-text-bold">Яндекс</span> Почта</span></div>
+		<div class="header-search">
+			<input class="header-search__text" placeholder="Поиск">
+			<div class="header-search__close-icon">╳</div>
+		</div>
+	</header>
+	<div class="main-content">
+		<div class="side-menu">
+			<button id="write-button">Написать</button>
+			<button id="incoming-button">Входящие</button>
+			<button class="side-menu-button">Отправленные</button>
+			<button class="side-menu-button">Удаленные</button>
+			<button class="side-menu-button">Спам</button>
+			<button class="side-menu-button">Черновики</button>
+			<button class="side-menu-button">Создать папку</button>
+		</div>
+		<div class="center-box">
+			<div class="box-top-menu-container">
+				<div class="checkbox-container"><div class="checkbox"></div></div>
+				<div class="box-top-menu">
+					<button class="box-top-menu-button">Переслать</button>
+					<button class="box-top-menu-button">Удалить</button>
+					<button class="box-top-menu-button">Это спам!</button>
+					<button class="box-top-menu-button">Прочитано</button>
+				</div>
+			</div>
+			<ul class="messages-list">
+				<li class="box-row-container">
+					<div class="checkbox-container"><div class="checkbox"></div></div>
+					<div class="sender-info">
+						<div class="avatar"><div class="text-in-circle">Я</div></div>
+						<button class="sender-name-button message-box-button bold">
+							<span class="sender-name-text">Яндекс.Паспорт</span>
+						</button>
+					</div>
+					<div class="is-read-mark"></div>
+					<div class="message-content">
+						<button class="first-message message-text message-box-button bold" tabindex="0">
+							Доступ к аккаунту восстановлен
+						</button>
+						<div class="hidden-article">
+							<div class="hidden-article-content">
+								<div class="hidden-article__close-icon_container">
+									<button class="hidden-article__close-icon" tabindex="0">╳</button>
+								</div>
+								<img src="images/cat.jpg" class="circle" width="300" height="300">
+								<p>
+									Многие владельцы кошек наверняка мечтают хотя бы на день очутиться в шкуре своего питомца, чтобы
+									взглянуть на мир его глазами. Хотя органы зрения кошек по строению во многом похожи на человеческие,
+									в процессе эволюции глаза кошек приспосабливались к конкретным условиям, поэтому у кошачьего зрения
+									есть своя специфика. Представители семейства кошачьих научились прекрасно ориентироваться в условиях
+									низкой освещённости и чутко реагировать на малейшие движения, однако ради этого им пришлось
+									пожертвовать тонкостями восприятия цвета и некоторыми другими возможностями.
+								</p>
+								<p>
+									Также глаз кошки плохо воспринимает коричневый, красный и оранжевый цвета, но отлично видит синий
+									и жёлтый. Благодаря большему количеству специальных фото-рецепторов в глазах кошки видят в темноте
+									в 6–8 раз лучше человека — эта способность позволяет диким представителям семейства кошачьих
+									охотиться по ночам. Кстати, у кошачьих глаз есть интересная особенность, которую многие наверняка
+									замечали: в темноте они испускают необычное фосфоресцирующее сияние, это обусловлено наличием
+									светоотражающего пигмента в тапетуме — слое ткани позади сетчатки.
+								</p>
+							</div>
+						</div>
+						<div class="message-date"><time datetime="08-06">6 авг</time></div>
+					</div>
+				</li>
+				<li class="box-row-container">
+					<div class="checkbox-container"><div class="checkbox"></div></div>
+					<div class="sender-info">
+						<div class="avatar"><div class="text-in-circle">Я</div></div>
+						<button class="sender-name-button message-box-button bold">
+							<span class="sender-name-text">Команда Яндекс.Почты</span>
+						</button>
+					</div>
+					<div class="is-read-mark"></div>
+					<div class="message-content">
+						<button class="message-text message-box-button bold">Как читать почту с мобильного</button>
+						<div class="message-date"><time datetime="08-06">6 июл</time></div>
+					</div>
+				</li>
+				<li class="box-row-container">
+					<div class="checkbox-container"><div class="checkbox"></div></div>
+					<div class="sender-info">
+						<div class="avatar"><div class="text-in-circle">Я</div></div>
+						<button class="sender-name-button message-box-button">
+							<span class="sender-name-text">Команда Яндекс.Почты</span>
+						</button>
+					</div>
+					<div class="read-mark"></div>
+					<div class="message-content">
+						<button class="message-text message-box-button">Как читать почту с мобильного</button>
+						<div class="message-date"><time datetime="08-06">6 июл</time></div>
+					</div>
+				</li>
+				<li class="box-row-container">
+					<div class="checkbox-container"><div class="checkbox"></div></div>
+					<div class="sender-info">
+						<div class="avatar"><div class="text-in-circle">Я</div></div>
+						<button class="sender-name-button message-box-button">
+							<span class="sender-name-text">Яндекс</span>
+						</button>
+					</div>
+					<div class="read-mark"></div>
+					<div class="message-content">
+						<button class="message-text message-box-button">Соберите всю почту в этот ящик</button>
+						<div class="message-date"><time datetime="08-06">6 июл</time></div>
+					</div>
+				</li>
+			</ul>
+			<div class="footer">
+				<div class="footer-menu">
+					<a href="" class="footer-item">Помощь и обратная связь</a>
+					<a href="" class="footer-item">Реклама</a>
+					<div class="footer-item">©&nbsp;2001—2019,&nbsp;</div>
+					<a href="https://yandex.ru/" class="footer-item last-footer-item">Яндекс</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
