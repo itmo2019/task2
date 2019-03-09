@@ -1,0 +1,254 @@
+span {
+    font-weight: bold;
+}
+#axolotl {
+    float: left;
+    shape-outside: circle();
+}
+#window {
+    width: 800px;
+    height: 600px;
+    background-color: #e5eaf0;
+    margin: auto;
+    position: relative;
+}
+#name {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 53px;
+}
+#start {
+    position: absolute;
+    margin-top: 14.2px;
+    margin-left: 22px;
+}
+
+.small_line {
+    margin-top: 4.8px;
+    width: 20px;
+    height: 2.4px;
+    background-color: #000000;
+}
+
+#search {
+    position: absolute;
+    margin: 11px 179px 557px 320px;
+    width: 301px;
+    height: 32px;
+    padding-left: 16px;
+    opacity: 0.5;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: inline;
+}
+#search2 {
+    position: absolute;
+    margin-top: 0;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 15px;
+    line-height: 2.13;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.cross {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 280px;
+    color: #cccccc;
+
+}
+
+#topic1 {
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    margin-top: 0px;
+    padding: 0 20px;
+}
+
+
+#workplace {
+    position: absolute;
+    margin: 56px 20px 14px 191px;
+    width: 589px;
+    height: 530px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+    background-color: #ffffff;
+}
+#menu {
+    position: absolute;
+    margin: 56px 631px 0 22px;
+    width: 147px;
+}
+#list {
+    margin-top: 8px;
+    width: 147px;
+    height: 320px;
+}
+
+.text {
+    font-family: Helvetica Neue,sans-serif;
+}
+
+.listelem {
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 11px;
+    color: #555555;
+
+}
+
+.listelem:focus {
+    width: 137px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #cdd6e4;
+    font-weight: bold;
+}
+
+.first{
+    width: 137px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #cdd6e4;
+    font-weight: bold;
+}
+
+#newletter {
+    width: 147px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.rectangle {
+    position: absolute;
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-top: 11px;
+}
+
+.line {
+    width: 588px;
+    border: solid 1px #e2e2e2;
+    margin-top: 38.5px;
+    margin-right: 0;
+
+}
+
+#open {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 20px;
+    display: none;
+}
+
+#container {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    display: block;
+}
+
+#crosstopic {
+    font-size: 20px;
+    margin-left: 520px;
+    color: #cccccc;
+}
+
+#open:checked ~ #container {
+    display: none;
+}
+
+#open:checked ~ #topic1 {
+    display: block;
+}
+
+.sender {
+    position: absolute;
+    margin-left: 86px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+.title {
+    position: absolute;
+    margin-left:281px;
+    margin-top: 12px;
+    font-size: 13px;
+    width: 213px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newletter {
+    font-weight: bold;
+    position: relative;
+    background: #ffffff;
+}
+.option {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 56px;
+}
+
+.optionelem {
+    display: inline;
+    font-size: 13px;
+    color: #cccccc;
+    margin-right: 20px;
+}
+
+.oval {
+    width: 30px;
+    height: 30px;
+    background-color: #ff3333;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: normal;
+    padding-top: 3px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    margin-left: 46px;
+    margin-top: 5px;
+}
+.small_oval {
+    width: 10px;
+    height: 10px;
+    background-color: #6287bd;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 261px;
+    margin-top: 14px;
+}
+.date {
+    position: absolute;
+    margin-left: 538px;
+    font-size: 13px;
+    color: #9b9b9b;
+}
+.footer {
+    position: absolute;
+    font-size: 10px;
+    color: #9b9b9b;
+    margin-top: 498.5px;
+}
+.footertext {
+    margin-left: 224px;
+}
+.footerline {
+    width: 588px;
+    border: solid 1px #e2e2e2;
+}
