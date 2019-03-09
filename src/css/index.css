@@ -139,6 +139,7 @@ body {
 .message-item {
   border-top: 1px solid #e5eaf0;
   border-bottom: 1px solid #e5eaf0;
+  height: 42px;
   /* height: 42px; */
 }
 
@@ -242,6 +243,7 @@ iframe {
 }
 
 .message-time {
+  padding: 0;
   float: right;
   margin: auto 10px auto 10px;
   color: #9b9b9b;
