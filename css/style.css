@@ -328,6 +328,8 @@ footer {
     color: #9b9b9b;
     font-family: "HelveticaNeueLight";
     font-size: 0.7em;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+    padding: 9px 0;
 }
 
 .footer {
