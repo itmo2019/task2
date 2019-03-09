@@ -167,7 +167,7 @@
     border-radius: 3px;
     display: inline-block;
     border: #000000 1px solid;
-    width: calc(100% - 260px);
+    width: calc(100% - 280px);
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
     background-color: #ffffff;
 }
@@ -179,11 +179,22 @@
     border-radius: 3px;
     display: none;
     border: #000000 1px solid;
-    width: calc(100% - 260px);
+    width: calc(100% - 280px);
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.26);
     background-color: #ffffff;
     overflow: hidden; 
 }
+
+@media screen and (min-width: 1500px) {
+    #mail-screen {
+        width: 79%;
+    }
+    #first-email {
+        width: 79%;
+    }
+}
+
+
 
 #cat-image {
     margin-top: 5px;
