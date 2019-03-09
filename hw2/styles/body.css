@@ -1,0 +1,55 @@
+.mainBody {
+    margin-top: 0.5%;
+    width: 100%;
+    /*border: 1px solid black;*/
+    height: 89.5%;
+    display: inline-block;
+}
+
+.mainBody:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.buttons {
+    margin-left: 2%;
+    display: inline-block;
+    width: 18%;
+    height: 40%;
+    vertical-align: top;
+}
+
+#buttonWrite {
+    border-style: none;
+    border-radius: 3px;
+    background: #6287bd;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Segoe UI", serif;
+    font-size: 12px;
+    height: 14%;
+    width: 100%;
+}
+
+.folders {
+    margin-top: 3%;
+    height: 60%;
+}
+
+.folders button {
+    border: none;
+    background-color: #E5EAF0;
+    text-align: left;
+    width: 100%;
+    height: 16.66%;
+    color: #555555;
+    font-family: "Segoe UI", serif;
+    font-size: 11px;
+}
+
+.folders button:hover {
+    background: #cdd6e4;
+    border-radius: 3px;
+}
