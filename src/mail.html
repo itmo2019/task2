@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Arina Rossomakhina">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Яндекс Почта</title>
+</head>
+<body>
+    <div class = "menu">
+        <div class="header">
+            <div class = "menu-rect">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </div>
+            <div class="yandex-mail"> <b>Яндекс</b>&nbsp;Почта</div>
+        </div>
+        <button class="rectangle-write">
+            Написать
+        </button>
+        <button class="rectangle-inbox">
+            Входящие
+        </button>
+        <button class="rectangle-menu">
+            Отправленные
+        </button>
+        <button class="rectangle-menu">
+            Удалённые
+        </button>
+        <button class="rectangle-menu">
+            Спам
+        </button>
+        <button class="rectangle-menu">
+            Черновики
+        </button>
+        <button class="rectangle-menu">
+            Создать папку
+        </button>
+    </div>
+    <div class="letters">
+        <div class="f">
+            <input type="text" class="find" placeholder="Поиск">
+            <button class="close">&times;</button>
+        </div>
+        <div class="all-mail">
+            <div class="kinds">
+                <input type="checkbox" class="check">
+                <div class="kind">Переслать</div>
+                <div class="kind">Удалить</div>
+                <div class="kind">Это спам!</div>
+                <div class="kind">Прочитано</div>
+            </div>
+            <div class="story" id="story">
+                <button class="X" onclick="closeStory()">&times;</button>
+                <img src="../images/christmas.jpg" width="150" class="circle">
+                Рождественский венок — типичное украшение в домах в предрождественское время в форме венка из еловых веток с четырьмя свечами, закрепляемое вертикально или устанавливаемое на стол. В первое из четырёх воскресений адвента зажигается первая свеча, на следующей неделе — вторая и т. д.
+                Рождественский венок был введён в рождественские традиции гамбургским лютеранским теологом Иоганном Хинрихом Вихерном, взявшим на воспитание нескольких детей из семей бедняков. В адвент дети постоянно спрашивали воспитателя, когда же наступит Рождество. Чтобы дети могли отсчитывать дни до Рождества, в
+                1839 году Вихерн смастерил из старого деревянного колеса венок, украшенный двадцатью четырьмя малыми красными и четырьмя большими белыми свечами. Каждое утро в этом венке зажигалось по одной маленькой свечке, к которым по воскресеньям добавлялась большая свеча.
+                В Европе венок нес особый смысл – это символ радости и веры. Рождественский венок, как со свечей, так и без нее, все равно нес в себе особое значение и его могли повесить на дверь или просто на стену. На двери он говорил всем приходящим о гостеприимстве хозяев и готовности к празднику, а на стене был просто украшением и напоминал о приближении Рождества.
+            </div>
+            <div class="mail" id="first" onclick="showStory()">                <input type="checkbox" class="check">
+                <div class="round">Я</div>
+                <div class="who"><b>Яндекс.Паспорт</b></div>
+                <div class="unread-round"></div>
+                <div class="what"><b>Доступ восстановлен</b></div>
+                <div class="when">9 мар</div>
+            </div>
+            <div class="mail" id="second">
+                <input type="checkbox" class="check">
+                <div class="round">Я</div>
+                <div class="who"><b>Команда Яндекс.Почты</b></div>
+                <div class="unread-round"></div>
+                <div class="what"><b>Как читать почту с мобильного</b></div>
+                <div class="when">9 мар</div>
+            </div>
+            <div class="mail" id="third">
+                <input type="checkbox" class="check">
+                <div class="round">Я</div>
+                <div class="who">Команда Яндекс.Почты</div>
+                <div class="what">Как читать почту с мобильного</div>
+                <div class="when">7 мар</div>
+            </div>
+            <div class="mail" id="forth">
+                <input type="checkbox" class="check">
+                <div class="round">Я</div>
+                <div class="who">Яндекс</div>
+                <div class="what">Соберите всю почту в этот ящик</div>
+                <div class="when">5 мар</div>
+            </div>
+
+            <footer>
+                <div class="info">© 2001—2018, Яндекс</div>
+                <div class="info">Реклама</div>
+                <div class="info">Помощь и обратная связь</div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function showStory() {
+            document.getElementById('first').style.display = 'none';
+            document.getElementById('second').style.display = 'none';
+            document.getElementById('third').style.display = 'none';
+            document.getElementById('forth').style.display = 'none';
+            document.getElementById('story').style.display = 'block';
+        }
+        function closeStory() {
+            document.getElementById('first').style.display = 'block';
+            document.getElementById('second').style.display = 'block';
+            document.getElementById('third').style.display = 'block';
+            document.getElementById('forth').style.display = 'block';
+            document.getElementById('story').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
