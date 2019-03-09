@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Почта</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="hamburger header-element">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logo header-element">
+                <span class="logo-first">Ямдекс</span> Почта
+            </div>
+            
+            <div class="search header-element">
+                <div class="search-text">
+                    Поиск
+                </div>
+                <div class="search-close">
+                    ×
+                </div>
+            </div>
+        </header>
+        <main>    
+            <div id="panel">
+                <div class="button primary">
+                    Написать
+                </div>
+                <div class="button secondary active">
+                    Входящие
+                </div>
+                <div class="button secondary">
+                    Отправленные
+                </div>
+                <div class="button secondary">
+                    Удалённые
+                </div>
+                <div class="button secondary">
+                    Спам
+                </div>
+                <div class="button secondary">
+                    Черновики
+                </div>
+                <div class="button secondary">
+                    Создать папку
+                </div>
+            </div>
+            <div id="mailbox">
+                <div class="header">
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
+                    <div class="header-element">
+                        Переслать
+                    </div>
+                    <div class="header-element">
+                        Удалить
+                    </div>
+                    <div class="header-element">
+                        Это спам
+                    </div>
+                    <div class="header-element">
+                        Прочитано
+                    </div>
+                </div>
+
+                <input type="checkbox" id="first-msg"/>
+                <div>
+                    <label class="first" for="first-msg">
+                        <div class="mail">
+                            <label class="checkbox">
+                                <input type="checkbox"/>
+                                <span></span>
+                            </label>
+                            <div class="mail-element pic">
+                                <img src="assets/owl-face.jpg"></img>
+                            </div>
+                            <div class="mail-element author">
+                                Сова
+                            </div>
+                            <div class="mail-element dot">
+                            </div>
+                            <div class="mail-element title new">
+                                От совы (!КЛИКАБЕЛЬНО!)
+                            </div>
+                            <div class="mail-element date">
+                                Mar 9
+                            </div>
+                        </div>
+                    </label>
+
+                    <div class="mail">
+                        <label class="checkbox">
+                            <input type="checkbox"/>
+                            <span></span>
+                        </label>
+                        <div class="mail-element pic">
+                            <img src="assets/cat-face.png"></img>
+                        </div>
+                        <div class="mail-element author">
+                            Кот
+                        </div>
+                        <div class="mail-element title">
+                            Старое сообщение
+                        </div>
+                        <div class="mail-element date">
+                            Feb 23
+                        </div>
+                    </div>
+
+                    <div class="mail">
+                        <label class="checkbox">
+                            <input type="checkbox"/>
+                            <span></span>
+                        </label>
+                        <div class="mail-element pic">
+                            <img src="assets/spam.png"></img>
+                        </div>
+                        <div class="mail-element author">
+                            Неспам
+                        </div>
+                        <div class="mail-element title">
+                            Легкий способ разбогатеть...
+                        </div>
+                        <div class="mail-element date">
+                            Jan 1
+                        </div>
+                    </div>
+                </div>
+                <div class="mail-contents">
+                    <label id="msg-close" for="first-msg">
+                        ×
+                    </label>
+                    <h1>Как падают кошки</h1>
+                    <article>
+                        <section>
+                            Большинство представителей семейства кошачьих имеет склонность к обзору местности с высоты. Крупные лесные кошки-рыси вообше значительную часть времени проводят на деревьях, находясь в засаде или погоне за добычей. А львы и леопарды в саваннах Африки приспособились в жаркое время отдыхать на деревьях, распластавшись на ветках и опустив вниз лапы. Случается, однако, что кошки не удерживаются на высоте и падают. Но и в падении у них есть свои особенности. Многим приходилось наблюдать, как падает обыкновенная кошка, сорвавшись с карниза дома, с дерева или с забора. Сначала она падает к земле головой, спиной или боком, но затем, сделав резкий поворот в воздухе, вывертывается и становится на лапки. И так всегда. Как бы ни падала кошка, приземляется она всегда на лапки и тотчас же может бежать дальше. Такое мгновенное выравнивание положения тела у кошек обеспечивается действием ее вестибулярного аппарата.
+                        </section>
+                        <img src="assets/sova.png" height="300" class="sova"></img>
+                        <section>
+                            При падении кошки вестибулярный аппарат помогает ей осуществить ряд последовательно возникающих рефлексов и приземлиться на лапы. Ненормальное положение тела в пространстве приводит в раздражение отолитовый прибор каналов внутреннего уха кошки. В ответ на это раздражение происходит рефлекторное сокращение мускулов шеи, приводящих голову животного в нормальное положение по отношению к горизонту. Это - первый рефлекс. Сокращение же шейных мышц и постановка шеи при повороте головы являются возбудителем для осуществления другого рефлекса - сокращения определенных мышц туловища и конечностей. В итоге животное принимает правильное положение.
+                        </section>
+                        <section>
+                            Этот сложный врожденный цепной рефлекс выработался у некоторых животных как приспособление к образу жизни. Ведь животным, особенно из семейства кошачьих, часто приходится во время охоты прыгать и падать с деревьев, скал или со спины своей жертвы. И не будь у них этого приспособительного рефлекса, от них не только ушла бы добыча, но иной раз и самому охотнику пришлось бы пострадать от зубов, рогов или копыт своей жертвы.
+                        </section>
+                        <p>Текст статьи взят с сайта <a href="https://petsi.net/articles/cats/how-cat-comes-down">petsi.net</a></p>
+                    </article>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-element">
+                        © 2019 – 2019, Ямдекс
+                    </div>
+                    <div class="footer-element">
+                        Реклама
+                    </div>
+                    <div class="footer-element">
+                        Помощь и обратная связь
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

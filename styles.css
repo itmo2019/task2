@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Yandex Sans';
+    src: url('assets/Yandex Sans Display-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Yandex Sans Bold';
+    src: url('assets/Yandex Sans Display-Bold.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-width: 800px;
+    min-height: 500px;
+    margin: 0;
+    font-family: 'Yandex Sans';
+    background-color: #e5eaf0;
+    color: #969799;
+}
+
+header {
+    width: 100%;
+    font-size: 15px;
+    height: 56px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 20px 0px 22px;
+} 
+
+.header-element {
+    display: inline-block;
+    text-align: left;
+}
+
+.hamburger {
+    width: 20px;
+    margin: 15px 11px 0px 0px;
+    float: left;
+}
+
+.hamburger div {
+    background-color: black;
+    height: 3px;
+    margin: 4px 0;
+} 
+
+.logo {
+    font-size: 24px;
+    line-height: 135%;
+    transform: scaleY(1.65);
+    margin-top: 12px;
+    float: left;
+    color: black;
+}
+
+.logo .logo-first {
+    font-family: 'Yandex Sans Bold';
+}
+
+.search {
+    margin-top: 11px;
+    background-color: #f2f5f8;
+    width: 301px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #d9dbde;
+}
+
+.search-text {
+    margin: auto 0 auto 16px;
+    width: 255px;
+    overflow: hidden;
+    float: left;
+}
+
+.search-close {
+    margin: auto 9px;
+    float: right;
+    font-size: 20px;
+}
+
+.button {
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.primary {
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    background-color: #6287bd;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.secondary {
+    height: 22px;
+    line-height: 22px;
+    margin: 1px 0;
+}
+
+.active {
+    background-color: #cdd6e4;
+    color: black;
+}
+
+main {
+    position: absolute;
+    min-width: inherit;
+    min-height: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 56px 20px 14px 22px;
+    box-sizing: border-box;
+}
+
+#panel {
+    float: left;
+    width: 147px;
+    margin-right: 22px;
+}
+
+#mailbox {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px grey;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox input {
+    float: left;
+    position: relative;
+    visibility: hidden;
+}
+
+.checkbox span {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.checkbox input:checked + span:before {
+    float: left;
+    line-height: 16px;
+    font-size: 16px;
+    content: '✓';
+    font-weight: bold;
+}
+
+#mailbox .header {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    top: 0;
+    color: #969799;
+    border-bottom: 3px solid #f1f1f1;
+}
+
+#mailbox .header .header-element {
+    display: inline-block;
+    margin: 0px 24px 0px 24px;
+}
+
+#mailbox .mail {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: #969799;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+#mailbox #first-msg {
+    display: none;
+}
+
+#mailbox .mail-contents {
+    height: 700px;
+    overflow-y: auto;
+}
+
+#mailbox .mail-contents {
+    display: none;
+}
+
+#mailbox input:checked ~ .mail-contents {
+    display: block;
+}
+
+#mailbox input:checked + div {
+    display: none;
+}
+
+#mailbox .mail .mail-element {
+    display: inline-block;
+}
+
+#mailbox #msg-close {
+    float: right;
+    margin: 0px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: grey;
+}
+
+#mailbox .mail-contents {
+    margin: 20px;
+}
+
+#mailbox .mail img {
+    vertical-align: middle;
+    height: 30px;
+}
+
+#mailbox .mail .pic {
+    margin: 0px 6px 0px 24px;
+}
+
+#mailbox .mail .author {
+    margin: 0px 10px 0px 6px;
+    width: 155px;
+    color: black;
+    font-family: 'Yandex Sans Bold';
+}
+
+#mailbox .mail .title {
+    color: black;
+    padding-left: 20px;
+}
+
+#mailbox .mail .new {
+    padding-left: 5px;
+    font-family: 'Yandex Sans Bold';
+}
+
+#mailbox .mail .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #6287bd;
+    border-radius: 50%;
+}
+
+#mailbox .mail .date {
+    float: right;
+    margin-right: 20px;
+}
+
+#mailbox .footer {
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    bottom: 0;
+    color: #969799;
+    font-size: 14px;
+    border-top: 3px solid #f1f1f1;
+}
+
+#mailbox .footer .footer-element {
+    float: right;
+    margin: 0px 20px 0px 20px;
+}
+
+article .sova {
+    float: left;
+    shape-outside: circle(160px);
+}
