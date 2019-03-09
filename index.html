@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #content {
+            display: none;
+        }
+        #show:target #content {
+            display: inline-block;
+        }
+        #show:target #mem {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Яндекс.Почта</title>
+</head>
+<body>
+
+<header>
+    <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="yandexpost"><span class="firstWord">Яндекс</span><span class="secondWord"> Почта</span></div>
+    <div class="search"><span class="textSearch">Поиск</span><img class="cross" src="images/cross.png"></div>
+</header>
+
+<div class="leftMenu">
+    <div class="button"><span class="textNapicat">Написать</span></div>
+    <div class="border">Входящие</div>
+    <div class="border">Отправленные</div>
+    <div class="border">Удалённые</div>
+    <div class="border">Спам</div>
+    <div class="border">Черновики</div>
+    <div class="border">Создать папку</div>
+</div>
+
+<div class="mainInfo">
+    <div class="mainTitle">
+        <label>
+            <input class="checkbox" type="checkbox">
+        </label>
+        <span class="textTitle">Переслать</span>
+        <span class="textTitle">Удалить</span>
+        <span class="textTitle">Это спам!</span>
+        <span class="textTitle">Прочитано</span>
+    </div>
+    <div class="mailLine"></div>
+    <div id="show">
+        <div id="mem">
+            <div class="mainTitle">
+                <label>
+                    <input class="checkbox" type="checkbox">
+                </label>
+                <a href="#show">
+                    <img class="ylogo" src="images/logo.jpg">
+                    <span class="textSenderNewletter">Яндекс.Наука</span>
+                    <div class="markNewLetter"></div>
+                    <span class="textNewletter">Статья о луне</span>
+                    <span class="data">6 авг</span>
+                </a>
+
+            </div>
+            <div class="mailLine"></div>
+            <div class="mainTitle">
+                <label>
+                    <input class="checkbox" type="checkbox">
+                </label>
+                <a href="#">
+                    <img class="ylogo" src="images/logo.jpg">
+                    <span class="textSenderNewletter">Яндекс.Паспорт</span>
+                    <div class="markNewLetter"></div>
+                    <span class="textNewletter">Доступ к аккаунту восстановлен</span>
+                    <span class="data">6 авг</span>
+                </a>
+            </div>
+            <div class="mailLine"></div>
+            <div class="mainTitle">
+                <label>
+                    <input class="checkbox" type="checkbox">
+                </label>
+                <a href="#">
+                    <img class="ylogo" src="images/logo.jpg">
+                    <span class="textSenderNewletter">Команда Яндекс.Почты</span>
+                    <div class="markNewLetter"></div>
+                    <span class="textNewletter">Как читать почту с мобильного</span>
+                    <span class="data">6 июл</span>
+                </a>
+            </div>
+            <div class="mailLine"></div>
+            <div class="mainTitle">
+                <label>
+                    <input class="checkbox" type="checkbox">
+                </label>
+                <a href="#">
+                    <img class="ylogo" src="images/logo.jpg">
+                    <span class="textSenderCheckLetter">Команда Яндекс.Почты</span>
+                    <div class="markNoLetter"></div>
+                    <span class="textCheckLetter">Как читать почту с мобильного</span>
+                    <span class="data">6 июл</span>
+                </a>
+            </div>
+            <div class="mailLine"></div>
+            <div class="mainTitle">
+                <label>
+                    <input class="checkbox" type="checkbox">
+                </label>
+                <a href="#">
+                    <img class="ylogo" src="images/logo.jpg">
+                    <span class="textSenderCheckLetter">Яндекс</span>
+                    <div class="markNoLetter"></div>
+                    <span class="textCheckLetter">Соберите всю почту в этот ящик</span>
+                    <span class="data">6 июл</span>
+                </a>
+            </div>
+        </div>
+        <div class="mailLine"></div>
+        <div id="content">
+            <a class="close" href="#hide"><img class="cross" src="images/cross.png"></a>
+            <img class="moonlogo" src="images/moon.png">
+            <p class="Textmoon">Луна́ — естественный спутник Земли. Самый близкий к Солнцу спутник планеты, так как у
+                ближайших к Солнцу планет,
+                Меркурия и Венеры, спутников нет. Второй по яркости объект на земном небосводе после Солнца и пятый по
+                величине естественный спутник планеты Солнечной системы. Среднее расстояние между центрами Земли и Луны
+                — 384 467 км (0,002 57 а. е., ~ 30 диаметров Земли).
+                Луна является единственным внеземным астрономическим объектом, на котором побывал человек.</p>
+        </div>
+    </div>
+    <div class="endLine">
+        <div class="endTitle">
+            <span class="textEndline">Помощь и обратная связь</span>
+            <span class="textEndline">Реклама</span>
+            <span class="textEndline">&copy; 2001-2018, Яндекс</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

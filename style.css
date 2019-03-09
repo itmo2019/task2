@@ -1,0 +1,380 @@
+body {
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    background-color: #e5eaf0;
+}
+
+.border:hover {
+    width: 137px;
+    border-radius: 3px;
+    background-color: #cdd6e4;
+    font-weight: bold;
+    color: #555555;
+}
+
+.leftMenu {
+    float: left;
+    margin-top: 2.2%;
+    margin-left: 2.8%;
+    width: 18.4%;
+    height: 88.3%;
+}
+
+.mainInfo {
+    margin-top: 2.2%;
+    float: left;
+    margin-left: 2.8%;
+    width: 73.6%;
+    height: 88.3%;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+    background-color: #ffffff;
+}
+
+.textSearch {
+    margin-left: 16px;
+    width: 44px;
+    height: 32px;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+a {
+    outline: none;
+}
+
+.close {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+header {
+    float: left;
+    height: 5.3%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.burger-menu {
+    float: left;
+    margin-left: 2.8%;
+    margin-top: 7px;
+}
+
+.search {
+    border-width: 0px;
+    float: left;
+    margin-left: 114px;
+    width: 301px;
+    height: 32px;
+    opacity: 0.5;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.line {
+    width: 20px;
+    height: 2.4px;
+    margin-bottom: 5px;
+    background-color: #000000;
+}
+
+button {
+    margin-bottom: 1.3%;
+    width: 147px;
+    height: 32px;
+    background-color: #6287bd;
+}
+
+.yandexpost {
+    margin-left: 11px;
+    font-size: 170%;
+    float: left;
+}
+
+@font-face {
+    src: url("txtStyle/YandexSansDisplay-Bold.ttf");
+    font-family: YandexBold;
+}
+
+@font-face {
+    src: url("txtStyle/YandexSansDisplay-Thin.ttf");
+    font-family: YandexThin;
+}
+
+.firstWord {
+    transform: scale(0.7, 1.4);
+    font-family: YandexBold;
+}
+
+.secondWord {
+    transform: scale(0.7, 1.4);
+    font-family: YandexThin;
+}
+
+.button {
+    width: 147px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #6287bd;
+    margin-bottom: 8px;
+}
+
+.textNapicat {
+    float: left;
+    margin-top: 7px;
+    width: 56px;
+    height: 15px;
+
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-left: 46px;
+
+}
+
+.cross {
+    width: 9px;
+    height: 9px;
+    opacity: 0.15;
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 10px;
+}
+
+.mailLine {
+
+    width: 660.3px;
+    height: 0.5px;
+    border: solid 1px #e2e2e2;
+    background-color: #e2e2e2;
+}
+
+.mainTitle {
+    height: 37px;
+}
+
+.endLine {
+    position: absolute;
+    top: 558px;
+    width: 660.3px;
+    height: 0.5px;
+    border: solid 1px #e2e2e2;
+    background-color: #e2e2e2;
+}
+
+.border {
+    width: 147px;
+
+    font-size: 11px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #707070;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+.textTitle {
+    margin-top: 11px;
+    float: left;
+    margin-left: 16px;
+    height: 16px;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #cccccc;
+}
+
+.endTitle {
+    height: 30.5px;
+    margin-left: 224px;
+}
+
+.Textmoon {
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.textEndline {
+    margin-top: 13px;
+    float: left;
+    margin-left: 18px;
+    height: 12px;
+
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+
+.ylogo {
+    margin-left: 10px;
+    float: left;
+    width: 37px;
+    border-radius: 50%;
+}
+
+.moonlogo {
+    float: left;
+    shape-outside: circle(50%);
+    margin: 20px;
+    width: 200px;
+}
+
+.textSenderNewletter {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "...";
+    float: left;
+    margin-top: 11.5px;
+    margin-left: 10px;
+    width: 200px;
+    height: 16px;
+
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.textSenderCheckLetter {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "...";
+    float: left;
+    margin-top: 11.5px;
+    margin-left: 10px;
+    width: 200px;
+    height: 15px;
+
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.textNewletter {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "...";
+    float: left;
+    margin-top: 11.5px;
+    margin-left: 10px;
+    width: 200px;
+    height: 16px;
+
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.textCheckLetter {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "...";
+    float: left;
+    margin-top: 11.5px;
+    margin-left: 10px;
+    width: 200px;
+    height: 15px;
+
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.markNewLetter {
+    float: left;
+    margin-left: 20px;
+    margin-top: 14.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6287bd;
+
+}
+
+.markNoLetter {
+    float: left;
+    margin-left: 20px;
+    margin-top: 14.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+}
+
+.data {
+    float: right;
+    margin-top: 11px;
+    margin-right: 20px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #9b9b9b;
+}
+
+.checkbox {
+    float: left;
+    margin-left: 20px;
+    margin-top: 11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    padding: 2px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    outline: none;
+    display: inline-block;
+}
+
+.checkbox:checked {
+    background: #e2e2e2;
+    background-clip: content-box;
+}
