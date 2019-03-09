@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Яндекс.Почта</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="essay-styles.css">
+</head>
+<body>
+    <header id="header">
+        <section id="burger-menu-button">
+            <div class="burger-menu-button-item"></div>
+            <div class="burger-menu-button-item"></div>
+            <div class="burger-menu-button-item"></div>
+        </section>
+        <section id="page-title-container">
+            <span id="yandex-word">Яндекс</span>
+            <span id="mail-word">Почта</span>
+        </section>
+        <section id="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Поиск">
+            <div class="close">&times;</div>
+        </section>
+    </header>
+    <div id="content">
+        <div id="left-column">
+            <button id="send-button">Написать</button>
+            <ul class="message-folders">
+                <li class="left-item left-active-item">Входящие</li>
+                <li class="left-item">Отправленные</li>
+                <li class="left-item">Удалённые</li>
+                <li class="left-item">Спам</li>
+                <li class="left-item">Черновики</li>
+                <li class="left-item">Создать папку</li>
+            </ul>
+        </div>
+        <div id="right-column">
+            <section class="message-item">
+                <div class="checkbox message-item-checkbox"></div>
+                <span class="message-control-item">Переслать</span>
+                <span class="message-control-item">Удалить</span>
+                <span class="message-control-item">Это спам!</span>
+                <span class="message-control-item">Прочитано</span>
+            </section>
+            <input type="checkbox" id="visibility-controller">
+            <div class="messages">
+                <label for="visibility-controller">
+                    <section class="message-item">
+                        <div class="checkbox"></div>
+                        <div class="circle">К</div>
+                        <span class="message-author">Кирилл Козлов</span>
+                        <span class="message-title">Эссе</span>
+                        <time datetime="2019-02-23" class="date">23 фев</time>
+                    </section>
+                </label>
+                <section class="message-item">
+                    <div class="checkbox"></div>
+                    <div class="circle">Я</div>
+                    <span class="message-author unread-message-author">Яндекс.Паспорт</span>
+                    <div class="blue-dot"></div>
+                    <span class="message-title unread-message-title">Доступ к аккаунту восстановлен</span>
+                    <time datetime="2018-08-06" class="date">6 авг</time>
+                </section>
+                <section class="message-item">
+                    <div class="checkbox"></div>
+                    <div class="circle">Я</div>
+                    <span class="message-author unread-message-author">Команда Яндекс.Почты</span>
+                    <div class="blue-dot"></div>
+                    <span class="message-title unread-message-title">Как читать почту с мобильного</span>
+                    <time datetime="2018-07-06" class="date">6 июл</time>
+                </section>
+                <section class="message-item">
+                    <div class="checkbox"></div>
+                    <div class="circle">Я</div>
+                    <span class="message-author">Команда Яндекс.Почты</span>
+                    <span class="message-title">Как читать почту с мобильного</span>
+                    <time datetime="2018-07-06" class="date">6 июл</time>
+                </section>
+                <section class="message-item">
+                    <div class="checkbox"></div>
+                    <div class="circle">Я</div>
+                    <span class="message-author">Яндекс</span>
+                    <span class="message-title">Соберите всю почту в этот ящик</span>
+                    <time datetime="2018-07-06" class="date">6 июл</time>
+                </section>                                                                        
+            </div>
+
+
+
+            <div class="essay">
+                <label for="visibility-controller"><div class="close-essay">&times;</div></label>
+                <h1>Чего я жду от курсов по фронтенду?</h1>
+                <article>
+                    <figure id="birds-img-container">
+                        <img src="birds.png" width="300" height="300" alt="Птички">
+                        <figcaption>
+                            Скриншот из <a href="https://www.pixar.com/for-the-birds" href="essay-link" title="Официальная страница" target="_blank">короткометражки Pixar Animation Studious "For The Birds"</a>
+                        </figcaption>
+                    </figure>
+                    <p>Моя основная цель - расширить свой кругозор: на текущий момент мне не хватает понимания, как работает всё то, что я ежедневно вижу в браузере.</p>
+                    <p>Для меня этот курс - это возможность увидеть, как устроен современный мир web-разработки:
+                        <ul class="essay-list">
+                            <li class="essay-list-item">какие технологии используются</li>
+                            <li class="essay-list-item">какие преимущества/недостатки каждой из них</li>
+                            <li class="essay-list-item">какие тенденции в развитии</li>
+                            <li class="essay-list-item">и т. д.</li>
+                        </ul>
+                    </p>
+                    <img src="pacman.png" width="200" height="234" class="pacman-image  " alt="Pacman">
+                    <p>Поскольку он будет вестись людьми, которые непосредственно работают в этой сфере, я надеюсь, что рассказанная информация будет максимально приближена к реалиям <strong>современной</strong> web-разработки.</p>
+                    <p>Так как курс сжатый, хочется побольше ссылок на хорошие дополнительные материалы. Я понимаю, что их бесконечное количество по любому соответствующему поисковому запросу, но именно из-за их количества хочется знать, какие являются <em>самыми актуальными</em> и достойны наибольшего внимания.</p>
+                    <p>Ну и конечно же, как когда-то сказал <s>кто-то из великих</s> кхм... я: <cite>"Без большого количества <b>практики</b> ничего не выйдет"</cite>, поэтому надеюсь, что будут <strong>полезные</strong> и <strong>интересные</strong> домашние задания, которые позволят во всём разобраться.
+                    <div id="ascii-art-container">
+                        <pre>
+ _               _     _                           _ 
+| |             | |   ( )                         | |
+| |        ___  | |_  |/   ___      __ _    ___   | |
+| |       / _ \ | __|     / __|    / _` |  / _ \  | |
+| |____  |  __/ | |_      \__ \   | (_| | | (_) | |_|
+|______|  \___|  \__|     |___/    \__, |  \___/  (_)
+                                    __/ |            
+                                   |___/             </pre>
+                    </div>
+                </article>
+                <hr>
+                <footer class="essay-footer">
+                    <div id="footer-right">Изменено: <time datetime="2019-02-23" class="essay-time">2019-02-23</time></div>
+                    <section id="contacts">
+                        <span class="contact-property">Автор:</span> Козлов Кирилл<br>
+                        <span class="contact-property">Группа:</span> M3339<br>
+                        <address><span class="contact-property">Email:</span> Когда-то здесь была моя почта</address>
+                        <span class="contact-property">Github:</span> <a href="https://github.com/kirill146" class="essay-link">github.com/kirill146</a>
+                    </section>
+                </footer>
+            </div>
+
+
+
+            <footer id="footer">
+                <span class="footer-item">&copy; 2001-2018, <a href="https://yandex.ru/adv" class="footer-item-link">Яндекс</a></span>
+                <a href="https://yandex.ru/adv" class="footer-item footer-item-link">Реклама</a>
+                <a href="https://yandex.ru/support/mail" class="footer-item footer-item-link">Помощь и обратная связь</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
