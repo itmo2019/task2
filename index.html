@@ -8,70 +8,72 @@
 </head>
 <body>
 <header>
-    <div class="group">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <div class="menu-logo">
+        <div class="menu-logo__line"></div>
+        <div class="menu-logo__line"></div>
+        <div class="menu-logo__line"></div>
     </div>
 
-    <div class="shape">
-        <div class="shape-property shape-yandex">Яндекс</div>
-        <div class="shape-property shape-mail">Почта</div>
+    <div class="logo">
+        <div class="logo__elem logo__elem_yandex">Яндекс</div>
+        <div class="logo__elem logo__elem_mail">Почта</div>
     </div>
 
-    <div class="search-box inline-top">
-        <div class="search-word">Поиск</div>
-        <div class="clear-word">×</div>
+    <div class="search inline-top">
+        <div class="search__search-word">Поиск</div>
+        <div class="search__clear-word">×</div>
     </div>
 </header>
 
 <main>
-    <div class="category-box inline-top">
-        <div class="write-letter">Написать</div>
-        <div class="category-list">
-            <div class="category category-choose">Входящие</div>
-            <div class="category">Отправленные</div>
-            <div class="category">Удалённые</div>
-            <div class="category">Спам</div>
-            <div class="category">Черновики</div>
-            <div class="category">Создать папку</div>
+    <div class="navigation inline-top">
+        <div class="navigation__write-letter">Написать</div>
+        <div class="navigation__list">
+            <div class="navigation__list-link navigation__list-link_chosen">Входящие</div>
+            <div class="navigation__list-link">Отправленные</div>
+            <div class="navigation__list-link">Удалённые</div>
+            <div class="navigation__list-link">Спам</div>
+            <div class="navigation__list-link">Черновики</div>
+            <div class="navigation__list-link">Создать папку</div>
         </div>
     </div>
 
-    <div class="manage-message-box inline-top">
-        <div class="message-box-line">
-            <div class="checkbox inline-top"></div>
-            <div class="message-commands inline-center">Переслать</div>
-            <div class="message-commands inline-center">Удалить</div>
-            <div class="message-commands inline-center">Это спам!</div>
-            <div class="message-commands inline-center">Прочитано</div>
+    <div class="letter-box inline-top">
+        <div class="letter-box__line">
+            <div class="letter-box__checkbox inline-top"></div>
+            <div class="letter-box__commands inline-center">Переслать</div>
+            <div class="letter-box__commands inline-center">Удалить</div>
+            <div class="letter-box__commands inline-center">Это спам!</div>
+            <div class="letter-box__commands inline-center">Прочитано</div>
         </div>
-        <hr class="message-hr">
+        <hr class="letter-box__hr">
 
-        <div class="message-messages">
-            <label for="apple-page-hider">
-                <div class="message-box-line first-message" tabindex="1">
-                    <div class="checkbox inline-top"></div>
-                    <div class="message-photo inline-center">Я</div>
-                    <div class="message-author inline-center message-not-read">Яндекс.Паспорт</div>
-                    <div class="message-icon inline-center message-not-read-icon"></div>
-                    <div class="message-topic inline-center message-not-read">Доступ к аккаунту восстановлен</div>
-                    <div class="message-date inline-center">6 авг</div>
+        <div class="letter-box__letters">
+            <label for="apple-page__hider">
+                <div class="letter-box__line letter-box__first-message" tabindex="1">
+                    <div class="letter-box__checkbox inline-top"></div>
+                    <div class="letter-box__line-photo inline-center">Я</div>
+                    <div class="letter-box__line-author letter-box__line-not-read inline-center">Яндекс.Паспорт</div>
+                    <div class="letter-box__line-icon letter-box__line-icon_not-read inline-center"></div>
+                    <div class="letter-box__line-topic letter-box__line_not-read inline-center">
+                        Доступ к аккаунту восстановлен
+                    </div>
+                    <div class="letter-box__line-date inline-center">6 авг</div>
                 </div>
             </label>
 
-            <input type="checkbox" id="apple-page-hider">
+            <input type="checkbox" id="apple-page__hider">
             <div class="apple-page">
-                <label for="apple-page-hider">
-                    <div class="apple-page-close">×</div>
+                <label for="apple-page__hider">
+                    <div class="apple-page__exit">×</div>
                 </label>
-                <div class="apple-page-text">
+                <div class="apple-page__text">
                     Яблоко — плод яблони, который употребляется в пищу в свежем виде, служит сырьём в кулинарии и для
                     приготовления напитков. Яблоня - род листопадных деревьев и кустарников семейства розоцветных с
                     шаровидными сладкими или кисло-сладкими плодами. Это самая распространенная плодовая культура в
                     наших садах. Великолепное цветение этих садов весной и изобилие фруктов осенью делают яблоню самым
                     излюбленным деревом.
-                    <img class="img-apple" src="images/apple.png" width="150" height="180" align="right" alt="Apple"
+                    <img class="apple-page__apple-img" src="images/apple.png" align="right" alt="Apple"
                          vspace="5" hspace="5">
                     Яблоня - самое неприхотливое дерево, при хорошем уходе она может давать обильный урожай и на
                     солнечном месте и при затенении. Не люб ит она только низины, впадины и замкнутые котловины, где во
@@ -83,44 +85,46 @@
                     климатических условиях.
                 </div>
             </div>
-            <hr class="message-hr">
+            <hr class="letter-box__hr">
 
-            <div class="message-box-line">
-                <div class="checkbox inline-top"></div>
-                <div class="message-photo inline-center">Я</div>
-                <div class="message-author inline-center message-not-read">Команда Яндекс.Почты</div>
-                <div class="message-icon inline-center message-not-read-icon"></div>
-                <div class="message-topic inline-center message-not-read">Как читать почту с мобильного</div>
-                <div class="message-date inline-center">6 июля</div>
+            <div class="letter-box__line">
+                <div class="letter-box__checkbox inline-top"></div>
+                <div class="letter-box__line-photo inline-center">Я</div>
+                <div class="letter-box__line-author letter-box__line_not-read inline-center">Команда Яндекс.Почты</div>
+                <div class="letter-box__line-icon letter-box__line-icon_not-read inline-center"></div>
+                <div class="letter-box__line-topic letter-box__line_not-read inline-center">
+                    Как читать почту с мобильного
+                </div>
+                <div class="letter-box__line-date inline-center">6 июля</div>
             </div>
-            <hr class="message-hr">
+            <hr class="letter-box__hr">
 
-            <div class="message-box-line">
-                <div class="checkbox inline-top"></div>
-                <div class="message-photo inline-center">Я</div>
-                <div class="message-author inline-center">Команда Яндекс.Почты</div>
-                <div class="message-icon inline-center"></div>
-                <div class="message-topic inline-center">Как читать почту с мобильного</div>
-                <div class="message-date inline-center">6 июля</div>
+            <div class="letter-box__line">
+                <div class="letter-box__checkbox inline-top"></div>
+                <div class="letter-box__line-photo inline-center">Я</div>
+                <div class="letter-box__line-author inline-center">Команда Яндекс.Почты</div>
+                <div class="letter-box__line-icon inline-center"></div>
+                <div class="letter-box__line-topic inline-center">Как читать почту с мобильного</div>
+                <div class="letter-box__line-date inline-center">6 июля</div>
             </div>
-            <hr class="message-hr">
+            <hr class="letter-box__hr">
 
-            <div class="message-box-line">
-                <div class="checkbox inline-top"></div>
-                <div class="message-photo inline-center">Я</div>
-                <div class="message-author inline-center">Яндекс</div>
-                <div class="message-icon inline-center"></div>
-                <div class="message-topic inline-center">Соберите всю почту в этот ящик</div>
-                <div class="message-date inline-center">6 июля</div>
+            <div class="letter-box__line">
+                <div class="letter-box__checkbox inline-top"></div>
+                <div class="letter-box__line-photo inline-center">Я</div>
+                <div class="letter-box__line-author inline-center">Яндекс</div>
+                <div class="letter-box__line-icon inline-center"></div>
+                <div class="letter-box__line-topic inline-center">Соберите всю почту в этот ящик</div>
+                <div class="letter-box__line-date inline-center">6 июля</div>
             </div>
-            <hr class="message-hr">
+            <hr class="letter-box__hr">
         </div>
 
-        <hr class="message-hr">
-        <div class="message-box-footer">
-            <div class="message-help-info inline-center">Помощь и обратная связь</div>
-            <div class="message-help-info inline-center">Реклама</div>
-            <div class="message-help-info inline-center">©2001-2018, Яндекс</div>
+        <hr class="letter-box__hr">
+        <div class="letter-box__footer">
+            <div class="letter-box__info inline-center">Помощь и обратная связь</div>
+            <div class="letter-box__info inline-center">Реклама</div>
+            <div class="letter-box__info inline-center">©2001-2018, Яндекс</div>
         </div>
     </div>
 </main>
