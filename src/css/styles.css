@@ -227,9 +227,6 @@ span.stretch {
 .message-text {
 	position: absolute;
 	padding-top: 8px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
 	width: 230px;
 }
 
@@ -241,6 +238,9 @@ span.stretch {
 	background-color: white;
 	min-width: 20px;
 	vertical-align: text-bottom;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .bold {
