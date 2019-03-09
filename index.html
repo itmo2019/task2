@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>mail</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="name">
+      <div class="square">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+      </div>
+
+      <div class="service_name">
+        <span class="campany">Яндекс</span> <span class="service">Почта</span>
+      </div>
+    </div>
+
+    <input type="text" class="search" placeholder="Поиск">
+  </div>
+
+  <div class="context">
+    <button class="send_button">Написать</button>
+
+    <ul class="bar">
+      <li><a href="">Входящие</a></li>
+      <li><a href="">Отправленные</a></li>
+      <li><a href="">Удалённые</a></li>
+      <li><a href="">Спам</a></li>
+      <li><a href="">Черновики</a></li>
+      <li><a href="">Создать папку</a></li>
+    </ul>
+
+    <div class="mail_box">
+      <div class="mails_bar">
+        <input type="checkbox" class="chooce" id="chooce_all">
+        <div id="resend" class="mails_bar_items">Переслать</div>
+        <div id="delete" class="mails_bar_items">Удалить</div>
+        <div id="spam" class="mails_bar_items">Это спам!</div>
+        <div id="read" class="mails_bar_items">Прочитано</div>
+      </div>
+      <ul class="mails">
+        <li class="mail" id="unread_mail">
+          <input type="checkbox" id="chooce_item" class="chooce">
+          <div class="oval-Ya">Я</div>
+          <span class="sender-name">Яндекс.Паспорт</span>
+          <div class="oval-unread"></div>
+          <span class="sender-title">Доступ к аккаунту восстановлен</span>
+          <time class="sender-time">6 авг</time>
+        </li>
+        <li class="mail" id="unread_mail">
+          <input type="checkbox" id="chooce_item" class="chooce">
+          <div class="oval-Ya">Я</div>
+          <span class="sender-name">Команда Яндекс.Почта</span>
+          <div class="oval-unread"></div>
+          <span class="sender-title">Как читать почту с мобильного</span>
+          <time class="sender-time">6 июл</time>
+        </li>
+        <li class="mail">
+          <input type="checkbox" id="chooce_item" class="chooce">
+          <div class="oval-Ya">Я</div>
+          <span class="sender-name">Команда Яндекс.Почта</span>
+          <span class="sender-title">Как читать почту с мобильного</span>
+          <time class="sender-time">6 июл</time>
+        </li>
+        <li class="mail">
+          <input type="checkbox" id="chooce_item" class="chooce">
+          <div class="oval-Ya">Я</div>
+          <span class="sender-name">Яндекс</span>
+          <span class="sender-title">Собери всю почту в этот ящик</span>
+          <time class="sender-time">6 июл</time>
+        </li>
+      </ul>
+      <div class="contacts">
+        <footer class="contacts_info">
+          <a href="">Помощь и обратная связь</a>
+          <a href="">Реклама</a>
+          <span>&#169; 2001&#150;2018, Яндекс</span>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
