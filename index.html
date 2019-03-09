@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Яндекс.Почта</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page">
+    <header id="header" class="header">
+        <a href="#" class="my-link">
+            <div class="menu">
+                <div class="first rectangle"></div>
+                <div class="second rectangle"></div>
+                <div class="third rectangle"></div>
+            </div>
+        </a>
+        <div class="title">
+            <span class="logo"><b>Яндекс</b> Почта</span>
+        </div>
+        <div class="search">
+            <div class="search-text">Поиск</div>
+            <img class="cancel" src="images/cross-symbol.png" alt="cancel">
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation-list">
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="write">
+                        <div class="write-text">Написать</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="inbox">
+                        <div class="inbox-text">Входящие</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="navigation-content">
+                        <div class="navigation-text">Отправленные</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="navigation-content">
+                        <div class="navigation-text">Удаленные</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="navigation-content">
+                        <div class="navigation-text">Спам</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="navigation-content">
+                        <div class="navigation-text">Черновики</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="navigation-link">
+                    <div class="navigation-content">
+                        <div class="navigation-text">Создать папку</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="content">
+        <label>
+            <input class="my-input my-checkbox" type="checkbox">
+        </label>
+        <ul class="message-menu">
+            <li class="message-menu-button message-menu-text">
+                <a href="#" class="my-link"><p class="my-text">Переслать</p></a>
+            </li>
+            <li class="message-menu-button message-menu-text">
+                <a href="#" class="my-link"><p class="my-text">Удалить</p></a>
+            </li>
+            <li class="message-menu-button message-menu-text">
+                <a href="#" class="my-link"><p class="my-text">Это спам!</p></a>
+            </li>
+            <li class="message-menu-button message-menu-text">
+                <a href="#" class="my-link"><p class="my-text">Прочитанно</p></a>
+            </li>
+        </ul>
+        <div class="line"></div>
+        <ul id="letters">
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#main-content" class="letter-head unread" id="my-letter">
+                    <img class="author-image" src="images/ox.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Евгений Глухов</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">ДЗ №1</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-09 23:59"><p>9 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#" class="letter-head unread">
+                    <img class="author-image" src="images/yandex.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Команда Яндекс.Почты</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">Доступ к аккаунту восстановлен</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-07 18:02"><p>7 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#" class="letter-head">
+                    <img class="author-image" src="images/yandex.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Команда Яндекс.Почты</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">Как читать почту с мобильного</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-07 18:01"><p>7 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#" class="letter-head">
+                    <img class="author-image" src="images/yandex.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Яндекс</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">Соберите всю почту в этот ящик и все будет хорошо</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-07 18:00"><p>7 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#" class="letter-head">
+                    <img class="author-image" src="images/yandex.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Яндекс</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">Соберите всю почту в этот ящик и все будет хорошо</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-07 18:00"><p>7 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <label>
+                    <input class="my-input my-checkbox" type="checkbox">
+                </label>
+                <a href="#" class="letter-head">
+                    <img class="author-image" src="images/yandex.png" alt="author logo">
+                    <div class="author-name">
+                        <p class="my-text">Яндекс</p>
+                    </div>
+                    <div class="read"></div>
+                    <div class="letter-head-text">
+                        <p class="my-text">Соберите всю почту в этот ящик и все будет хорошо</p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2019-03-07 18:00"><p>7 мар</p></time>
+                    </div>
+                </a>
+                <div class="line"></div>
+            </li>
+        </ul>
+        <div id="main-letter" class="letter">
+            <a href="#" id="close"><img class="close" src="images/cross-symbol.png" alt="close"></a>
+            <article class="my-article">
+                <p class="my-letter-text">
+                    Первое мое знакомство с <abbr title="HyperText Markup Language">HTML</abbr>/<abbr
+                        title="Cascading Style Sheets">CSS</abbr>
+                    случилось еще в школе, на уроках информатики. Полученные на них знания, позволили мне создать
+                    простой сайт с версткой на таблицах.
+                    Это было около 4 лет назад, после этого я не имел дел с
+                    <abbr title="HyperText Markup Language">HTML</abbr>/<abbr
+                        title="Cascading Style Sheets">CSS</abbr>,
+                    поэтому многое уже не помню и в первую очередь, курс по фронтенду позолит мне вспомнить давно
+                    забытое.
+                </p>
+                <img class="letter-image" src="images/itmo.png" alt="itmo">
+                <p class="my-letter-text">
+                    Во-вторых, этот курс практический, и я ожидаю, что будут различные интересные задания, которые
+                    позволят
+                    проверить полученные знания в <i>"боевых условиях"</i>.
+                </p>
+                <p class="my-letter-text">
+                    В-третьих, я ожидаю знакомства с новыми технологиями, такими как <a href="https://reactjs.org/">React</a>
+                    и
+                    <a href="https://redux.js.org">Redux</a>, которые позволят мне создать
+                    web-приложение.
+                </p>
+            </article>
+        </div>
+        <footer class="footer">
+            <div class="simple-line"></div>
+            <ul class="footer-menu">
+                <li class="footer-menu-button footer-menu-text">
+                    <a href="#" class="my-link"><p>Помощь и обратная связь</p></a>
+                </li>
+
+                <li class="footer-menu-button footer-menu-text">
+                    <a href="#" class="my-link"><p>Реклама</p></a>
+                </li>
+
+                <li class="footer-menu-button footer-menu-text">
+                    <p>&copy; 2001-2018, Яндекс</p>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</div>
+</body>
+</html>
