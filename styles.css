@@ -1,18 +1,18 @@
 @font-face {
   font-family: YandexSansBold;
-  src: url("font_style/YandexSansDisplay-Bold.ttf");
+  src: url("resources/font_style/YandexSansDisplay-Bold.ttf");
 }
 @font-face {
   font-family: YandexSansThin;
-  src: url("font_style/YandexSansDisplay-Thin.ttf");
+  src: url("resources/font_style/YandexSansDisplay-Thin.ttf");
 }
 @font-face {
   font-family: HelveticaNeueCyrLight;
-  src: url("font_style/HelveticaNeueCyr-Light.otf")
+  src: url("resources/font_style/HelveticaNeueCyr-Light.otf")
 }
 @font-face {
   font-family: HelveticaNeueCyrMedium;
-  src: url("font_style/HelveticaNeueCyr-Medium.otf")
+  src: url("resources/font_style/HelveticaNeueCyr-Medium.otf")
 }
 
 body {
@@ -244,4 +244,33 @@ ul {
   font-family: YandexSanBold;
   font-size: 11px;
   color: #9b9b9b;
+}
+#article_checkbox {
+  display: none;
+}
+#article_checkbox:checked + #article {
+  display:block;
+}
+#article {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  word-spacing: 3px;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px;
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+#close_item {
+  float: right;
+  font-size: 20px;
+  color: #708090;
+}
+img {
+  float: right;
+  width: 200px;
 }
