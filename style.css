@@ -11,64 +11,75 @@
 html {
     background: #e5eaf0;
     height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
     margin: 0;
 }
 
 .mail-page {
-    width: 800px;
+    width: 97%;
     min-height: 100%;
+    min-width: 950px;
     margin: 0 auto;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
-.stripes {
-    vertical-align: middle;
+.logo-with-menu {
+    display: inline-block;
+    width: 250px;
+}
+
+.header-menu {
+    cursor: pointer;
     display: inline-block;
     width: 20px;
     height: 17px;
-    margin-right: 10px;
     margin-top: 2px;
+    margin-right: 10px;
 }
 
 .single-stripe {
-    width: 20px;
     height: 2px;
     margin-top: 4px;
     background-color: #000000;
 }
 
-.ya-mail-logo {
-    vertical-align: middle;
+.service-logo {
+    width: 80%;
     display: inline-block;
-    width: 153px;
     height: 31px;
-    margin-right: 114px;
 }
 
-.ya {
+.yandex-logo {
+    cursor: pointer;
     display: inline-block;
-    margin-left: -20px;
+    width: 50%;
     font-size: 28px;
     letter-spacing: 1px;
-    transform: scale(0.7, 1.2);
     font-family: YandexSansBold, sans-serif;
     color: #010101;
 }
 
-.mail {
+.service-logo__mail {
+    width: 40%;
+    cursor: pointer;
     display: inline-block;
-    margin-left: -20px;
     font-size: 28px;
     letter-spacing: 1px;
-    transform: scale(0.7, 1.2);
     font-family: YandexSansThin, sans-serif;
     font-weight: 600;
     color: #010101;
 }
 
-.search-bar {
+.header-search-bar {
+    width: 35%;
+    margin-left: 12.5%;
+
     display: inline-block;
-    vertical-align: middle;
-    width: 301px;
     height: 32px;
     padding-left: 16px;
 
@@ -81,26 +92,30 @@ html {
 }
 
 .main-block {
-    width: 800px;
     min-height: 100%;
-    margin: 0 auto;
+    min-width: 800px;
     margin-top: 13px;
 }
 
 .left-menu {
     display: inline-block;
+    width: 19.5%;
+    min-width: 150px;
 }
 
 .write-letter {
     text-align: center;
-    width: 127px;
     height: 32px;
     padding: 0 10px;
     line-height: 32px;
     border-radius: 4px;
     background-color: #6287bd;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
+}
+
+.write-letter:hover {
+    cursor: pointer;
 }
 
 .folders-list {
@@ -115,11 +130,10 @@ html {
 }
 
 .folder {
-    width: 127px;
     height: 14px;
     padding: 5px 10px;
     color: #707070;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .folder:hover {
@@ -134,17 +148,20 @@ html {
 
 .messages-block {
     display: inline-block;
+    margin-left: 2%;
+    width: 78%;
+    min-width: 600px;
+    margin-right: 0;
+
     vertical-align: top;
-    width: 600px;
     height: 560px;
-    margin-left: 22px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     background-color: #ffffff;
 }
 
-.message-actions {
-    padding: 10px 20px;
+.messages-block-header {
+    padding: 10px 17px;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 13px;
     white-space: nowrap;
@@ -153,13 +170,13 @@ html {
     border-bottom: solid 1px #e2e2e2;
 }
 
-.message-actions div {
-    width: 90px;
+.messages-block-header__action {
+    width: 80px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
-    margin-left: 25px;
+    margin-left: 15px;
     color: #cccccc;
     font-weight: 500;
     display: inline-block;
@@ -170,44 +187,54 @@ html {
     vertical-align: top;
 }
 
-.messages-list {
-    position: relative;
-    height: 490px;
-    border-bottom: solid 1px #e2e2e2;
-}
-
-.message {
-    padding: 10px 20px;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 13px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-bottom: solid 1px #e2e2e2;
-}
-
 .checkbox {
+    cursor: pointer;
     width: 16px;
     height: 16px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+
+    display: inline-block;
+    vertical-align: top;
 }
 
-.message div {
-    display: inline-block;
+.select-message-checkbox {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.messages-list {
+    height: 490px;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.message {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 300px;
+    padding-right: 90px;
+
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    border-bottom: solid 1px #e2e2e2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.message span {
+.message-info__left-part {
+    margin: 0;
     display: inline-block;
-    vertical-align: top;
+
+    width: 300px;
+    position: relative;
+    float: left;
+    margin-left: -300px;
 }
 
-.ya-pic {
-    margin-left: 10px;
+.sender-logo {
+    display: inline-block;
     margin-top: -5px;
     margin-bottom: -5px;
     width: 30px;
@@ -217,7 +244,6 @@ html {
     background-color: #ff3333;
     color: #ffffff;
     text-align: center;
-    display: inline-block;
 }
 
 .bold {
@@ -225,49 +251,67 @@ html {
 }
 
 .sender {
-    width: 160px;
+    display: inline-block;
+    width: 175px;
     margin-left: 10px;
     color: #000000;
 }
 
-.read_mark {
+.mark {
+    display: inline-block;
     width: 10px;
     height: 10px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
-.unread_mark {
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
+.unread-mark {
     border-radius: 100px;
     background-color: #6287bd;
 }
 
 .subject {
-    width: 220px;
-    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #000000;
+}
+
+.date-container {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-right: -70px;
+    margin-left: 0;
+
+    line-height: 20px;
+    width: 70px;
+    color: #9b9b9b;
 }
 
 .date {
     float: right;
-    line-height: 20px;
-    width: 45px;
-    color: #9b9b9b;
 }
 
 .footer {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px;
     padding: 5px 20px;
     float: right;
     margin: auto 0 5px 0;
-    font-size: 13px;
 }
 
-.footer div {
+.footer-link {
+    margin-left: 20px;
     display: inline-block;
-    margin-left: 25px;
     color: #cccccc;
+    cursor: pointer;
 }
 
 #show-first-message {
@@ -281,7 +325,7 @@ html {
 .first-message {
     position: absolute;
     display: none;
-    width: 600px;
+    /*width: 600px;*/
     min-height: 490px;
     top: 0;
     z-index: 1;
@@ -309,7 +353,7 @@ html {
     height: 180px;
 }
 
-label:hover {
+.first-message-label:hover {
     cursor: pointer;
 }
 

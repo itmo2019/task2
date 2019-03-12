@@ -8,21 +8,22 @@
 </head>
 <body>
 <div class="mail-page">
-    <header>
-        <div class="stripes">
-            <div class="single-stripe"></div>
-            <div class="single-stripe"></div>
-            <div class="single-stripe"></div>
-        </div>
+    <header class="header">
+        <div class="logo-with-menu">
+            <a class="header-menu">
+                <div class="single-stripe"></div>
+                <div class="single-stripe"></div>
+                <div class="single-stripe"></div>
+            </a>
 
-        <div class="ya-mail-logo">
-            <div class="ya-mail">
-                <div class="ya">Яндекс</div>
-                <div class="mail">Почта</div>
+            <div class="service-logo">
+                <a class="yandex-logo">Яндекс</a>
+
+                <a class="service-logo__mail">Почта</a>
             </div>
         </div>
 
-        <input type="search" class="search-bar" placeholder="Поиск"/>
+        <input type="search" class="header-search-bar" placeholder="Поиск"/>
     </header>
 
     <div class="main-block">
@@ -41,52 +42,68 @@
 
         <div class="messages-block">
 
-            <div class="message-actions">
-                <span class="checkbox" id="check-all"></span>
-                <div>Переслать</div>
-                <div>Удалить</div>
-                <div>Это спам!</div>
-                <div>Прочитано</div>
+            <div class="messages-block-header">
+                <input type="checkbox" class="checkbox" id="check-all">
+                <div class="messages-block-header__action">Переслать</div>
+                <div class="messages-block-header__action">Удалить</div>
+                <div class="messages-block-header__action">Это спам!</div>
+                <div class="messages-block-header__action">Прочитано</div>
             </div>
 
 
             <div class="messages-list">
-                <label for="show-first-message">
+                <label for="show-first-message" class="first-message-label">
                     <div class="message">
-                        <span class="checkbox"></span>
-                        <div class="ya-pic">АК</div>
-                        <div class="sender bold">Антон Копица</div>
-                        <div class="unread_mark"></div>
+                        <div class="message-info__left-part">
+                            <input type="checkbox" class="select-message-checkbox checkbox">
+                            <div class="sender-logo">АК</div>
+                            <div class="sender bold">Антон Копица</div>
+                            <div class="mark unread-mark"></div>
+                        </div>
                         <div class="subject bold">Статья о песиках</div>
-                        <div class="date">6 авг</div>
+                        <div class="date-container">
+                            <div class="date">9 марта</div>
+                        </div>
                     </div>
                 </label>
 
                 <div class="message">
-                    <span class="checkbox"></span>
-                    <div class="ya-pic">Я</div>
-                    <div class="sender bold">Команда Яндекс.Почты</div>
-                    <div class="unread_mark"></div>
+                    <div class="message-info__left-part">
+                        <input type="checkbox" class="select-message-checkbox checkbox">
+                        <div class="sender-logo">Я</div>
+                        <div class="sender bold">Команда Яндекс.Почты</div>
+                        <div class="mark unread-mark"></div>
+                    </div>
                     <div class="subject bold">Как читать почту с мобильного</div>
-                    <div class="date">6 июл</div>
+                    <div class="date-container">
+                        <div class="date">6 июл</div>
+                    </div>
                 </div>
 
                 <div class="message">
-                    <span class="checkbox"></span>
-                    <div class="ya-pic">Я</div>
-                    <div class="sender">Команда Яндекс.Почты</div>
-                    <div class="read_mark"></div>
+                    <div class="message-info__left-part">
+                        <input type="checkbox" class="select-message-checkbox checkbox">
+                        <div class="sender-logo">Я</div>
+                        <div class="sender">Команда Яндекс.Почты</div>
+                        <div class="mark read-mark"></div>
+                    </div>
                     <div class="subject">Как читать почту с мобильного</div>
-                    <div class="date">6 июл</div>
+                    <div class="date-container">
+                        <div class="date">6 июл</div>
+                    </div>
                 </div>
 
                 <div class="message">
-                    <span class="checkbox"></span>
-                    <div class="ya-pic">Я</div>
-                    <div class="sender">Яндекс</div>
-                    <div class="read_mark"></div>
+                    <div class="message-info__left-part">
+                        <input type="checkbox" class="select-message-checkbox checkbox">
+                        <div class="sender-logo">Я</div>
+                        <div class="sender">Яндекс</div>
+                        <div class="mark read-mark"></div>
+                    </div>
                     <div class="subject">Соберите всю почту в этот ящик</div>
-                    <div class="date">6 июл</div>
+                    <div class="date-container">
+                        <div class="date">6 июл</div>
+                    </div>
                 </div>
 
                 <input type="checkbox" id="show-first-message">
@@ -117,9 +134,9 @@
             </div>
 
             <div class="footer">
-                <div>Помощь и обратная связь</div>
-                <div>Реклама</div>
-                <div>© 2001—2018, Яндекс</div>
+                <a class="footer-link">Помощь и обратная связь</a>
+                <a class="footer-link">Реклама</a>
+                <a class="footer-link">© 2001—2018, Яндекс</a>
             </div>
         </div>
     </div>
