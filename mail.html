@@ -62,13 +62,13 @@
                 <p><a class="link_unset_style single-line letters_panel_link" href="#">Прочитано</a></p>
             </div>
         </div>
+        <input class="letters_checkbox_hidden" id="open-task-1" type="checkbox"/>
         <div class="letters_inbox" id="inbox">
             <div class="letters_letter letters_letter_unread">
-                <label class="checkbox">
-                    <input class="checkbox-input" type="checkbox">
-                </label>
-                <a class="link_unset_style" href="#"
-                   onclick="document.getElementById('inbox').style.setProperty('display', 'none');document.getElementById('first_task').style.setProperty('display', 'block')">
+                <label class="label_control" for="open-task-1">
+                    <label class="checkbox">
+                        <input class="checkbox-input" type="checkbox">
+                    </label>
                     <div class="letters_sender_icon">
                         <span class="single-letter">Я</span>
                     </div>
@@ -78,7 +78,7 @@
                     <div class="letters_date gray-text">
                         <p class="single-line">6 авг</p>
                     </div>
-                </a>
+                </label>
             </div>
             <div class="letters_letter letters_letter_unread">
                 <label class="checkbox">
@@ -152,16 +152,20 @@
                                 <rt class="essay_rt"> Эм-ви-ви-эм</rt>
                             </ruby>
                             ), типо как
-                            <img src="https://openclipart.org/image/2400px/svg_to_png/23674/Anonymous-red-round-button.png" alt="round" class="essay_streamlined_img"/>
+                            <img alt="round"
+                                 class="essay_streamlined_img"
+                                 src="https://openclipart.org/image/2400px/svg_to_png/23674/Anonymous-red-round-button.png"/>
                             написать сайт так, чтобы он работал при потере соединения с сервером (считая, что у нас
                             интерактивное
                             веб-приложение). Или как сделать, чтобы каждый элемент твоего приложения реагировал
-                            <i class="essay_i">асинхронно</i> на каждое изменение данных сервера, и при этом не убить сервер,
+                            <i class="essay_i">асинхронно</i> на каждое изменение данных сервера, и при этом не убить
+                            сервер,
                             и не погибнуть в
                             бесконечных запросах. Еще хочу <abbr title="Web Assembly">WASM</abbr> и его будущее,
                             <img alt="jb team" class="essay_rotate"
                                  src="https://camo.githubusercontent.com/9e56add92e31202218fcaea188e566a0a3757a6a/687474703a2f2f6a622e67672f6261646765732f7465616d2e737667">
-                            <a class="essay_link" href="https://github.com/JetBrains/kotlin-wrappers/tree/master/kotlin-react">kotlin-react</a>
+                            <a class="essay_link"
+                               href="https://github.com/JetBrains/kotlin-wrappers/tree/master/kotlin-react">kotlin-react</a>
                             (но я про него знаю, просто людям показать, много кто на котлине пишет).
                         </p>
                     </div>
@@ -174,14 +178,15 @@
                     <div class="essay_footer">
                         <div class="essay_target_container">
                             <p class="footer-center-text"> Well what will be if th </p>
-                                <img alt="target"
-                                     class="target essay_medium_width"
-                                     src="http://cdn.shoplightspeed.com/shops/611633/files/3455511/3006-3006-mini-paper-target-10-ring-each.jpg"
-                                     usemap="#targetmap">
-                                <map name="targetmap">
-                                    <area alt="center" class="essay_target_inner essay_medium_width" coords="150,150,30" href="#code"
-                                          shape="circle">
-                                </map>
+                            <img alt="target"
+                                 class="target essay_medium_width"
+                                 src="http://cdn.shoplightspeed.com/shops/611633/files/3455511/3006-3006-mini-paper-target-10-ring-each.jpg"
+                                 usemap="#targetmap">
+                            <map name="targetmap">
+                                <area alt="center" class="essay_target_inner essay_medium_width" coords="150,150,30"
+                                      href="#code"
+                                      shape="circle">
+                            </map>
                         </div>
                     </div>
                     <div class="essay_centered_item essay_code_snippet essay_medium_width">
@@ -228,7 +233,11 @@
                 <div class="essay_nuclear_explosion" id="backoff">
                 </div>
             </div>
-            <button class="essay_close gray-text" onclick="document.getElementById('inbox').style.setProperty('display', 'block');document.getElementById('first_task').style.setProperty('display', 'none')">X</button>
+            <button class="essay_close gray-text">
+                <label class="label_control" for="open-task-1">
+                    X
+                </label>
+            </button>
         </div>
         <footer class="letters_footer gray-text">
             <div class="letters_footer_item">
