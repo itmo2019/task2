@@ -154,7 +154,7 @@ body {
     margin-right: 0;
 
     vertical-align: top;
-    height: 560px;
+    height: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     background-color: #ffffff;
@@ -205,7 +205,8 @@ body {
 }
 
 .messages-list {
-    height: 490px;
+    height: 100%;
+    min-height: 500px;
     border-bottom: solid 1px #e2e2e2;
 }
 
@@ -318,15 +319,19 @@ body {
     display: none;
 }
 
-#show-first-message:checked + .first-message {
+#show-first-message:checked ~ .first-message {
     display: block;
 }
 
-.first-message {
-    position: absolute;
+#show-first-message:checked ~ .messages-list {
     display: none;
-    /*width: 600px;*/
-    min-height: 490px;
+}
+
+.first-message {
+    position: relative;
+    display: none;
+    height: 100%;
+    min-height: 500px;
     top: 0;
     z-index: 1;
     background-color: #ffffff;
