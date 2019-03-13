@@ -13,11 +13,11 @@
     float: left;
 }
 
-.search {
+.panel-for-search-by-mails {
     overflow: hidden;
 }
 
-.input-placeholder {
+.wrapper-panel-for-search-by-mails {
     margin: 7px 70px 0;
     width: 310px;
     height: 30px;
@@ -25,25 +25,24 @@
     border: 1px solid #d9dbde;
 
     color: #737578;
-    font-family: "YS Text - Regular", serif;
     font-size: 15px;
 }
 
-.input-placeholder input {
+.wrapper-panel-for-search-by-mails input {
     float: left;
     display: inline;
-    width: 290px;
+    width: 280px;
     height: 30px;
-    background-color: #f2f5f8;
+    background-color: transparent;
     outline: none;
     border: none;
+    padding-left: 16px;
 }
 
-.input-placeholder div {
+.wrapper-panel-for-search-by-mails div {
     float: left;
     display: inline;
-    margin: 5px 0 0 -5px ;
-
+    margin-top: 8px;
 }
 
 .yandex-logo .multy-lines {
