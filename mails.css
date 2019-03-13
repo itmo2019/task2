@@ -125,7 +125,7 @@
     border-width: 1px 0 0 0;
 }
 
-.list-footer div {
+.list-footer a {
     display: inline;
     float: right;
     margin: 10px 20px 0 0;
@@ -135,6 +135,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 140px;
+    text-decoration: none;
+    color: #bdbdbd;
 }
 
 #is-active-essay:checked ~ .mail {

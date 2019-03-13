@@ -51,10 +51,6 @@
     margin: 11px 10px 0 0;
 }
 
-.yandex-logo .yandex-name * {
-    margin: 0;
-    display: inline;
-}
 
 .yandex-logo .yandex-name *:first-child {
     font-family: YandexSansBold;
