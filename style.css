@@ -3,14 +3,12 @@ body {
 }
 
 .background {
-    height: 100%;
     margin: auto;
     width: 800px;
 
 }
 
 .header {
-    display: block;
     margin: 10px 0 0 0;
     clear: both;
 }
