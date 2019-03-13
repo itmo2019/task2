@@ -6,6 +6,7 @@ body {
 #header {
     height: 32px;
     margin-bottom: 13px;
+    overflow: hidden;
 }
 
 #left-column {
@@ -16,7 +17,6 @@ body {
 
 #right-column {
     position: relative;
-    background-color: pink;
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
@@ -25,9 +25,19 @@ body {
 }
 
 #burger-menu-button {
-    float: left;
     width: 20px;
-    margin: 7px 11px 7px 0;
+    margin-right: 3px;
+    display: inline-block;
+    line-height: 31px;
+    height: 16.8px;
+    vertical-align: middle;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+#burger-menu-button:hover {
+    background-color: #d9e0ea;
+    cursor: pointer;
 }
 
 .burger-menu-button-item {
@@ -37,23 +47,35 @@ body {
 }
 
 #page-title-container {
+    position: relative;
     float: left;
-    width: 153px;
+    height: 31px;
     font: 23px/32px Arial, sans-serif;
-    transform: scale(1, 1.6);
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 31px;
 }
 
 #yandex-word {
+    display: inline-block;
     font-weight: bold;
+    vertical-align: middle;
+    line-height: 31px;
+}
+
+#mail-word {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 31px;
 }
 
 #search-bar-container {
-    position: relative;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
+    position: relative;
+    margin-left: 298px;
+    margin-right: 159px;
     height: 32px;
     opacity: 0.5;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -65,12 +87,13 @@ body {
     width: 100%;
     border: none;
     height: 30px;
-    margin-top: 1px;
-    margin-left: 2px;
+    margin: 1px;
     font-family: Arial, sans-serif;
-    line-height: 30px;
-    vertical-align: middle;
     padding: 0 36px 0 16px;
+}
+
+#search-bar::-ms-clear {
+    display: none;
 }
 
 #search-bar:focus {
@@ -80,7 +103,7 @@ body {
 .close {
     position: absolute;
     right: -12px;
-    top: 5px;
+    top: 5.5px;
     height: 20px;
     width: 34px;
     font-size: 20px;
@@ -105,6 +128,13 @@ body {
     color: white;
     font: 12px Arial, sans-serif;
     margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #4c76b7;
 }
 
 #send-button:focus {
@@ -118,16 +148,19 @@ body {
 }
 
 .left-item {
+    display: block;
     box-sizing: border-box;
     line-height: 22px;
     width: 147px;
     height: 22px;
-    font-family: Arial;
-    font-size: 11px;
+    font: 11px/22px Arial, sans-serif;
     color: #707070;
-    margin-bottom: 1px;
-    padding: 0 0 0 10px;
+    text-decoration: none;
+    margin-bottom: 0;
+    padding: 0 10px;
     border-radius: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .messages {
@@ -136,25 +169,33 @@ body {
 
 .left-active-item {
     font-weight: bold;
+    background-color: #cdd6e4;
     color: #555555;
 }
 
-.left-item:hover {
-    background-color: #cdd6e4;
+.left-item:hover:not(.left-active-item) {
+    background-color: #d9e0ea;
 }
 
 .message-item {
     height: 39px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     font: 0px Arial, sans-serif;
     line-height: 39px;
     border-bottom: solid 1px #e2e2e2;
     white-space: nowrap;
 }
 
+.base-checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .checkbox {
     display: inline-block;
+    box-sizing: border-box;
     width: 16px;
     height: 16px;
     margin-right: 10px;
@@ -164,7 +205,16 @@ body {
     vertical-align: middle;
 }
 
-.circle {
+.base-checkbox:checked + .checkbox {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' viewBox='0 0 24 24'%3E%3Cpath d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+
+.base-checkbox:focus + .checkbox {
+    box-shadow: 0 0 4px 2px #ff0a;
+}
+
+.sender {
     display: inline-block;
     margin-right: 10px;
     width: 30px;
@@ -181,6 +231,8 @@ body {
     display: inline-block;
     vertical-align: middle;
     font: 13px/39px Arial, sans-serif;
+    text-decoration: none;
+    color: black;
     width: 165px;
     margin-right: 20px;
     text-overflow: ellipsis;
@@ -192,7 +244,7 @@ body {
     margin-right: 0px;
 }
 
-.blue-dot {
+.read-marker {
     display: inline-block;
     vertical-align: middle;
     width: 10px;
@@ -207,10 +259,13 @@ body {
     overflow: hidden;
     vertical-align: middle;
     font: 13px/39px Arial, sans-serif;
+    text-decoration: none;
+    color: black;
     width: -webkit-calc(100% - 310px);
     width: -moz-calc(100% - 310px);
     width: calc(100% - 310px);
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 .unread-message-title {
@@ -225,6 +280,9 @@ body {
     color: #9b9b9b;
     text-align: right;
     width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 .message-item-checkbox {
@@ -238,13 +296,21 @@ body {
     font-size: 13px;
     font-weight: 500;
     color: #cccccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#footer {   
+#footer {
     float: bottom;
+    overflow: hidden;
     width: 100%;
     height: 30.5px;
     border-top: solid 1px #e2e2e2;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .footer-item {
@@ -253,6 +319,10 @@ body {
     line-height: 30.5px;
     color: #9b9b9b;
     float: right;
+}
+
+.footer-item-last {
+    margin-right: 0;
 }
 
 #visibility-controller {
