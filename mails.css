@@ -1,6 +1,6 @@
 .mails-placeholder {
     position: relative;
-    width: 530px;
+    min-width: 530px;
     height: 589px;
 }
 

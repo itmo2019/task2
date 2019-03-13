@@ -1,16 +1,31 @@
-.line-black {
+.yandex-mail-logo-b {
     width: 20px;
     height: 3px;
     background-color: #000000;
 }
 
-.line-white {
+.yandex-mail-logo-w {
     width: 20px;
     height: 3px;
 }
 
+.mail-logo-lines {
+    float: left;
+    margin-top: 12px;
+}
+
 .yandex-logo {
     float: left;
+}
+
+.yandex-logo *:first-child {
+    font-family: YandexSansBold;
+    font-size: 31px;
+}
+
+.yandex-logo *:last-child {
+    font-family: YandexSansThin;
+    font-size: 31px;
 }
 
 .panel-for-search-by-mails {
@@ -19,11 +34,12 @@
 
 .wrapper-panel-for-search-by-mails {
     margin: 7px 70px 0;
-    width: 310px;
+    width: 41.16%;
+    min-width: 312px;
     height: 30px;
     background-color: #f2f5f8;
     border: 1px solid #d9dbde;
-
+    font-family: YandexSansThin;
     color: #737578;
     font-size: 15px;
 }
@@ -31,7 +47,7 @@
 .wrapper-panel-for-search-by-mails input {
     float: left;
     display: inline;
-    width: 280px;
+    min-width: 280px;
     height: 30px;
     background-color: transparent;
     outline: none;
@@ -40,27 +56,8 @@
 }
 
 .wrapper-panel-for-search-by-mails div {
-    float: left;
+    float: right;
     display: inline;
-    margin-top: 8px;
+    margin: 8px 5px 0 0;
 }
 
-.yandex-logo .multy-lines {
-    float: left;
-    margin: 11px 10px 0 0;
-}
-
-
-.yandex-logo .yandex-name *:first-child {
-    font-family: YandexSansBold;
-    font-size: 31px;
-}
-
-.yandex-logo .yandex-name *:last-child {
-    font-family: YandexSansThin;
-    font-size: 31px;
-}
-
-.yandex-logo .yandex-name {
-    overflow: hidden;
-}
