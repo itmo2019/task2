@@ -4,7 +4,7 @@
     height: 589px;
 }
 
-.list-header {
+.mail-placeholder-header {
     float: left;
     display: block;
 
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.list-header .on-mails-actions {
+.mail-placeholder-header .on-mails-actions {
     display: inline;
     float: left;
 
@@ -30,7 +30,7 @@
 
 }
 
-.list-inner {
+.mail-placeholder-list-of-mails {
     float: left;
     display: block;
     width: 100%;
@@ -39,7 +39,7 @@
     position: relative;
 }
 
-.list-inner .mail {
+.mail-placeholder-list-of-mails .mail {
     width: 100%;
     display: block;
     clear: both;
@@ -51,7 +51,7 @@
     background-color: white
 }
 
-.list-inner .mail * {
+.mail-placeholder-list-of-mails .mail * {
     display: inline;
     float: left;
     margin: 10px 10px 0 0;
@@ -62,60 +62,64 @@
     height: 20px;
 }
 
-.list-inner .mail .mail-checkbox {
+.mail-placeholder-list-of-mails .mail .mail-checkbox {
     margin: 16px 10px 0 20px;
 }
 
-.list-inner .mail *:nth-child(n + 3) {
+.mail-placeholder-list-of-mails .mail *:nth-child(n + 3) {
     margin-top: 13px;
 }
 
-.list-inner .not-readed *:nth-child(n + 3) {
+.mail-placeholder-list-of-mails .not-readed *:nth-child(n + 3) {
     font-size: 14px;
     font-family: HelveticaNeueMedium;
 }
 
-.list-inner .readed *:nth-child(n + 3) {
+.mail-placeholder-list-of-mails .readed *:nth-child(n + 3) {
     font-size: 14px;
     font-family: HelveticaNeueLight;
 }
 
-.list-inner .not-readed .mail-message:before {
+.mail-placeholder-list-of-mails .not-readed .mail-message:before {
     font-size: 14px;
     color: #6287bd;
     content: ' \25CF';
 }
 
-.list-inner .mail .mail-message {
+.mail-placeholder-list-of-mails .mail .mail-message {
     margin-top: 10px;
-    width: 215px;
+    min-width: 215px;
+    width: 40%;
 }
 
-.list-inner .readed .mail-message {
+.mail-placeholder-list-of-mails .readed .mail-message {
     margin-top: 13px;
     padding-left: 10px;
-    width: 205px;
-
+    min-width: 205px;
+    width: 40%;
 }
 
-.list-inner .mail .mail-arrived {
+.mail-placeholder-list-of-mails .mail .mail-arrived {
     font-family: HelveticaNeueLight;
     color: #9b9b9b;
-    width: 40px;
+    min-width: 40px;
+    width: 4.97%;
+    float: right;
 }
 
-.list-inner .mail .mail-from {
-    width: 160px;
+.mail-placeholder-list-of-mails .mail .mail-from {
+    min-width: 160px;
+    width: 19.63%;
 }
 
-.list-inner .mail .mail-image {
+.mail-placeholder-list-of-mails .mail .mail-image {
     width: 30px;
     height: 30px;
     background-image: url(//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg);
     margin-top: 5px;
 }
 
-.list-footer {
+.mail-placeholder-list-of-footer-items {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -124,7 +128,7 @@
     border-width: 1px 0 0 0;
 }
 
-.list-footer a {
+.mail-placeholder-list-of-footer-items a {
     display: inline;
     float: right;
     margin: 10px 20px 0 0;

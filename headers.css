@@ -14,16 +14,16 @@
     margin-top: 12px;
 }
 
-.yandex-logo {
+.yandex-logo-title {
     float: left;
 }
 
-.yandex-logo *:first-child {
+.yandex-logo-title *:first-child {
     font-family: YandexSansBold;
     font-size: 31px;
 }
 
-.yandex-logo *:last-child {
+.yandex-logo-title *:last-child {
     font-family: YandexSansThin;
     font-size: 31px;
 }

@@ -5,7 +5,7 @@
     text-overflow: ellipsis;
 }
 
-.actions-panel .new-mail {
+.actions-panel .create-new-mail-button {
     display: block;
     width: 147px;
     height: 32px;
@@ -15,7 +15,7 @@
     float: left;
 }
 
-.actions-panel .new-mail div {
+.actions-panel .create-new-mail-button div {
     color: #ffffff;
     font-family: HelveticaNeueMedium;
     font-size: 12px;
@@ -40,7 +40,7 @@ nav {
     cursor: pointer;
 }
 
-.navigation-item div {
+.navigation-item {
     color: #707070;
     font-size: 12px;
     font-family: HelveticaNeueMedium;
@@ -48,8 +48,11 @@ nav {
     margin: 4px 0;
     text-indent: 1em;
 }
+.navigation-item div {
+    margin-top: 8px;
+}
 
-.not-more-147px {
+.max-text-size {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
