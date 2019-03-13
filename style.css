@@ -252,6 +252,10 @@ body {
 }
 
 .sender {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     display: inline-block;
     width: 175px;
     margin-left: 10px;
