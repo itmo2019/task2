@@ -1,15 +1,15 @@
 body {
     background-color: #e5eaf0;
+    margin: 0;
 }
 
 .background {
     margin: auto;
     width: 800px;
-
 }
 
 .header {
-    margin: 10px 0 0 0;
+    margin: 10px;
     clear: both;
 }
 
@@ -31,7 +31,7 @@ main * {
     margin-right: 22px;
 }
 
-.inner {
+.mails-placeholder {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.34);
     border-radius: 3px;
     background-color: #ffffff;
