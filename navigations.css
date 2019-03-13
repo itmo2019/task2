@@ -1,12 +1,11 @@
 
-.navigate {
+.actions-panel {
     width: 20%;
-    height: 598px;
     float: left;
     text-overflow: ellipsis;
 }
 
-.navigate .new-mail {
+.actions-panel .new-mail {
     display: block;
     width: 147px;
     height: 32px;
@@ -16,7 +15,7 @@
     float: left;
 }
 
-.navigate .new-mail div {
+.actions-panel .new-mail div {
     color: #ffffff;
     font-family: HelveticaNeueMedium;
     font-size: 12px;
@@ -26,20 +25,20 @@
 
 }
 
-.hover-select {
+.navigation-item {
     width: 147px;
     height: 22px;
     margin: 10px 20px 0 0;
     float: left;
 }
 
-.hover-select:hover {
+.navigation-item:hover {
     border-radius: 3px;
     background-color: #cdd6e4;
     cursor: pointer;
 }
 
-.hover-select div {
+.navigation-item div {
     color: #707070;
     font-size: 12px;
     font-family: HelveticaNeueMedium;
