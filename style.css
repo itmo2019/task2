@@ -51,7 +51,7 @@ body {
     vertical-align: middle;
 }
 
-.yandex-service-logo__img {
+.yandex-service-logo__image-link {
     cursor: pointer;
     display: inline-block;
 }
@@ -278,11 +278,15 @@ body {
 
     line-height: 20px;
     width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #9b9b9b;
 }
 
 .date {
     float: right;
+
 }
 
 .footer {
@@ -298,6 +302,10 @@ body {
     display: inline-block;
     color: #ccc;
     cursor: pointer;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #show-first-message {
