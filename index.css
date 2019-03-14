@@ -112,6 +112,13 @@
   width: 100%;
 }
 
+.mail-navigation a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
 .menu-actions {
   margin-top: 8px;
 }
@@ -343,7 +350,7 @@
   padding: 10px;
   display: none;
   margin-left: 22px;
-  width: calc(100% - 178px);
+  width: calc(100% - 198px);
   height: 86%;
   word-wrap: break-word;
   border-radius: 3px;
@@ -375,7 +382,7 @@
 
 @media screen and (min-width: 1500px) {
   #first-email {
-    width: 80%;
+    width: 79.3%;
     height: 87%;
   }
 }
