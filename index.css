@@ -77,9 +77,6 @@
 }
 
 #search-bar {
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-  appearance: textfield;
   padding: 1px;
   height: 32px;
   width: 100%;
@@ -405,3 +402,24 @@
 }
 
 /* END SECTION: FIRST E-MAIL */
+
+/* BEGIN SECTION: FOOTER */
+
+.mail-footer {
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  height: 29px;
+  bottom: 0;
+  border-top: 1px solid #cccccc;
+  background-color: ffff;
+}
+
+.footer-item {
+  padding: 21px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9b9b9b;
+}
+
+/* END SECTION: FOOTER */
