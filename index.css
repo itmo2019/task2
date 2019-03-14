@@ -233,6 +233,12 @@
   table-layout: fixed;
 }
 
+.mail-screen-and-footer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 .email {
   width: 100%;
   height: 40px;
@@ -390,11 +396,12 @@
 .mail-footer {
   padding-top: 5px;
   position: absolute;
-  width: 100%;
-  height: 29px;
+  width: calc(100% - 178px);
+  height: 30px;
   bottom: 0;
+  text-align: right;
   border-top: 1px solid #cccccc;
-  background-color: ffff;
+  background-color: #fff;
 }
 
 .footer-item {
