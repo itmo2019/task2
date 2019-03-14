@@ -37,12 +37,12 @@
 
 .mail-placeholder-list-of-mails .not-readed *:nth-child(n + 3) {
     font-size: 14px;
-    font-family: HelveticaNeueMedium;
+    font-family: HelveticaNeueMedium, Georgia;
 }
 
 .mail-placeholder-list-of-mails .readed *:nth-child(n + 3) {
     font-size: 14px;
-    font-family: HelveticaNeueLight;
+    font-family: HelveticaNeueLight, Georgia;
 }
 
 .mail-placeholder-list-of-mails .not-readed .mail-message:before {
@@ -126,7 +126,7 @@
 }
 
 .mail-placeholder-list-of-mails .mail .mail-arrived {
-    font-family: HelveticaNeueLight;
+    font-family: HelveticaNeueLight, Arial;
     color: #9b9b9b;
     min-width: 40px;
     width: 4.97%;

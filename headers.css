@@ -20,12 +20,12 @@
 }
 
 .yandex-logo-title *:first-child {
-    font-family: YandexSansBold;
+    font-family: YandexSansBold, Times;
     font-size: 31px;
 }
 
 .yandex-logo-title *:last-child {
-    font-family: YandexSansThin;
+    font-family: YandexSansThin, "Times New Roman";
     font-size: 31px;
 }
 
@@ -39,7 +39,7 @@
     height: 30px;
     background-color: #f2f5f8;
     border: 1px solid #d9dbde;
-    font-family: YandexSansThin;
+    font-family: YandexSansThin, "Times New Roman";
     color: #737578;
     font-size: 15px;
 }
