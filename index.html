@@ -10,217 +10,149 @@
     </head>
     <body id="container">
         <header id="header">
-            <div id="hamburger-and-logo-container">
-                <div id="hamburger">
-                    <div class="Rectangle"></div>
-                    <div class="Rectangle"></div>
-                    <div class="Rectangle"></div>
-                </div>
-                <div id="top-logo">
-                    <span class="word-yandex">Яндекс</span>
-                    <span class="word-after-yandex">Почта</span>
-                </div>
+          <div id="hamburger-and-logo">
+            <div class="hamburger">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
             </div>
-            <div id="search-bar-container">
-                <div class="search-bar">
-                    <div class="search-request">Поиск</span>
-                    <div class="search-cancel">&#x2715;</span>
-                </div>
+            <img id="mail-logo" src="./mail_logo.png"/>
+          </div>
+          <div id="search-bar-container">
+            <div id="search-bar-and-close">
+              <input type="text" id="search-bar" placeholder="Поиск"/>
+              <span id="search-bar-close">&#x2715;</span>
             </div>
+          </div>
         </header>
         <main id="content">
-            <nav id="mail-folders">
-                <section class="new-message">
-                    <div class="new-message-text">
-                        Написать
-                    </div>
-                </section>
-                <section class="folders">
-                    <div class="folder-wrapper">
-                        <div class="folder selected-folder">
-                            Входящие
-                        </div>
-                    </div>
-                    <div class="folder-wrapper">
-                        <div class="folder">
-                            Отправленные
-                        </div>
-                    </div>
-                    <div class="folder-wrapper">
-                        <div class="folder">
-                            Удалённые
-                        </div>
-                    </div>
-                    <div class="folder-wrapper">
-                        <div class="folder">
-                            Спам
-                        </div>
-                    </div>
-                    <div class="folder-wrapper">
-                        <div class="folder">
-                            Черновики
-                        </div>
-                    </div>
-                    <div class="folder-wrapper">
-                        <div class="folder">
-                            Создать папку
-                        </div>
-                    </div>
-                </section>
+            <nav class="left-menu">
+              <button class="new-message-btn">Написать</button>
+              <div class="menu-actions">
+                <div class="menu-action-wrapper">
+                  <div class="menu-action selected-menu-action">
+                    <a href="#inbox">Входящие</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#sent">Отправленные</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#deleted">Удалённые</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#spam">Спам</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#drafts">Черновики</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#new_folder">Создать папку</a>
+                  </div>
+                </div>
+                <div class="menu-action-wrapper">
+                  <div class="menu-action">
+                    <a href="#long_name">Очень длинная команда, ну просто очень длинная, самая длинная здесь</a>
+                  </div>
+                </div>
+              </div>
             </nav>
             <input type="checkbox" id="toggle-first-mail">
             <div id="first-email">
-                    <label for="toggle-first-mail">
-                        <span class="close-email">&#x2715;</span>
-                    </label>
-                    <h3>Они нас вдохновляют</h3>
-                    <img id="cat-image">
-                    <p>Коты и кошки — прекрасные музы! Представь только, свой первый сольный альбом Mr. Bad Guy Фредди Меркьюри посвятил своим четвероногим пушистым любимцам. И мы никогда не узнали бы знаменитого кота Бегемота, если бы у Булгакова не было огромного серого кота по имени Флюшка!</p>
-                    <h3>Они нас лечат</h3>
-                    <p>Не хочешь идти к психотерапевту — заведи кота! Шутки в сторону, но если у тебя есть кот, многие лекарства действительно не нужны — пушистый комочек ляжет на больное место и вылечит без лишних рецептов и слов. Кототерапия поможет снять воспаление, вылечить больные суставы, избавить от депрессии и вернуть ощущение радости жизни.</p>
-                    <h3>Они нас смешат</h3>
-                    <p>Какие видео на Youtube набирают максимальное число просмотров? Те, на которых есть котики. Если настроение не очень, достаточно просто понаблюдать за хвостатым — за 5 минут от мрачных мыслей не останется и следа.</p>
-                    <h3>Они создают уют в доме</h3>
-                    <p>Дом без кошки как свадьба без невесты. Наши предки об этом знали, и с давних времен завели традицию первой запускать в новый дом кошку. Ну а кто еще мог стать символом домашнего очага, комфорта и уюта? Только это прекрасное мурлыкающее создание.</p>
-                    <h3>Они делают нас счастливее</h3>
-                    <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
-                    <h3>Они делают нас счастливее</h3>
-                    <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
-                    <h3>Они делают нас счастливее</h3>
-                    <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
-                    <h3>Они делают нас счастливее</h3>
-                    <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
-                </div> 
-            <section id="mail-screen">
-               <div class="mail-screen-row-wrapper">
-                    <nav class="mail-row mail-row-top">
-                        <span class="select-mail-row">
-                            <input id="open-first-email" type="checkbox" />
-                        </span>
-                        <span class="nav-mail-screen-action">
-                            Переслать
-                        </span>
-                        <span class="nav-mail-screen-action">
-                            Удалить
-                        </span>
-                        <span class="nav-mail-screen-action">
-                            Это спам!
-                        </span>
-                        <span class="nav-mail-screen-action">
-                            Прочитано
-                        </span>
-                    </nav>
+                <div class="close-email">
+                  <label for="toggle-first-mail">&#x2715;</label>
                 </div>
-                 <div class="mail-screen-row-wrapper">
-                        <section class="mail-row">
-                            <span class="select-mail-row">
-                                <input type="checkbox" />
-                            </span>
-                            <span>
-                                <img class="sender-photo" src="./yandex-logo.png" />
-                            </span>
-                            <div class="sender-name">
-                                <label for="toggle-first-mail">Яндекс.Паспорт</label>
-                            </div>
-                            <div class="unread-flag">
-                            </div>
-                            <div class="mail-title">
-                                <label for="toggle-first-mail">Доступ к аккаунту восстановлен</label>
-                            </div>
-                            <div class="mail-date">
-                                15 авг
-                            </div>
-                        </section>
+                <h3>Они нас вдохновляют</h3>
+                <img id="cat-image">
+                <p>Коты и кошки — прекрасные музы! Представь только, свой первый сольный альбом Mr. Bad Guy Фредди Меркьюри посвятил своим четвероногим пушистым любимцам. И мы никогда не узнали бы знаменитого кота Бегемота, если бы у Булгакова не было огромного серого кота по имени Флюшка!</p>
+                <h3>Они нас лечат</h3>
+                <p>Не хочешь идти к психотерапевту — заведи кота! Шутки в сторону, но если у тебя есть кот, многие лекарства действительно не нужны — пушистый комочек ляжет на больное место и вылечит без лишних рецептов и слов. Кототерапия поможет снять воспаление, вылечить больные суставы, избавить от депрессии и вернуть ощущение радости жизни.</p>
+                <h3>Они нас смешат</h3>
+                <p>Какие видео на Youtube набирают максимальное число просмотров? Те, на которых есть котики. Если настроение не очень, достаточно просто понаблюдать за хвостатым — за 5 минут от мрачных мыслей не останется и следа.</p>
+                <h3>Они создают уют в доме</h3>
+                <p>Дом без кошки как свадьба без невесты. Наши предки об этом знали, и с давних времен завели традицию первой запускать в новый дом кошку. Ну а кто еще мог стать символом домашнего очага, комфорта и уюта? Только это прекрасное мурлыкающее создание.</p>
+                <h3>Они делают нас счастливее</h3>
+                <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
+                <h3>Они делают нас счастливее</h3>
+                <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
+                <h3>Они делают нас счастливее</h3>
+                <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
+                <h3>Они делают нас счастливее</h3>
+                <p>Добиться кошачьей любви, кажется, непросто — независимый и гордый нрав делает животного похожим на неприступную снежную королеву. Но потом она трется об ноги и с мурчанием ложится тебе на колени, и вот тогда-то и понимаешь, что ты тот избранный, заслуживший любовь этого грациозного существа! И ведь секрет прост: ты сделал кошку счастливой — кошка сделает счастливым тебя.</p>
+            </div> 
+            <section class="mail-screen">
+              <section class="mail-screen-element-wrapper">
+                <div class="mail-navigation">
+                  <input type="checkbox" class="mailscreen-checkbox"/>
+                  <button class="mail-nav-bnt"><a href="">Написать</a></button>
+                  <button class="mail-nav-bnt"><a href="">Входящие</a></button>
+                  <button class="mail-nav-bnt"><a href="">Отправленные</a></button>
+                  <button class="mail-nav-bnt"><a href="">Удалённые</a></button>
+                  <button class="mail-nav-bnt"><a href="">Спам!</a></button>
+                  <button class="mail-nav-bnt"><a href="">Прочитано</a></button>
                 </div>
-                <div class="mail-screen-row-wrapper">
-                    <section class="mail-row">
-                        <span class="select-mail-row">
-                            <input type="checkbox" />
-                        </span>
-                        <span>
-                            <img class="sender-photo" src="./yandex-logo.png" />
-                        </span>
-                        <div class="sender-name">
-                            Команда Яндекс.Почты
-                        </div>
-                        <div class="unread-flag">
-                        </div>
-                        <div class="mail-title">
-                            Как читать почту с мобильного
-                        </div>
-                        <div class="mail-date">
-                            6 авг
-                        </div>
-                    </section>
-                </div>
-                <div class="mail-screen-row-wrapper">
-                    <section class="mail-row read">
-                        <span class="select-mail-row">
-                            <input type="checkbox" />
-                        </span>
-                        <span>
-                            <img class="sender-photo" src="./yandex-logo.png" />
-                        </span>
-                        <div class="sender-name">
-                            Команда Яндекс.Почты
-                        </div>
-                        <div class="unread-flag">
-                        </div>
-                        <div class="mail-title">
-                            Как читать почту с мобильного
-                        </div>
-                        <div class="mail-date">
-                            6 июл
-                        </div>
-                    </section>
-                </div>
-                <div class="mail-screen-row-wrapper">
-                    <section class="mail-row read">
-                        <span class="select-mail-row">
-                            <input type="checkbox" />
-                        </span>
-                        <span>
-                            <img class="sender-photo" src="./yandex-logo.png" />
-                        </span>
-                        <div class="sender-name">
-                            Яндекс
-                        </div>
-                        <div class="unread-flag">
-                        </div>
-                        <div class="mail-title">
-                            Соберите всю почту в этот ящик
-                        </div>
-                        <div class="mail-date">
-                            6 авг
-                        </div>
-                    </section>
-                </div>
-                <div class="mail-screen-row-wrapper">
-                    <section class="mail-row read">
-                        <span class="select-mail-row">
-                            <input type="checkbox" />
-                        </span>
-                        <span>
-                            <img class="sender-photo" src="./yandex-logo.png" />
-                        </span>
-                        <div class="sender-name">
-                            Яндекс очень длинное имя отправителя
-                        </div>
-                        <div class="unread-flag">
-                        </div>
-                        <div class="mail-title">
-                            Очень длинный текст, ну просто очень длинный текст! Очень очень очень длинный!
-                        </div>
-                        <div class="mail-date">
-                            6 авг
-                        </div>
-                    </section>
-                </div>    
-                <footer class="mail-footer">
-                    <span class="footer-item">Помощь и обратная связь</span>
-                    <span class="footer-item">Реклама</span>
-                    <span class="footer-item">&copy; 2001-2018, Яндекс</span>
-                </footer> 
+              </section>
+              <section class="mail-emails">
+                <section class="mail-screen-element-wrapper">
+                  <div class="unread email">
+                    <div class="mail-date">6 авг</div>
+                    <input type="checkbox" class="mailscreen-checkbox"/>
+                    <img class="sender-photo" src="./yandex-logo.png" />
+                    <span class="sender-part sender-name"><label for="toggle-first-mail">Яндекс.Паспорт</label></span>
+                    <div class="unread-flag"></div>
+                    <div class="sender-part sender-title"><label for="toggle-first-mail">Как читать почту с мобильного и не только</label></div>
+                  </div>
+                </section>
+                <section class="mail-screen-element-wrapper">
+                  <div class="unread email">
+                    <div class="mail-date">6 авг</div>
+                    <input type="checkbox" class="mailscreen-checkbox"/>
+                    <img class="sender-photo" src="./yandex-logo.png" />
+                    <div class="sender-part sender-name">Команда Яндекс.Почты</div>
+                    <div class="unread-flag"></div>
+                    <div class="sender-part sender-title">Как читать почту с мобильного и не только (еще и с компьютера)</div>
+                  </div>
+                </section>
+                <section class="mail-screen-element-wrapper">
+                  <div class="email">
+                    <div class="mail-date">6 июл</div>
+                    <input type="checkbox" class="mailscreen-checkbox"/>
+                    <img class="sender-photo" src="./yandex-logo.png" />
+                    <div class="sender-part sender-name">Команда Яндекс.Почты</div>
+                    <div class="unread-flag"></div>
+                    <div class="sender-part sender-title">Как читать почту с мобильного</div>
+                  </div>
+                </section>
+                <section class="mail-screen-element-wrapper">
+                  <div class="email">
+                    <div class="mail-date">28 мар</div>
+                    <input type="checkbox" class="mailscreen-checkbox"/>
+                    <img class="sender-photo" src="./yandex-logo.png" />
+                    <div class="sender-part sender-name">Яндекс</div>
+                    <div class="unread-flag"></div>
+                    <div class="sender-part sender-title">Соберите всю почту в этот ящик</div>
+                  </div>
+                </section>
+                <section class="mail-screen-element-wrapper">
+                  <div class="email">
+                    <div class="mail-date">28 мар</div> 
+                    <input type="checkbox" class="mailscreen-checkbox"/>
+                    <img class="sender-photo" src="./yandex-logo.png" />
+                    <div class="sender-part sender-name">Самое длинное название Яндекса которое вообще когда-либо и где-либо существовало</div>
+                    <div class="unread-flag"></div>
+                    <div class="sender-part sender-title">Соберите всю почту в этот ящик, не только свою, еще можете почту друга, и соседей, всю почту! Еще можно здесь собирать не только почту, но и грибы, ягоды, вообще, что угодно можно собирать в этом ящике!!!</div>
+                  </div>
+                </section>
+              </section>
             </section>
         </main>
     </body>
