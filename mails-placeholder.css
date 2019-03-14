@@ -26,7 +26,7 @@
 }
 
 .mail-placeholder-list-of-mails .mail .custom-check {
-    margin: 0 10px 0 20px;
+    padding: 20px 10px 0 20px;
     width: 16px;
     height: 16px;
 }
@@ -59,7 +59,6 @@
 .mail-checkbox__input {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
     position: absolute;
 }
 
@@ -92,8 +91,12 @@
     height: 20px;
 }
 
+.mail-checkbox__box-align {
+    margin-bottom: 5px;
+}
+
 .on-mails-action__align {
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .mail-checkbox__box {
