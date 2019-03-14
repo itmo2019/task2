@@ -1,0 +1,131 @@
+.mail-placeholder-list-of-mails {
+    display: block;
+    width: 100%;
+    min-height: 535px;
+    position: relative;
+}
+
+.mail-placeholder-list-of-mails .mail {
+    width: 100%;
+    display: block;
+    position: relative;
+    border: 0 solid #9b9b9b;
+    border-bottom-width: 1px;
+    height: 40px;
+    z-index: 1000000;
+    background-color: white
+}
+
+.mail .mail-image, .mail .mail-from, .mail .mail-message, .mail .mail-arrived {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.mail-placeholder-list-of-mails .mail .custom-check {
+    margin: 0 10px 0 20px;
+    width: 16px;
+    height: 16px;
+}
+
+.mail-placeholder-list-of-mails .mail *:nth-child(n + 3) {
+
+}
+
+.mail-placeholder-list-of-mails .not-readed *:nth-child(n + 3) {
+    font-size: 14px;
+    font-family: HelveticaNeueMedium;
+}
+
+.mail-placeholder-list-of-mails .readed *:nth-child(n + 3) {
+    font-size: 14px;
+    font-family: HelveticaNeueLight;
+}
+
+.mail-placeholder-list-of-mails .not-readed .mail-message:before {
+    font-size: 14px;
+    color: #6287bd;
+    content: ' \25CF';
+}
+
+.mail-placeholder-list-of-mails .mail .mail-message {
+    min-width: 215px;
+    width: 40%;
+}
+
+.mail-checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.mail-checkbox__input:checked + .mail-checkbox__box {
+    background-image: url("images/icon.svg");
+    background-size: 16px 16px;
+}
+
+.mail-checkbox__input:focus + .mail-checkbox__box {
+    border: 1px solid red;
+}
+
+.mail-checkbox__input:checked:focus + .mail-checkbox__box {
+    border: 1px solid red;
+    background-image: url("images/icon.svg");
+    background-size: 16px 16px;
+}
+
+.mail-checkbox__input:disabled + .mail-checkbox__box {
+    background-color: #9b9b9b;
+}
+
+.mail-checkbox__input:disabled:checked + .mail-checkbox__box {
+    background: #9b9b9b url("images/icon.svg");
+    background-size: 16px 16px;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    height: 20px;
+}
+
+.on-mails-action__align {
+    padding-bottom: 5px;
+}
+
+.mail-checkbox__box {
+    width: 16px;
+    height: 16px !important;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.mail-placeholder-list-of-mails .readed .mail-message {
+    padding-left: 10px;
+    min-width: 205px;
+    width: 40%;
+}
+
+.mail-placeholder-list-of-mails .mail .mail-from {
+    min-width: 160px;
+    width: 19.63%;
+}
+
+.mail-placeholder-list-of-mails .mail .mail-image {
+    width: 30px;
+    height: 30px;
+    background-image: url(//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg);
+    margin-top: 5px;
+}
+
+.mail-placeholder-list-of-mails .mail .mail-arrived {
+    font-family: HelveticaNeueLight;
+    color: #9b9b9b;
+    min-width: 40px;
+    width: 4.97%;
+    float: right;
+}

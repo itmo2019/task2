@@ -5,118 +5,25 @@
 }
 
 .mail-placeholder-header {
-    float: left;
     display: block;
-
     border: 0 solid #9b9b9b;
     border-bottom-width: 1px;;
     width: 100%;
 }
 
 .mail-placeholder-header .on-mails-actions {
-    display: inline;
-    float: left;
-
+    display: inline-block;
     margin: 11px 26px 5px 0;
     color: #9b9b9b;
-
     font-family: HelveticaNeueMedium;
     font-size: 11px;
-
-    white-space: nowrap;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 60px;
-
 }
 
-.mail-placeholder-list-of-mails {
-    float: left;
-    display: block;
-    width: 100%;
-    min-height: 535px;
-    position: relative;
-}
 
-.mail-placeholder-list-of-mails .mail {
-    width: 100%;
-    display: block;
-    clear: both;
-    position: relative;
-    border: 0 solid #9b9b9b;
-    border-bottom-width: 1px;
-    height: 40px;
-    z-index: 1000000;
-    background-color: white
-}
-
-.mail-placeholder-list-of-mails .mail * {
-    display: inline;
-    float: left;
-    margin: 10px 10px 0 0;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 20px;
-}
-
-.mail-placeholder-list-of-mails .mail .mail-checkbox {
-    margin: 16px 10px 0 20px;
-}
-
-.mail-placeholder-list-of-mails .mail *:nth-child(n + 3) {
-    margin-top: 13px;
-}
-
-.mail-placeholder-list-of-mails .not-readed *:nth-child(n + 3) {
-    font-size: 14px;
-    font-family: HelveticaNeueMedium;
-}
-
-.mail-placeholder-list-of-mails .readed *:nth-child(n + 3) {
-    font-size: 14px;
-    font-family: HelveticaNeueLight;
-}
-
-.mail-placeholder-list-of-mails .not-readed .mail-message:before {
-    font-size: 14px;
-    color: #6287bd;
-    content: ' \25CF';
-}
-
-.mail-placeholder-list-of-mails .mail .mail-message {
-    margin-top: 10px;
-    min-width: 215px;
-    width: 40%;
-}
-
-.mail-placeholder-list-of-mails .readed .mail-message {
-    margin-top: 13px;
-    padding-left: 10px;
-    min-width: 205px;
-    width: 40%;
-}
-
-.mail-placeholder-list-of-mails .mail .mail-arrived {
-    font-family: HelveticaNeueLight;
-    color: #9b9b9b;
-    min-width: 40px;
-    width: 4.97%;
-    float: right;
-}
-
-.mail-placeholder-list-of-mails .mail .mail-from {
-    min-width: 160px;
-    width: 19.63%;
-}
-
-.mail-placeholder-list-of-mails .mail .mail-image {
-    width: 30px;
-    height: 30px;
-    background-image: url(//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg);
-    margin-top: 5px;
-}
 
 .mail-placeholder-list-of-footer-items {
     display: inline-block;

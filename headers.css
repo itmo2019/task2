@@ -31,7 +31,6 @@
 
 .panel-for-search-by-mails {
     display: inline-block;
-    width: 40%;
 }
 
 .wrapper-panel-for-search-by-mails {
@@ -46,8 +45,7 @@
 }
 
 .wrapper-panel-for-search-by-mails .input-for-search-by-mails {
-    float: left;
-    display: inline;
+    display: inline-block;
     min-width: 280px;
     height: 30px;
     background-color: transparent;
@@ -57,8 +55,8 @@
 }
 
 .wrapper-panel-for-search-by-mails .placeholder-for-clear-input {
-    float: right;
-    display: inline;
+    display: inline-block;
     margin: 8px 5px 0 0;
+    float: right;
 }
 
