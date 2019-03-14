@@ -104,6 +104,7 @@
   font-weight: 500;
   color: #fff;
   outline: none;
+  cursor: pointer;
 }
 
 .menu-action-wrapper {
@@ -324,4 +325,59 @@
   }
 }
 
-/* END SECTION: MAIL SCREEN */ 
+/* END SECTION: MAIL SCREEN */
+
+/* BEGIN SECTION: FIRST E-MAIL */
+
+#cat-image {
+    margin-top: 5px;
+    float: right;
+    border-radius: 50%;
+    shape-outside:circle();
+    height: 250px;
+    width: 250px;
+    content: url("cat.png");
+}
+
+#first-email {
+  padding: 10px;
+  display: none;
+  margin-left: 22px;
+  width: calc(100% - 178px);
+  height: 86%;
+  word-wrap: break-word;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
+  background-color: #ffffff;
+  overflow-y: scroll;
+} 
+
+.close-email {
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  text-align: right;
+}
+
+#toggle-first-mail {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#toggle-first-mail:checked ~ #first-email {
+    display: inline-block;
+}
+
+#toggle-first-mail:checked ~ .mail-screen {
+    display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  #first-email {
+    width: 80%;
+    height: 87%;
+  }
+}
+
+/* END SECTION: FIRST E-MAIL */
