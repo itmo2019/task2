@@ -1,28 +1,20 @@
-body {
+.mail-body {
     background-color: #e5eaf0;
     margin: 0;
 }
 
-header {
-    clear: both;
+.main-mails-header {
+    white-space: nowrap;
     margin-left: 22px;
+    height: 40px;
+    margin-bottom: 13px;
 }
 
-
-
-header:after {
-    content: "\a";
-    white-space: pre;
-}
-main {
+.main-mail-with-content {
     width: 100%;
     min-width: 725px;
     margin-left: 22px;
     display: inline-block;
-}
-
-main * {
-    margin-right: 22px;
 }
 
 .mails-placeholder {

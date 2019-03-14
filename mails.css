@@ -1,6 +1,6 @@
 .mails-placeholder {
-    position: relative;
-    min-width: 530px;
+    position: absolute;
+    min-width: 575px;
     height: 589px;
 }
 
@@ -34,8 +34,7 @@
     float: left;
     display: block;
     width: 100%;
-    height: max-content;
-    min-height: 530px;
+    min-height: 535px;
     position: relative;
 }
 
@@ -128,7 +127,7 @@
     border-width: 1px 0 0 0;
 }
 
-.mail-placeholder-list-of-footer-items a {
+.mail-placeholder-list-of-footer-items .company-about {
     display: inline;
     float: right;
     margin: 10px 20px 0 0;
@@ -146,7 +145,6 @@
     background-color: red;
     display: none;
     z-index: -100;
-
 }
 
 .essay {

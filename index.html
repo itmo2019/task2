@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="all-fonts.css">
@@ -9,8 +10,8 @@
     <link rel="stylesheet" href="mails.css">
     <title>Яндекс.Почта</title>
 </head>
-<body>
-<header>
+<body class="mail-body">
+<header class="main-mails-header">
     <div class="mail-logo-lines">
         <div class="yandex-mail-logo-b"></div>
         <div class="yandex-mail-logo-w"></div>
@@ -18,60 +19,62 @@
         <div class="yandex-mail-logo-w"></div>
         <div class="yandex-mail-logo-b"></div>
     </div>
+
     <div class="yandex-logo-title">
         <span>Яндекс</span>
         <span>Почта</span>
     </div>
+
     <div class="panel-for-search-by-mails">
         <div class="wrapper-panel-for-search-by-mails">
-            <input placeholder="Поиск">
-            <div>&times;</div>
+            <input class="input-for-search-by-mails" placeholder="Поиск">
+            <div class="placeholder-for-clear-input">&times;</div>
         </div>
     </div>
 </header>
 
-<main>
+<main class="main-mail-with-content">
     <div class="actions-panel">
 
-        <div class="create-new-mail-button">
-            <div>
+        <button class="create-new-mail-button">
+            <div class="place-for-aligned-text">
                 Написать
             </div>
-        </div>
+        </button>
 
-        <nav>
+        <nav class="action-navigation-placeholder">
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Входящие
                 </div>
             </div>
 
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Отправленные
                 </div>
             </div>
 
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Удаленные
                 </div>
             </div>
 
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Спам
                 </div>
             </div>
 
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Черновики
                 </div>
             </div>
 
             <div class="navigation-item max-text-size">
-                <div>
+                <div class="place-for-aligned-text">
                     Создать папку
                 </div>
             </div>
@@ -79,7 +82,7 @@
     </div>
     <div class="mails-placeholder">
         <div class="mail-placeholder-header">
-            <input class="on-mails-actions" type="checkbox" style="margin-left: 20px">
+            <input class="on-mails-actions" type="checkbox" style="margin-left: 20px;">
             <div class="on-mails-actions">Переслать</div>
             <div class="on-mails-actions">Удалить</div>
             <div class="on-mails-actions">Это спам!</div>
@@ -157,17 +160,17 @@
 
             </div>
         </div>
-        <footer class="mail-placeholder-list-of-footer-items">
-            <a href="#">
+        <div class="mail-placeholder-list-of-footer-items">
+            <a class="company-about" href="#">
                 © 2001—2018, Яндекс
             </a>
-            <a href="#">
+            <a class="company-about" href="#">
                 Реклама
             </a>
-            <a href="#">
+            <a class="company-about" href="#">
                 Помощь и обратная связь
             </a>
-        </footer>
+        </div>
     </div>
 </main>
 
