@@ -56,17 +56,34 @@
   display: inline-block;
 }
 
+#search-bar-and-close {
+  height: 32px;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+#search-bar-close {
+  top: 9px;
+  right: 5px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  opacity: 0.15;
+  color: #000;
+  cursor: pointer;
+}
+
 #search-bar {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
   appearance: textfield;
   padding: 1px;
   height: 32px;
-  width: 50%;
+  width: 100%;
   position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
   opacity: 0.5;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
