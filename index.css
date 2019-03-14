@@ -6,7 +6,7 @@
     padding: 11px 22px 14px 22px;
     background-color: #e5eaf0;
     font-family: HelveticaNeue;
-    min-width: 770px;
+    min-width: 900px;
 }
 
 #header {
@@ -213,6 +213,7 @@
 .mail-screen-element-wrapper {
   display: table;
   width: 100%;
+  table-layout: fixed;
 }
 
 .email {
@@ -240,7 +241,6 @@
 }
 
 .sender-name {
-  display: inline-block;
   font-size: 13px; 
   margin-left: 10px;
   width: 25%;
@@ -274,13 +274,23 @@
   display: inline-block;
   font-size: 13px;
   color: #9b9b9b;
-  width: 8%;
+  width: 9%;
   text-align: right;
 }
 
 .unread .unread-flag {
   background-color: #6287bd;
 }
+
+@media screen and (min-width: 1600px) {
+  .sender-name {
+    width: 20%;
+  }
+  .sender-title {
+    width: 50%;
+  }
+}
+
 
 @media screen and (min-width: 1500px) {
   .left-menu {
