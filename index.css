@@ -6,7 +6,7 @@
     padding: 11px 22px 14px 22px;
     background-color: #e5eaf0;
     font-family: HelveticaNeue;
-    min-width: 300px;
+    min-width: 770px;
 }
 
 #header {
@@ -84,7 +84,7 @@
   white-space: nowrap;
 }
 
-#content * {
+#content > * {
   white-space: normal;
 }
 
@@ -168,7 +168,118 @@
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
   background-color: #ffffff;
   overflow-y: scroll;
-  padding: 5px;
+}
+
+.mailscreen-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-left: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.mail-navigation > * {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.mail-emails {
+  width: 100%;
+  display: inline-block;
+}
+
+.mail-navigation {
+  width: 100%;
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  border-bottom: solid 1px #e2e2e2;
+  white-space: nowrap;
+}
+
+.mail-navigation * {
+  white-space: nowrap;
+}
+
+.mail-nav-bnt {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.mail-screen-element-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.email {
+  width: 100%;
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  border-bottom: solid 1px #e2e2e2;
+}
+
+.sender-photo {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.sender-part {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sender-name {
+  display: inline-block;
+  font-size: 13px; 
+  margin-left: 10px;
+  width: 25%;
+}
+
+.unread .sender-name {
+  font-weight: bold;
+}
+
+.unread-flag {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: inherit;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sender-title {
+  width: 44%;
+  font-size: 13px;
+  text-overflow: ellipsis;;
+}
+
+.unread .sender-title {
+  font-weight: bold;
+}
+
+.mail-date {
+  display: inline-block;
+  font-size: 13px;
+  color: #9b9b9b;
+  width: 8%;
+  text-align: right;
+}
+
+.unread .unread-flag {
+  background-color: #6287bd;
 }
 
 @media screen and (min-width: 1500px) {
@@ -187,13 +298,10 @@
     width: 80%;
     height: 87%;
   }
-}
-
-.mail-emails {
-}
-
-.email {
-  width: 100%;
+  .mailscreen-checkbox {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* END SECTION: MAIL SCREEN */ 
