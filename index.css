@@ -308,6 +308,10 @@
   background-color: #6287bd;
 }
 
+.email label {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1600px) {
   .sender-name {
     width: 20%;
