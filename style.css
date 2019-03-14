@@ -328,6 +328,7 @@ body {
     top: 0;
     z-index: 1;
     background-color: #fff;
+    border-bottom: solid 1px #e2e2e2;
 }
 
 .first-message-text {
