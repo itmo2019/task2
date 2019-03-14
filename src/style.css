@@ -38,7 +38,7 @@ body {
     margin-left: 30px;
 }
 
-.logo{
+.logo {
     height: 30px;
     width: 152px;
 }
@@ -56,6 +56,16 @@ body {
     margin-bottom: 8px;
 }
 
+.rectangle-write:hover {
+    cursor: pointer;
+}
+
+.rectangle-write:active {
+    cursor: pointer;
+    border-top: solid 2px #50709d;
+    border-left: solid 2px #50709d;
+}
+
 .rectangle-inbox {
     width: 100%;
     height: 22px;
@@ -64,23 +74,32 @@ body {
     text-align: start;
     font-family: HelveticaNeue-Bold, sans-serif;
     font-size: 11px;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
     border: none;
     color: #555555;
 }
 
+.rectangle-inbox:hover {
+    cursor: pointer;
+}
+
 .rectangle-menu {
     width: 100%;
-    height: 13px;
+    height: 22px;
     border-radius: 3px;
     background-color: inherit;
     text-align: start;
     font-family: HelveticaNeue-Medium, sans-serif;
     font-size: 11px;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     padding: 0 7px;
     border: none;
     color: #707070;
+}
+
+.rectangle-menu:hover {
+    cursor: pointer;
+    background-color: #cdd6e4;;
 }
 
 .letters {
@@ -88,7 +107,7 @@ body {
     margin: 0 10px 0 190px;
 }
 
-.f {
+.finder {
     width: 100%;
     height: 36px;
     padding: 14px 0;
@@ -98,11 +117,14 @@ body {
     position: relative;
     margin-left: 30%;
     width: 40%;
+    color: #a5a5a5;
     height: 32px;
     opacity: 0.5;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     font-size: 16px;
+    padding-left: 4px;
+    padding-right: 20px;
 }
 
 .close {
@@ -115,6 +137,12 @@ body {
     border-radius: 3px;
     background-color: inherit;
     text-align: start;
+    color: #bcbcbc;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #dadada;
 }
 
 .all-mail {
@@ -137,8 +165,13 @@ body {
     float: left;
     font-size: 14px;
     font-weight: 500;
-    color: #cccccc;
+    color: #ccc;
     margin-left: 20px;
+}
+
+.kind:hover {
+    cursor: pointer;
+    color: #000;
 }
 
 .check {
@@ -153,11 +186,17 @@ body {
 }
 
 .mail {
+    position: relative;
+    display: block;
     height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 13px;
     border-bottom: solid 1px #e2e2e2;
+}
+
+.check:hover, .round:hover, .who:hover, .what:hover, .photo:hover, .cross:hover {
+    cursor: pointer;
 }
 
 .round {
@@ -206,17 +245,22 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
+    top: calc(50% - 5px);
     border-radius: 50%;
     margin-left: 260px;
-    margin-top: 7px;
     background-color: #6287bd;
 }
 
-#first {
+.mail-list {
+    padding: 0;
+    margin: 0;
+}
+
+.first-letter {
     font-weight: bold;
 }
 
-#second {
+.second-letter {
     font-weight: bold;
 }
 
@@ -235,10 +279,15 @@ footer {
     float: right;
     font-size: 12px;
     font-weight: 500;
-    color: #cccccc;
+    color: #ccc;
     margin-right: 20px;
     margin-top: 9px;
     display: block;
+}
+
+.info:hover {
+    cursor: pointer;
+    color: #000;
 }
 
 .show-story {
@@ -249,7 +298,7 @@ footer {
     display: block;
 }
 
-.show-story:checked ~ .mail {
+.show-story:checked ~ .mail-list {
     display: none;
 }
 
@@ -272,7 +321,7 @@ footer {
     font-weight: normal;
 }
 
-.X {
+.cross {
     font-size: 28px;
     float: right;
     margin-right: 10px;
