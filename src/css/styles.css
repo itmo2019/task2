@@ -6,10 +6,11 @@ body {
 	outline: none;
 }
 
-ul {
+.messages-list {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	min-height: 446px;
 }
 
 .container {
@@ -17,33 +18,15 @@ ul {
 }
 
 .hamburger {
-    display: inline-block;
+	display: inline-block;
 	vertical-align: bottom;
 	padding: 0;
 	border: none;
 	background: none;
 }
 
-.header-text {
-	display: inline;
-	font-family: 'Yandex Sans Text', sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 25px;
-	margin-left: 3px;
-}
-
-.header-text-bold {
-	font-weight: 400;
-}
-
-span.stretch {
-	display: inline-block;
-    -webkit-transform: scale(1,1.5); /* Safari and Chrome */
-	/*-moz-transform:scale(1,2); !* Firefox *!*/
-	/*-ms-transform:scale(1,2); !* IE 9 *!*/
-	/*-o-transform:scale(1,2); !* Opera *!*/
-	/*transform:scale(1,2); !* W3C *!*/
+.yandex-logo {
+	vertical-align: middle;
 }
 
 .header-search {
@@ -92,35 +75,28 @@ span.stretch {
 	width: 100%;
 }
 
-#write-button {
+.messages-folders {
+	margin-top: 9px;
+}
+
+#compose-button {
+	display: block;
 	width: 150px;
 	height: 34px;
 	background-color: #6287bd;
 	border-radius: 5px;
 	font-family: HelveticaNeue, sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	color: #ffffff;
 	font-weight: 500;
 	font-style: normal;
 	letter-spacing: normal;
 	border-width: 0;
-}
-
-#incoming-button {
-	width: 150px;
-	height: 23px;
-	border-radius: 3px;
-	background-color: #cdd6e4;
-	font-family: HelveticaNeue, sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	font-style: normal;
-	color: #555555;
-	letter-spacing: normal;
-	margin-top: 9px;
-	text-align: left;
-	padding-left: 10px;
-	border-width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	line-height: 33px;
 }
 
 .side-menu {
@@ -128,27 +104,45 @@ span.stretch {
 }
 
 .side-menu-button {
+	width: 140px;
 	font-size: 11px;
-	margin-top: 7px;
 	color: #707070;
 	border: none;
 	background-color: #e5eaf0;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: left;
+	font-family: HelveticaNeue, sans-serif;
+	padding-left: 10px;
+	margin-top: 2px;
+	padding-top: 4px;
+	padding-bottom: 5px;
 }
 
-.side-menu button {
-	display: block;
+.active-folder {
+	border-radius: 3px;
+	background-color: #cdd6e4;
+}
+
+.main-folder {
+	font-weight: bold;
+	color: #555555;
+	margin-bottom: 3px;
 }
 
 .center-box {
 	position: absolute;
 	display: inline-block;
 	margin-left: 20px;
-	width: 590PX;
+	width: calc(100vw - 226px);
 	border-radius: 3px;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
 	background-color: #ffffff;
 	vertical-align: top;
 	height: 530px;
+	overflow: hidden;
 }
 
 .box-top-menu-container {
@@ -165,11 +159,23 @@ span.stretch {
 	border-bottom: solid 1px #e2e2e2;
 }
 
-.box-top-menu {
-	min-width: 400px;
+.first-message {
 	position: absolute;
-	margin-left: 6px;
+	width: calc(100vw - 275px);
+	height: 41px;
+	left: 48px;
+	top: 42px;
+}
+
+.message-info {
+	margin-left: 20px;
+}
+
+.box-top-menu {
+	position: absolute;
+	margin-left: 30px;
 	display: inline-block;
+	white-space: nowrap;
 }
 
 .checkbox-container {
@@ -180,70 +186,93 @@ span.stretch {
 .checkbox {
 	width: 15px;
 	height: 15px;
+	position: absolute;
+	left: 20px;
+	top: 0;
+	margin-top: 13px;
 	border-radius: 3px;
 	border: solid 1px rgba(0, 0, 0, 0.15);
 	background-color: #ffffff;
 }
 
+.checkbox-message-container {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+}
+
+.checkbox-message {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 6px;
+	border-radius: 3px;
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
+}
+
+.checkbox__input {
+	position: absolute;
+	-webkit-appearance: none;
+}
+
 .box-top-menu-button {
 	font-family: HelveticaNeue, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	color: #cccccc;
 	vertical-align: middle;
-	margin-left: 10px;
+	margin-right: 26px;
 	border: none;
 	background-color: white;
+	letter-spacing: 0.5px;
 }
 
 .sender-info {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 7px;
+	width: 223px;
 }
 
-.avatar {
-	display: inline-block;
+.sender-picture {
+	vertical-align: middle;
+}
+
+.sender-picture-container {
 	width: 30px;
 	height: 30px;
-	border-radius: 50%;
-	color: #fff;
-	line-height: 32px;
-	text-align: center;
-	background-color: #ff3333;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.text-in-circle{
-	-webkit-transform: scale(1,1.4);
-	font-family: 'Yandex Sans Text', sans-serif;
-	font-size: 19px;
-	font-weight: 300;
-}
-
-.sender-name-button {
+.sender-name {
 	display: inline;
-	width: 185px;
+	margin-left: 6px;
 }
 
 .message-text {
 	position: absolute;
 	padding-top: 8px;
-	width: 230px;
+	min-width: 160px;
+	width: calc(100vw - 590px);
+	margin-left: 6px;
 }
 
-.message-box-button {
+.message-box {
 	font-family: HelveticaNeue, sans-serif;
 	font-size: 13px;
 	text-align: left;
 	border: none;
 	background-color: white;
-	min-width: 20px;
-	vertical-align: text-bottom;
+	vertical-align: middle;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
 
-.bold {
+.not-read {
 	font-weight: bold;
 }
 
@@ -282,16 +311,20 @@ span.stretch {
 	font-weight: 100;
 	padding-right: 20px;
 	line-height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .footer {
 	border-top: solid 1px #e2e2e2;
-	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	height: 40px;
 	z-index: 2;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .footer-menu {
@@ -320,10 +353,19 @@ span.stretch {
 	padding-left: 18px;
 	padding-right: 0;
 	text-decoration: none;
+
 }
 
 .last-footer-item {
 	padding-left: 0;
+}
+
+#first-message {
+	display: none;
+}
+
+#first-message:checked ~ .hidden-article {
+	display: block;
 }
 
 .hidden-article {
@@ -334,10 +376,6 @@ span.stretch {
 	top: 44px;
 	left: 0;
 	background-color: white;
-}
-
-.first-message:focus ~ .hidden-article {
-	display: block;
 }
 
 .hidden-article-content {
@@ -361,10 +399,7 @@ span.stretch {
 	background: none;
 	float: right;
 	font-size: 15px;
-}
-
-.hidden-article__close-icon:focus ~ .hidden-article {
-	display: none;
+	cursor: pointer;
 }
 
 .circle {
@@ -373,6 +408,6 @@ span.stretch {
 	clip-path: circle(50%);
 }
 
-p {
+.hidden-article p {
 	text-align: justify;
 }

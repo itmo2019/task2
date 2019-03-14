@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<link rel="stylesheet" href="fonts/yandex-font/stylesheet.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<title>Яндекс Почта</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
 		<button class="hamburger">
 			<img src="images/hamburger.svg" width="25px" height="25px">
 		</button>
-		<div class="header-text"><span class="stretch"><span class="header-text-bold">Яндекс</span> Почта</span></div>
+		<img class="yandex-logo" src="images/yandex-mail-logo.png" width="164px">
 		<div class="header-search">
 			<input class="header-search__text" placeholder="Поиск">
 			<div class="header-search__close-icon">╳</div>
@@ -20,97 +20,141 @@
 	</header>
 	<div class="main-content">
 		<div class="side-menu">
-			<button id="write-button">Написать</button>
-			<button id="incoming-button">Входящие</button>
-			<button class="side-menu-button">Отправленные</button>
-			<button class="side-menu-button">Удаленные</button>
-			<button class="side-menu-button">Спам</button>
-			<button class="side-menu-button">Черновики</button>
-			<button class="side-menu-button">Создать папку</button>
+			<a id="compose-button">Написать</a>
+			<div class="messages-folders">
+				<a class="side-menu-button active-folder main-folder">Входящие</a>
+				<a class="side-menu-button">Отправленные</a>
+				<a class="side-menu-button">Удаленные</a>
+				<a class="side-menu-button">Спам</a>
+				<a class="side-menu-button">Черновики</a>
+				<a class="side-menu-button">Создать папку</a>
+			</div>
 		</div>
 		<div class="center-box">
 			<div class="box-top-menu-container">
-				<div class="checkbox-container"><div class="checkbox"></div></div>
+				<div class="checkbox-container">
+					<label>
+						<input type="checkbox" class="checkbox__input">
+						<span class="checkbox"></span>
+					</label>
+				</div>
 				<div class="box-top-menu">
-					<button class="box-top-menu-button">Переслать</button>
-					<button class="box-top-menu-button">Удалить</button>
-					<button class="box-top-menu-button">Это спам!</button>
-					<button class="box-top-menu-button">Прочитано</button>
+					<span class="box-top-menu-button">Переслать</span>
+					<span class="box-top-menu-button">Удалить</span>
+					<span class="box-top-menu-button">Это спам!</span>
+					<span class="box-top-menu-button">Прочитано</span>
+				</div>
+			</div>
+			<input type="checkbox" id="first-message">
+			<div class="hidden-article">
+				<div class="hidden-article-content">
+					<div class="hidden-article__close-icon_container">
+						<label for="first-message">
+							<span class="hidden-article__close-icon">╳</span>
+						</label>
+					</div>
+					<img src="images/cat.jpg" class="circle" width="300" height="300">
+					<p>
+						Многие владельцы кошек наверняка мечтают хотя бы на день очутиться в шкуре своего питомца, чтобы
+						взглянуть на мир его глазами. Хотя органы зрения кошек по строению во многом похожи на человеческие,
+						в процессе эволюции глаза кошек приспосабливались к конкретным условиям, поэтому у кошачьего зрения
+						есть своя специфика. Представители семейства кошачьих научились прекрасно ориентироваться в условиях
+						низкой освещённости и чутко реагировать на малейшие движения, однако ради этого им пришлось
+						пожертвовать тонкостями восприятия цвета и некоторыми другими возможностями.
+					</p>
+					<p>
+						Также глаз кошки плохо воспринимает коричневый, красный и оранжевый цвета, но отлично видит синий
+						и жёлтый. Благодаря большему количеству специальных фото-рецепторов в глазах кошки видят в темноте
+						в 6–8 раз лучше человека — эта способность позволяет диким представителям семейства кошачьих
+						охотиться по ночам. Кстати, у кошачьих глаз есть интересная особенность, которую многие наверняка
+						замечали: в темноте они испускают необычное фосфоресцирующее сияние, это обусловлено наличием
+						светоотражающего пигмента в тапетуме — слое ткани позади сетчатки.
+					</p>
 				</div>
 			</div>
 			<ul class="messages-list">
 				<li class="box-row-container">
-					<div class="checkbox-container"><div class="checkbox"></div></div>
-					<div class="sender-info">
-						<div class="avatar"><div class="text-in-circle">Я</div></div>
-						<button class="sender-name-button message-box-button bold">Яндекс.Паспорт</button>
+					<div class="checkbox-message-container">
+						<label>
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox-message"></span>
+						</label>
 					</div>
-					<div class="is-read-mark"></div>
-					<div class="message-content">
-						<button class="first-message message-text message-box-button bold" tabindex="0">
-							Доступ к аккаунту восстановлен
-						</button>
-						<div class="hidden-article">
-							<div class="hidden-article-content">
-								<div class="hidden-article__close-icon_container">
-									<button class="hidden-article__close-icon" tabindex="0">╳</button>
-								</div>
-								<img src="images/cat.jpg" class="circle" width="300" height="300">
-								<p>
-									Многие владельцы кошек наверняка мечтают хотя бы на день очутиться в шкуре своего питомца, чтобы
-									взглянуть на мир его глазами. Хотя органы зрения кошек по строению во многом похожи на человеческие,
-									в процессе эволюции глаза кошек приспосабливались к конкретным условиям, поэтому у кошачьего зрения
-									есть своя специфика. Представители семейства кошачьих научились прекрасно ориентироваться в условиях
-									низкой освещённости и чутко реагировать на малейшие движения, однако ради этого им пришлось
-									пожертвовать тонкостями восприятия цвета и некоторыми другими возможностями.
-								</p>
-								<p>
-									Также глаз кошки плохо воспринимает коричневый, красный и оранжевый цвета, но отлично видит синий
-									и жёлтый. Благодаря большему количеству специальных фото-рецепторов в глазах кошки видят в темноте
-									в 6–8 раз лучше человека — эта способность позволяет диким представителям семейства кошачьих
-									охотиться по ночам. Кстати, у кошачьих глаз есть интересная особенность, которую многие наверняка
-									замечали: в темноте они испускают необычное фосфоресцирующее сияние, это обусловлено наличием
-									светоотражающего пигмента в тапетуме — слое ткани позади сетчатки.
-								</p>
-							</div>
+					<label for="first-message">
+						<span class="message-info">
+							<span class="sender-info">
+								<img class="sender-picture" src="images/yandex-logo.png" width="30">
+								<span class="sender-name message-box not-read">Яндекс.Паспорт</span>
+							</span>
+							<span class="is-read-mark"></span>
+							<span class="message-content">
+								<span class="message-text message-box not-read">
+									Доступ к аккаунту восстановлен
+								</span>
+								<span class="message-date"><time datetime="08-06">6 авг</time></span>
+							</span>
+						</span>
+					</label>
+				</li>
+				<li class="box-row-container">
+					<div class="checkbox-message-container">
+						<label>
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox-message"></span>
+						</label>
+					</div>
+					<div class="message-info">
+						<div class="sender-info">
+							<img class="sender-picture" src="images/yandex-logo.png" width="30">
+							<span class="sender-name message-box not-read">Команда Яндекс.Почты</span>
 						</div>
-						<div class="message-date"><time datetime="08-06">6 авг</time></div>
+						<div class="is-read-mark"></div>
+						<div class="message-content">
+							<span class="message-text message-box not-read">Как читать почту с мобильного</span>
+							<div class="message-date"><time datetime="08-06">6 июл</time></div>
+						</div>
 					</div>
 				</li>
 				<li class="box-row-container">
-					<div class="checkbox-container"><div class="checkbox"></div></div>
-					<div class="sender-info">
-						<div class="avatar"><div class="text-in-circle">Я</div></div>
-						<button class="sender-name-button message-box-button bold">Команда Яндекс.Почты</button>
+					<div class="checkbox-message-container">
+						<label>
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox-message"></span>
+						</label>
 					</div>
-					<div class="is-read-mark"></div>
-					<div class="message-content">
-						<button class="message-text message-box-button bold">Как читать почту с мобильного</button>
-						<div class="message-date"><time datetime="08-06">6 июл</time></div>
-					</div>
-				</li>
-				<li class="box-row-container">
-					<div class="checkbox-container"><div class="checkbox"></div></div>
-					<div class="sender-info">
-						<div class="avatar"><div class="text-in-circle">Я</div></div>
-						<button class="sender-name-button message-box-button">Команда Яндекс.Почты</button>
-					</div>
-					<div class="read-mark"></div>
-					<div class="message-content">
-						<button class="message-text message-box-button">Как читать почту с мобильного</button>
-						<div class="message-date"><time datetime="08-06">6 июл</time></div>
+					<div class="message-info">
+						<div class="sender-info">
+							<img class="sender-picture" src="images/yandex-logo.png" width="30">
+							<span class="sender-name message-box">Команда Яндекс.Почты</span>
+						</div>
+						<div class="read-mark"></div>
+						<div class="message-content">
+							<span class="message-text message-box">Как читать почту с мобильного</span>
+							<div class="message-date"><time datetime="08-06">6 июл</time></div>
+						</div>
 					</div>
 				</li>
 				<li class="box-row-container">
-					<div class="checkbox-container"><div class="checkbox"></div></div>
-					<div class="sender-info">
-						<div class="avatar"><div class="text-in-circle">Я</div></div>
-						<button class="sender-name-button message-box-button">Яндекс</button>
+					<div class="checkbox-message-container">
+						<label>
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox-message"></span>
+						</label>
 					</div>
-					<div class="read-mark"></div>
-					<div class="message-content">
-						<button class="message-text message-box-button">Соберите всю почту в этот ящик</button>
-						<div class="message-date"><time datetime="08-06">6 июл</time></div>
+					<div class="message-info">
+						<div class="sender-info">
+							<div class="sender-picture-container">
+								<img class="sender-picture" src="images/yandex-logo.png" width="30">
+							</div>
+							<span class="sender-name message-box">Яндекс</span>
+						</div>
+						<div class="read-mark"></div>
+						<div class="message-content">
+							<span class="message-text message-box">
+								Соберите всю почту в этот ящик, отсортируйте письма по категории
+							</span>
+							<div class="message-date"><time datetime="08-06">6 июл</time></div>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -118,7 +162,7 @@
 				<div class="footer-menu">
 					<a href="" class="footer-item">Помощь и обратная связь</a>
 					<a href="" class="footer-item">Реклама</a>
-					<div class="footer-item">©&nbsp;2001—2019,&nbsp;</div>
+					<div class="footer-item copy">&copy;&nbsp;2001—2019,&nbsp;</div>
 					<a href="https://yandex.ru/" class="footer-item last-footer-item">Яндекс</a>
 				</div>
 			</div>
