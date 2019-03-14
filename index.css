@@ -351,7 +351,7 @@
   padding: 10px;
   display: none;
   margin-left: 22px;
-  width: calc(100% - 178px);
+  width: calc(100% - 198px);
   height: 100%;
   margin-bottom: 14px;
   word-wrap: break-word;
@@ -374,11 +374,13 @@
     left: -9999px;
 }
 
+
 #toggle-first-mail:checked ~ #first-email {
     display: inline-block;
 }
 
-#toggle-first-mail:checked ~ .mail-screen {
+
+#toggle-first-mail:checked ~ .mail-screen-and-footer {
     display: none;
 }
 
