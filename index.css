@@ -345,8 +345,9 @@
   padding: 10px;
   display: none;
   margin-left: 22px;
-  width: calc(100% - 198px);
-  height: 86%;
+  width: calc(100% - 178px);
+  height: 100%;
+  margin-bottom: 14px;
   word-wrap: break-word;
   border-radius: 3px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
