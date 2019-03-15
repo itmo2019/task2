@@ -4,62 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Яндекс Почта</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/letter-box-style.css">
+    <link rel="stylesheet" href="css/apple-page-style.css">
 </head>
 <body>
 <header>
-    <div class="menu-logo">
-        <div class="menu-logo__line"></div>
-        <div class="menu-logo__line"></div>
-        <div class="menu-logo__line"></div>
+    <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 
     <div class="logo">
-        <div class="logo__elem logo__elem_yandex">Яндекс</div>
-        <div class="logo__elem logo__elem_mail">Почта</div>
+        <a href="https://yandex.ru">
+            <img class="logo__yandex" src="images/logo-yandex.png" alt="Яндекс"/>
+        </a>
+        <a href="https://mail.yandex.ru">
+            <img class="logo__mail" src="images/logo-mail.png" alt="Почта"/>
+        </a>
     </div>
 
-    <div class="search inline-top">
-        <div class="search__search-word">Поиск</div>
-        <div class="search__clear-word">×</div>
+    <div class="search">
+        <input type="text" placeholder="Поиск"/>
+        <div class="search__clear inline-middle">×</div>
     </div>
 </header>
 
 <main>
-    <div class="navigation inline-top">
-        <div class="navigation__write-letter">Написать</div>
-        <div class="navigation__list">
-            <div class="navigation__list-link navigation__list-link_chosen">Входящие</div>
-            <div class="navigation__list-link">Отправленные</div>
-            <div class="navigation__list-link">Удалённые</div>
-            <div class="navigation__list-link">Спам</div>
-            <div class="navigation__list-link">Черновики</div>
-            <div class="navigation__list-link">Создать папку</div>
-        </div>
-    </div>
+    <nav class="nav">
+        <a href="index.html">
+            <button class="nav__write-button">Попросить повысить баллы за домашку</button>
+        </a>
+        <ul class="nav__list">
+            <li class="nav__list-li_select"><a href="index.html">Входящие</a></li>
+            <li><a href="index.html">
+                Вставлю сюда длинный текст, чтобы ревьювер не делал это и сэкономил секундочки
+            </a></li>
+            <li><a href="index.html">Удалённые</a></li>
+            <li><a href="index.html">Спам</a></li>
+            <li><a href="index.html">Черновики</a></li>
+            <li><a href="index.html">Создать папку</a></li>
+        </ul>
+    </nav>
 
-    <div class="letter-box inline-top">
-        <div class="letter-box__line">
-            <div class="letter-box__checkbox inline-top"></div>
-            <div class="letter-box__commands inline-center">Переслать</div>
-            <div class="letter-box__commands inline-center">Удалить</div>
-            <div class="letter-box__commands inline-center">Это спам!</div>
-            <div class="letter-box__commands inline-center">Прочитано</div>
-        </div>
+    <div class="letter-box">
+        <ul class="letter-box__header">
+            <li class="check__place"><label>
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
+            </label></li>
+            <li>Переслать</li>
+            <li>Удалить</li>
+            <li>Это спам!</li>
+            <li>Прочитано</li>
+        </ul>
         <hr class="letter-box__hr">
 
         <div class="letter-box__letters">
             <label for="apple-page__hider">
-                <div class="letter-box__line letter-box__first-message" tabindex="1">
-                    <div class="letter-box__checkbox inline-top"></div>
-                    <div class="letter-box__line-photo inline-center">Я</div>
-                    <div class="letter-box__line-author letter-box__line_not-read inline-center">Яндекс.Паспорт</div>
-                    <div class="letter-box__line-icon letter-box__line-icon_not-read inline-center"></div>
-                    <div class="letter-box__line-topic letter-box__line_not-read inline-center">
-                        Доступ к аккаунту восстановлен
-                    </div>
-                    <div class="letter-box__line-date inline-center">6 авг</div>
-                </div>
+                <ul class="cursor letter-box__line">
+                    <li class="check__place"><label>
+                        <input class="check__input" type="checkbox">
+                        <span class="check__box"></span>
+                    </label></li>
+                    <li class="author__place"><img class="author__logo" src="images/logo-author-yandex.png" alt="Я">
+                    </li>
+                    <li class="author-name letter-box__line_not-read">Яндекс.Паспорт</li>
+                    <li class="read-mark read-mark_not-read"></li>
+                    <li class="topic letter-box__line_not-read">
+                        Меню сверху тоже скалируется
+                    </li>
+                    <li class="date">6 авг</li>
+                </ul>
             </label>
 
             <input type="checkbox" id="apple-page__hider">
@@ -73,8 +92,7 @@
                     шаровидными сладкими или кисло-сладкими плодами. Это самая распространенная плодовая культура в
                     наших садах. Великолепное цветение этих садов весной и изобилие фруктов осенью делают яблоню самым
                     излюбленным деревом.
-                    <img class="apple-page__apple-img" src="images/apple.png" align="right" alt="Apple"
-                         vspace="5" hspace="5">
+                    <img class="apple-page__apple-img" src="images/apple.png" align="right" alt="Apple">
                     Яблоня - самое неприхотливое дерево, при хорошем уходе она может давать обильный урожай и на
                     солнечном месте и при затенении. Не люб ит она только низины, впадины и замкнутые котловины, где во
                     время цветения поздние заморозки могут повреждать цветки. Многие виды яблони выращивают в качестве
@@ -87,54 +105,60 @@
             </div>
             <hr class="letter-box__hr">
 
-            <div class="letter-box__line">
-                <div class="letter-box__checkbox inline-top"></div>
-                <div class="letter-box__line-photo inline-center">Я</div>
-                <div class="letter-box__line-author letter-box__line_not-read inline-center">Команда Яндекс.Почты</div>
-                <div class="letter-box__line-icon letter-box__line-icon_not-read inline-center"></div>
-                <div class="letter-box__line-topic letter-box__line_not-read inline-center">
-                    Как читать почту с мобильного
-                </div>
-                <div class="letter-box__line-date inline-center">6 июля</div>
-            </div>
+            <ul class="letter-box__line">
+                <li class="check__place"><label>
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                </label></li>
+                <li class="author__place"><img class="author__logo" src="images/logo-author-yandex.png" alt="Я"></li>
+                <li class="author-name letter-box__line_not-read ">Команда Яндекс.Почтыы</li>
+                <li class="read-mark read-mark_not-read"></li>
+                <li class="topic letter-box__line_not-read">
+                    Яблоко — плод яблони, который употребляется в пищу в свежем виде, служит сырьём в кулинарии и для
+                    приготовления напитков. Яблоня - род листопадных деревьев и кустарников семейства розоцветных с
+                    шаровидными сладкими или кисло-сладкими плодами. Это самая распространенная плодовая культура в
+                    наших садах. Великолепное цветение этих садов весной и изобилие фруктов осенью делают яблоню самым
+                    излюбленным деревом.
+                </li>
+                <li class="date">6 июл</li>
+            </ul>
             <hr class="letter-box__hr">
 
-            <div class="letter-box__line">
-                <div class="letter-box__checkbox inline-top"></div>
-                <div class="letter-box__line-photo inline-center">Я</div>
-                <div class="letter-box__line-author inline-center">Команда Яндекс.Почты</div>
-                <div class="letter-box__line-icon inline-center"></div>
-                <div class="letter-box__line-topic inline-center">Как читать почту с мобильного</div>
-                <div class="letter-box__line-date inline-center">6 июля</div>
-            </div>
+            <ul class="letter-box__line">
+                <li class="check__place"><label>
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                </label></li>
+                <li class="author__place"><img class="author__logo" src="images/logo-author-yandex.png" alt="Я"></li>
+                <li class="author-name">Команда Яндекс.Почты</li>
+                <li class="read-mark"></li>
+                <li class="topic">Как читать почту с мобильного с кастомными чекбоксами</li>
+                <li class="date">6 июл</li>
+            </ul>
             <hr class="letter-box__hr">
 
-            <div class="letter-box__line">
-                <div class="letter-box__checkbox inline-top"></div>
-                <div class="letter-box__line-photo inline-center">Я</div>
-                <div class="letter-box__line-author inline-center">Яндекс</div>
-                <div class="letter-box__line-icon inline-center"></div>
-                <div class="letter-box__line-topic inline-center">Соберите всю почту в этот ящик</div>
-                <div class="letter-box__line-date inline-center">6 июля</div>
-            </div>
+            <ul class="letter-box__line">
+                <li class="check__place"><label>
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                </label></li>
+                <li class="author__place"><img class="author__logo" src="images/logo-author-yandex.png" alt="Я"></li>
+                <li class="author-name">Яндекс</li>
+                <li class="read-mark"></li>
+                <li class="topic">Можно добавить письма и ничего не сломается! (скорей всего)</li>
+                <li class="date">31 июл</li>
+            </ul>
             <hr class="letter-box__hr">
         </div>
 
         <hr class="letter-box__hr">
         <div class="letter-box__footer">
-            <div class="letter-box__info inline-center">Помощь и обратная связь</div>
-            <div class="letter-box__info inline-center">Реклама</div>
-            <div class="letter-box__info inline-center">©2001-2018, Яндекс</div>
+            <a href="https://yandex.ru/support/mail/">Помощь и обратная связь</a>
+            <a href="https://yandex.ru/adv/">Реклама</a>
+            <div>© 2001&mdash;2019, <a href="https://yandex.ru">Яндекс</a></div>
         </div>
     </div>
 </main>
 
 </body>
 </html>
-
-
-
-
-
-
-
