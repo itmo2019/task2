@@ -59,41 +59,26 @@ a {
     text-decoration: none;
 }
 
-#main-header {
+.main-header {
     white-space: nowrap;
     height: 56px;
     padding: 12px 0;
     box-sizing: border-box;
 }
 
-#mail-yandex-logo {
+.main-header > * {
+    vertical-align: middle;
+}
+
+.mail-yandex-logo {
     display: inline-block;
 }
 
-#logo-hamburger-icon {
-    float: left;
+.logo-hamburger-icon {
     margin: 8px 12px 8px 0;
 }
 
-.logo-text{
-    font: 25px "Yandex Sans";
-    color: black;
-
-    /* Sorry, svg is too hard for me */
-    display: inline-block;
-    transform: scaleY(1.8);
-}
-
-#logo-yandex {
-    font-weight: 500;
-    margin-right: 5px;
-}
-
-#logo-mail {
-    font-weight: 300;
-}
-
-#search {
+.search {
     position: relative;
     display: inline-block;
     width: 50%;
@@ -102,33 +87,34 @@ a {
     opacity: 0.5;
 }
 
-#search-area {
+.search-area {
     width: 100%;
     height: 30px;
 
     font: 15px/32px "Yandex Sans";
     padding-left: 16px;
+    padding-right: 30px;
     box-sizing: border-box;
 }
 
-#cross-icon {
+.cross-icon {
     position: absolute;
-    top: 11px;
-    right: 8px;
+    top: 10px;
+    right: 15px;
 }
 
-#main-window {
+.main-window {
     margin-bottom: 14px;
     white-space: nowrap;
 }
 
-#left-column {
+.left-column {
     display: inline-block;
     width: 150px;
     margin-right: 22px;
 }
 
-#write-letter-button {
+.write-letter-button {
     width: 100%;
     height: 32px;
     border: none;
@@ -139,22 +125,22 @@ a {
     color: white;
 }
 
-#write-letter-button:hover {
+.write-letter-button:hover {
     cursor: pointer;
 }
 
-#navigation ul {
+.navigation ul {
     list-style-type: none;
     margin-top: 8px;
 }
 
-#navigation li {
+.navigation li {
     padding: 5px 10px;
     margin-bottom: 2px;
 
 }
 
-#navigation li a {
+.navigation li a {
     display: block;
     font: bold 11px "Helvetica Neue";
     color: #555555;
@@ -164,13 +150,13 @@ a {
     text-overflow: ellipsis;
 }
 
-#navigation li.active,
-#navigation li:hover {
+.navigation li.active,
+.navigation li:hover {
     border-radius: 3px;
     background-color: #cdd6e4;
 }
 
-#incoming-letters-window {
+.incoming-letters-window {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -180,26 +166,80 @@ a {
     width: 80%;
 }
 
-#letter-actions {
+.letter-actions {
     height: 37px;
     border-bottom: solid 1px #e2e2e2;
 }
 
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .my-checkbox {
+    position: relative;
     float: left;
     margin: 11px 20px;
 
     width: 14px;
     height: 14px;
+
     border-radius: 3px;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #ccc;
+    background-color: #fff;
 
     cursor: pointer;
 }
 
-#actions-box {
+
+.my-checkbox::after {
+    content: '';
+
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+
+    width:18px;
+    height:18px;
+
+    background-image: url(../img/checkbox.svg);
+    visibility:hidden;
+}
+
+.checkbox:active + label > .my-checkbox {
+    background-color: #f6f5f3;
+}
+
+.checkbox:checked + label > .my-checkbox {
+    background-color: #ffeba0;
+    box-shadow: 0 0 0 1px #c2b275;
+}
+
+.checkbox:checked + label > .my-checkbox::after {
+    visibility: visible;
+}
+
+.checkbox:checked + label + a {
+    background-color: #f0f0f0;
+}
+
+.my-checkbox:hover {
+    box-shadow: 0 0 0 1px #999;
+}
+
+.checkbox:focus + label > .my-checkbox {
+    box-shadow: 0 0 0 1px #e4c23b,
+    0 0 15px 1px #e4c23b;
+}
+
+.actions-box {
     height: 100%;
+}
+
+#checkbox-all:checked + label + div > button {
+    color: black;
 }
 
 .action {
@@ -217,7 +257,7 @@ a {
     margin-right: 26px;
 }
 
-#incoming-letters-list {
+.incoming-letters-list {
     position: relative;
     width: 100%;
     min-height: 491px;
@@ -225,12 +265,12 @@ a {
     overflow-y: auto;
 }
 
-#incoming-letters-list ul {
+.incoming-letters-list ul {
     list-style-type: none;
 }
 
-#change-content-label,
-#close-article-label
+.change-content-label,
+.close-article-label
 {
     cursor: pointer;
     display: block;
@@ -241,11 +281,11 @@ a {
     display: none;
 }
 
-#incoming-letters-list ul {
+.incoming-letters-list ul {
     display: block;
 }
 
-#change-content:checked ~ ul {
+#change-content:checked + ul {
     display: none;
 }
 
@@ -356,7 +396,7 @@ a {
     color: #9b9b9b;
 }
 
-#main-footer {
+.main-footer {
     margin-bottom: 0;
     height: 31px;
     width: 100%;
@@ -365,8 +405,8 @@ a {
     text-align: right;
 }
 
-#main-footer a,
-#main-footer #copyright {
+.main-footer a,
+.main-footer .copyright {
     display: inline-block;
     margin-left: 30px;
     margin-top: 9px;
@@ -374,7 +414,7 @@ a {
     color: #9b9b9b;
 }
 
-#main-footer #copyright {
+.main-footer .copyright {
     margin-right: 20px;
     margin-left: 30px;
 }

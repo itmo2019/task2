@@ -10,28 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header id="main-header">
-        <div id="mail-yandex-logo">
+    <header class="main-header">
+        <div class="mail-yandex-logo">
             <a href="#">
-                <img src="img/icons/hamburger-menu.png" width="16" height="16" id="logo-hamburger-icon" alt=""/>
+                <img src="img/icons/hamburger-menu.png" width="16" height="16" class="logo-hamburger-icon" alt="Menu pop-up button"/>
             </a>
-            <a href="https://yandex.ru" id="logo-yandex" class="logo-text">Яндекс</a>
-            <a href="index.html" id="logo-mail" class="logo-text">Почта</a>
+            <a href="#" class="logo-yandex">
+                <img src="img/icons/mail_l.png" width="153" height="32" alt="Yandex logo">
+            </a>
         </div>
 
-        <div id="search">
-            <input id="search-area" type="text" placeholder="Поиск">
-            <img src="img/icons/cross.png" width="10" height="10" id="cross-icon" alt="">
+        <div class="search">
+            <input class="search-area" type="text" placeholder="Поиск">
+            <img src="img/icons/cross.png" width="10" height="10" class="cross-icon" alt="Clear input button">
         </div>
     </header>
 
-    <div id="main-window">
-        <aside id="left-column">
+    <div class="main-window">
+        <aside class="left-column">
             <a href="#">
-                <button id="write-letter-button">Написать</button>
+                <button class="write-letter-button">Написать</button>
             </a>
 
-            <nav id="navigation">
+            <nav class="navigation">
                 <ul>
                     <li class="active"><a href="#">Входящие</a></li>
                     <li><a href="#">Отправленные</a></li>
@@ -43,11 +44,14 @@
             </nav>
         </aside>
 
-        <div id="incoming-letters-window">
-            <header id="letter-actions">
-                <div class="my-checkbox"></div>
+        <div class="incoming-letters-window">
+            <header class="letter-actions">
+                <input type="checkbox" class="checkbox" id="checkbox-all">
+                <label for="checkbox-all">
+                    <span class="my-checkbox"></span>
+                </label>
 
-                <div id="actions-box">
+                <div class="actions-box">
                     <button class="action">Переслать</button>
                     <button class="action">Удалить</button>
                     <button class="action">Это спам!</button>
@@ -55,23 +59,31 @@
                 </div>
             </header>
 
-            <main id="incoming-letters-list">
+            <main class="incoming-letters-list">
                 <input type="checkbox" id="change-content">
                 <ul>
                     <li class="letter unread">
-                        <div class="my-checkbox"></div>
-                        <label id="change-content-label" for="change-content">
-                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
-                            <span class="letter-from">Яндекс.Паспорт</span>
-                            <span class="unread-flag"></span>
-                            <span class="letter-subject">Доступ к аккаунту восстановлен</span>
-                            <time class="letter-date" datetime="2018-08-06">6 авг</time>
+                        <input type="checkbox" class="checkbox" id="checkbox-letter1">
+                        <label for="checkbox-letter1">
+                            <span class="my-checkbox"></span>
+                        </label>
+                        <label class="change-content-label" for="change-content">
+                            <a href="#" class="letter-link">
+                                <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="Sender profile image">
+                                <span class="letter-from">Яндекс.Паспорт</span>
+                                <span class="unread-flag"></span>
+                                <span class="letter-subject">Доступ к аккаунту восстановлен</span>
+                                <time class="letter-date" datetime="2018-08-06">6 авг</time>
+                            </a>
                         </label>
                     </li>
                     <li class="letter unread">
-                        <div class="my-checkbox"></div>
+                        <input type="checkbox" class="checkbox" id="checkbox-letter2">
+                        <label for="checkbox-letter2">
+                            <span class="my-checkbox"></span>
+                        </label>
                         <a href="#" class="letter-link">
-                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="Sender profile image">
                             <span class="letter-from">Команда Яндекс.Почты</span>
                             <span class="unread-flag"></span>
                             <span class="letter-subject">Как читать почту с мобильного</span>
@@ -79,9 +91,12 @@
                         </a>
                     </li>
                     <li class="letter read">
-                        <div class="my-checkbox"></div>
+                        <input type="checkbox" class="checkbox" id="checkbox-letter3">
+                        <label for="checkbox-letter3">
+                            <span class="my-checkbox"></span>
+                        </label>
                         <a href="#" class="letter-link">
-                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="Sender profile image">
                             <span class="letter-from">Команда Яндекс.Почты</span>
                             <span class="unread-flag"></span>
                             <span class="letter-subject">Как читать почту с мобильного</span>
@@ -89,9 +104,12 @@
                         </a>
                     </li>
                     <li class="letter read">
-                        <div class="my-checkbox"></div>
+                        <input type="checkbox" class="checkbox" id="checkbox-letter4">
+                        <label for="checkbox-letter4">
+                            <span class="my-checkbox"></span>
+                        </label>
                         <a href="#" class="letter-link">
-                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="">
+                            <img src="img/icons/yandex-logo.png" width="30" height="30" class="user-img" alt="Sender profile image">
                             <span class="letter-from">Яндекс</span>
                             <span class="unread-flag"></span>
                             <span class="letter-subject">Соберите всю почту в этот ящик</span>
@@ -101,8 +119,8 @@
                 </ul>
 
                 <div class="article-content">
-                    <label id="close-article-label" for="change-content">
-                        <img class="close-article" src="img/icons/cross.png" width="16" height="16" alt="">
+                    <label class="close-article-label" for="change-content">
+                        <img class="close-article" src="img/icons/cross.png" width="16" height="16" alt="Close article button">
                     </label>
 
                     <!-- Article -->
@@ -110,7 +128,7 @@
                         <section class="content">
                             <header class="user-info">
                                 <div class="col1 user-image">
-                                    <img src="img/profile-photo100.jpg" alt="" width="100" height="100"/>
+                                    <img src="img/profile-photo100.jpg" alt="Article. Profile photo" width="100" height="100"/>
                                 </div>
                                 <div class="col2">
                                     <span class="user-name"><b>Никита Волошин</b></span>
@@ -118,13 +136,13 @@
                                 </div>
                                 <address class="col3 contacts">
                                     <a href="https://github.com/nikvoloshin">
-                                        <img src="img/github-icon.png" alt="" width="32" height="32"/>
+                                        <img src="img/github-icon.png" alt="Article. Go to user Github button" width="32" height="32"/>
                                     </a>
                                     <a href="mailto:nik.volosh@yandex.ru">
-                                        <img src="img/email-icon.png" alt="" width="32" height="32"/>
+                                        <img src="img/email-icon.png" alt="Article. Write email button" width="32" height="32"/>
                                     </a>
                                     <a href="https://vk.com/crash_urban">
-                                        <img src="img/vk-icon.png" alt="" width="32" height="32"/>
+                                        <img src="img/vk-icon.png" alt="Article. Go to user VK button" width="32" height="32"/>
                                     </a>
                                 </address>
                             </header>
@@ -202,10 +220,10 @@
                 </div>
             </main>
 
-            <footer id="main-footer">
+            <footer class="main-footer">
                 <a href="#">Помощь и обратная связь</a>
                 <a href="#">Реклама</a>
-                <span id="copyright">© 2001-2018, Яндекс</span>
+                <span class="copyright">© 2001-2018, Яндекс</span>
             </footer>
         </div>
     </div>
