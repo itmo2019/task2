@@ -1,340 +1,98 @@
-@import "font/stylesheet.css";
+@import "fonts/YandexSans/stylesheet.css";
+@import "fonts/HelveticaNeue/style.css";
 
-body {
-    background-color: #e5eaf0;
-    position: absolute;
-    width: 98%;
-    height: 98%;
-    padding: 5px;
-    margin: 5px;
-    min-width: 800px;
-    min-height: 600px;
-}
+@import "bem/common.blocks/yandex-mail/yandex-mail.css";
+@import "bem/common.blocks/yandex-mail/__header/yandex-mail__header.css";
+@import "bem/common.blocks/yandex-mail/__main-menu/yandex-mail__main-menu.css";
+@import "bem/common.blocks/yandex-mail/__mail-frame/yandex-mail__mail-frame.css";
 
-header {
-    position: absolute;
-    top: 12px;
-    /* vertical-align: middle; */
-}
+@import "bem/common.blocks/checkbox/checkbox.css";
 
-header div {
-    height: 32px;
-}
+@import "bem/common.blocks/text/text.css";
+@import "bem/common.blocks/text/_alignment/text_alignment_center.css";
+@import "bem/common.blocks/text/_color/text_color_white.css";
+@import "bem/common.blocks/text/_color/text_color_707070.css";
+@import "bem/common.blocks/text/_color/text_color_9b9b9b.css";
+@import "bem/common.blocks/text/_color/text_color_cccccc.css";
+@import "bem/common.blocks/text/_color/text_color_black.css";
+@import "bem/common.blocks/text/_font/text_font_helvetica.css";
+@import "bem/common.blocks/text/_font-size/text_font-size_11.css";
+@import "bem/common.blocks/text/_font-size/text_font-size_12.css";
+@import "bem/common.blocks/text/_font-size/text_font-size_13.css";
+@import "bem/common.blocks/text/_weight/text_weight_bold.css";
 
-header #burger-menu {
-    position: absolute;
-    left: 22px;
-    line-height: 0.2;
-}
 
-#burger-menu div {
-    width: 20px;
-    height: 2.4px;
-    margin-top: 5px;
-    background-color: black;
-}
+@import "bem/common.blocks/header/__burger-menu/header__burger-menu.css";
+@import "bem/common.blocks/header/__main-logo/header__main-logo.css";
+@import "bem/common.blocks/header/__search-box/header__search_box.css";
+@import "bem/common.blocks/burger-menu/burger-menu.css";
+@import "bem/common.blocks/burger-menu/__rect/burger-menu__rect.css";
+@import "bem/common.blocks/main-logo/main-logo.css";
+@import "bem/common.blocks/search-box/search-box.css";
 
-#logo {
-    position: absolute;
-    left: 53px;
-    width: 153px;
+@import "bem/common.blocks/main-menu/main-menu.css";
+@import "bem/common.blocks/main-menu/__button/main-menu__button.css";
+@import "bem/common.blocks/main-menu/__item/main-menu__item.css";
+@import "bem/common.blocks/button/button.css";
 
-    font-family: 'Yandex Sans Text';
-    
-    width: 250px;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 30px;
-    font-style: normal;
-    color: #000000;
-    letter-spacing: -0.1em;
-}
+@import "bem/common.blocks/mail-frame/__actions/mail-frame__actions.css";
+@import "bem/common.blocks/mail-frame/__actions-item/_order/mail-frame__actions_item-order_first.css";
+@import "bem/common.blocks/mail-frame/__actions-item/_order/mail-frame__actions_item-order_normal.css";
+@import "bem/common.blocks/mail-frame/__actions-item/mail-frame__actions-item.css";
+@import "bem/common.blocks/mail-frame/__checkbox/mail-frame__checkbox.css";
+@import "bem/common.blocks/mail-frame/__mail-box/mail-frame__mail-box.css";
+@import "bem/common.blocks/actions/actions.css";
+@import "bem/common.blocks/actions/__item/actions__item.css";
+@import "bem/common.blocks/mail-box/mail-box.css";
 
-strong {
-    font-weight: 400;
-}
+@import "bem/common.blocks/message/message.css";
+@import "bem/common.blocks/message/__checkbox/message__checkbox.css";
+@import "bem/common.blocks/message/__avatar/message__avatar.css";
+@import "bem/common.blocks/message/__sender/message__sender.css";
+@import "bem/common.blocks/message/__topic/message__topic.css";
+@import "bem/common.blocks/message/__unread-dot/message__unread-dot.css";
+@import "bem/common.blocks/message/__unread-dot/_disable/message__unread-dot_disable.css";
+@import "bem/common.blocks/message/__date/message__date.css";
 
-#search-box {
-    position: absolute;
-    left: 320px;
-
-    width: 301px;
-    height: 32px;
-    opacity: 0.5;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    border: none;
-    background-color: #ffffff;
-  
-    padding: 16px;
-    font-family: 'Yandex Sans Text';
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.13;
-    letter-spacing: normal;
-    color: #000000;
-}
-
-#menu {
-    display: block;
-    position: absolute;
-    left: 22px;
-    top: 40px;
-    padding: 0;
-    width: 147px;
-    border: none;
-    list-style-type: none;
-}
-
-#write-button {
-    width: 147px;
-    height: 32px;
-    border-radius: 3px;
-    background-color: #6287bd;
-}
-
-#menu li a {
-    display: block;
-    padding-left: 10px;
-
-    height: 18px;
-    padding-top: 4px;
-    font-family: HelveticaNeue;
-    font-size: 11px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #707070;
-    text-decoration: none;
-}
-
-#menu li a.active {
-    width: 147px;
-    height: 25px;
-    border-radius: 3px;
-    background-color: #6287bd;
-
-    padding-top: 7px;
-    padding-left: 0;
-
-    text-align: center;
-    font-size: 12px;
-    color: #ffffff;
-}
-
-#menu li a:hover:not(.active) {
-    width: 147px;
-    border-radius: 3px;
-    background-color: #cdd6e4;
-
-    font-weight: bold;
-    color: #555555;
-}
-  
-
-#mail-frame {
-    position: absolute;
-    top: 56px;
-    right: 20px;
-    bottom: 20px;
-    left: 191px;
-
-    /* margin-right: 20px; */
-    margin-bottom: 14px;
-
-    border-radius: 3px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
-    background-color: #ffffff;
-}
-
-#actions li {
-    display: inline;
-    padding-left: 25px;
-    top: 11px;
-}
-
-#mail-frame li a {
-    height: 16px;
-    font-family: HelveticaNeue;
-    font-size: 13px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #cccccc;
-    text-decoration: none;
-}
-
-#select-all {
-    position: absolute;
-    left: 20px;
-    top: 11px;
-
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-    background-color: #ffffff;
-}
-
-#mail-box {
-    list-style-type: none;
-    position: absolute;
-    top: 50px;
-    padding: 0;
-    width: 100%;
-    margin: 0;
-}
-
-li:first-child.unread-message, li:first-child.read-message {
-    border-top: 1px solid #cccccc;
-}
-
-.unread-message, .message { 
-    position: relative;
-    height: 37px;
-    border-bottom: 1px solid #cccccc;
-}
-
-.unread-message * , .message * { 
-    position: absolute;
-    top: 12px;   
-}
-
-.message-tick {
-    left: 20px;
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-    background-color: #ffffff;
-}
-
-.unread-message-sender, .unread-message-topic, .message-date, .message-sender, .message-topic {
-    height: 16px;
-    font-family: HelveticaNeue;
-    font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-}
-
-.unread-message-sender, .unread-message-topic {
-    font-weight: bold;
-}
-
-.message-avatar {
-    left: 46px;
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    content: url("img/yandex-logo.png");
-}
-
-.unread-message-sender, .message-sender {
-    left: 86px;
-    max-width: 170px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.unread-message-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    left: 261px;
-    background-color: #6287bd;
-}
-
-.unread-message-topic, .message-topic {
-    left: 281px;
-    right: 80px;    
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.unread-message-date, .message-date {
-    right: 20px;
-}
+@import "bem/common.blocks/footer/__list/footer__list.css";
+@import "bem/common.blocks/footer/__box/footer__box.css";
+@import "bem/common.blocks/footer/__item/footer__item.css";
 
 #mail-show-hide {
     display: none;
 }
-  
-#mail-show-hide:checked + #showing-message {
+
+#mail-show-hide:checked + .showing-message {
     display: block;
 }
 
-#showing-message {
+.showing-message {
     display: none;
-
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: -400px;
-    left: 0px;
-    
-    
-    padding: 30px;
+    top: 0;
+
+
+    overflow: scroll;
+    max-height: 430px;
+    padding: 0 30px 30px 30px;
     background-color: #ffffff;
     z-index: 100;
 }
 
-#close-button {
+.close-button {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 30px;
-    
+
     height: 20px;
     width: 20px;
     content: url("img/close.png");
 }
 
-#that-feel-yoba {
+.that-feel-yoba {
     float: right;
     shape-outside:circle();
     height: 300px;
     width: 300px;
     content: url("img/circle.png");
-}
-
-#footer-list {
-    list-style-type: none;
-    position: absolute;
-    bottom: -10px;
-    right: 20px;
-    text-align: right;
-}
-
-#footer-box {
-    position: absolute;
-    width: 100%;
-    height: 31px;
-    bottom: 0;
-    border-top: 1px solid #cccccc;
-    background-color: ffff;
-}
-
-#footer-list li {
-    display: inline;
-    padding: 20px;
-
-    
-    font-family: HelveticaNeue;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #9b9b9b;
 }

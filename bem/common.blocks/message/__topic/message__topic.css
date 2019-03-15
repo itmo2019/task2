@@ -1,0 +1,10 @@
+.message__topic {
+    position: absolute;
+    left: 281px;
+    right: 100px;
+    padding-top: 12px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

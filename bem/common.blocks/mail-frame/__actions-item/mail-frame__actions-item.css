@@ -1,0 +1,5 @@
+.mail-frame__actions-item {
+    padding-top: 11px;
+    max-width: 15%;
+    text-overflow: ellipsis;
+}
