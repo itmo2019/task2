@@ -242,6 +242,10 @@ a {
     color: black;
 }
 
+#checkbox-all:checked + label + div > button:hover {
+    background-color: #f0f0f0;
+}
+
 .action {
     display: block;
     float: left;
@@ -254,7 +258,8 @@ a {
     border: none;
     font: 500 12px "Helvetica Neue";
     color: #ccc;
-    margin-right: 26px;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .incoming-letters-list {
