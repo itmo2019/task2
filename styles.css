@@ -35,6 +35,7 @@ ul {
 }
 .name {
   position: relative;
+  top: 12px;
   height: 45px;
   width: 200px;
 }
@@ -42,28 +43,22 @@ ul {
   width: 180px;
   height: 31px;
   left: 31px;
-  top: 12px;
   position: absolute;
   color: #010101;
   font-size: 25px;
 }
 .campany {
   font-family: YandexSansBold;
-  font-weight: bold;
+  
 }
 .service {
   font-family: YandexSansThin;
-}
-.rectangle {
-  width: 20px;
-  height: 2.4px;
-  margin-top: 3px;
-  background-color: #000000;
+  font-weight: bold;
 }
 .square {
-  width:20px;
+  width: 31px;
   height: 31px;
-  top: 19px;
+  top: 2px;
   position: absolute;
 }
 .search {
@@ -79,7 +74,6 @@ ul {
   background-color: #ffffff;
   font-size: 15px;
   line-height: 2.13;
-  letter-spacing: normal;
   color: #000000;
 }
 .context {
@@ -104,7 +98,7 @@ ul {
   padding-left: 0px;
   margin: 0px;
   position: absolute;
-  font-family: HelveticaNeueCyrMedium;
+  font-family: YandexSanBold;
 }
 .bar li {
   height: 22px;
@@ -118,6 +112,7 @@ ul {
   line-height: 22px;
   color: #555555;
 }
+.hovered-item,
 .bar li:hover {
   background-color: #cdd6e4;
 }
