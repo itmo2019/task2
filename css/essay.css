@@ -20,8 +20,6 @@
 }
 
 .essay_paragraph {
-    voice-family: male;
-    richness: 80;
     size: 16pt;
     border-style: groove;
     text-indent: 30px;
