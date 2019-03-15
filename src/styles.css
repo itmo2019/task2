@@ -63,7 +63,6 @@ body {
     font-size: 20px ;
 }
 
-
 .IncomingMessages {
     margin: 0;
     padding: 4px 81px 5px 10px;
@@ -250,6 +249,7 @@ a {
 
 
 .TextOverflow {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
