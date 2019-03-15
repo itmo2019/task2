@@ -8,9 +8,6 @@ body {
     float: right;
 }
 
-
-
-
 .Rectangle {
     margin-bottom: 4.8px;
     clear: right;
@@ -56,11 +53,6 @@ body {
 
 }
 
-.Logo {
-    font-family: 'Yandex Sans Text';
-    font-size: 20px ;
-}
-
 .IncomingMessages {
     margin: 0;
     padding: 4px 81px 5px 10px;
@@ -86,8 +78,6 @@ body {
     height: 100%;
     top: 64px;
     left: 22px;
-
-
     position: absolute;
 }
 
@@ -365,27 +355,10 @@ a {
     color: #ffffff;
 }
 
-/*.WriteMessage {*/
-    /*margin: 0;*/
-    /*padding: 7px 45px 10px 46px;*/
-    /*width: 56px;*/
-    /*height: 15px;*/
-    /*font-family: HelveticaNeue;*/
-    /*font-size: 12px;*/
-    /*font-weight: 500;*/
-    /*font-style: normal;*/
-    /*font-stretch: normal;*/
-    /*line-height: normal;*/
-    /*letter-spacing: normal;*/
-    /*color: #ffffff;*/
-/*}*/
-
-
 .CurrentItem {
     width: 147px;
     height: 22px;
     border-radius: 3px;
-    /*margin-bottom: 6px;*/
     background-color: #cdd6e4;
 }
 
@@ -433,10 +406,10 @@ li:hover {
 #PopupEssay {
     float: left;
     position: fixed;
-    top: -8.5%;
-    right: 0;
-    bottom: 0;
-    left: -3.5%;
+    width: 69.5%;
+    height: 82%;
+    min-width: 730px;
+    min-height: 500px;
     background: rgba(0, 0, 0, 0.4);
     z-index: 99999;
     opacity:0;
@@ -452,17 +425,17 @@ li:hover {
 
 #PopupEssay  > div {
     float: right;
-    width: 65%;
-    height: 72%;
+    width: auto;
+    height: auto;
     position: relative;
-    margin: 10% 19% 0 0 ;
-    padding: 20px 20px 13px 20px;
+    max-height: 99.9%;
+    margin: auto;
+    padding: auto;
     border: 2px solid black;
     border-radius: 10px;
     background: #f5f5dc;
     overflow-y: auto;
 }
-
 
 /*CSS block from previous task*/
 
