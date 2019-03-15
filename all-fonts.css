@@ -1,14 +1,4 @@
 @font-face {
-    font-family: YandexSansBold;
-    src: url("fonts/YandexBold.ttf");
-}
-
-@font-face {
-    font-family: YandexSansThin;
-    src: url("fonts/YandexThin.ttf");
-}
-
-@font-face {
     font-family: HelveticaNeueLight;
     src: url("fonts/HelveticaNeueLight.otf");
 }

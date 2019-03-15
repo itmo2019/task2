@@ -10,33 +10,26 @@
 }
 
 .mail-logo-lines {
-    margin-top: 12px;
     display: inline-block;
+    padding-bottom: 8px;
 }
 
 .yandex-logo-title {
-    white-space: nowrap;
     display: inline-block;
+    height: 50px;
 }
 
-.yandex-logo-title *:first-child {
-    font-family: YandexSansBold, Times;
-    font-size: 31px;
-}
-
-.yandex-logo-title *:last-child {
-    font-family: YandexSansThin, "Times New Roman";
-    font-size: 31px;
+.yandex-logo-title img {
+    padding-top: 10px;
+    height: 30px;
+    width: 150px;
 }
 
 .panel-for-search-by-mails {
     display: inline-block;
-}
-
-.wrapper-panel-for-search-by-mails {
-    margin: 7px 70px 0;
-    min-width: 312px;
+    width: 312px;
     height: 30px;
+    margin-left: 90px;
     background-color: #f2f5f8;
     border: 1px solid #d9dbde;
     font-family: YandexSansThin, "Times New Roman";
@@ -44,7 +37,13 @@
     font-size: 15px;
 }
 
-.wrapper-panel-for-search-by-mails .input-for-search-by-mails {
+.wrapped-panel-for-search-by-mails {
+    position: absolute;
+    width: 315px;
+    white-space: nowrap;
+}
+
+.input-for-search-by-mails {
     display: inline-block;
     min-width: 280px;
     height: 30px;
@@ -54,7 +53,7 @@
     padding-left: 16px;
 }
 
-.wrapper-panel-for-search-by-mails .placeholder-for-clear-input {
+.placeholder-for-clear-input {
     display: inline-block;
     margin: 8px 5px 0 0;
     float: right;
