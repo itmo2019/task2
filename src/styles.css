@@ -8,10 +8,7 @@ body {
     float: right;
 }
 
-.LogoPicture {
-    float: left;
-    margin: 19px 11px 0 22px ;
-}
+
 
 
 .Rectangle {
@@ -22,12 +19,13 @@ body {
     background-color: #000000;
 }
 
-.YandexMailLogo {
-    margin-right: 20%;
+.MailLogo {
     width: 153px;
     height: 31px;
     float: left;
+    margin: 19px 20% 0 22px ;
 }
+
 
 .SearchBar {
     float: left;
@@ -97,7 +95,7 @@ body {
     position: relative;
     width: 70%;
     margin-left: 180px;
-    min-width: 500px;
+    min-width: 730px;
     min-height: 500px;
     height: 90vh;
     border-radius: 3px;
