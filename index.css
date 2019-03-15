@@ -9,64 +9,48 @@
     min-width: 900px;
 }
 
-#header {
-  height: 56px;
-}
-
 /* BEGIN SECTION: HEADER */
 
-/* Боковое меню и логотип сгруппированы вместе */
-
-#hamburger-and-logo {
-  position: absolute;
-  display: inline-block;
-}
-
 .hamburger {
-  top: 19.5px;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
   position: absolute;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
-.hamburger > .hamburger-line:not(:first-child) {
-  margin-top: 4.8px;
-}
-
-.hamburger-line {
-  width: 20px;
-  height: 2.4px;
-  background-color: #000000;
-}
-
-#mail-logo {
-  top: 12px;
-  left: 31px;
+.mail-logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 31px;
   height: 31px;
   width: 153px;
-  position: absolute;
   background: #ccc;
   content: url("mail_logo.png");
 }
 
 .search-bar-container {
-  top: 18px;
-  position: absolute;
-  margin-left: 185px;
-  width: calc(100% - 200px);
+  margin-top: 10px;
   display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 200px);
 }
 
 .search-bar-and-close {
   height: 32px;
   width: 50%;
-  left: 0;
-  right: 0;
   margin: auto;
-  position: absolute;
+  position: relative;
 }
 
 #search-bar-close {
   top: 9px;
-  right: 5px;
+  right: 0;
   width: 9px;
   height: 9px;
   position: absolute;
@@ -278,7 +262,7 @@
 }
 
 .sender-title {
-  width: 44%;
+  width: 46%;
   font-size: 13px;
   text-overflow: ellipsis;;
 }
