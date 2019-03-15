@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
@@ -7,88 +8,142 @@
         <title>Яндекс. Почта</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <header>
-            <div id="p1" class="ps"></div>
-            <div id="p2" class="ps"></div>
-            <div id="p3" class="ps"></div>
-            <div id="search-cross">x</div>
-            <div id="logo"><span id="yandex-part">Яндекс</span><span id="mail-part">Почта</span></div>
-            <input id="search" placeholder="Поиск">
+    <body class="web-page-content">
+        <header class="logo-and-search">
+            <div class="mail-logo">
+                <div class="horizontal-logo-lines">
+                    <div class="logo-line"></div>
+                    <div class="logo-line other-lines"></div>
+                    <div class="logo-line other-lines"></div>
+                </div>
+                <img class="logo_pic" src="../resources/mail_logo_for_top.png" alt="Text logo of yandex-mail"/>
+            </div>
+            <div class="search-wrapper">
+                <div class="text_field_with_cross">
+                    <input type="text" class="search-textfield" placeholder="Поиск">
+                    <span class="search-cross">x</span>
+                </div>
+            </div>
         </header>
 
-        <main>
-            <div id="main-menu">
-                <div id="make-new-letter"><a>Написать</a></div>
-                <ul id="folders">
-                    <li class="folders-choosing"><a>Входящие</a></li>
-                    <li class="folders-choosing"><a>Отправленные</a></li>
-                    <li class="folders-choosing"><a>Удаленные</a></li>
-                    <li class="folders-choosing"><a>Спам</a></li>
-                    <li class="folders-choosing"><a>Черновики</a></li>
-                    <li class="folders-choosing"><a>Создать папку</a></li>
-                </ul>
+        <main class="letters-footer-control">
+            <div class="left-menu">
+                <div class="write-message-wrapper">
+                    <button class="write-message left-list-element">Написать</button>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element first-action-wrapper">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">Входящие</a>
+                    </div>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">Отправленные</a>
+                    </div>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">Удалённые</a>
+                    </div>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">Спам</a>
+                    </div>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">Черновики</a>
+                    </div>
+                </div>
+                <div class="left-menu-elem-wrapper left-list-element">
+                    <div class="left-menu-elem left-list-element">
+                        <a href="">
+                            Я изменил текст, предлагающий создать папку,
+                            на это длинное и бессмысленное предложение только затем, чтобы показать поведение элементов
+                            меню, вместо которых вставляется не подходящий по размеру текст. Также отмечу, что это очень удобно
+                            при дебаге, для проверки, не сломал ли я чего. Прошу простить мне это несоответствие макету.
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div id="main-screen">
-                <div id="letter-actions">
-                    <input id="top-selector" type="checkbox">
-                    <ul id="letter-options">
-                        <li id="forward" class="mail-option">Переслать</li>
-                        <li id="delete" class="mail-option">Удалить</li>
-                        <li id="spam" class="mail-option">Это спам!</li>
-                        <li id="mark-as-read" class="mail-option">Прочитано</li>
-                    </ul>
+            <input type="checkbox" id="open-text-trigger">
+            <div class="opened-text">
+                <div class="text-cross">
+                    <label for="open-text-trigger">x</label>
                 </div>
-                <div id="letters-holder">
-                    <div id="norma">
-                        <label for="make-norma-choose" class="cross">x</label>
-                        <img class="yoba" src="../resources/yoba.png" width="282" alt="Рисунок жёлтого ехидного колобка">
-                        Здравствуйте дорогой Мартин Алексеич! Пишу вам сразу по приезду, прямо вот только что вошёл и сел писать. Тут всё у нас хорошо, весна вовсю, снег ещё не сошёл, но вроде бы сходит, на дороге намёрзло много, а калитку я еле отодрал — вон как пристыл внизу ледок то! Так что вошёл когда, сразу трубы проверил и понял что целы слава Богу. Ну и действительно — зима то не очень сурова была больше двадцати двух и не было кажется, а для нас это прямо благодать — и яблонки молодые и розы ваши и опять же чтоб трубы не разорвало. Но ничего, всё обошлось, всё тут хорошо.
-                    </div>
-                    <input id="make-norma-choose" class="choose-letter" type="checkbox">
-                    <ul id="all-letters">
-                        <li class="letter">
-                            <label id="show-norma" for="make-norma-choose"></label>
-                            <input class="choose-letter" type="checkbox">
-                            <img class="pic" width="30px" height="30px" alt="yandex logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
-                            <span class="sender">Яндекс.Паспорт</span>
-                            <div class="point"></div>
-                            <span class="description">Доступ к аккаунту восстановлен</span>
-                            <time class="date">6 авг</time>
-                        </li>
-                        <li class="letter">
-                            <input class="choose-letter" type="checkbox">
-                            <img class="pic" width="30px" height="30px" alt="yandex logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
-                            <span class="sender">Команда Яндекс.Почты</span>
-                            <div class="point"></div>
-                            <span class="description">Как читать почту с мобильного</span>
-                            <time class="date">6 июл</time>
-                        </li>
-                        <li class="letter">
-                            <input class="choose-letter" type="checkbox">
-                            <img class="pic" width="30px" height="30px" alt="yandex logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
-                            <span class="sender-read">Команда Яндекс.Почты</span>
-                            <span class="description-read">Как читать почту с мобильного</span>
-                            <time class="date">6 июн</time>
-                        </li>
-                        <li class="letter">
-                            <input class="choose-letter" type="checkbox">
-                            <img class="pic" width="30px" height="30px" alt="yandex logo" src="https://yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg">
-                            <span class="sender-read">Яндекс</span>
-                            <span class="description-read">Соберите всю почту в этот ящик</span>
-                            <time class="date">6 мар</time>
-                        </li>
-                    </ul>
-                </div>
-                <footer>
-                    <div id="bottom-links">
-                        <a class="footer-link">Помощь и обратная связь</a>
-                        <a class="footer-link">Реклама</a>
-                        <span class="footer-link"> © 2001&mdash;2018, Яндекс </span>
-                    </div>
-                </footer>
+                <img src="../resources/yoba-letov.jpg" class="letov-picture" alt="Жёлтый ехидный колобок" height="300px" width="300px">
+                Летов здесь находится потому, что макет оказался сильней. Спасибо за внимание. <br>
+                Я не знаю, чем заполнить пустое прострнаство, поэтому приведу тут отрывок из Сорокина. <br>
+                Да, из "Нормы". Нет, не про норму. <br><br>
+                Здравствуйте дорогой Мартин Алексеич! Пишу вам сразу по приезду, прямо вот только что вошёл и сел писать. Тут всё у нас хорошо, весна вовсю, снег ещё не сошёл, но вроде бы сходит, на дороге намёрзло много, а калитку я еле отодрал — вон как пристыл внизу ледок то! Так что вошёл когда, сразу трубы проверил и понял что целы слава Богу. Ну и действительно — зима то не очень сурова была больше двадцати двух и не было кажется, а для нас это прямо благодать — и яблонки молодые и розы ваши и опять же чтоб трубы не разорвало. Но ничего, всё обошлось, всё тут хорошо. Мартин Алексеевич! Я позвонил Любане перед отъездом и она мне рассказала всё как было у вас с Николаем. Это конечно очень неприятно. Я давно говорил, что Николай человек грубый и невоспитан. Я ей по телефону говорил, но она меня успокоила и говорит, что всё нормально, что Николай извинялся. Я думаю что всё это пустяки и вы не берите в голову. А я тут встретил совершенно случайно Рудакова. Иду со станции, а он с внучкой идёт. Узнал меня, поздоровался, подошёл. Как здоровье спросил, и про вас спрашивал. Я говорит, только что из командировки, а я говорю, так что ж ты значит ещё работаешь, а он говорит — опять устроился, дома не могу. Вот как. Ушёл, говорит, с работы полгода назад, а после прямо невмоготу, а как же! Человек ведь привыкает. И опять туда же его взяли прямо с распростёртыми объятьями, потому что работник он хороший, исполнительный, он мне рассказывал. Он говорит, я как ревизию поеду делать, так только пух летит — весь завод вверх дном! А вроде и не очень видный человек, но вот что значит — с характером. Мартин Алексеич! Я всё хотел спросить, а что мы с парниками делать будем? Ведь подпорки ещё прошлый год гнилые были, а нынче я потрогал, так они все попрели — одна труха, так что плёнку не выдержат. Я думаю надо б попросить Серёжу привезти трубок таких и из них я б подпорок напилил, а после мы б их проволокою скрутили и стояло бы хорошо, хоть сто лет. А эти не выдержат ни за что, ещё бы, ведь плёнка она и от ветра заиграть может и опять же когда дождь пойдёт — раз, и вода вверху скопилась, он и повалился. Так что я думаю, что трубки это оптимальный варьянт. А огород уже протаял, я вдоль грядок ходил, они всё в норме и клубника и всё остальное. Я думаю мы картошку в этом году в заду посадим, это возле туалета, где подсолнух и горох росли. Там и почва хорошая, а у забора пусть редиска, да салат, да разная морковка. А картофелю там самый раз будет, он солнце любит, а там опять же мы ведь бузину повырубили, так что солнца хоть отбавляй. Ещё я как только пришёл, сразу в погреб полез поглядеть как там не натекло, но там всё было в норме — вода есть, но немного, не то что в позапрошлом году, когда и слезть то некуда было! А в этом всё нормально — на три пальца внизу, в ложбине, а к мешкам и не подобралась — все сухие. Так что о погребе вы не волнуйтесь. А после я на тераске семена смотрел и опять всё нормально — картошка сухая, тюльпаны и гладиолусы ваши тоже. Мартин Алексеевич! Как ваше здоровье? Как Людмила Степановна? Как там Саша поживает? Вы мне пишите чаще, и передавайте всем приветы. Так что жду от вас писем и Ц.У.
             </div>
+
+            <div class="mail-screen-and-footer">
+                <div class="main-page-content">
+                    <div class="messages-options-table">
+                        <div class="messages-options">
+                            <input type="checkbox" class="all-letters-chooser"/>
+                            <button class="first-option">      <a class="a-non-decorated" href="">Переслать</a></button>
+                            <button class="other-mail-options"><a class="a-non-decorated" href="">Удалить</a></button>
+                            <button class="other-mail-options"><a class="a-non-decorated" href="">Это спам!</a></button>
+                            <button class="other-mail-options"><a class="a-non-decorated" href="">Прочитано</a></button>
+                        </div>
+                    </div>
+
+                    <div class="mails-list-wrapper">
+                        <div class="all-emails-list">
+                            <div class="email-wrapper">
+                                <div class="single-letter">
+                                    <div class="receive-date"><label for="open-text-trigger">6 авг</label></div>
+                                    <input type="checkbox" class="letter-chooser"/>
+                                    <label for="open-text-trigger"><img class="yandex-logo-email" src="../resources/yandex-logo_for_letter.png" alt="yandex-logo"/></label>
+                                    <span class="cut-text author-name"><label for="open-text-trigger">Яндекс.Паспорт</label></span>
+                                    <div class="mark-as-read"></div>
+                                    <div class="cut-text email-text"><label for="open-text-trigger">Доступ к аккаунту восстановлен</label></div>
+                                </div>
+                            </div>
+                            <div class="email-wrapper">
+                                <div class="single-letter">
+                                    <div class="receive-date">6 июл</div>
+                                    <input type="checkbox" class="letter-chooser"/>
+                                    <img class="yandex-logo-email" src="../resources/yandex-logo_for_letter.png" alt="yandex-logo"/>
+                                    <div class="cut-text author-name">Команда Яндекс.Почты</div>
+                                    <div class="mark-as-read"></div>
+                                    <div class="cut-text email-text">Интересно, зачем команда яндекс почты написала мне такое длинное письмо? Возможно, они хотели узнать, что происходит с длинными строчками, которые невозможно показать целиком </div>
+                                </div>
+                            </div>
+                            <div class="email-wrapper">
+                                <div class="single-letter">
+                                    <div class="receive-date">6 июл</div>
+                                    <input type="checkbox" class="letter-chooser"/>
+                                    <img class="yandex-logo-email" src="../resources/yandex-logo_for_letter.png" alt="yandex-logo"/>
+                                    <div class="cut-text author-name read-name">Команда Яндекс.Почты</div>
+                                    <div class="mark-as-read used-flag"></div>
+                                    <div class="cut-text email-text read-title">Как читать почту с мобильного</div>
+                                </div>
+                            </div>
+                            <div class="email-wrapper">
+                                <div class="single-letter">
+                                    <div class="receive-date">6 июл</div>
+                                    <input type="checkbox" class="letter-chooser"/>
+                                    <img class="yandex-logo-email" src="../resources/yandex-logo_for_letter.png" alt="yandex-logo"/>
+                                    <div class="cut-text author-name read-name">Яндекс</div>
+                                    <div class="mark-as-read used-flag"></div>
+                                    <div class="cut-text email-text read-title">Опять очень длинное и бессмысленное письмо. Интересно, что произойдёт со строками на этот раз?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="mail-footer">
+                    <span class="footer-item"><a class="a-non-decorated" href="">Помощь и обратная связь</a></span>
+                    <span class="footer-item"><a class="a-non-decorated" href="">Реклама</a></span>
+                    <span class="footer-item">&copy; 2001-2018, Яндекс</span>
+                </footer>
+          </div>
         </main>
     </body>
 </html>
