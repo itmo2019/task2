@@ -23,7 +23,7 @@
 .actions-panel .create-new-mail-button .place-for-aligned-text {
     color: #ffffff;
     font-family: HelveticaNeueLight, Arial;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     float: left;
     margin: 10px 46px 10px 45px;
@@ -37,9 +37,9 @@
     width: 147px;
     height: 22px;
     color: #707070;
-    font-size: 12px;
+    font-size: 11px;
     font-family: HelveticaNeueMedium, Georgia;
-
+    font-weight: 500;
     float: left;
     text-indent: 1em;
 }
@@ -50,6 +50,7 @@
     cursor: pointer;
     font-size: 11px;
     font-weight: 700;
+    color: #555555;
 }
 
 .navigation-item .place-for-aligned-text {
