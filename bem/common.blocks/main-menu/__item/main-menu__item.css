@@ -9,6 +9,8 @@
     max-width: 147px;
     overflow: hidden;
     white-space: nowrap;
+
+    cursor: pointer;
 }
 
 .main-menu__item:hover {

@@ -8,7 +8,7 @@
         <title>Yandex.Mail</title>
         <link rel="stylesheet" href="yandex_mail.css">
     </head>
-        
+
     <body class="yandex-mail">
         <header class="header yandex-mail__header">
             <div class="burger-menu header__burger-menu">
@@ -18,7 +18,7 @@
             </div>
 
             <img class="main-logo header__main-logo" src="img/main-logo.png" alt="Яндекс Почта">
-            
+
             <input class="search-box header__search-box" type="search" placeholder="Поиск">
         </header>
 
@@ -27,7 +27,7 @@
             <li class="button main-menu__button">
                 <a class="text text_color_white text_alignment_center
                 text_font_helvetica text_font-size_12" href="">
-                Написать. А кстати написать можно много чего, но вёрстка не едет, а кнопки должны быть лаконичными
+                    Написать
                 </a>
             </li>
 
@@ -45,7 +45,7 @@
             </li>
             <li class="main-menu__item">
                 <a class="text text_color_707070 text_font_helvetica text_font-size_11"
-                   href="">какая-то длинная кнопка, вот те на, никуда не вылезает</a>
+                   href="">Спам</a>
             </li>
             <li class="main-menu__item">
                 <a class="text text_color_707070 text_font_helvetica text_font-size_11"
@@ -66,17 +66,21 @@
                     </label>
                 </li>
                 <li class="actions__item  mail-frame__actions-item mail-frame__actions-item_order_normal">
-                    <a class="text text_color_cccccc text_font_helvetica text_font-size_13"
-                       href="">Переслать</a></li>
+                    <span class="text text_color_cccccc text_font_helvetica text_font-size_13">
+                        Переслать
+                    </span></li>
                 <li class="actions__item  mail-frame__actions-item mail-frame__actions-item_order_normal">
-                    <a class="text text_color_cccccc text_font_helvetica text_font-size_13"
-                        href="">Удалить</a></li>
+                    <span class="text text_color_cccccc text_font_helvetica text_font-size_13">
+                        Удалить
+                    </span></li>
                 <li class="actions__item  mail-frame__actions-item mail-frame__actions-item_order_normal">
-                    <a class="text text_color_cccccc text_font_helvetica text_font-size_13"
-                       href="">Это спам!</a></li>
+                    <span class="text text_color_cccccc text_font_helvetica text_font-size_13">
+                        Это спам!
+                    </span></li>
                 <li class="actions__item  mail-frame__actions-item mail-frame__actions-item_order_normal">
-                    <a class="text text_color_cccccc text_font_helvetica text_font-size_13"
-                       href="">Прочитано</a></li>
+                    <span class="text text_color_cccccc text_font_helvetica text_font-size_13">
+                        Прочитано
+                    </span></li>
             </ul>
 
             <ul class="mail-box mail-frame__mail-box">
@@ -105,16 +109,16 @@
                     </li>
                 </label>
                 <input type="checkbox" id="mail-show-hide">
-                    <div class="showing-message">
+                    <div class="full-message">
                         <label for="mail-show-hide">
-                            <img class="close-button" alt="Закрыть" src="img/close.png">
+                            <img class="full-message__close-button" alt="Закрыть" src="img/close.png">
                         </label>
 
                         <p> Короче, крутую фишку придумал - верстануть перед друзьями. </p>
                         <p>
                             Вобщем смысл какой, я знаю много людей, котороые когда собираются вместе, порой,
                             не знают чем заняться. Ну это случается, когда собрались никому не нужные друзья,
-                            <img class="that-feel-yoba" alt="Если эта картинка не прогрузилась, то я не сдал" src="img/circle.png">
+                            <img class="full-message__picture" alt="Если эта картинка не прогрузилась, то я не сдал" src="img/circle.png">
                             которых не видел 1000 лет, которых столько же ещё не видел бы. Поговорить с ними,
                             есстественно, не о чем, поэтому приходится выкручиваться стандартными методами — играть
                             в унылого "крокодила", "твистера", "мафию" и так далее!
@@ -237,7 +241,9 @@
             </footer>
         </div>
 
-        
+
     </body>
+
+    <script src="bem/common.blocks/mail-box/__animation/mail-box__animation_remove-message.js"></script>
 
 </html>

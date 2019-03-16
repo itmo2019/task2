@@ -1,7 +1,4 @@
 .actions__item{
     float: left;
-    white-space:nowrap;
-    overflow: hidden;
+    cursor: pointer;
 }
-
-

@@ -1,8 +1,10 @@
 .message__topic {
-    position: absolute;
-    left: 281px;
-    right: 100px;
     padding-top: 12px;
+    float: left;
+
+    max-width: 35%;
+    margin-left: 10px;
+    margin-right: -100px;
 
     text-overflow: ellipsis;
     white-space: nowrap;
