@@ -8,13 +8,25 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 16px;
   width: 20px;
   height: 3px;
-  background: black;
+  background: #000;
   box-shadow:
-    0 7px 0 0 black,
-    0 14px 0 0 black;
+    0 7px 0 0 #000,
+    0 14px 0 0 #000;
+}
+
+.body {
+  font-family: "Helvetica Neue", "Arial" "Serif";
+}
+
+.logo-picture {
+  position: relative;
+  top: 12px;
+  margin-left: 11px;
+  width: 153px;
+  height: 31px;
 }
 
 #main-header {
@@ -30,7 +42,6 @@
   background-color: #6287bd;
   font-size: 15px;
   color: #ffffff;
-  font-family: "Arial";
   font-size: 12px;
   font-weight: 500;
 }
@@ -38,17 +49,19 @@
 .folders-list {
   list-style-type: none;
   padding: 0;
-  width: 56px;
+  width: 147px;
   color: #555555;
-  font-family: "Helvetica Neue";
   font-size: 11px;
   font-weight: 700;
 }
 
 .folders-list li {
   background-color: #e5eaf0;
+  overflow: hidden;
   padding-top: 4px;
   text-indent: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 147px;
   height: 18px;
   border-radius: 3px;
@@ -68,7 +81,7 @@
 }
 
 body {
-  min-width: 780px;
+  min-width: 800px;
   position: relative;
   margin: 0 auto;
   background-color: #e5eaf0;
@@ -94,33 +107,34 @@ body {
   vertical-align: middle;
   margin: 11px 11px;
   color: #cccccc;
-  font-family: "Arial";
   font-size: 13px;
   font-weight: 500;
   display: inline;
 }
 
-/*  589 */
-
 .mail-box input {
   margin: 11px 10px 11px 20px;
-  /* display: inline; */
   vertical-align: middle;
 }
 
 .circle {
   display: inline-block;
+  line-height: 1.5em;
   height: 32px;
   width: 32px;
-  text-align: center;
-  text-indent: -2px;
   vertical-align: middle;
+  text-align: center;
   line-height: 32px;
   border-radius: 50%;
   background: red;
   color: white;
   font-size: 19px;
-  font-family: "Arial";
+}
+
+.circle > img {
+  position: relative;
+  top: 3px;
+  right: 1px;
 }
 
 .unread-circle {
@@ -140,7 +154,11 @@ body {
   border-top: 1px solid #e5eaf0;
   border-bottom: 1px solid #e5eaf0;
   height: 42px;
-  /* height: 42px; */
+}
+
+.message-item > .checkbox {
+  width: 16px;
+  height: 16px;
 }
 
 .unread-message-preview, .read-message-preview, .unread-message-content, .read-message-content {
@@ -151,13 +169,37 @@ body {
   white-space: nowrap;
   overflow: hidden;
   color: #000000;
-  font-family: "Arial";
   font-size: 13px;
 }
 
+/*
+
+    Message's theme and text preview sizes depend on the mail box size.
+    According to the sketch:
+    Width of mail box zone : 589
+
+    Format:
+    Component: leftMargin - width - rightMargin
+
+    Checkbox component  : 20 - 16 - 10
+    LogoCircle component: 10 - 30 - 10
+    ThemeText component : 10 - 155 - 40
+    Text component      : 40 - 204 - 48
+    Date component      : 48 - 36 - 20
+
+    Assume that all margins are with fixed lengths;
+    Assume that width of Checkbox, logoCircle, Date is fixed too;
+
+    Total fixed width: 20 + 16 + 10 + 30 + 10 + 40 + 48 + 36 + 20 = 230
+
+    ThemeText width = 155 / (155 + 204) * (100% - 320px)
+    Text width = 155 / (155 + 204) * (100% - 320px)
+
+*/
+
 .unread-message-preview, .read-message-preview {
-  width: calc(150 / 589 * 100%) ;
-  margin: auto 30px auto 4px;
+  width: calc(155 / 359 * (100% - 230px));
+  margin-right: 30px auto 4px;
 }
 
 .unread-message-preview {
@@ -165,7 +207,7 @@ body {
 }
 
 .unread-message-content, .read-message-content {
-  width: calc(200 / 589 * 100%);
+  width: calc(204 / 359 * (100% - 230px));
   margin: auto 30px auto 20px;
 }
 
@@ -173,20 +215,20 @@ body {
   font-weight: 700;
 }
 
-footer {
-  position: absolute;
-  right: 20px;
-  bottom: 9px;
-  width: 346px;
-  height: 13px;
-  color: #9b9b9b;
-  font-family: "Arial";
-  font-size: 11px;
-}
+/*
 
-#search-line {
-  margin-left: calc(10/589*100%);
-  width: calc(301/589*100%);
+  SearchLine width depends on size width
+  According to the sketch:
+  Width of page: 800
+  Distance from searchline left border to start of the page: 206
+  Distance from searchline left border to the end of logo: 114
+  SearchLine width: 301
+
+*/
+
+.search-line {
+  margin-left: calc(114/800*(100% - 206px));
+  width: calc(301/800*(100% - 206px));
   height: 32px;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -196,29 +238,16 @@ footer {
   display: none;
 }
 
-/* body {
-  background-color: green;
-} */
-
-/* #open-message1:not(:checked) ~ body {
-    background-color: blue;
-}
-
-#open-message1:checked ~ body {
-    background-color: red;
-} */
 #messages-section {
   width: 100%;
 }
 
 #open-message1:checked ~ #messages-section {
    display: none;
-   /* background-color: red; */
 }
 
 #open-message1:checked ~ .essay {
    display: block;
-   /* background-color: green; */
 }
 
 .essay {
@@ -236,7 +265,6 @@ iframe {
   position: absolute;
   top: 40px;
   right: 0;
-  font-family: Arial;
   font-weight: 100;
   text-align: center;
   padding-right: 10px;
@@ -247,8 +275,34 @@ iframe {
   float: right;
   margin: auto 10px auto 10px;
   color: #9b9b9b;
-  font-family: "Arial";
   font-size: 13px;
   line-height: 42px;
   vertical-align: middle;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.footer-class {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  right: 20px;
+  bottom: 9px;
+  outline: none;
+  color: #9b9b9b;
+  font-size: 11px;
+}
+
+.footer-class a {
+  margin-right: 20px;
+  display: inline;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-class nav {
+  display: inline;
 }

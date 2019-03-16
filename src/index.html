@@ -14,9 +14,9 @@
 
   <header id="main-header">
     <a href="#popup-menu" class="box-popup-menu"> </a>
-    <strong>Яндекс</strong> Почта
+    <img src="images/logo.png" class="logo-picture">
 
-    <input id="search-line" type="search" placeholder="Поиск">
+    <input class="search-line" type="search" placeholder="Поиск">
   </header>
 
   <div class="menu-zone">
@@ -37,7 +37,7 @@
   <div class="mail-box">
 
     <div id="mail-box-action-list">
-      <input id="select-all" type="checkbox">
+      <input id="select-all" type="checkbox" style="width: 16px; height: 16px">
       <ul class="mail-box-actions">
         <li id="resend">Переслать</li>
         <li id="delete">Удалить</li>
@@ -52,8 +52,8 @@
 
       <label for="open-message1" onclick="">
         <div class="message-item">
-          <input id="select-message1" type="checkbox">
-          <span class="circle"> Я </span>
+          <input id="select-message1" type="checkbox" class="checkbox">
+          <span class="circle"> <img src="images/message-company-logo.png"> </span>
           <p class="unread-message-preview"> Яндекс.Паспорт </p>
           <span class="unread-circle"> </span>
           <p class="unread-message-content"> Доступ к аккаунту восстановлен </p>
@@ -62,8 +62,8 @@
       </label>
 
       <div class="message-item">
-        <input id="select-message2" type="checkbox">
-        <span class="circle"> Я </span>
+        <input id="select-message2" type="checkbox" class="checkbox">
+        <span class="circle"> <img src="images/message-company-logo.png"> </span>
         <p class="unread-message-preview"> Команда Яндекс.Почты </p>
         <span class="unread-circle"> </span>
         <p class="unread-message-content"> Как читать почту с мобильного </p>
@@ -71,16 +71,16 @@
       </div>
 
       <div class="message-item">
-        <input id="select-message3" type="checkbox">
-        <span class="circle"> Я </span>
+        <input id="select-message3" type="checkbox" class="checkbox">
+        <span class="circle" style="background: blue"> JB </span>
         <p class="read-message-preview"> Команда Яндекс.Почты </p>
         <p class="read-message-content"> Как читать почту с мобильного </p>
         <time datetime="2019-08-06" class="message-time">6 авг</time>
       </div>
 
       <div class="message-item">
-        <input id="select-message4" type="checkbox">
-        <span class="circle"> Я </span>
+        <input id="select-message4" type="checkbox" class="checkbox">
+        <span class="circle"> <img src="images/message-company-logo.png"> </span>
         <p class="read-message-preview"> Яндекс </p>
         <p class="read-message-content"> Соберите всю почту в один ящик </p>
         <time datetime="2019-08-06" class="message-time">6 авг</time>
@@ -96,8 +96,8 @@
       <iframe src="essay.html"></iframe>
     </div>
 
-    <footer>
-      <nav style="display: inline">
+    <footer class="footer-class">
+      <nav>
         <a href="">Помощь и обратная связь</a>
         <a href="">Реклама</a>
       </nav>
@@ -107,4 +107,5 @@
     </footer>
 
   </div>
+
 </body>
