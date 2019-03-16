@@ -15,72 +15,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4185766">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/hw2.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="309" column="1" lean-forward="true" selection-start-line="309" selection-start-column="1" selection-end-line="309" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#369#478#0" />
-                    <element signature="e#410#531#0" />
-                    <element signature="e#600#608#0" />
-                    <element signature="e#543#636#0" />
-                    <element signature="e#648#743#0" />
-                    <element signature="e#757#852#0" />
-                    <element signature="e#860#1090#0" />
-                    <element signature="e#1116#1124#0" />
-                    <element signature="e#1282#1439#0" />
-                    <element signature="e#1451#1554#0" />
-                    <element signature="e#1563#1598#0" />
-                    <element signature="e#1606#1689#0" />
-                    <element signature="e#1704#1761#0" />
-                    <element signature="e#1770#1873#0" />
-                    <element signature="e#1886#1907#0" />
-                    <element signature="e#1927#2066#0" />
-                    <element signature="e#2091#2125#0" />
-                    <element signature="e#2423#2724#0" />
-                    <element signature="e#2769#2777#0" />
-                    <element signature="e#2803#2910#0" />
-                    <element signature="e#2926#3218#0" />
-                    <element signature="e#3241#3303#0" />
-                    <element signature="e#3321#3518#0" />
-                    <element signature="e#3424#3682#0" />
-                    <element signature="e#3782#3810#0" />
-                    <element signature="e#3938#3946#0" />
-                    <element signature="e#3508#3770#0" />
-                    <element signature="e#3783#3872#0" />
-                    <element signature="e#3886#4004#0" />
-                    <element signature="e#4038#4070#0" />
-                    <element signature="e#4079#4269#0" />
-                    <element signature="e#4808#4908#0" />
-                    <element signature="e#4302#4334#0" />
-                    <element signature="e#4475#4502#0" />
-                    <element signature="e#4510#4684#0" />
-                    <element signature="e#5375#5714#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/hw2.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="114" column="12" selection-start-line="113" selection-start-column="16" selection-end-line="114" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="229" column="25" selection-start-line="229" selection-start-column="25" selection-end-line="229" selection-end-column="25" />
+              <folding>
+                <element signature="e#369#478#0" />
+                <element signature="e#410#531#0" />
+                <element signature="e#600#608#0" />
+                <element signature="e#543#636#0" />
+                <element signature="e#648#743#0" />
+                <element signature="e#757#852#0" />
+                <element signature="e#860#1090#0" />
+                <element signature="e#1116#1124#0" />
+                <element signature="e#1282#1439#0" />
+                <element signature="e#1451#1554#0" />
+                <element signature="e#1563#1598#0" />
+                <element signature="e#1606#1689#0" />
+                <element signature="e#1704#1761#0" />
+                <element signature="e#1770#1873#0" />
+                <element signature="e#1886#1907#0" />
+                <element signature="e#1927#2066#0" />
+                <element signature="e#2091#2125#0" />
+                <element signature="e#2423#2724#0" />
+                <element signature="e#2769#2777#0" />
+                <element signature="e#2803#2910#0" />
+                <element signature="e#2926#3218#0" />
+                <element signature="e#3241#3303#0" />
+                <element signature="e#3321#3518#0" />
+                <element signature="e#3424#3682#0" />
+                <element signature="e#3782#3810#0" />
+                <element signature="e#3938#3946#0" />
+                <element signature="e#3783#3872#0" />
+                <element signature="e#3886#4004#0" />
+                <element signature="e#4038#4070#0" />
+                <element signature="e#4079#4269#0" />
+                <element signature="e#4808#4908#0" />
+                <element signature="e#4302#4334#0" />
+                <element signature="e#4475#4502#0" />
+                <element signature="e#4510#4684#0" />
+                <element signature="e#5375#5714#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -89,10 +80,12 @@
       <find>write</find>
       <find>square</find>
       <find>ya-letter</find>
+      <find>my-msg</find>
     </findStrings>
     <replaceStrings>
       <replace>central-row__date</replace>
       <replace>ya-circle__ya-letter</replace>
+      <replace>hidden-message</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -106,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -164,19 +157,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552728737435</updated>
-      <workItem from="1552728738718" duration="16070000" />
+      <workItem from="1552728738718" duration="17858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16070000" />
+    <option name="totallyTimeSpent" value="17858000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="927" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.093989074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19026549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -200,8 +193,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hw2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="309" column="1" lean-forward="true" selection-start-line="309" selection-start-column="1" selection-end-line="309" selection-end-column="1" />
+        <state relative-caret-position="319">
+          <caret line="229" column="25" selection-start-line="229" selection-start-column="25" selection-end-line="229" selection-end-column="25" />
           <folding>
             <element signature="e#369#478#0" />
             <element signature="e#410#531#0" />
@@ -229,7 +222,6 @@
             <element signature="e#3424#3682#0" />
             <element signature="e#3782#3810#0" />
             <element signature="e#3938#3946#0" />
-            <element signature="e#3508#3770#0" />
             <element signature="e#3783#3872#0" />
             <element signature="e#3886#4004#0" />
             <element signature="e#4038#4070#0" />
@@ -245,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        <state relative-caret-position="499">
+          <caret line="114" column="12" selection-start-line="113" selection-start-column="16" selection-end-line="114" selection-end-column="12" />
         </state>
       </provider>
     </entry>

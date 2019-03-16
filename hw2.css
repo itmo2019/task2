@@ -218,11 +218,16 @@ body {
     border-bottom: solid 1px #e2e2e2;
 }
 
-.central-row__ya-circle {
+.central-row__avatar-frame {
     vertical-align: top;
     margin-left: 10px;
     margin-top: 5px;
     display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.central-row__ya-circle {
     background-color: #ff3333;
     border: 0;
     border-radius: 50%;
@@ -353,3 +358,5 @@ body {
     margin-right: 20px;
     min-width: max-content;
 }
+
+
