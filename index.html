@@ -6,84 +6,126 @@
     <title>Яндекс.Почта</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header__burger-menu">
-            <div class="header__burger-menu-rectangle"></div>
-            <div class="header__burger-menu-rectangle"></div>
-            <div class="header__burger-menu-rectangle"></div>
-        </div>
-        <div class="header__yandex-mail-logo"><span class="header__yandex-logo">Яндекс </span><span class="header__mail-logo">Почта</span></div>
-        <input type="search" class="header__search-input" placeholder="Поиск">
+<header class="header">
+    <div class="header__burger-menu">
+        <div class="header__burger-menu-rectangle"></div>
+        <div class="header__burger-menu-rectangle"></div>
+        <div class="header__burger-menu-rectangle"></div>
     </div>
+    <img class="header__yandex-mail-logo" src="images/yandex-mail-logo.svg" alt="logo">
+    <div class="header__search-input-block">
+        <input class="header__search-input" type="text" placeholder="Поиск">
+        <span class="header__search-input-close">&#x2715;</span>
+    </div>
+</header>
+<main class="main">
     <div class="menu">
         <button class="menu__new-letter-button"><span class="menu__new-letter-button-text">Написать</span></button>
-        <div class="menu__menu-buttons">
-            <div class="menu__menu-button">Входящие</div>
-            <div class="menu__menu-button">Отправленные</div>
-            <div class="menu__menu-button">Удаленные</div>
-            <div class="menu__menu-button">Спам</div>
-            <div class="menu__menu-button">Черновики</div>
-            <div class="menu__menu-button">Создать папку</div>
-        </div>
+        <ul class="menu__menu-buttons">
+            <li class="menu__menu-button"><a href="" class="main_links">Входящие</a></li>
+            <li class="menu__menu-button"><a href="" class="main_links">Отправленные</a></li>
+            <li class="menu__menu-button"><a href="" class="main_links">Удаленные</a></li>
+            <li class="menu__menu-button"><a href="" class="main_links">Спам</a></li>
+            <li class="menu__menu-button"><a href="" class="main_links">Черновики</a></li>
+            <li class="menu__menu-button"><a href="" class="main_links">Создать папку</a></li>
+        </ul>
     </div>
     <div class="content">
         <input type="checkbox" id="hidden-page-viewer">
         <div class="content__hidden-page">
             <label for="hidden-page-viewer">
-                <img class="content__page-close-button" src="images/close.png" alt="close-button">
+                <span class="content__page-close-button">&#x2715;</span>
             </label>
             <img class="content__raccoon-image" src="images/raccoon.png" alt="raccoon">
-            Енот – животное крайне забавное. В начале 20 века зоолог Альфред Брем описал этих любопытных зверьков так: «По умственному складу енот несколько походит на обезьяну: также весел, жив, при случае смел, а при выслеживании добычи хитер, как лисица, ест он все, начиная с растений и кончая рыбой и крабами, которых ловит из воды. Любит также таскать домашних кур».
-            <p>Еноты – хищники (семейство енотовые). Самый известный и распространенный вид - енот-полоскун. Вес и размеры енота сродни небольшому бочонку: тело достигает до 65 см в длину, вес – до 10 кг. Обычно самочки уступают самцам в размерах. Зубов у енота много (от 31 до 46), их длина достигает нескольких сантиметров. Енот всеяден, он охотно поедает ягоды, червячков, букашек, лягушек, мелких грызунов. Из-за своей прожорливости многие еноты селятся неподалеку от человека в поисках объедков на свалках и помойках. Не редки случаи, когда в поисках пищи наглые еноты пробираются не только во дворы, но и в сами дома.
-            <p>Родина енотов – Северная и Центральная Америка. В начале 20 века из-за ценного меха этих животных стали разводить и на других материках. Сегодня еноты-полоскуны обитают в некоторых странах Европы и в Европейской части России. Продолжительность жизни енотов в естественной среде – до 10 лет, прирученные еноты дольше – до 15 лет. Читайте подробнее про домашних енотов.
+            Енот – животное крайне забавное. В начале 20 века зоолог Альфред Брем описал этих любопытных зверьков так:
+            «По умственному складу енот несколько походит на обезьяну: также весел, жив, при случае смел, а при
+            выслеживании добычи хитер, как лисица, ест он все, начиная с растений и кончая рыбой и крабами, которых
+            ловит из воды. Любит также таскать домашних кур».
+            <p>Еноты – хищники (семейство енотовые). Самый известный и распространенный вид - енот-полоскун. Вес и
+                размеры енота сродни небольшому бочонку: тело достигает до 65 см в длину, вес – до 10 кг. Обычно самочки
+                уступают самцам в размерах. Зубов у енота много (от 31 до 46), их длина достигает нескольких
+                сантиметров. Енот всеяден, он охотно поедает ягоды, червячков, букашек, лягушек, мелких грызунов. Из-за
+                своей прожорливости многие еноты селятся неподалеку от человека в поисках объедков на свалках и
+                помойках. Не редки случаи, когда в поисках пищи наглые еноты пробираются не только во дворы, но и в сами
+                дома.
+            <p>Родина енотов – Северная и Центральная Америка. В начале 20 века из-за ценного меха этих животных стали
+                разводить и на других материках. Сегодня еноты-полоскуны обитают в некоторых странах Европы и в
+                Европейской части России. Продолжительность жизни енотов в естественной среде – до 10 лет, прирученные
+                еноты дольше – до 15 лет. Читайте подробнее про домашних енотов.
         </div>
         <div class="content__content-line">
-            <div class="content__content-line-checkbox"></div>
-            <div class="content__header-text">Переслать</div>
-            <div class="content__header-text">Удалить</div>
-            <div class="content__header-text">Это спам!</div>
-            <div class="content__header-text">Прочитано</div>
-        </div>
-        <label for="hidden-page-viewer">
-            <div class="content__content-line">
-                <div class="content__content-line-checkbox"></div>
-                <img class="content__yandex-mail-logo" src="//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg" alt="yandex-logo">
-                <div class="content__letter-author bold-text content__letter-text">Яндекс.Паспорт</div>
-                <div class="content__new-letter-flag content__new-letter-flag-enabled"></div>
-                <div class="content__letter-subject bold-text content__letter-text">Доступ к аккаунту восстановлен</div>
-                <div class="content__letter-time">6 авг</div>
+            <input class="content__content-line-checkbox" type="checkbox">
+            <div class="content__header-menu">
+                <div class="content__header-text"><a href="" class="main_links">Переслать</a></div>
+                <div class="content__header-text"><a href="" class="main_links">Удалить</a></div>
+                <div class="content__header-text"><a href="" class="main_links">Это спам!</a></div>
+                <div class="content__header-text"><a href="" class="main_links">Прочитано</a></div>
             </div>
-        </label>
-        <div class="content__content-line">
-            <div class="content__content-line-checkbox"></div>
-            <img class="content__yandex-mail-logo" src="//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg" alt="yandex-logo">
-            <div class="content__letter-author bold-text content__letter-text">Команда Яндекс.Почты</div>
-            <div class="content__new-letter-flag content__new-letter-flag-enabled"></div>
-            <div class="content__letter-subject bold-text content__letter-text">Как читать почту с мобильного</div>
-            <div class="content__letter-time">6 июля</div>
         </div>
-        <div class="content__content-line">
-            <div class="content__content-line-checkbox"></div>
-            <img class="content__yandex-mail-logo" src="//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg" alt="yandex-logo">
-            <div class="content__letter-author content__letter-text">Командла Яндекс.Почты</div>
-            <div class="content__new-letter-flag"></div>
-            <div class="content__letter-subject content__letter-text">Как читать почту с мобильного</div>
-            <div class="content__letter-time">6 июня</div>
-        </div>
-        <div class="content__content-line">
-            <div class="content__content-line-checkbox"></div>
-            <img class="content__yandex-mail-logo" src="//yastatic.net/mail/socialavatars/socialavatars/v4/ya-default.svg" alt="yandex-logo">
-            <div class="content__letter-author content__letter-text">Яндекс</div>
-            <div class="content__new-letter-flag"></div>
-            <div class="content__letter-subject content__letter-text">Соберите всю почту в этот ящик</div>
-            <div class="content__letter-time">6 мая</div>
+        <div class="content__letters">
+            <label for="hidden-page-viewer">
+                <div class="content__content-line">
+                    <input class="content__content-line-checkbox" type="checkbox">
+                    <div class="content__author-logo">
+                        <div class="content__author_abbr">РХ</div>
+                    </div>
+                    <div class="content__letter-author bold-text content__letter-text">Яндекс.Паспорт
+                    </div>
+                    <div class="content__new-letter-flag content__new-letter-flag-enabled"></div>
+                    <div class="content__letter-subject bold-text content__letter-text">Доступ
+                        к аккаунту восстановлен
+                    </div>
+                    <div class="content__letter-time">6 авг</div>
+                </div>
+            </label>
+            <div class="content__content-line">
+                <input class="content__content-line-checkbox" type="checkbox">
+                <div class="content__author-logo">
+                    <div class="content__author_abbr">Я</div>
+                </div>
+                <div class="content__letter-author bold-text content__letter-text">Команда
+                    Яндекс.Почты
+                </div>
+                <div class="content__new-letter-flag content__new-letter-flag-enabled"></div>
+                <div class="content__letter-subject bold-text content__letter-text">Как
+                    читать почту с мобильного
+                </div>
+                <div class="content__letter-time">6 июля</div>
+            </div>
+            <div class="content__content-line">
+                <input class="content__content-line-checkbox" type="checkbox">
+                <div class="content__author-logo">
+                    <div class="content__author_abbr">Я</div>
+                </div>
+                <div class="content__letter-author content__letter-text">Командла
+                    Яндекс.Почты
+                </div>
+                <div class="content__new-letter-flag"></div>
+                <div class="content__letter-subject content__letter-text">Как читать почту
+                    с мобильного
+                </div>
+                <div class="content__letter-time">6 июня</div>
+            </div>
+            <div class="content__content-line">
+                <input class="content__content-line-checkbox" type="checkbox">
+                <div class="content__author-logo">
+                    <div class="content__author_abbr">Я</div>
+                </div>
+                <div class="content__letter-author content__letter-text">Яндекс</div>
+                <div class="content__new-letter-flag"></div>
+                <div class="content__letter-subject content__letter-text">Соберите всю
+                    почту в этот ящик
+                </div>
+                <div class="content__letter-time">6 мая</div>
+            </div>
         </div>
 
         <div class="content__footer">
-            <div class="content__footer-text">&#169; 2001 - 2018, Яндекс</div>
+            <div class="content__footer-text">&copy; 2001 - 2018, Яндекс</div>
             <div class="content__footer-text">Реклама</div>
             <div class="content__footer-text">Помощь и обратная связь</div>
         </div>
     </div>
+</main>
 </body>
 </html>
