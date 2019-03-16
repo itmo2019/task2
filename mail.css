@@ -30,7 +30,7 @@
 
 header {
     margin: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
 }
 
 #ya-services {
@@ -132,7 +132,7 @@ html {
     display: inline-block;
     position: relative;
     width: 80%;
-    height: 100%;
+    height: 90%;
     border-radius: 3px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
     background-color: #fff;
@@ -159,7 +159,7 @@ html {
 
 .credential {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 
 .mail {
@@ -359,7 +359,7 @@ footer {
 .clear-button {
     position: absolute;
     right: 9px;
-    top: 5px;
+    top: 4px;
     width: 12px;
     height: 12px;
     padding: 0 8px;
