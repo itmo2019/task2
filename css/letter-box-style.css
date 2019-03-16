@@ -5,24 +5,13 @@
     right: 0;
     top: 0;
     bottom: 0;
-    min-width: max-content;
+    overflow: hidden;
+    min-width: 700px;
     min-height: 350px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .34);
     border-radius: 3px;
     background-color: #fff;
     font-family: "Helvetica Neue", sans-serif;
-}
-
-@media screen and (max-width: 800px) {
-    .letter-box {
-        min-width: 600px;
-    }
-}
-
-@media screen and (min-width: 4000px) {
-    .letter-box {
-        left: 5.3%;
-    }
 }
 
 #letter-box__letters {
@@ -195,6 +184,7 @@
     position: absolute;
     top: 13px;
     right: 20px;
+    width: 55px;
 }
 
 .letter-box__footer {
