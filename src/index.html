@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Входящие - Почта</title>
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="pancakes">
+            <img src="images/pancakes.svg" alt="menu button">
+        </button>
+        <div class="logo">
+            <a href="http://mail.yandex.ru">
+                <img src="images/header-logo.svg" alt="Yandex Mail logo">
+            </a>
+        </div>
+        <div class="search">
+            <input class="search-text" placeholder="Поиск" type="text" maxlength="100">
+            <button class="search-clear" type="reset">✖</button>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <button class="compose">Написать</button>
+            <nav class="folders">
+                <ul>
+                    <li><a href="#">Входящие</a></li>
+                    <li><a href="#">Отправленные</a></li>
+                    <li><a href="#">Удаленные</a></li>
+                    <li><a href="#">Спам</a></li>
+                    <li><a href="#">Черновики</a></li>
+                    <li><a href="#">Создать папку</a></li>
+                    <li><a href="#">ЛОРЕМ ИПСУМ ДОЛОР СИТ АМЕТ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="inner">
+            <div class="toolbar">
+                <label class="check">
+                    <input class="check__input" type="checkbox">
+                </label>
+                <a>Переслать</a>
+                <a>Удалить</a>
+                <a>Это спам!</a>
+                <a>Прочитано</a>
+            </div>
+            <hr>
+            <div class="messages">
+                <input type="checkbox" id="message__cutter">
+                <div class="croissant">
+                    <label for="message__cutter">
+                        <span class="croissant__close">✖</span>
+                    </label>
+                    <div class="croissant__page">
+                        <img class="croissant__image" src="images/image.png" width="180" alt="Свежий круассан">
+                        Мучные изделия в форме полумесяцев выпекались в Австрии по меньшей мере с XIII века. Но началом нынешней популярности круассанов можно считать 1839 год, когда австрийский артиллерийский офицер Август Цанг открыл в Париже «Венскую пекарню», где пекли такие булочки.
+                        <p>Существует легенда, что в 1683 году венский пекарь Петер Вендлер впервые сделал булочку в честь неуспеха турецкой осады Вены. Османское войско осадило Вену; пекари, работавшие по ночам и готовившие для горожан свежие булочки к утру, услышали шум от мотыг и кирок, — поняли, что турки делают подкоп под стенами города. Вовремя предупредив об этом солдат, они сорвали план врага.
+                        <p>По другой версии, спустя некоторое время после осады, шляхтичем Юрием Кульчицким в Вене была открыта первая знаменитая кофейня, в которой подавали круассаны в форме османского полумесяца и ароматный кофе по-восточному. Считается, что с тех пор эти необычные булочки стали очень популярны среди покупателей.
+                        <p>В 1770 году круассан впервые появился во Франции. Это случилось благодаря приезду из Вены Марии-Антуанетты и появлению вместе с ней в Париже «венской выпечки». Но венский и французский круассаны — это всё же два разных изделия. Ведь из Вены — только форма изделия, а изготовили его впервые из слоёного теста с маслом именно французские повара, и это случилось в начале XX века. В скором времени появилось целое «семейство» подобных дрожжевых и слоеных булочек, например, улитка с изюмом, слойка с яблочным пюре, слойка с шоколадом и т. д. В 2013 году антиправительственные повстанцы в Сирии запретили круассаны на контролируемой ими территории в Алеппо, объясняя свой запрет вышеупомянутой австрийской легендой
+                    </div>
+                </div>
+                <ul>
+                    <li class="message-box">
+                        <label class="check">
+                            <input class="check__input" type="checkbox">
+                        </label>
+                        <label for="message__cutter">
+                            <img class="message-logo" src="images/message-logo.svg">
+                            <div class="message-contact message__not-read">Яндекс.Паспорт</div>
+                            <div class="read-icon"></div>
+                            <div class="message-subject message__not-read">Доступ к аккаунту восстановлен</div>
+                            <div class="message-time">6 авг</div>
+                        </label>
+                    </li>
+                    <hr>
+                    <li class="message-box">
+                        <label class="check">
+                            <input class="check__input" type="checkbox">
+                        </label>
+                        <img class="message-logo" src="images/message-logo.svg" alt="logo of message contact">
+                        <div class="message-contact message__not-read">Команда Яндекс.Почты</div>
+                        <div class="read-icon"></div>
+                        <div class="message-subject message__not-read">Как читать почту с мобильного</div>
+                        <div class="message-time">6 июл</div>
+                    </li>
+                    <hr>
+                    <li class="message-box">
+                        <label class="check">
+                            <input class="check__input" type="checkbox">
+                        </label>
+                        <img class="message-logo" src="images/message-logo.svg" alt="logo of message contact">
+                        <div class="message-contact">Команда Яндекс.Почты ssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                        <div class="read-icon read-icon__invisible"></div>
+                        <div class="message-subject">Как читать почту с мобильного sssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                        <div class="message-time">6 июл</div>
+                    </li>
+                    <hr>
+                    <li class="message-box">
+                        <label class="check">
+                            <input class="check__input" type="checkbox">
+                        </label>
+                        <img class="message-logo" src="images/message-logo.svg" alt="logo of message contact">
+                        <div class="message-contact">Яндекс</div>
+                        <div class="read-icon read-icon__invisible"></div>
+                        <div class="message-subject">Соберите всю почту в этот ящик</div>
+                        <div class="message-time">6 июл</div>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+            <hr>
+            <footer class="footer">
+                <a href="#">Помощь и обратная связь</a>
+                <a href="#">Реклама</a>
+                <a href="#">&copy; 2001-2018, Яндекс</a>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
