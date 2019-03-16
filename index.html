@@ -8,10 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<header id="header-mail">
-    <div id="ya-logo-and-button">
-        <button id="button-more"><img src="resources/more_btn.png"></button>
-        <span class="logo-ya">Яндекс</span> <span class="logo-mail">Почта</span>
+<header>
+    <div id="logo-ya-and-menu">
+        <div id="header-menu">
+            <div class="single-strip"></div>
+            <div class="single-strip"></div>
+            <div class="single-strip"></div>
+        </div>
+        <img class="ya-logo-mail" src="resources/yandex-mail.png" alt="yandex" height="25" width="150">
     </div>
     <input id="search-header-bar" type="search" placeholder="Поиск"/>
 </header>
@@ -39,9 +43,8 @@
                 <li class="horizontal-nav-panel-elem"><a class="top-bar" href="#">Прочитано</a></li>
             </ul>
         </div>
-        <hr/>
         <div id="messages-container">
-            <div class="bold-message-container">
+            <div class="message-container bold">
                 <input class="message-selector" type="checkbox" id="show-page-checkbox">
                 <div id="hidden-page">
                     <label id="cancel-btn" for="show-page-checkbox">X</label>
@@ -66,44 +69,39 @@
                     <span class="message-sender">Яндекс.Животные</span>
                     <span class="unread-circle"></span>
                     <span class="message-theme">Сегодня у нас в подборке золотистый ретривер</span>
-                    <time class="date">6 авг</time>
+                    <time class="message-date">6 авг</time>
                 </label>
             </div>
-            <hr/>
-            <div class="bold-message-container">
+            <div class="message-container bold">
                 <input class="message-selector" type="checkbox">
                 <img class="ya-img" src="resources/ya-default.png">
                 <div class="message-sender">Команда Яндекс.Почты</div>
                 <span class="unread-circle"></span>
                 <div class="message-theme">Как читать почту с мобильного</div>
-                <div class="date">6 июл</div>
+                <div class="message-date">6 июл</div>
             </div>
-            <hr/>
             <div class="message-container">
                 <input class="message-selector" type="checkbox">
                 <img class="ya-img" src="resources/ya-default.png">
                 <div class="message-sender">Команда Яндекс.Почты</div>
                 <span class="unread-circle"></span>
                 <div class="message-theme">Как читать почту с мобильного</div>
-                <div class="date">6 июл</div>
+                <div class="message-date">6 июл</div>
             </div>
-            <hr/>
             <div class="message-container">
                 <input class="message-selector" type="checkbox">
                 <img class="ya-img" src="resources/ya-default.png">
                 <div class="message-sender">Яндекс</div>
                 <span class="unread-circle"></span>
                 <div class="message-theme">Соберите всю почту в ящик</div>
-                <div class="date">6 июл</div>
+                <div class="message-date">6 июл</div>
             </div>
-            <hr/>
         </div>
         <footer class="footer-add-info">
-            <hr/>
             <nav class="footer-bar">
-                <div class="footer-text">Помощь и обратная связь</div>
-                <div class="footer-text">Реклама</div>
-                <div class="footer-text">&#9400; 2001—2018, Яндекc</div>
+                <div class="footer-text"><a href="#">Помощь и обратная связь</a></div>
+                <div class="footer-text"><a href="#">Реклама</a></div>
+                <div class="footer-text"><a href="#">&#9400; 2001—2018, Яндекc</a></div>
             </nav>
         </footer>
     </main>
