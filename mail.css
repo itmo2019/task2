@@ -30,89 +30,69 @@
 
 header {
     margin: 5px;
-    height: 60px;
+    padding-bottom: 5px;
 }
 
-#group {
+#ya-services {
+    display: inline-block;
     width: 16px;
     height: 16px;
-    padding: 7px;
-    top: -2px;
+    padding-bottom: 2px;
     margin-right: 6px;
 }
 
 .rectangle {
     width: 20px;
-    height: 2.4px;
+    height: 2px;
     margin: 5px;
     background: #000000;
 }
 
-#ya-mail-logo {
-    font-size: 25px;
-}
-
-#logo-ya {
-    font-size: 32px;
-    letter-spacing: 0.001em;
-    font-family: YandexSansBold;
-    margin-right: 4px;
-    margin-left: 3px;
-}
-
-#logo-mail {
-    letter-spacing: 0.001em;
-    font-family: YandexSansLight;
-    font-size: 32px;
-}
-
-.inline {
+.logo {
     display: inline-block;
 }
 
-.invisible-block {
-    width: 5%;
-}
-
-#textInput {
-    width: 30%;
-    height: 32px;
-    padding-left: 25px;
-
-    opacity: 0.5033;
+#ya-search {
+    display: inline-block;
+    margin-left: 10%;
+    padding-left: 16px;
+    cursor: pointer;
+    opacity: 0.5;
     background-color: #ffffff;
-    font-family: YandexSanThin;
+    font-family: YandexSansRegular, serif;
     font-size: 15px;
     line-height: 2.13;
     color: #000000;
+    width: 80%;
+    border: 1px solid #ccc;
+    outline: 0;
+    padding-right: 24px;
 }
 
 ul {
     list-style-type: none;
 }
 
-
-html, body {
+body {
     background-color: #e5eaf0;
+    height: 100%;
 }
 
-body {
-    padding-left: 20px;
-    padding-right: 14px;
+html {
+    height: 100%;
 }
 
 #nav-bar {
     margin-top: 0;
-    margin-left: 22px;
     padding: 0;
 }
 
-#nav-bar A, A:active, A:visited, A:hover {
+.ya-link {
     color: unset;
     text-decoration: none;
 }
 
-#nav-bar li:not(#write-message){
+#nav-bar li:not(.ya-big-button) {
     height: 22px;
     margin-left: 0;
     padding-left: 10px;
@@ -120,11 +100,11 @@ body {
     line-height: 22px;
 }
 
-#nav-bar li:not(#write-message):hover{
+#nav-bar li:not(.ya-big-button):hover {
     background-color: #cdd6e4;
 }
 
-#write-message {
+.ya-big-button {
     height: 32px;
     border-radius: 3px;
     background-color: #6287bd;
@@ -138,8 +118,9 @@ body {
 }
 
 #actions-bar {
-    width: 150px;
-    margin-right: 5px;
+    display: inline-block;
+    width: 147px;
+    margin-right: 22px;
     vertical-align: top;
     font-family: HelveticaNeue;
     font-size: 11px;
@@ -148,7 +129,10 @@ body {
 }
 
 #mails {
+    display: inline-block;
+    position: relative;
     width: 80%;
+    height: 100%;
     border-radius: 3px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
     background-color: #fff;
@@ -156,7 +140,9 @@ body {
 }
 
 .action {
-    margin-left: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 26px;
 }
 
 #mail-actions {
@@ -164,15 +150,15 @@ body {
     font-family: HelveticaNeue;
     font-size: 13px;
     color: #cccccc;
-    border-bottom: 0.5px solid #e2e2e2;;
+    border-bottom: 1px solid #e2e2e2;;
 }
 
 #letters {
     position: relative;
-    min-height: 90%;
 }
 
 .credential {
+    display: inline-block;
     padding: 10px;
 }
 
@@ -180,23 +166,28 @@ body {
     z-index: 2;
     padding: 2px 10px 2px 15px;
     vertical-align: middle;
-    position:  relative;
+    position: relative;
     line-height: normal;
     font-family: HelveticaNeueLight;
     font-size: 13px;
     color: #000000;
     background-color: white;
-    border-bottom: 0.5px solid #e2e2e2;;
+    border-bottom: 1px solid #e2e2e2;;
 }
 
-.bold {
+.unread span:not(.receive-time) {
     font-family: HelveticaNeue;
     font-weight: bold;
 }
 
-.ya-checkbox {
-    vertical-align: middle;
+.unread .read-mark {
+    visibility: visible;
+}
 
+.ya-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    filter: brightness(1.2);
     width: 16px;
     height: 16px;
     background-color: #fff;
@@ -205,25 +196,44 @@ body {
     cursor: pointer;
 }
 
+#select-all {
+    margin-right: 20px;
+}
+
 .user-avatar {
     margin: 5px;
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background-image: url(./img/ya-default.svg);
     border-radius: 15px;
 }
 
 .sender {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     width: 185px;
     max-height: 16px;
+    vertical-align: middle;
 }
 
 .message-title {
+    display: inline-block;
     max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+
+.main-container {
+    height: 100%;
 }
 
 .receive-time {
+    display: inline-block;
     vertical-align: middle;
     float: right;
     color: #9b9b9b;
@@ -232,54 +242,52 @@ body {
 }
 
 footer {
-    border-top: 0.5px solid #e2e2e2;;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: 40px;
+    border-top: 1px solid #e2e2e2;;
     font-family: HelveticaNeueLight;
     font-size: 11px;
     color: #9b9b9b;
     line-height: 15px;
     text-align: right;
+
+    vertical-align: bottom;
 }
 
-footer nav a, footer span {
+.credential-el {
     margin-left: 20px;
 }
 
-#open-article-label {
+.open-article-label {
     box-sizing: border-box;
     width: 100%;
-    position: absolute;
     min-height: 90%;
     z-index: 3;
-    padding: 20px 0 20px 20px;
 }
 
-#kitty {
-    float: right;
-    border-radius: 50%;
-    shape-outside:circle();
-}
-
-#open-article{
+#open-article {
     z-index: 3;
     width: 100%;
     display: none;
 }
 
-#open-article:checked ~.mail {
+#open-article:checked ~ .mail {
     z-index: -10000;
     display: block;
 }
 
-#cat {
+.article {
     padding: 10px;
     z-index: 1;
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
     height: 50px;
     font-size: 18px;
 }
-
 
 #close {
     float: right;
@@ -294,23 +302,74 @@ footer nav a, footer span {
 }
 
 
-#kitty {
+.article-img {
     width: 130px;
     height: 130px;
     position: relative;
     float: left;
     border-radius: 50%;
-    shape-outside:circle();
+    shape-outside: circle();
 }
 
 #close:hover {
     background-color: #cdd6e4;
 }
 
-.oval {
+.read-mark {
+    vertical-align: middle;
+    visibility: hidden;
+    display: inline-block;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: #6287bd;
+    background-color: #6287bd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
 }
 
+.read-mark:checked {
+    background-color: #e5eaf0;
+}
+
+.main-layout {
+    min-width: 990px !important;
+    padding-left: 20px;
+    padding-right: 14px;
+    height: 100%;
+}
+
+.mail-logo {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 153px;
+    height: 31px;
+    content: url(./img/mail-logo.png);
+}
+
+.search-block {
+    margin-left: 10%;
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 32px;
+}
+
+.clear-button {
+    position: absolute;
+    right: 9px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    padding: 0 8px;
+    font-style: normal;
+    font-size: 1.5em;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.15;
+}
+
+.search-block input::-ms-clear {
+    display: none;
+}

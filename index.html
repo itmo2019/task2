@@ -1,97 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <title>Яндекс.Почта</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="mail.css">
 </head>
 <body>
-<header>
-    <div id="group" class="inline">
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-    </div>
-    <div class="inline">
-        <span id="logo-ya">Яндекс</span><span id="logo-mail">Почта</span>
-    </div>
-    <div class="invisible-block inline"></div>
-    <div class="invisible-block inline"></div>
-    <input id="textInput" type="search" class="inline" placeholder="Поиск">
-</header>
-<div>
-    <div id="actions-bar" class="inline">
-        <ul id="nav-bar">
-            <li id="write-message"><a href="">Написать</a></li>
-            <li><a href="index.html">Входящие</a></li>
-            <li><a href="index.html">Отправленные</a></li>
-            <li><a href="index.html">Удаленные</a></li>
-            <li><a href="index.html">Спам</a></li>
-            <li><a href="index.html">Черновики</a></li>
-            <li><a href="index.html">Создать папку</a></li>
-        </ul>
-    </div>
-    <div id="mails" class="inline">
-        <div id="mail-actions">
-            <input class="ya-checkbox" type="checkbox">
-            <div class="inline">
-                <div class="action inline">Переслать</div>
-                <div class="action inline">Удалить</div>
-                <div class="action inline">Это спам!</div>
-                <div class="action inline">Прочитано</div>
-            </div>
+<div class="main-layout">
+    <header>
+        <div id="ya-services">
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
         </div>
-        <div id="letters">
-            <input id="open-article" type="checkbox">
-            <div id="cat">
-                <label for="open-article" id="close">X</label>
-                <img id="kitty" src="./img/kitty.jpg">
-                Кошка - не просто животное, а член семьи. И в любой семье она главная. Нам только кажется, что мы её
-                хозяева. Ничего подобного! Неслучайно говорят: кошка гуляет сама по себе. Это она выбирает себе
-                семью, ведь если кошке что-то не по­нравится, она уйдёт, сбежит в другое место. И, хвастаясь в
-                Интернете фотографиями своих кошек, люди выставляют изображение самого главного персонажа в своей
+        <div class="mail-logo"></div>
+        <div class="search-block">
+            <input id="ya-search" type="text" placeholder="Поиск">
+            <i class="clear-button">&times;</i>
+        </div>
+    </header>
+    <div class="main-container">
+        <div id="actions-bar">
+            <ul id="nav-bar">
+                <li class="ya-big-button"><a class="ya-link" href="">Написать</a></li>
+                <li><a class="ya-link" href="index.html">Входящие</a></li>
+                <li><a class="ya-link" href="index.html">Отправленные</a></li>
+                <li><a class="ya-link" href="index.html">Удаленные</a></li>
+                <li><a class="ya-link" href="index.html">Спам</a></li>
+                <li><a class="ya-link" href="index.html">Черновики</a></li>
+                <li><a class="ya-link" href="index.html">Создать папку</a></li>
+            </ul>
+        </div>
+        <div id="mails">
+            <div id="mail-actions">
+                <input id="select-all" class="ya-checkbox" type="checkbox">
+                <div class="action"><a class="ya-link" href="index.html">Переслать</a></div>
+                <div class="action"><a class="ya-link" href="index.html">Удалить</a></div>
+                <div class="action"><a class="ya-link" href="index.html">Это спам!</a></div>
+                <div class="action"><a class="ya-link" href="index.html">Прочитано</a></div>
+            </div>
+            <div id="letters">
+                <input id="open-article" type="checkbox">
+                <div class="article">
+                    <label for="open-article" id="close">X</label>
+                    <img class="article-img" src="./img/kitty.jpg">
+                    Кошка - не просто животное, а член семьи. И в любой семье она главная. Нам только кажется, что мы её
+                    хозяева. Ничего подобного! Неслучайно говорят: кошка гуляет сама по себе. Это она выбирает себе
+                    семью, ведь если кошке что-то не по­нравится, она уйдёт, сбежит в другое место. И, хвастаясь в
+                    Интернете фотографиями своих кошек, люди выставляют изображение самого главного персонажа в своей
                     семье. Это единственное рабство, которое нам не в тягость, а совсем наоборот.
+                </div>
+                <div class="unread mail">
+                    <input class="ya-checkbox" type="checkbox">
+
+                    <img class="user-avatar" src="img/ya-default.svg">
+                    <span class="sender">
+                        <label class="open-article-label" for="open-article">
+                            Яндекс.Паспорт
+                        </label>
+                    </span>
+                    <input type="checkbox" class="read-mark">
+                    <span class="message-title">
+                        <label class="open-article-label" for="open-article">Доступ к аккаунту восстановлен</label>
+                    </span>
+                    <span class="receive-time">6 авг</span>
+                    </input>
+                </div>
+                <div class="unread mail">
+                    <input class="ya-checkbox" type="checkbox">
+                    <img class="user-avatar" src="img/ya-default.svg">
+                    <span class="sender">Команда Яндекс.Почты</span>
+                    <input type="checkbox" class="read-mark">
+                    <span class="message-title">Как читать почту с мобильного</span>
+                    <span class="receive-time">6 июл</span>
+                </div>
+                <div class="mail">
+                    <input class="ya-checkbox" type="checkbox">
+                    <img class="user-avatar" src="img/ya-default.svg">
+                    <span class="sender">Команда Яндекс.Почты</span>
+                    <input type="checkbox" class="read-mark">
+                    <span class="message-title">Как читать почту с мобильного</span>
+                    <span class="receive-time">6 июн</span>
+                </div>
+                <div class="mail">
+                    <input class="ya-checkbox" type="checkbox">
+                    <img class="user-avatar" src="img/ya-default.svg">
+                    <span class="sender">Яндекс</span>
+                    <input type="checkbox" class="read-mark">
+                    <span class="message-title">Соберите всю почту в этот ящик</span>
+                    <span class="receive-time">26 мар</span>
+                </div>
+                <div class="mail">
+                    <input class="ya-checkbox" type="checkbox">
+                    <img class="user-avatar" src="img/ya-default.svg">
+                    <span class="sender">Длиннной динович длинновинский</span>
+                    <input type="checkbox" class="read-mark">
+                    <span class="message-title">Съешь ещё этих мягких французскихбулок, да выпей чаю</span>
+                    <span class="receive-time">26 мар</span>
+                </div>
             </div>
-            <div class="mail">
-                <input class="ya-checkbox inline" type="checkbox">
-                <label id="open-article-label" for="open-article">
-                </label>
-                <img class="user-avatar">
-                <span class="sender bold inline">Яндекс.Паспорт</span>
-                <div class="oval inline"></div>
-                <span class="message-title bold inline">Доступ к аккаунту восстановлен</span>
-                <span class="receive-time inline">6 авг</span>
-                </input>
-            </div>
-            <div class="mail">
-                <input class="ya-checkbox" type="checkbox">
-                <img class="user-avatar">
-                <span class="sender bold inline">Команда Яндекс.Почты</span>
-                <div class="oval inline"></div>
-                <span class="message-title bold inline">Как читать почту с мобильного</span>
-                <span class="receive-time inline">6 июл</span>
-            </div>
-            <div class="mail">
-                <input class="ya-checkbox" type="checkbox">
-                <img class="user-avatar">
-                <span class="sender inline">Команда Яндекс.Почты</span>
-                <span class="message-title inline">Как читать почту с мобильного</span>
-                <span class="receive-time inline">6 июн</span>
-            </div>
-            <div class="mail">
-                <input class="ya-checkbox" type="checkbox">
-                <img class="user-avatar">
-                <span class="sender inline ">Яндекс</span>
-                <span class="message-title inline">Соберите всю почту в этот ящик</span>
-                <span class="receive-time inline">26 мар</span>
-            </div>
+            <footer>
+                <nav class="credential">
+                    <a class="credential-el ya-link" href="">Помощь и обратная связь</a>
+                    <a class="credential-el ya-link" href="">Реклама</a>
+                    <a class="credential-el ya-link" href="">&copy 2001&mdash;2018, Яндекс</a>
+                </nav>
+            </footer>
         </div>
-        <footer>
-            <nav class="credential inline">
-                <a href="">Помощь и обратная связь</a>
-                <a href="">Реклама</a>
-                <a href="">© 2001&mdash;2018, Яндекс</a>
-            </nav>
-        </footer>
     </div>
 </div>
 </body>
