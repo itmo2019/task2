@@ -1,13 +1,13 @@
 .mails-placeholder {
     position: absolute;
-    min-width: 575px;
+    min-width: 530px;
     height: 589px;
 }
 
 .mail-placeholder-header {
     display: block;
-    border: 0 solid #9b9b9b;
-    border-bottom-width: 1px;;
+    border: 0 solid #e2e2e2;
+    border-bottom-width: 2px;
     width: 100%;
 }
 
@@ -30,8 +30,8 @@
     position: relative;
     width: 100%;
     color: #9b9b9b;
-    border-style: solid;
-    border-width: 1px 0 0 0;
+    border: 0 solid #e2e2e2;
+    border-top-width: 2px;
     bottom: 20px;
 }
 

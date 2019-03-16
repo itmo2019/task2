@@ -29,7 +29,7 @@
     display: inline-block;
     width: 312px;
     height: 30px;
-    margin-left: 90px;
+    margin-left: 114px;
     background-color: #f2f5f8;
     border: 1px solid #d9dbde;
     font-family: YandexSansThin, "Times New Roman";
@@ -51,11 +51,16 @@
     outline: none;
     border: none;
     padding-left: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
 }
 
 .placeholder-for-clear-input {
     display: inline-block;
-    margin: 8px 5px 0 0;
+    margin: 3px 5px 0 0;
     float: right;
+    color: #cbced1;
+    font-size: 22px;
 }
 
