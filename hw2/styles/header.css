@@ -60,7 +60,7 @@ body {
 .search::-webkit-input-placeholder {
     font-family: "Yandex Sans Light", serif;
     font-size: 15px;
-    color: #cccccc;
+    color: rgb(204, 204, 204);
 }
 
 .search::-webkit-search-cancel-button {
