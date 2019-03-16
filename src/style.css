@@ -146,6 +146,13 @@ body {
     color: #cccccc;
 }
 
+.letters {
+    width: 100%;
+    min-height: 420px;
+    height: 80%;
+    overflow: scroll;
+}
+
 .letter {
     height: 40px;
     border-bottom: solid #d8d8d8;
