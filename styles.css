@@ -291,13 +291,14 @@ body {
 }
 
 .content__hidden-page {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     position: absolute;
+    margin: 0;
     background-color: #fff;
     display: none;
     z-index: 1;
-    padding: 20px 20px;
+    padding: 5% 5%;
     font-size: 20px;
     overflow-y: scroll;
 }
@@ -317,8 +318,8 @@ body {
 }
 
 .content__raccoon-image {
-    width: 300px;
+    width: 25%;
     float: right;
     shape-outside: url("images/raccoon.png");
-    -webkit-shape-outside: circle();
+    -webkit-shape-outside: circle(50%);
 }
