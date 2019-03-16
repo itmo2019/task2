@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/style.css" line="88" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d614df5c-fc5b-439b-94c4-80a9b5587f20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="3cb80460-6961-4fb3-ba05-51dd032dbd7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Task2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task2.html" beforeDir="false" afterPath="$PROJECT_DIR$/task2.html" afterDir="false" />
     </list>
@@ -16,12 +21,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            <state relative-caret-position="676">
+              <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -29,35 +34,63 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+            <state relative-caret-position="265">
+              <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/help.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>float</find>
-      <find>sear</find>
-      <find>marked</find>
-      <find>leftBu</find>
-      <find>main</find>
-      <find>ul</find>
-      <find>cate</find>
-      <find>categories</find>
-      <find>mark</find>
-      <find>threeSt</find>
-      <find>yan</find>
-      <find>three</find>
-      <find>write</find>
-      <find>box</find>
-      <find>searc</find>
-      <find>messageBox</find>
-      <find>none</find>
+      <find>align</find>
+      <find>manul</find>
       <find>message</find>
-      <find>mess</find>
+      <find>&lt;p&gt;</find>
+      <find>useless</find>
+      <find>Helvetica Neue</find>
+      <find>markedList</find>
+      <find>ulCa</find>
+      <find>marked</find>
+      <find>messageBox</find>
+      <find>logo</find>
+      <find>chec</find>
+      <find>messageBoxLi</find>
+      <find>none</find>
+      <find>ul</find>
+      <find>firstRow</find>
+      <find>otherRows</find>
+      <find>messageBoxList</find>
+      <find>write</find>
+      <find>leftB</find>
+      <find>categ</find>
+      <find>leftLis</find>
+      <find>messageBoxUl</find>
+      <find>vertical</find>
+      <find>messageButto</find>
+      <find>messageButtons</find>
+      <find>checkbox</find>
+      <find>butt</find>
+      <find>leftList</find>
+      <find>buttons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -66,21 +99,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/help.txt" />
         <option value="$PROJECT_DIR$/task2.html" />
+        <option value="$PROJECT_DIR$/task2.html" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="960" />
-    <option name="height" value="1025" />
+    <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,10 +128,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,58 +156,133 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d614df5c-fc5b-439b-94c4-80a9b5587f20" name="Default Changelist" comment="" />
-      <created>1552659588415</created>
+      <changelist id="3cb80460-6961-4fb3-ba05-51dd032dbd7e" name="Default Changelist" comment="" />
+      <created>1552058221458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552659588415</updated>
-      <workItem from="1552659591006" duration="11811000" />
+      <updated>1552058221458</updated>
+      <workItem from="1552058222769" duration="23494000" />
+      <workItem from="1552088132376" duration="34000" />
+      <workItem from="1552088183586" duration="12000" />
+      <workItem from="1552088240991" duration="232000" />
+      <workItem from="1552125708086" duration="2570000" />
+      <workItem from="1552129884968" duration="41000" />
+      <workItem from="1552745573890" duration="9607000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1552126478809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552126478809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="small upd">
+      <created>1552128228194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552128228194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11811000" />
+    <option name="totallyTimeSpent" value="35990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="640" height="683" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20066334" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2494577" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32929516" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2494577" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32929516" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="small upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="small upd" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/task2.html___jb_tmp___" />
+    <entry file="file://$PROJECT_DIR$/help.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/structural.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        <state relative-caret-position="676">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+        <state relative-caret-position="265">
+          <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
