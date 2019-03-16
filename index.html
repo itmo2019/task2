@@ -12,52 +12,46 @@
     </head>
 
     <body id="background">
-        <div id="content">
-            <header id="header">
-                <div id="burger">
-                    <div></div> 
-                    <div></div> 
-                    <div></div> 
-                    <div></div>
-                    <div></div>
+        <div class="content">
+            <header class="header">
+                <div class="burger">
+                    <div class="burger-1"></div>
                 </div>
-                <div id="logo" title="YandexSans is not open">
-                    <span class="yandex-word">Яндекс</span> Почта
-                </div>
-                <div id="search-wrapper">
-                    <div id="search-field">Поиск</div>
+                <img class="logo" alt="логотип" src="logo.png" width="153" height="31">
+                <div class="search-wrapper">
+                    <div class="search-field">Поиск</div>
                 </div>
             </header>
-            <div id="main-page">
-                <div id="menu">
-                    <div id="write-letter">Написать</div>
-                    <div class="menu-item">Входящие</div>
-                    <div class="menu-item">Отправленные</div>
-                    <div class="menu-item">Удаленные</div>
-                    <div class="menu-item">Спам</div>
-                    <div class="menu-item">Черновики</div>
-                    <div class="menu-item">Создать папку</div>
-                </div>
-                <div id="letters-maintainance">
-                    <div id="letters-menu">
+            <div class="main-page">
+                <ul class="menu">
+                    <li class="write-letter">Написать
+                    <li class="menu-item">Входящие
+                    <li class="menu-item">Отправленные
+                    <li class="menu-item">Удаленные
+                    <li class="menu-item">Спам
+                    <li class="menu-item">Черновики
+                    <li class="menu-item">Создать папку
+                </ul>
+                <div class="letters-maintainance">
+                    <div class="letters-menu">
                         <input type="checkbox" class="check-box">
-                        <div class="letter-menu-item">Переслать</div>
-                        <div class="letter-menu-item">Удалить</div>
-                        <div class="letter-menu-item">Это бан!</div>
-                        <div class="letter-menu-item">Прочитано</div>
+                        <ul class="horizontal-list">
+                            <li class="letter-menu-item">Переслать
+                            <li class="letter-menu-item">Удалить
+                            <li class="letter-menu-item">Это бан!
+                            <li class="letter-menu-item">Прочитано
+                        </ul>
                     </div>
                     <input class="letter-trigger" id="letter-trigger0" type="checkbox">
                     <div class="unread-letter-header">
                         <div class=letter-title-aligner-left>
                             <input type="checkbox" class="check-box">
                             <img class="avatar" src="avatar.png" width="30px" height="30px">
-                            <div class="sender">Яндекс.Паспорт</div>
                         </div>
-                        <label class="letter-title-aligner" for="letter-trigger0">
-                            <div class="letter-date">6 авг</div>
-                            <div class="letter-title">Доступ к аккаунту восстановлен</div>
-                            <div class="unread-flag"></div>
-                        </label>
+                        <div class="sender">Яндекс.Паспорт</div>
+                        <div class="unread-flag"></div>
+                        <label class="letter-title" for="letter-trigger0">Доступ к аккаунту восстановлен</label>
+                        <time class="letter-date">6 авг</time>
                     </div>
                     <article class="letter-article">
                         <label class="letter-cross" for="letter-trigger0">
@@ -98,49 +92,43 @@
                             Я сажаю алюминиевые огурцы, а-а на брезентовом поле <br>
                             Я сажаю алюминиевые огурцы, а-а на брезентовом поле. <br>
                         </p>
-                        <footer style="text-align: right">Алюминевые огурцы - В.Цой</footer> 
+                        <footer class="letter-ending clearfix">Алюминевые огурцы - В.Цой</footer> 
                     </article>
                     <div class="unread-letter-header">
                         <div class=letter-title-aligner-left>
                             <input type="checkbox" class="check-box">
                             <img class="avatar" src="avatar.png" width="30px" height="30px">
-                            <div class="sender">Команда Яндекс.Почты</div>
                         </div>
-                        <div class="letter-title-aligner">
-                            <div class="letter-date">6 июл</div>
-                            <div class="letter-title">Как читать почту с мобильного</div>
-                            <div class="unread-flag"></div>
-                        </div>
+                        <div class="sender">Команда Яндекс.Почты</div>
+                        <div class="unread-flag"></div>
+                        <div class="letter-title">Как читать почту с мобильного</div>
+                        <time class="letter-date">6 июл</time>
                     </div>
                     <div class="read-letter-header">
                         <div class=letter-title-aligner-left>
                             <input type="checkbox" class="check-box">
                             <img class="avatar" src="avatar.png" width="30px" height="30px">
-                            <div class="sender">Команда Яндекс.Почты</div>
                         </div>
-                        <div class="letter-title-aligner">
-                            <div class="letter-date">6 июл</div>
-                            <div class="letter-title">Как читать почту с мобильного</div>
-                            <div class="unread-flag"></div>
-                        </div>
+                        <div class="sender">Команда Яндекс.Почты</div>
+                        <div class="unread-flag"></div>
+                        <div class="letter-title">Как читать почту с мобильного</div>
+                        <time class="letter-date">6 июл</time>
                     </div>
                     <div class="read-letter-header">
                         <div class=letter-title-aligner-left>
                             <input type="checkbox" class="check-box">
                             <img class="avatar" src="avatar.png" width="30px" height="30px">
-                            <div class="sender">Яндекс</div>
                         </div>
-                        <div class="letter-title-aligner">
-                            <div class="letter-date">6 июл</div>
-                            <div class="letter-title">Соберите всю почту в этот ящик</div>
-                            <div class="unread-flag"></div>
-                        </div>
+                        <div class="sender">Яндекс</div>
+                        <div class="unread-flag"></div>
+                        <div class="letter-title">Соберите всю почту в этот ящик</div>
+                        <time class="letter-date">6 июл</time>
                     </div>
                     <div class="letter"></div>
                     <footer class="letters-footer">
-                        <div title="права на оригинальный макет">© 2001—2018, Яндекс</div>
-                        <div>Реклама</div>
                         <div>Помощь и обратная связь</div>
+                        <div>Реклама</div>
+                        <div title="права на оригинальный макет">© 2001—2018, Яндекс</div>
                     </footer>  
                 </div>
             </div>
