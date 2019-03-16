@@ -116,6 +116,7 @@ body {
 
 .main_links {
     text-decoration: none;
+    color: inherit;
 }
 
 .main_links:visited {
