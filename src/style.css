@@ -329,31 +329,6 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 1600px) {
-  .author-name {
-    width: 20%;
-  }
-  .email-text {
-    width: 60%;
-  }
-}
-
-
-@media screen and (min-width: 2400px) {
-  .receive-date {
-    top: 5%;
-  }
-  .all-letters-chooser {
-    width: 24px;
-    height: 24px;
-  }
-
-  .letter-chooser {
-    width: 24px;
-    height: 24px;
-  }
-}
-
 .letov-picture {
     float: right;
     shape-outside:circle();
@@ -364,7 +339,7 @@
 }
 
 .opened-text {
-  width: calc(100% - 198px);
+  width: 78%;
   height: 100%;
   margin-bottom: 14px;
   word-wrap: break-word;
