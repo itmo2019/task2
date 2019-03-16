@@ -1,11 +1,59 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("txtStyle/HelveticaNeueCyr-Medium.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeueLight;
+    src: url("txtStyle/HelveticaNeueCyr-Light.otf");
+}
+
 body {
-    margin: 0 auto;
-    width: 900px;
-    height: 600px;
+    padding: 2% 3%;
     background-color: #e5eaf0;
 }
 
-.border:hover {
+.textMenu {
+    font-family: HelveticaNeue;
+    padding-left: 10px;
+    margin-left: -10px;
+    font-size: 11px;
+    color: #707070;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    list-style-type: none;
+}
+
+#content {
+    display: none;
+}
+
+#show:target #content {
+    display: inline-block;
+}
+
+#show:target #mem {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.openMoon {
+    width: 100%;
+    height: 750px;
+}
+
+.YPlogo {
+    vertical-align: text-bottom;
+    margin-left: 11px;
+    font-size: 170%;
+    width: 200px;
+    display: inline-block;
+}
+
+.textMenu:hover {
     width: 137px;
     border-radius: 3px;
     background-color: #cdd6e4;
@@ -13,41 +61,50 @@ body {
     color: #555555;
 }
 
+.unhighlight {
+    color: inherit;
+    text-decoration: none;
+}
+
+.unhighlight:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    width: 100%;
+    margin-left: -30px;
+}
+
 .leftMenu {
-    float: left;
-    margin-top: 2.2%;
-    margin-left: 2.8%;
-    width: 18.4%;
-    height: 88.3%;
+    display: inline-block;
+    vertical-align: top;
+    width: 147px;
+    height: 100%;
 }
 
 .mainInfo {
-    margin-top: 2.2%;
-    float: left;
-    margin-left: 2.8%;
-    width: 73.6%;
-    height: 88.3%;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    height: 800px;
+    margin-left: 3%;
     border-radius: 3px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
     background-color: #ffffff;
 }
 
 .textSearch {
-    margin-left: 16px;
-    width: 44px;
-    height: 32px;
-    opacity: 0.5;
     font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.13;
-    letter-spacing: normal;
-    color: #000000;
-}
-
-a {
+    -webkit-appearance: none;
     outline: none;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    width: 90%;
+    height: 100%;
+    color: #000000;
 }
 
 .close {
@@ -56,24 +113,32 @@ a {
     margin-right: 10px;
 }
 
-header {
-    float: left;
-    height: 5.3%;
+.main_part {
+    display: inline-block;
+    margin-top: 13px;
     width: 100%;
-    margin-top: 2%;
+    height: 90%;
+    min-width: 800px;
+}
+
+header {
+    min-width: 800px;
+    display: inline-block;
+    height: 5%;
+    width: 100%;
 }
 
 .burger-menu {
-    float: left;
-    margin-left: 2.8%;
+    display: inline-block;
     margin-top: 7px;
 }
 
 .search {
-    border-width: 0px;
-    float: left;
-    margin-left: 114px;
-    width: 301px;
+    vertical-align: text-bottom;
+    border-width: 0;
+    display: inline-block;
+    margin-left: 14%;
+    width: 40%;
     height: 32px;
     opacity: 0.5;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -81,68 +146,32 @@ header {
 }
 
 .line {
+    margin-top: 5px;
     width: 20px;
-    height: 2.4px;
+    height: 3px;
     margin-bottom: 5px;
     background-color: #000000;
 }
 
 button {
-    margin-bottom: 1.3%;
-    width: 147px;
-    height: 32px;
-    background-color: #6287bd;
-}
-
-.yandexpost {
-    margin-left: 11px;
-    font-size: 170%;
-    float: left;
-}
-
-@font-face {
-    src: url("txtStyle/YandexSansDisplay-Bold.ttf");
-    font-family: YandexBold;
-}
-
-@font-face {
-    src: url("txtStyle/YandexSansDisplay-Thin.ttf");
-    font-family: YandexThin;
-}
-
-.firstWord {
-    transform: scale(0.7, 1.4);
-    font-family: YandexBold;
-}
-
-.secondWord {
-    transform: scale(0.7, 1.4);
-    font-family: YandexThin;
-}
-
-.button {
     width: 147px;
     height: 32px;
     border-radius: 3px;
-    background-color: #6287bd;
     margin-bottom: 8px;
+    border: #6287bd;
+    background-color: #6287bd;
 }
 
-.textNapicat {
-    float: left;
+.textWrite {
+    font-family: HelveticaNeue;
+    display: inline-block;
+    vertical-align: center;
     margin-top: 7px;
+    margin-bottom: 10px;
     width: 56px;
     height: 15px;
-
     font-size: 12px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #ffffff;
-    margin-left: 46px;
-
 }
 
 .cross {
@@ -150,65 +179,37 @@ button {
     height: 9px;
     opacity: 0.15;
     float: right;
-    margin-top: 11.5px;
+    margin-top: 12px;
     margin-right: 10px;
-}
-
-.mailLine {
-
-    width: 660.3px;
-    height: 0.5px;
-    border: solid 1px #e2e2e2;
-    background-color: #e2e2e2;
 }
 
 .mainTitle {
     height: 37px;
+    width: 100%;
+    border-bottom: solid 1px #e2e2e2;
 }
 
-.endLine {
-    position: absolute;
-    top: 558px;
-    width: 660.3px;
-    height: 0.5px;
-    border: solid 1px #e2e2e2;
-    background-color: #e2e2e2;
-}
-
-.border {
-    width: 147px;
-
-    font-size: 11px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #707070;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 10px;
-}
 
 .textTitle {
+    font-family: HelveticaNeue;
     margin-top: 11px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     margin-left: 16px;
     height: 16px;
-
     font-size: 13px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #cccccc;
 }
 
 .endTitle {
-    height: 30.5px;
-    margin-left: 224px;
+    min-width: 623px;
+    width: calc(100% - 505px);
+    position: absolute;
+    top: 850px;
+    height: 31px;
+    border-top: solid 1px #e2e2e2;
 }
+
 
 .Textmoon {
     margin-top: 25px;
@@ -216,151 +217,105 @@ button {
 }
 
 .textEndline {
-    margin-top: 13px;
-    float: left;
-    margin-left: 18px;
+    font-family: HelveticaNeueLight;
+    float: right;
+    margin-top: 18px;
+    margin-right: 45px;
     height: 12px;
-
     font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #9b9b9b;
 }
 
 .ylogo {
     margin-left: 10px;
-    float: left;
+    display: inline-block;
     width: 37px;
     border-radius: 50%;
 }
 
 .moonlogo {
+    position: relative;
     float: left;
     shape-outside: circle(50%);
     margin: 20px;
     width: 200px;
 }
 
-.textSenderNewletter {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: "...";
-    float: left;
-    margin-top: 11.5px;
-    margin-left: 10px;
-    width: 200px;
-    height: 16px;
-
-    font-size: 12px;
+.isBold {
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
 }
 
-.textSenderCheckLetter {
+.textSenderLetter {
+    font-family: HelveticaNeue;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: "...";
-    float: left;
-    margin-top: 11.5px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-top: 12px;
     margin-left: 10px;
-    width: 200px;
+    width: 20%;
     height: 15px;
-
+    vertical-align: top;
     font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #000000;
 }
 
-.textNewletter {
+.isBoldLetter {
+    font-weight: bold;
+}
+
+.textLetter {
+    font-family: HelveticaNeue;
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: "...";
-    float: left;
-    margin-top: 11.5px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-top: 12px;
     margin-left: 10px;
-    width: 200px;
-    height: 16px;
-
-    font-size: 12px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-}
-
-.textCheckLetter {
-    position: absolute;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: "...";
-    float: left;
-    margin-top: 11.5px;
-    margin-left: 10px;
-    width: 200px;
+    width: 40%;
     height: 15px;
-
+    vertical-align: top;
     font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #000000;
 }
 
 .markNewLetter {
-    float: left;
+    display: inline-block;
     margin-left: 20px;
-    margin-top: 14.5px;
+    margin-top: 15px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #6287bd;
+    vertical-align: top;
 
 }
 
 .markNoLetter {
-    float: left;
+    display: inline-block;
     margin-left: 20px;
-    margin-top: 14.5px;
+    margin-top: 15px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
-
+    vertical-align: top;
 }
 
 .data {
+    font-family: HelveticaNeue;
     float: right;
     margin-top: 11px;
     margin-right: 20px;
     height: 15px;
     font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: right;
     color: #9b9b9b;
 }
 
 .checkbox {
-    float: left;
+    display: inline-block;
     margin-left: 20px;
     margin-top: 11px;
     width: 16px;
@@ -371,10 +326,11 @@ button {
     background-color: #ffffff;
     -webkit-appearance: none;
     outline: none;
-    display: inline-block;
+    vertical-align: top;
 }
 
 .checkbox:checked {
+    display: inline-block;
     background: #e2e2e2;
     background-clip: content-box;
 }
