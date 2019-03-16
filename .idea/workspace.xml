@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cb80460-6961-4fb3-ba05-51dd032dbd7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Task2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task2.html" beforeDir="false" afterPath="$PROJECT_DIR$/task2.html" afterDir="false" />
     </list>
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+            <state relative-caret-position="152">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="39" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+            <state relative-caret-position="378">
+              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -61,8 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>align</find>
-      <find>manul</find>
       <find>message</find>
       <find>&lt;p&gt;</find>
       <find>useless</find>
@@ -89,8 +85,10 @@
       <find>messageButtons</find>
       <find>checkbox</find>
       <find>butt</find>
-      <find>leftList</find>
       <find>buttons</find>
+      <find>overflow</find>
+      <find>messageBo</find>
+      <find>leftList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,10 +98,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/help.txt" />
-        <option value="$PROJECT_DIR$/task2.html" />
-        <option value="$PROJECT_DIR$/task2.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/task2.html" />
+        <option value="$PROJECT_DIR$/task2.html" />
       </list>
     </option>
   </component>
@@ -167,7 +165,7 @@
       <workItem from="1552088240991" duration="232000" />
       <workItem from="1552125708086" duration="2570000" />
       <workItem from="1552129884968" duration="41000" />
-      <workItem from="1552745573890" duration="9607000" />
+      <workItem from="1552745573890" duration="10115000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1552126478809</created>
@@ -183,11 +181,32 @@
       <option name="project" value="LOCAL" />
       <updated>1552128228194</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix mistakes">
+      <created>1552756158141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552756158141</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix mistakes">
+      <created>1552756176543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552756176543</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix mistakes">
+      <created>1552756207851</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552756207852</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35990000" />
+    <option name="totallyTimeSpent" value="36498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
@@ -237,7 +256,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="small upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="small upd" />
+    <MESSAGE value="fix mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix mistakes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/task2.html___jb_tmp___" />
@@ -257,15 +277,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+        <state relative-caret-position="152">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="39" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+        <state relative-caret-position="378">
+          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
