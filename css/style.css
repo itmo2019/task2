@@ -27,7 +27,6 @@ body {
     position: relative;
 }
 
-
 /*Start Header*/
 .lines, .main-logo, .search {
     float: left;
@@ -59,28 +58,30 @@ header {
 .search {
     width: 37%;
     margin-left: 114px;
-    /*height: 32px;*/
+    height: 32px;
     margin-top: 11px;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
     background: #f2f5f8;
-
 }
 
-.search > form > input[type="text"] {
+.search-input {
     border: none;
-    width: calc(100% - 70px);
-    margin-bottom: auto;
+    width: calc(100% - 50px);
     margin-left: 16px;
+    height: 27px;
     outline: none;
     background-color: #f2f5f8;
 }
 
-.search > form > button {
-    margin-right: 9px;
+.search-button {
+    margin: 10px;
+    height: 12px;
+    width: 12px;
+    padding: 0;
+    float: right;
     border: none;
     background: #f2f5f8;
 }
-
 
 .clearfix:after {
     content: "";
@@ -119,13 +120,13 @@ header {
     padding: 0;
 }
 
-.bar > li {
+.bar-li {
     width: 147px;
     list-style: none;
     border-radius: 3px;
 }
 
-.bar > li > a {
+.bar-a {
     text-decoration: none;
     color: #555555;
     font-family: "HelveticaNeue", sans-serif;
@@ -135,7 +136,7 @@ header {
     padding-left: 10px;
 }
 
-.bar > li:hover {
+.bar-li:hover {
     background-color: #cdd6e4;
 }
 
@@ -145,18 +146,19 @@ header {
 
 .main-block {
     width: calc(100% - 230px);
-    height: calc(100vh - 14px);
+
     min-width: 400px;
     min-height: 400px;
     margin-left: 22px;
     margin-bottom: 14px;
     margin-right: 20px;
+    padding: 0;
     float: right;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.34);
     border-radius: 3px;
     background-color: #ffffff;
     position: relative;
-    /*overflow: hidden;*/
+    /*overflow: scroll;*/
 }
 
 .check {
@@ -202,6 +204,11 @@ header {
 /*End Container*/
 
 /*Start letter*/
+.all-letters {
+    height: calc(100vh - 14px);
+    overflow: scroll;
+}
+
 .letter {
     border-bottom: 2px solid #e2e2e2;
     height: 40px;
@@ -211,8 +218,12 @@ header {
     text-align: center;
     float: left;
     margin-left: 2%;
-    margin-top: 3px;
-    padding-top: 3px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.hidden-check {
+    display: none;
 }
 
 .mail-from {
@@ -220,12 +231,12 @@ header {
     float: left;
     font-family: "HelveticaNeue", sans-serif;
     font-size: 0.8em;
-    height: 20px;
+    height: 18px;
     width: 29%;
     overflow: hidden;
 }
 
-.blue-circle {
+.circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -239,10 +250,14 @@ header {
     visibility: hidden;
 }
 
+.bold-text {
+    font-weight: 700;
+}
+
 .topic {
     color: #000000;
     font-family: "HelveticaNeue", sans-serif;
-    font-size: 13px;
+    font-size: 0.8em;
     margin-left: 2%;
     margin-top: 11px;
     min-width: 30px;
@@ -255,7 +270,7 @@ header {
 .date {
     color: #9b9b9b;
     font-family: "HelveticaNeue", sans-serif;
-    font-size: 13px;
+    font-size: 0.8em;
     float: right;
     margin-right: 2%;
     width: 6%;
@@ -266,7 +281,7 @@ header {
 /*End letter*/
 
 /*Start My letter*/
-#my-topic {
+.my-topic {
     display: none;
     position: absolute;
     background: rgb(199, 216, 226);
@@ -294,7 +309,7 @@ input[type=checkbox]:checked ~ .letter {
     display: none;
 }
 
-input[type=checkbox]:checked ~ #my-topic {
+input[type=checkbox]:checked ~ .my-topic {
     display: block;
 }
 
@@ -313,13 +328,14 @@ input[type=checkbox]:checked ~ #my-topic {
 
 /*start footer*/
 footer {
+    background-color: white;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     color: #9b9b9b;
     font-family: "HelveticaNeue", sans-serif;
-    font-size: 11px;
+    font-size: 0.7em;
     border-top: 2px solid rgba(140, 140, 140, 0.45);
 }
 

@@ -16,14 +16,12 @@
     <div class="main-logo">
         <img src="img/logo.png" alt="logo">
     </div>
-    <div class="search">
-        <form action="" method="post">
-            <input type="text" placeholder="Поиск">
-            <button type="reset">
-                <img src="img/reset.png" alt="reset">
-            </button>
-        </form>
-    </div>
+    <form method="post" class="search">
+        <input type="text" placeholder="Поиск" class="search-input">
+        <button type="reset" class="search-button">
+            <img src="img/reset.png" height="12" width="12" alt="reset">
+        </button>
+    </form>
 </header>
 <div class="clearfix">
     <section class="menu">
@@ -31,30 +29,30 @@
             Написать
         </button>
         <ul class="bar">
-            <li>
-                <a href="#">Входящие</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Входящие</a>
             </li>
-            <li>
-                <a href="#">Отправленные</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Отправленные</a>
             </li>
-            <li>
-                <a href="#">Удаленные</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Удаленные</a>
             </li>
-            <li>
-                <a href="#">Спам</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Спам</a>
             </li>
-            <li>
-                <a href="#">Черновики</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Черновики</a>
             </li>
-            <li>
-                <a href="#">Создать папку</a>
+            <li class="bar-li">
+                <a href="#" class="bar-a">Создать папку</a>
             </li>
         </ul>
     </section>
     <div class="main-block">
         <div class="mail-functions clearfix">
             <label>
-                <input type="checkbox" class="check float-check">
+                <input type="checkbox" class="check">
             </label>
             <ul>
                 <li>
@@ -72,10 +70,12 @@
             </ul>
         </div>
 
-        <div>
-            <input type="checkbox" class="check" id="op">
-            <div id="my-topic">
-                <label for="op" class="close clearfix"><img src="img/reset.png" alt="reset" width="15"></label>
+        <div class="all-letters">
+            <input type="checkbox" class="check hidden-check" id="op">
+            <div class="my-topic">
+                <label for="op" class="close clearfix">
+                    <img src="img/reset.png" alt="reset" width="15">
+                </label>
                 <p>
                 <h1>
                     Амурский тигр
@@ -113,49 +113,58 @@
                     следующим за ней тигрятам. Зимой шкура тигров светлеет, становится густой и пушистой. Больших снегов
                     тигр не боится – ходить по ним ему помогают широкие лапы.
                 </p>
-
-
             </div>
 
-            <label for="op">
-                <div class="letter clearfix">
-                    <img src="img/yandex.png" alt="Yandex" class="ya">
-                    <span class="mail-from"><b>Яндекс Паспорт</b></span>
-                    <div class="blue-circle"></div>
-                    <b class="topic">Доступ к аккаунту востановлен</b>
-                    <data class="date" value="06.08">6 авг</data>
+            <div class="letter clearfix">
+                <label>
+                    <input type="checkbox" class="check">
+                </label>
+                <label for="op">
+                    <div class="ya">
+                        <img src="img/yandex.png" alt="Yandex">
+                    </div>
+                    <span class="mail-from bold-text">Яндекс Паспорт</span>
+                    <div class="circle"></div>
+                    <span class="topic bold-text">Доступ к аккаунту востановлен</span>
+                    <time class="date" datetime="06.08">6 авг</time>
+                </label>
+            </div>
+
+            <div class="letter clearfix">
+                <label>
+                    <input type="checkbox" class="check">
+                </label>
+                <div class="ya">
+                    <img src="img/yandex.png" alt="Yandex">
                 </div>
-            </label>
-
-            <div class="letter clearfix">
-                <label>
-                    <input type="checkbox" class="check">
-                </label>
-                <img src="img/yandex.png" alt="Yandex" class="ya">
-                <span class="mail-from"><b>Команда Яндекс.Почты</b></span>
-                <div class="blue-circle"></div>
-                <b class="topic">Как читать почту с мобильного</b>
-                <data class="date" value="06.07">6 июл</data>
+                <span class="mail-from bold-text">Команда Яндекс.Почты</span>
+                <div class="circle"></div>
+                <span class="topic bold-text">Как читать почту с мобильного</span>
+                <time class="date" datetime="06.07">6 июл</time>
             </div>
             <div class="letter clearfix">
                 <label>
                     <input type="checkbox" class="check">
                 </label>
-                <img src="img/yandex.png" alt="Yandex" class="ya">
+                <div class="ya">
+                    <img src="img/yandex.png" alt="Yandex">
+                </div>
                 <span class="mail-from">Команда Яндекс.Почты</span>
-                <div class="blue-circle hidden"></div>
+                <div class="circle hidden"></div>
                 <span class="topic">Как читать почту с мобильного</span>
-                <data class="date" value="06.07">6 июл</data>
+                <time class="date" datetime="06.07">6 июл</time>
             </div>
             <div class="letter clearfix">
                 <label>
-                    <input type="checkbox" class="check check-percent">
+                    <input type="checkbox" class="check">
                 </label>
-                <img src="img/yandex.png" alt="Yandex" class="ya">
+                <div class="ya">
+                    <img src="img/yandex.png" alt="Yandex">
+                </div>
                 <span class="mail-from">Яндекс</span>
-                <div class="blue-circle hidden"></div>
+                <div class="circle hidden"></div>
                 <span class="topic">Собери свою поту в этот ящик</span>
-                <data class="date" value="06.07">6 июл</data>
+                <time class="date" datetime="06.07">6 июл</time>
             </div>
         </div>
 
