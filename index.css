@@ -23,6 +23,11 @@
   background: none;
 }
 
+.hamburger__img {
+  width: 25px;
+  height: 25px;
+}
+
 .mail-logo {
   display: inline-block;
   vertical-align: top;
