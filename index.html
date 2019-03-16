@@ -8,65 +8,71 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="find">
-		<span class="findname">Поиск</span>
-		<span class="x">x</span>
-	</div>	
-	<div class="lines">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</div>
+	<input  class="find" name="request" value="" type="search" placeholder="Поиск">
 	<div class="yandex">
-		<span class="bold">Яндекс</span>
-		<span class="thin">Почта</span>
+		<img src="./logo.jpg" 
+		alt="Лого яндекса"
+		height="31"
+		width="153">
 	</div>
 	<div class="inbox"></div>
 	<div class="newbox">
-		<p class="new">Написать</p>
+		<p class="new"><a>Написать</a></p>
 	</div>
 	<div class="menu">
 		<ul class="menulist">
-			<li class="in">Входящие</li>
-			<li class="send">Отправленные</li>
-			<li class="del">Удаленные</li>
-			<li class="spam">Спам</li>
-			<li class="draft">Черновики</li>
-			<li class="makep">Создать папку</li>
+			<li class="in">
+				<a>Входящие</a>
+			</li>
+			<li class="send">
+				<a>Отправленные</a>
+			</li>
+			<li class="del">
+				<a>Удаленные</a>
+			</li>
+			<li class="spam">
+				<a>Спам</a>
+			</li>
+			<li class="draft">
+				<a>Черновики</a>
+			</li>
+			<li class="makep">
+				<a>Создать папку</a>
+			</li>
 		</ul>
 	</div>	
 	<div class="window">
 		<div class="allright">
 			<div class="line3"></div>
-			<p class="foot">Помощь и обратноя связь &nbsp; &nbsp; &nbsp; Реклама &nbsp; &nbsp; &nbsp;  &#169 2001-2018, Яндекс</p>
+			<p class="foot">Помощь и обратноя связь &nbsp; &nbsp; &nbsp; Реклама &nbsp; &nbsp; &nbsp;  &#169; 2001-2018, Яндекс</p>
 		</div>
 		<div class="header">
-				<div class="box item"></div>
-				<span class="item resend">Переслать</span> 
-				<span class="item del">Удалить</span> 
-				<span class="item spam">Это спам!</span> 
-				<span class="item read">Прочитано</span> 
+				<input type="checkbox" class="box item">
+				<input type="submit" name="forward" class="item resend" value="Переслать">
+				<input type="submit" name="delete" class="item resend" value="Удалить">
+				<input type="submit" name="spam" class="item resend" value="Это спам!">
+				<input type="submit" name="read" class="item resend" value="Прочитано">
 		</div>
 		<input type="checkbox" id="essay-action">
 		<article id = "essay">
 			<label id="krestik" for="essay-action">x</label>
            	<iframe src="essay/index.html" width=100% height=100%></iframe>
 		</article>
-		<div class="line1"></div>
+		<div class="line1 firstline"></div>
 		<div id = "letters">
 			<div class = "firstletter">
 				<label for="essay-action" class="clickme">
-					<div class="box item1"></div>
+					<input type="checkbox" class="box item1">
 					<div class="oval item1">Я</div>
 					<div class="item1 authtor">Яндекс.Паспорт</div> 
-					<div class="dot item1"></div>
 					<div class="textletter item1">Доступ к аккаунту востановлен</div>
 					<div class="date">6 авг</div>
+					<div class="dot item1"></div>
 				</label>
 			</div>
 			<div class="line1"></div>
 			<div class="letter">
-				<div class="box item2"></div>
+				<input type="checkbox" class="box item2">
 					<div class="oval item2">Я</div>
 					<div class="authtor item2">Команда Яндекс.Почты</div> 
 					<div class="dot item2"></div>
@@ -75,18 +81,18 @@
 			</div>
 			<div class="line1"></div>
 			<div class="letter">
-				<div class="box item3"></div>
+				<input type="checkbox" class="box item3">
 					<div class="oval item3" >Я</div>
-					<div class="item3 authtor">Команда Яндекс.Почты</div> 
+					<div class="item3 authtor">Команда Яндекс.Почты имеет слишком длинное название</div> 
 					<div class="textletter item3">Как читать почту с мобильного</div>
 					<div class="date item3">6 июл</div>
 			</div>
 			<div class="line1"></div>
 			<div class="letter">
-				<div class="box item4"></div>
+				<input type="checkbox" class="box item4">
 					<div class="oval item4" >Я</div>
 					<div class="item4 authtor">Яндекс</div> 
-					<div class="textletter item4">Это очень длинное письмо и поэтому его показывать не стоит</div>
+					<div class="textletter item4">Это очень длинное письмо и поэтому его показывать не стоит. Very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text, very long text</div>
 					<div class="date item4">8 июл</div>
 			</div>
 			<div class="line1"></div>

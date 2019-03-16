@@ -8,7 +8,10 @@
 	src: url(./YandexSansText-Bold/YandexSansText-Bold.woff2) format('woff2');
 	src: url(YandexSansText-Bold/YandexSansText-Bold.ttf) format('truetype');
 }
-
+.header {
+	margin-left: 20px; 
+	margin-top: 11px; 
+}
 .bold {
 	font-family: Yandex Sans Text Bold;
 }
@@ -26,58 +29,29 @@
 }
 .window {
 	position: absolute;
-	width: 589px;
+	/*width: 589px;*/
+	min-width: 589px;
+	width: 73.625vw;
   	height: 530px;
 	margin-top: 56px;
 	margin-left: 191px;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
 	background-color: #ffffff;
 }
-.item {
+.allright {
+	width: inherit;
 	position: absolute;
-	margin-top: 11px;
-  	height: 16px;
-  	font-family: HelveticaNeue;
-  	font-size: 13px;
-  	font-weight: 500;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	color: #cccccc;
+	margin-top: 498.5px;
 }
-.resend {
-	width: 68px;
-	margin-left: 56px;
+.line3{
+	width: inherit;
+ 	height: 1px;
+    border: solid 1px #e2e2e2;
 }
-span.del {
-	width: 54px;
-	height: 16px;
-	font-family: HelveticaNeue;
-	font-size: 13px;
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	color: #cccccc;
-	margin-left: 150px;
-}
-span.spam {
-	width: 62px;
-	margin-left: 228px;
-
-}
-.line1 {
-	position: relative;
-	margin-top: 37px;
-	width: 590px;
-	height: 2px;
-	border: solid 1px #e2e2e2;
-} 
 .foot {
 	margin-top: 8.5px;
-	margin-left: 224px;
+	float: right;
+	margin-right: 20px; 
 	white-space: nowrap;
 	width: 345px;
 	height: 12px;
@@ -90,39 +64,6 @@ span.spam {
 	letter-spacing: normal;
 	color: #9b9b9b;
 }
-.allright {
-	position: absolute;
-	margin-top: 498.5px;
-}
-.line3{
-	width: 589px;
- 	height: 1px;
-    border: solid 1px #e2e2e2;
-}
-.read {
-	width: 70px;
-	margin-left: 315px;
-}
-.item1.box {
-	position: absolute;
-	margin-top: 11px;
-}
-.item.box{
-	display: block;
-	position: absolute;
-	margin-top: 11px;
-}
-.box{
-	position: absolute;
-	margin-top: 11.5px;
-	margin-left: 20px;
-	width: 16px;
-  	height: 16px;
-  	border-radius: 3px;
-  	border: solid 1px rgba(0, 0, 0, 0.15);
-  	background-color: #ffffff;
-  }
-
 .new {
 	position: relative;
 	margin-left: 46px;
@@ -161,12 +102,27 @@ span.spam {
 }
 
 .menulist {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 	position: absolute;
 	margin-top: 96px;
-	width: 147px;
+	width: 100%;
 	margin-left: 22px;
 }
+.line1.firstline {
+	margin-top: 10px;
+}
+.line1 {
+	position: relative;
+	margin-top: 4px;
+	/*width: 590px;*/
+	width: 100%;
+	height: 2px;
+	border: solid 1px #e2e2e2;
+} 
 .inbox {
+	/*position: relative;*/
 	position: absolute;
 	margin-top: 96px;
 	margin-left: 22px;
@@ -175,13 +131,49 @@ span.spam {
   	border-radius: 3px;
   	background-color: #cdd6e4;
 }
+label {
+	display: inline-block;
+	width: inherit;
+}
+.item1.box, .item2.box, .item3.box, .item4.box {
+	display: inline-block;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.firstletter {
+	width: 100%;
+}
+.letter {
+	width: 100%;
+}
+#letters {
+	width: 100%;
+}
+
+.item {
+	background: #ffffff;
+	color: #cccccc;
+	border:0 none;
+}
 .item1.authtor, .item2.authtor {
 	font-weight: bold;
 }
-.authtor {
+#letters {
 	position: absolute;
+}
+.authtor {
+	display: inline-block;
+	position: relative;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	/*float: right;*/
+	/*position: absolute;*/
+	width: 155px;
 	margin-top: 12px;
-	margin-left: 86px;
+	margin-left: 10px;
 	font-family: HelveticaNeue;
 	font-size: 13px;
 	font-weight: normal;
@@ -195,10 +187,17 @@ span.spam {
 	font-weight: bold;
 }
 .textletter {
-	position: absolute;
+	display: inline-block;
+	position: relative;
+	/*float: left;*/
+	/*position: absolute;*/
 	margin-top: 12px;
-	margin-left: 281px;
-	width: 213px;
+	margin-left: 50px;
+	/*margin-right: 7.4%;*/
+	width: calc(100% - 376px);
+	/*max-width: 0.36vw;*/
+	/*min-width: 213px; */
+	/*todo изменить*/
 	height: 16px;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -214,10 +213,20 @@ span.spam {
 }
 
 .date {
-	position: absolute;
-
+	display: inline-block;
+	
+	position: relative;
+	/*width: inherit;*/
+	/*position: absolute;*/
 	margin-top: 13px;
-	margin-left: 538px;
+	/*margin-left: 538px;*/
+	/*text-overflow: ellipsis;*/
+	overflow: hidden;
+	white-space: nowrap;
+	width: 40px;
+	margin-right: 10px;
+	margin-left: auto;
+	float: right;
  	font-family: HelveticaNeue;
   	font-size: 13px;
   	font-weight: normal;
@@ -232,6 +241,9 @@ li {
 	margin-bottom: 8px;
 	list-style-type: none;
 	width: 81px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
  	height: 13px;
   	font-family: HelveticaNeue;
   	font-size: 11px;
@@ -242,7 +254,6 @@ li {
   	letter-spacing: normal;
   	color: #707070;
 }
-
 .in {
 	margin-top: 4px;
 	margin-bottom: 11px;
@@ -257,14 +268,23 @@ li {
   	letter-spacing: normal;
   	color: #555555;
 }
-#letters {
-	position: absolute;
+.oval.item1 {
+	display: inline-block;
+	/*display: block;*/
+	/*position: absolute;*/
+	position: relative;
 }
 
 .oval {
-	position: absolute;
+	display: inline-block;
+	/*display: block;*/
+	/*position: absolute;*/
+	position: relative;
     width: 30px;
     height: 30px;
+     /*margin-left: 100px;*/
+   /* margin-top: 0px;*/
+    margin-top: 10px;
     font-family: Yandex Sans Text Thin;
     background-color: #ff3333;
     border-radius: 50%;
@@ -272,8 +292,6 @@ li {
     font-weight: normal;
     color: #ffffff;
     text-align: center;
-    margin-left: 46px;
-    margin-top: 5px;
 }
 body {
 	position: relative;
@@ -292,7 +310,10 @@ body {
 }
 .dot {
 	position: absolute;
-	margin-top: 14px;
+	/*display: inline-block;*/
+	/*display: none;
+	position: relative;*/
+	margin-top: -20px;
 	margin-left: 261px;
 	border-radius: 50%;
 	width: 10px;
@@ -322,9 +343,10 @@ body {
   	letter-spacing: normal;
   	color: #000000;
 }
+
 #essay {
     position: absolute;
-    margin-top: 37px;
+    margin-top: 10px;
     display: none;
     background: #ffffff;
     height:491px; 
@@ -342,7 +364,7 @@ body {
 	position: absolute;
     font-size: 20px;
     margin-top: 0px;
-    margin-left: 550px;
+    margin-left: 90%;
     color: #cccccc;
 }
 
@@ -353,4 +375,3 @@ body {
 #essay-action:checked ~ #essay {
     display: block;
 }
-

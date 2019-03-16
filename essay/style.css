@@ -5,9 +5,6 @@ div {
 	float: left;
 	margin: 0px 5px 5px 0px;
 	shape-outside: circle();
-	/*shape-outside: circle(50%) margin-box; */
-	 /*shape-outside: ellipse(closest-side farthest-side at 50% 50%);*/
-
 }
 p {
 	margin-left: 5px;
