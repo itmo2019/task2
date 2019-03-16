@@ -6,14 +6,22 @@ html {
 
 main {
     margin-top: 13px;
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 65px);
+    position: absolute;
+    top: 42px;
+    left: 18px;
+    right: 18px;
+    bottom: 10px;
 }
 
 main > * {
     display: inline-block;
     vertical-align: top;
+}
+
+@media screen and (min-width: 4000px) {
+    main {
+        margin-top: .5%;
+    }
 }
 
 a {
@@ -29,4 +37,8 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+.cursor {
+    cursor: pointer;
 }

@@ -2,8 +2,10 @@
     position: absolute;
     display: none;
     top: 0;
-    z-index: 1;
-    background-color: white;
+    left: 0;
+    height: 100%;
+    z-index: 50;
+    background-color: #fff;
 }
 
 .apple-page__text {
@@ -18,7 +20,7 @@
     margin-top: -5px;
     margin-right: 5px;
     font-size: 35px;
-    color: gray;
+    color: #808080;
     cursor: pointer;
 }
 
@@ -33,6 +35,6 @@
     display: none;
 }
 
-#apple-page__hider:checked + .apple-page {
+#apple-page__hider:checked ~ .apple-page {
     display: block;
 }

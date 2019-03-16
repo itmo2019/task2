@@ -15,7 +15,7 @@
     word-wrap: break-word;
 }
 
-.nav__write-button {
+.write-button {
     border: none;
     outline: none;
     width: 100%;
@@ -23,13 +23,13 @@
     text-align: center;
     border-radius: 3px;
     background-color: #6287bd;
-    color: #ffffff;
+    color: #fff;
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
 }
 
-.nav__write-button:hover {
+.write-button:hover {
     background-color: #4c76b7;
 }
 
@@ -54,6 +54,6 @@
 .nav__list-li_select {
     border-radius: 3px;
     background-color: #cdd6e4;
-    color: #555555;
+    color: #555;
     font-weight: 700;
 }
