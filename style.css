@@ -156,15 +156,13 @@ body {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 13px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: auto;
     border-bottom: solid 1px #e2e2e2;
 }
 
 .messages-block-header__action {
-    width: 80px;
+    width: auto;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
 
     margin-left: 15px;
