@@ -132,6 +132,8 @@ body {
 }
 
 .acts-not-writing {
+    overflow: hidden;
+    text-overflow: ellipsis;
     box-sizing: border-box;
     width: 147px;
     min-height: 22px;
@@ -161,6 +163,9 @@ li {
 
 .inner-block {
     width: calc(100% - 221px);
+    min-width: 550px;
+    min-height: 300px;
+    overflow: scroll;
     height: calc(100% - 70px);
     position: absolute;
     display: inline;
@@ -325,7 +330,7 @@ li {
     shape-outside: circle();
 }
 
-.choose:checked+label {
+.choose:checked + label {
     display: inline-block;
     margin-left: -42px;
 }
@@ -353,11 +358,8 @@ li {
 .text {
     font-family: HelveticaNeue;
     font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    padding: 20px;
+    white-space: normal;
 }
 
 .msg-mark {
