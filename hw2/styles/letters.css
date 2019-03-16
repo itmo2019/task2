@@ -1,73 +1,76 @@
 .letters {
     margin-left: 2%;
-    margin-right: 2%;
     vertical-align: top;
     display: inline-block;
-    width: 74%;
-    height: 96.5%;
-    background: #ffffff;
+    width: 78%;
+    height: 685px;
+    background: rgb(255, 255, 255);
     border-radius: 3px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 20);
 }
 
-.letters #headerLetters {
+.headerLetters {
     width: 100%;
-    height: 8%;
-    margin-left: 3.5%;
+    height: 50px;
+    margin-left: 40px;
 }
 
-.letters #headerLetters:before {
+.headerLetters:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-#headerLetters button {
+.headerLetters__button {
     display: inline-block;
     vertical-align: middle;
-    color: #cccccc;
-    font-family: "Segoe UI", serif;
-    font-size: 13px;
-    background-color: #ffffff;
+    color: rgb(204, 204, 204);
+    font-family: "Yandex Sans Light", serif;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
     border-style: none;
     margin-left: 2%;
 }
 
-#headerLetters button:nth-child(n + 3):nth-child(-n + 5) {
+.headerLetters__button:nth-child(n + 3):nth-child(-n + 5) {
     margin-left: 4%;
 }
-
 
 .line {
     width: 100%;
     height: 1px;
-    background: #e2e2e2;
+    background: rgb(226, 226, 226);
 }
 
-.letter {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+.bottomLine {
+    width: 100%;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    margin-top: 480px;
+}
+
+.letters__letter {
+    margin-left: 36px;
     width: 95%;
-    height: 8%;
+    height: 50px;
 }
 
-.letter:before {
+.letters__letter:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-
-.wrapper_checkbox_infoSender {
+.wrapper-checkbox-infoSender {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
     width: 38%;
 }
 
-.wrapper_checkbox_infoSender:before {
+.wrapper-checkbox-infoSender:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -84,120 +87,111 @@
     height: 16px;
 }
 
-.yandexLogo {
+.wrapper-checkbox-infoSender__yandexLogo {
     display: inline-block;
     vertical-align: middle;
-    background: #ff3333;
-    border-radius: 50%;
+    margin-left: 10px;
+    background-image: url(../images/yandex_logo.svg);
     width: 30px;
     height: 30px;
-    margin-left: 3px;
 }
 
-.Y {
-    font-family: "Yandex Sans Light", serif;
-    color: white;
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 8px;
-}
-
-.senderPhoto {
+.wrapper-checkbox-infoSender__senderPhoto {
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin-left: 3px;
+    margin-left: 10px;
 }
 
-.senderTheme {
+.wrapper-checkbox-infoSender__senderTheme {
     display: inline-block;
     vertical-align: middle;
+    overflow: hidden;
     font-family: "Yandex Sans Light", serif;
-    font-size: 13px;
-    width: 65%;
+    font-size: 15px;
+    width: 80%;
+    height: 20px;
     margin-left: 3px;
 }
 
-
-.wrapper_readed {
+.wrapper-readed {
     display: inline-block;
     vertical-align: middle;
     width: 3%;
     height: 100%;
 }
 
-.wrapper_readed:before {
+.wrapper-readed:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-.readed {
+.wrapper-readed__readed {
     display: inline-block;
     vertical-align: middle;
     width: 10px;
     height: 10px;
-    background: #6287bd;
+    background: rgb(98, 135, 189);
     border-radius: 50%;
 }
 
-
-.wrapper_infoAboutLetter {
+.wrapper-infoAboutLetter {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
     width: 55%;
 }
 
-.wrapper_infoAboutLetter:before {
+.wrapper-infoAboutLetter:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-
-.beginOfLetter {
+.wrapper-infoAboutLetter__beginOfLetter {
+    overflow: hidden;
     display: inline-block;
     vertical-align: middle;
     width: 75%;
     font-family: "Yandex Sans Light", serif;
-    font-size: 13px;
+    font-size: 15px;
+    height: 20px;
 }
 
-.data {
+.wrapper-infoAboutLetter__data {
     display: inline-block;
     vertical-align: middle;
     width: 20%;
     font-family: "Yandex Sans Light", serif;
-    font-size: 13px;
+    font-size: 15px;
     text-align: right;
-    color: #9b9b9b;
+    color: rgb(155, 155, 155);
 }
-
-/*div {
-    border: 1px solid black;
-}*/
 
 .footerLetters {
-    margin-top: 61.5%;
     text-align: right;
-    color: #9b9b9b;
-    font-family: "Segoe UI", serif;
-    font-size: 11px;
+    height: 50px;
 }
 
-
-.footerLetters button {
+.footerLetters:before {
+    content: "";
     display: inline-block;
     vertical-align: middle;
-    color: #cccccc;
-    font-family: "Segoe UI", serif;
+    height: 100%;
+}
+
+.footerLetters__a {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(204, 204, 204);
+    font-family: "Yandex Sans Light", serif;
     font-size: 11px;
-    background-color: #ffffff;
     border-style: none;
     margin-right: 4%;
+    cursor: pointer;
 }

@@ -4,129 +4,111 @@
     <meta charset="UTF-8">
     <title>Яндекс.Почта</title>
     <link href="styles/header.css" rel="stylesheet">
-    <link href="styles/body.css" rel="stylesheet">
-    <link href="styles/letter.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/letters.css" rel="stylesheet">
     <link href="styles/interactive.css" rel="stylesheet">
 </head>
 <body>
-<main>
-    <header id="mainHeader">
-        <div id="menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div id="name">
-            <span id="yandex">Яндекс</span> <span id="mail">Почта</span>
-        </div>
-        <div id="inputText">
-            <span id="search">Поиск</span>
-            <span id="cross">&times</span>
-        </div>
-    </header>
-    <div class="mainBody">
-        <div class="buttons">
-            <button id="buttonWrite">
-                Написать
-            </button>
-            <div class="folders">
-                <button>Входящие</button>
-                <button>Отправленные</button>
-                <button>Удаленные</button>
-                <button>Спам</button>
-                <button>Черновики</button>
-                <button>Создать папку</button>
-            </div>
-        </div>
-        <div class="letters">
-            <header id="headerLetters">
-                <div class="checkbox"></div>
-                <button>Переслать</button>
-                <button>Удалить</button>
-                <button>Это спам!</button>
-                <button>Прочитано</button>
-            </header>
-            <div class="line"></div>
-            <input type="checkbox" id="clicker">
-            <div class="page">
-                <label for="clicker">
-                    <div class="pageClose">&times</div>
-                </label>
-                <div class="pageText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio
-                        excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo
-                        rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore
-                        possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum
-                        repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse
-                        accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse
-                        repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis
-                        libero facere. Suscipit odit quas
-                    <div id="element"></div>
-                    nemo, enim laudantium, provident repellendus natus nostrum
-                    facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium.
-                    Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet
-                    eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore
-                    corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate
-                    earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut
-                    in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam
-                    ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente
-                    ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit
-                    possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis
-                    aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut
-                    reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde?
-                </div>
-            </div>
-            <label for="clicker">
-                <div class="letter">
-                    <div class="wrapper_checkbox_infoSender">
-                        <div class="checkbox"></div>
-                        <img class="senderPhoto" alt="sender" src="images/myPhoto.jpg">
-                        <span class="senderTheme">Task 1</span>
-                    </div>
-                    <div class="wrapper_readed">
-                        <div class="readed"></div>
-                    </div>
-                    <div class="wrapper_infoAboutLetter">
-                    <span class="beginOfLetter">
-                        Здравствуйте, отправил 1 задание
-                    </span>
-                        <div class="data">
-                            <time datetime="2019-03-01">3 мар</time>
-                        </div>
-                    </div>
-                </div>
-            </label>
-
-            <div class="line"></div>
-            <div class="letter">
-                <div class="wrapper_checkbox_infoSender">
-                    <div class="checkbox"></div>
-                    <div class="yandexLogo"><span class="Y">Я</span></div>
-                    <span class="senderTheme">Яндекс.Паспорт</span>
-                </div>
-                <div class="wrapper_readed">
-                </div>
-                <div class="wrapper_infoAboutLetter">
-                    <div class="beginOfLetter">
-                        <span>Доступ к аккаунту восстановлен</span>
-                    </div>
-                    <div class="data">
-                        <time datetime="2019-02-29">29 фев</time>
-                    </div>
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <footer class="footerLetters">
-                <div class="line"></div>
-                <button>Помощь и обратная связь</button>
-                <button>Реклама</button>
-                <button>&copy 2001 - 2018, Яндекс</button>
-            </footer>
+<header class="header">
+    <div class="menu">
+        <div class="menu__rectangle"></div>
+        <div class="menu__rectangle"></div>
+        <div class="menu__rectangle"></div>
+    </div>
+    <div class="nameLogo"></div>
+    <input class="search" type="search" placeholder="Поиск">
+</header>
+<main class="mainBody">
+    <div class="buttons">
+        <button class="buttonWrite">Написать</button>
+        <div class="folders">
+            <button class="folders__button">Входящие</button>
+            <button class="folders__button">Отправленные</button>
+            <button class="folders__button">Удаленные</button>
+            <button class="folders__button">Спам</button>
+            <button class="folders__button">Черновики</button>
+            <button class="folders__button">Создать папку</button>
         </div>
     </div>
+    <div class="letters">
+        <header class="headerLetters">
+            <div class="checkbox"></div>
+            <button class="headerLetters__button">Переслать</button>
+            <button class="headerLetters__button">Удалить</button>
+            <button class="headerLetters__button">Это спам!</button>
+            <button class="headerLetters__button">Прочитано</button>
+        </header>
+        <div class="line"></div>
+        <input type="checkbox" id="clicker">
+        <div class="page">
+            <label for="clicker">
+                <div class="page__close">&times;</div>
+            </label>
+            <div class="page__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit libero esse odio
+                    excepturi fuga est ut itaque a quod suscipit, rerum asperiores. Consequuntur voluptates illo
+                    rerum recusandae pariatur asperiores, aspernatur, saepe ipsum error dolorem, quod inventore
+                    possimus modi deleniti tenetur et officiis. Nemo ab in totam ratione sequi error, ea dolorum
+                    repudiandae omnis, eaque facere impedit fugiat. Dolorum distinctio autem sequi enim quidem esse
+                    accusamus repudiandae voluptatum nobis, velit, molestiae. Eaque maiores, harum. Saepe esse
+                    repellendus sint. Labore provident optio quis commodi quod quaerat quo similique perspiciatis
+                    libero facere. Suscipit odit quas
+                <div id="element"></div>
+                nemo, enim laudantium, provident repellendus natus nostrum
+                facilis expedita adipisci qui, harum minus quidem officia cupiditate repellat ut praesentium.
+                Possimus corporis, error atque ex adipisci, illum suscipit pariatur saepe impedit aliquam amet
+                eos reiciendis quidem hic, nisi. Sint nobis modi, nesciunt quasi placeat quia. Veniam inventore
+                corrupti quisquam illum debitis vitae accusamus nobis alias cum iste error magnam, cupiditate
+                earum! Incidunt at consequuntur, rem ipsa odio ipsum deleniti repudiandae blanditiis harum ut
+                in, fugit officia rerum ad, corporis dolore! Commodi repellendus esse quibusdam enim qui totam
+                ipsum, consequuntur officia vel dolores, quod corrupti eveniet maiores minus explicabo, sapiente
+                ratione doloribus laboriosam impedit nesciunt a obcaecati quam veritatis! Placeat, velit
+                possimus delectus, atque voluptate iste alias illo, dolor odit ipsa facere quibusdam? Non omnis
+                aliquid eveniet fuga labore dolores, autem blanditiis, dolorem error ex enim fugiat quisquam aut
+                reprehenderit delectus, nihil accusamus eaque at odit natus accusantium sunt asperiores unde?
+            </div>
+        </div>
+        <label for="clicker">
+            <div class="letters__letter">
+                <div class="wrapper-checkbox-infoSender">
+                    <div class="checkbox"></div>
+                    <img class="wrapper-checkbox-infoSender__senderPhoto" alt="sender" src="images/myPhoto.jpg">
+                    <div class="wrapper-checkbox-infoSender__senderTheme">Task 1</div>
+                </div>
+                <div class="wrapper-readed">
+                    <div class="wrapper-readed__readed"></div>
+                </div>
+                <div class="wrapper-infoAboutLetter">
+                    <div class="wrapper-infoAboutLetter__beginOfLetter">Здравствуйте, отправил 1 задание</div>
+                    <div class="wrapper-infoAboutLetter__data">
+                        <time datetime="2019-03-01">3 мар</time>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <div class="line"></div>
+        <div class="letters__letter">
+            <div class="wrapper-checkbox-infoSender">
+                <div class="checkbox"></div>
+                <div class="wrapper-checkbox-infoSender__yandexLogo"></div>
+                <div class="wrapper-checkbox-infoSender__senderTheme">Яндекс.Паспорт</div>
+            </div>
+            <div class="wrapper-readed"></div>
+            <div class="wrapper-infoAboutLetter">
+                <div class="wrapper-infoAboutLetter__beginOfLetter">Доступ к аккаунту восстановлен</div>
+                <div class="wrapper-infoAboutLetter__data">
+                    <time datetime="2019-02-29">29 фев</time>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="bottomLine"></div>
+        <footer class="footerLetters">
+            <a class="footerLetters__a">Помощь и обратная связь</a>
+            <a class="footerLetters__a">Реклама</a>
+            <a class="footerLetters__a">&copy; 2001 - 2018, Яндекс</a>
+        </footer>
+    </div>
 </main>
-
-
 </body>
 </html>
