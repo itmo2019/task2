@@ -330,7 +330,7 @@ li {
     shape-outside: circle();
 }
 
-.choose:checked + label {
+#choose:checked + .mail {
     display: inline-block;
     margin-left: -42px;
 }
@@ -343,7 +343,7 @@ li {
     right: 7px;
 }
 
-.label {
+.mail {
     box-sizing: border-box;
     position: absolute;
     top: 0;
