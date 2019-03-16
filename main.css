@@ -26,20 +26,20 @@ header {
     top: 12px;
 }
 
-#ya-mail-logo {
+.ya-mail-logo {
     font-size: 25px;
 }
 
-#logo-ya {
+.logo-ya {
     width: 100%;
-    font-family: YandexSansBold;
+    font-family: YandexSansBold, sans-serif;
     margin-right: 4px;
     margin-left: 3px;
 }
 
-#logo-mail {
+.logo-mail {
     width: 100%;
-    font-family: YandexSansThin;
+    font-family: YandexSansThin, sans-serif;
 }
 
 .inline {
@@ -50,9 +50,10 @@ ul {
     list-style-type: none;
 }
 
-A, A:active, A:visited, A:hover {
+a, a:active, a:visited, a:hover {
     color: unset;
     text-decoration: none;
+    position: unset !important;
 }
 
 html, body {
@@ -61,14 +62,14 @@ html, body {
     background-color: #e5eaf0;
 }
 
-#content {
+.content {
     width: 800px;
     min-height: 100%;
     position: relative;
     margin: 0 auto;
 }
 
-#top-search {
+.top-search {
     width: 301px;
     height: 32px;
     position: absolute;
@@ -80,23 +81,18 @@ html, body {
     opacity: 0.5;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    font-family: YandexSanThin;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
+    font: 15px YandexSanThin;
     line-height: 2.13;
-    letter-spacing: normal;
-    color: #000000;
+    color: #000;
 }
 
-#nav-bar {
+.nav-bar {
     margin-top: 0;
     margin-left: 22px;
     padding: 0;
 }
 
-#nav-bar li:not(#write-message-action){
+.nav-bar li:not(.write-message-action){
     width: 137px;
     height: 22px;
     margin-left: 0;
@@ -106,22 +102,18 @@ html, body {
     line-height: 22px;
 }
 
-#nav-bar li:not(#write-message-action):hover{
+.nav-bar li:not(.write-message-action):hover{
     background-color: #cdd6e4;
 }
 
-#write-message-action {
+.write-message-action {
     width: 147px;
     height: 32px;
     border-radius: 3px;
     background-color: #6287bd;
-    font-family: HelveticaNeue;
+    font-family: HelveticaNeue, sans-serif;
     font-size: 12px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #ffffff;
     text-align: center;
     vertical-align: middle;
@@ -129,22 +121,18 @@ html, body {
     margin-bottom: 8px;
 }
 
-#actions-bar {
+.actions-bar {
     width: 200px;
     position: absolute;
     left: 0;
     top: 56px;
-    font-family: HelveticaNeue;
+    font-family: HelveticaNeue, sans-serif;
     font-size: 11px;
-    font-weight: 500;   
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    font-weight: 500;
     color: #707070;
 }
 
-#mail-box {
+.mail-box {
     width: 589px;
     min-height: 530px;
     position: absolute;
@@ -156,46 +144,42 @@ html, body {
     margin-bottom: 30px;
 }
 
-#mail-box-actions {
+.mail-box-actions {
     position: relative;
     width: 100%;
     height: 37px;
-    font-family: HelveticaNeue;
+    font-family: HelveticaNeue, sans-serif;
     font-size: 13px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #cccccc;
 }
 
-#mail-box-actions * {
+.mail-box-actions * {
     position: absolute;
     top: 11px;
 }
 
-#mail-box-actions ul {
+.mail-box-actions ul {
     position: unset;
 }
 
-#select-all {
+.select-all {
     left: 20px;
 }
 
-#resend {
+.resend {
     left: 56px;
 }
 
-#delete {
+.delete {
     left: 150px;
 }
 
-#strike {
+.strike {
     left: 228px;
 }
 
-#mark-as-read {
+.mark-as-read {
     left: 315px;
 }
 
@@ -203,14 +187,14 @@ html, body {
     border-bottom: solid 1px #e2e2e2;
 }
 
-#mail-box-content {
+.mail-box-content {
     width: 100%;
     min-height: 463px;
     border-top: solid 1px #e2e2e2;
     border-bottom: solid 1px #e2e2e2;
 }
 
-#messages-list {
+.messages-list {
     padding: 0;
     margin: 0;
 }
@@ -218,16 +202,9 @@ html, body {
 .message-snippet {
     position: relative;
     height: 37px;
-    line-height: normal;
 
-    font-family: HelveticaNeue;
-    font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
+    font: 13px HelveticaNeue;
+    color: #000;
 }
 
 .bold {
@@ -284,7 +261,7 @@ html, body {
     font-weight: normal;
 }
 
-#footer-wrapper {
+.footer-wrapper {
     width: 100%;
     height: 30px;
     position: relative;
@@ -296,13 +273,7 @@ footer {
     position: absolute;
     right: 20px;
     bottom: 10px;
-    font-family: HelveticaNeueLight;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    font: 11px HelveticaNeueLight;
     color: #9b9b9b;
 }
 
@@ -310,7 +281,7 @@ footer nav a, footer span {
     margin-left: 15px;
 }
 
-#article {
+.article {
     box-sizing: border-box;
     width: 100%;
     min-height: 463px;
@@ -322,39 +293,38 @@ footer nav a, footer span {
     font-size: 14px;
     padding: 20px 0 20px 20px;
     display: none;
-    font-family: sans-serif;
     font-weight: 300;
 }
 
-#moon {
+.moon {
     position: relative;
     float: right;
     border-radius: 50%;
     shape-outside:circle();
 }
 
-#cross {
+.cross {
     position: absolute;
     top: 0;
     right: 0;
     margin: 10px;
     width: 15px;
     height: 15px;
-    font-family: HelveticaNeueLight;
+    font-family: HelveticaNeueLight, sans-serif;
     font-weight: 100;
     text-align: center;
     line-height: 15px;
     vertical-align: middle;
 }
 
-#cross:hover {
+.cross:hover {
     background-color: #cdd6e4;
 }
 
-#first-message-tick:checked + #article {
+#first-message-tick:checked + .article {
     display: block;
 }
 
-#first-message-label {
+.first-message-label {
     position: unset;
 }

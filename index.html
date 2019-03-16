@@ -6,15 +6,15 @@
         <link rel="stylesheet" href="main.css">
     </head>
 <body>
-    <div id="content">
+    <div class="content">
         <header>
-            <div id="ya-services-popup" class="inline"><img src="static/menu-512.png" width="20" height="14"></div>
-            <div id="ya-mail-logo" class="inline"><span id="logo-ya">Яндекс</span><span id="logo-mail">Почта</span></div>
+            <div class="inline ya-services-popup"><img src="static/menu-512.png" width="20" height="14" alt=""></div>
+            <div class="inline ya-mail-logo"><span class="logo-ya">Яндекс</span><span class="logo-mail">Почта</span></div>
         </header>
-        <input id="top-search" type="search" placeholder="Поиск">
-        <div id="actions-bar">
-            <ul id="nav-bar">
-                <li id="write-message-action"><a href="">Написать</a></li>
+        <input class="top-search" type="search" placeholder="Поиск">
+        <div class="actions-bar">
+            <ul class="nav-bar">
+                <li class="write-message-action"><a href="">Написать</a></li>
                 <li><a href="">Входящие</a></li>
                 <li><a href="">Отправленные</a></li>
                 <li><a href="">Удаленные</a></li>
@@ -23,61 +23,61 @@
                 <li><a href="">Создать папку</a></li>
             </ul>
         </div>
-        <div id="mail-box">
-            <div id="mail-box-actions">
-                <input id="select-all" class="inline" type="checkbox">
+        <div class="mail-box">
+            <div class="mail-box-actions">
+                <input class="select-all inline" type="checkbox">
                 <ul class="inline">
-                    <li id="resend" class="inline">Переслать</li>
-                    <li id="delete" class="inline">Удалить</li>
-                    <li id="strike" class="inline">Это спам!</li>
-                    <li id="mark-as-read" class="inline">Прочитано</li>
+                    <li class="resend inline">Переслать</li>
+                    <li class="delete inline">Удалить</li>
+                    <li class="strike inline">Это спам!</li>
+                    <li class="mark-as-read inline">Прочитано</li>
                 </ul>
             </div>
-            <div id="mail-box-content">
-                <ul id="messages-list">
+            <div class="mail-box-content">
+                <ul class="messages-list">
                     <li class="message-snippet bold">
                         <input id="first-message-tick" class="message-tick" type="checkbox">
-                        <div id="article">
-                            <label id="cross" for="first-message-tick">X</label>
-                            <img id="moon" src="/static/moon.png" width="150" height="150">
+                        <div class="article">
+                            <label class="cross" for="first-message-tick">X</label>
+                            <img class="moon" src="/static/moon.png" width="150" height="150" alt="">
                             После Солнца Луна является самым заметным космическим телом на небосводе, поэтому люди всегда проявляли к ней повышенный интерес. Сегодня ночное светило – объект самого пристального изучения.
                             Благодаря исследованиям астрономов мы знаем о нем практически всё, но некоторые люди до сих пор задаются вопросом, что такое Луна – спутник, звезда или планета. Чтобы дать однозначный ответ, необходимо, прежде всего, разобраться в понятиях этих небесных тел.
                             Звездами во Вселенной называют массивные газовые шары, которые излучают свет и удерживают равновесие благодаря силам собственного притяжения. В их недрах происходят реакции термоядерного синтеза, а температура измеряется миллионами кельвинов. 
                             В большинстве случаев звезды имеют большой диаметр и высокую массу. Их химический состав представляет собой набор легких элементов, которые обычно имеют вес меньше гелия.
                         </div>
-                        <label id="first-message-label" for="first-message-tick">
-                            <img class="avatar" width="30px" height="30px">
+                        <label class="first-message-label" for="first-message-tick">
+                            <img class="avatar" width="30" height="30" alt="">
                             <span class="sender-name">Яндекс.Почта</span>
                             <div class="message-item"></div>
                             <span class="message-topic">Доступ к аккаунту восстановлен</span>
-                            <time class="message-time">6 авг</time>
+                            <time class="message-time" datetime="2018-08-06">6 авг</time>
                         </label>
                     </li>
                     <li class="message-snippet bold">
                         <input class="message-tick" type="checkbox">
-                        <img class="avatar" width="30px" height="30px">
+                        <img class="avatar" width="30" height="30" alt="">
                         <span class="sender-name">Яндекс.Почта</span>
                         <div class="message-item"></div>
                         <span class="message-topic">Доступ к аккаунту восстановлен</span>
-                        <time class="message-time">6 июл</time>
+                        <time class="message-time" datetime="2018-07-06">6 июл</time>
                     </li>
                     <li class="message-snippet">
                         <input class="message-tick" type="checkbox">
-                        <img class="avatar" width="30px" height="30px">
+                        <img class="avatar" width="30" height="30" alt="">
                         <span class="sender-name">Яндекс.Почта</span>
                         <span class="message-topic">Доступ к аккаунту восстановлен</span>
-                        <time class="message-time">6 июн</time>
+                        <time class="message-time" datetime="2018-06-06">6 июн</time>
                     </li>
                     <li class="message-snippet">
                         <input class="message-tick" type="checkbox">
-                        <img class="avatar" width="30px" height="30px">
+                        <img class="avatar" width="30" height="30" alt="">
                         <span class="sender-name">Яндекс.Почта</span>
                         <span class="message-topic">Доступ к аккаунту восстановлен</span>
-                        <time class="message-time">6 мар</time>
+                        <time class="message-time" datetime="2018-03-06">6 мар</time>
                     </li>
                 </ul>
             </div>
-            <div id="footer-wrapper">
+            <div class="footer-wrapper">
                 <footer>
                     <nav class="inline">
                         <a href="">Помощь и обратная связь</a>
