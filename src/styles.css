@@ -13,7 +13,7 @@ body {
     clear: right;
     width: 20px;
     height: 2.4px;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .MailLogo {
@@ -42,7 +42,7 @@ body {
     opacity: 0.5;
     text-overflow: ellipsis;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .Cross {
@@ -50,7 +50,6 @@ body {
     float: right;
     margin: 0;
     padding: 1.5% 2% 2% 0;
-
 }
 
 .IncomingMessages {
@@ -90,7 +89,7 @@ body {
     height: 90vh;
     border-radius: 3px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .Actions {
@@ -115,7 +114,6 @@ body {
     margin: 0;
     width: 100%;
     border: solid 1px #e2e2e2;
-    float: right;
 }
 
 a {
@@ -146,7 +144,7 @@ a {
     height: 16px;
     border-radius: 3px;
     border: solid 1px rgba(0, 0, 0, 0.15);
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .MailElem {
@@ -226,7 +224,7 @@ a {
     letter-spacing: normal;
     font-family: HelveticaNeue;
     font-size: 13px;
-    color: #000000;
+    color: #000;
 }
 
 .Yandex {
@@ -288,7 +286,7 @@ a {
     visibility: hidden;
 }
 
-.Oval {
+.SenderLogo {
     margin: 5px 10px 4px 10px;
     float: left;
     width: 30px;
@@ -304,7 +302,7 @@ a {
     height: 18.6px;
     font-weight: bold;
     font-family: 'Yandex Sans Text';
-    color: #ffffff;
+    color: #fff;
 }
 
 .Resend {
@@ -352,7 +350,7 @@ a {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #ffffff;
+    color: #fff;
 }
 
 .CurrentItem {
@@ -406,8 +404,8 @@ li:hover {
 #PopupEssay {
     float: left;
     position: fixed;
-    width: 69.5%;
-    height: 82%;
+    width: 69.2%;
+    height: 80%;
     min-width: 730px;
     min-height: 500px;
     background: rgba(0, 0, 0, 0.4);
