@@ -17,32 +17,24 @@ body {
     margin-top: 11px;
 }
 
-.inline-blocks {
-    display: inline-block; 
-}
-
-.line {
+.header__line {
     width: 20px;
     height: 2.4px;
     background-color: #000;
 }
 
-.with-mrgn {
+.header__line-mrgn {
     margin-top: 4.8px;
 }
 
-.id {
-    display: inline-block; 
-}
-
-.yandex {
+.header__pic-yandex {
     box-sizing: border-box;
     margin-top: 1px;
     vertical-align: top;    
     margin-left: 11px;
 }
 
-.menu {
+.header__menu {
     box-sizing: border-box;
     margin-top: 8px;
     display: inline-block;  
@@ -50,7 +42,7 @@ body {
     vertical-align: top;
 }
 
-.search {
+.header__search {
     vertical-align: top;
     display: inline-block;
     left: 320px;
@@ -67,14 +59,7 @@ body {
     font-size: 15px;
 }
 
-.rectangle {
-    width: 20px;
-    height: 2.4px;
-    margin-bottom: 5px;
-    background-color: #000;
-}
-
-.close {
+.header__close {
     font-size: 20px;
     position: absolute;
     top: 15px;
@@ -94,7 +79,7 @@ body {
     padding-inline-start: 22px;
 }
 
-.write-button {
+#actions__button-write {
     vertical-align: top;
     box-sizing: border-box;
     height: 32px;
@@ -112,15 +97,11 @@ body {
     letter-spacing: normal;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-.income-msg {
+.actions__msgs-income {
     margin-top: 8px;
 }
 
-.acts {
+.actions__acts {
     font-weight: 500;
     font-size: 11px;
     font-style: normal;
@@ -131,7 +112,7 @@ body {
     font-family: HelveticaNeue;
 }
 
-.acts-not-writing {
+.actions__not-writing {
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
@@ -150,7 +131,7 @@ a {
     text-decoration: none;
 }
 
-.bottom-borders {
+.block-inner__bottom-borders {
     font-size: 13px;
     position: relative;
     width: 100%;
@@ -161,11 +142,11 @@ li {
     list-style-type: none;
 }
 
-.inner-block {
+.block-inner {
     width: calc(100% - 221px);
     min-width: 550px;
-    min-height: 300px;
-    overflow: scroll;
+    min-height: 250px;
+    overflow: auto;
     height: calc(100% - 70px);
     position: absolute;
     display: inline;
@@ -177,16 +158,22 @@ li {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
 }
 
-.inner-links {
+.block-inner__links {
     color: #ccc;
 }
 
-.letters {
-   position: absolute;
-   width: 100%;
+.block-inner__letters {
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 70px);
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    box-sizing: border-box;
+    
 }
 
-.inner-ul {
+.block-inner__ul {
     outline: none;
     width: 100%;
     box-sizing: border-box;
@@ -196,14 +183,14 @@ li {
     padding-inline-start: 17px;
 }
 
-.highlight {
+.block-inner__highlight {
     width: 16px;
     height: 16px;
     border-radius: 3px;
     border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
-.checkbox {
+.block-inner__checkbox {
     vertical-align: top;
     margin-top: 11px;
     box-sizing: border-box;
@@ -215,7 +202,7 @@ li {
     border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
-.pic {
+.block-inner__pic {
     vertical-align: top;
     display: inline-block;
     margin-top: 5px;
@@ -224,7 +211,7 @@ li {
     height: 30px;
 }
 
-.msg-date {
+.block-inner__date-msg {
     vertical-align: top;
     font-family: HelveticaNeue; 
     position: absolute;
@@ -235,7 +222,7 @@ li {
     color: #9b9b9b;
 }
 
-.sender {
+.block-inner__sender {
     box-sizing: border-box;
     vertical-align: top;
     font-family: HelveticaNeue;
@@ -250,11 +237,11 @@ li {
     text-overflow: ellipsis;
 }
 
-.unread {
+.block-inner__unread {
     font-weight: bold;
 }
 
-.message {
+.block-inner__message {
     box-sizing: border-box;
     vertical-align: top;
     font-family: HelveticaNeue;
@@ -269,7 +256,7 @@ li {
     text-overflow: ellipsis;    
 }
 
-.resend {
+.block-inner__resend {
     font-family: HelveticaNeue;
     display: inline-block;
     vertical-align: top;
@@ -277,7 +264,7 @@ li {
     margin-left: 20px;
 }
 
-.delete {
+.block-inner__delete {
     font-family: HelveticaNeue;
     display: inline-block;
     margin-left: 26px;
@@ -285,7 +272,7 @@ li {
     margin-top: 3px;
 }
 
-.make-spam {
+.block-inner__make-spam {
     font-family: HelveticaNeue;
     display: inline-block;
     margin-left: 24px;
@@ -293,7 +280,7 @@ li {
     margin-top: 3px;
 }
 
-.read-msg {
+.block-inner__read-msgs {
     font-family: HelveticaNeue;
     display: inline-block;
     margin-left: 25px;
@@ -301,18 +288,20 @@ li {
     margin-top: 3px;
 }
 
-.footer {
+.block-inner__footer {
     box-sizing: border-box;
     text-align: right;
     position: absolute;
     bottom: 0; 
+    left: 0;
+    right: 0;
     border-top: solid 1px #e2e2e2;
     width: 100%;   
     height: 30.5px;
     padding: 8.5px 20px 0 0;
 }
 
-.footer-links {
+.block-inner__links-footer {
     vertical-align: top;
     margin-left: 25px;
     font-family: HelveticaNeue;
@@ -325,17 +314,17 @@ li {
     color: #9b9b9b;
 }
 
-.snowman {
+.block-inner__snowman {
     float: right;
     shape-outside: circle();
 }
 
-#choose:checked + .mail {
+#block-inner__choose:checked + .block-inner__mail {
     display: inline-block;
     margin-left: -42px;
 }
 
-.close2 {
+.block-inner__close2 {
     position: absolute;
     margin: 5px;
     font-size: 25px;
@@ -343,7 +332,7 @@ li {
     right: 7px;
 }
 
-.mail {
+.block-inner__mail {
     box-sizing: border-box;
     position: absolute;
     top: 0;
@@ -355,14 +344,14 @@ li {
     display: none;
 }
 
-.text {
+.block-inner__text {
     font-family: HelveticaNeue;
     font-size: 15px;
     padding: 20px;
     white-space: normal;
 }
 
-.msg-mark {
+.block-inner__msg-mark {
     vertical-align: top;
     display: inline-block;
     margin-top: 14px;
@@ -371,6 +360,6 @@ li {
     border-radius: 13px;
 }
 
-.mark-unread {
+.block-inner__mark-unread {
     background-color: #6287bd;
 }
