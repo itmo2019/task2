@@ -16,72 +16,83 @@
 }
 
 body {
-  width: 800px;
   margin: 0 auto;
   position: relative;
   background-color: #e5eaf0
 }
+
 a {
   color: unset;
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
 }
-.header {
+
+header {
   margin-left: 22px;
   height: 56px;
   position: relative;
 }
-.name {
+
+.menu_button {
+  width: 27px;
+  height: 27px;
+  top: 4px;
+  position: absolute;
+}
+
+.service_logo {
   position: relative;
+  cursor: pointer;
   top: 12px;
   height: 45px;
-  width: 200px;
-}
-.service_name {
   width: 180px;
+}
+
+.logo {
+  width: 150px;
   height: 31px;
-  left: 31px;
+  left: 31px;  
   position: absolute;
   color: #010101;
   font-size: 25px;
 }
-.campany {
-  font-family: YandexSansBold;
-  
-}
-.service {
-  font-family: YandexSansThin;
-  font-weight: bold;
-}
-.square {
-  width: 31px;
-  height: 31px;
-  top: 2px;
-  position: absolute;
-}
-.search {
+
+.search_block {
   left: 320px;
-  width: 301px;
+  width: 37%;
   height: 31px;
   top: 11px;
+  display: inline-block;
   position: absolute;
-
-  padding-left: 16px;
-  opacity: 0.5;
+  background-color: #fff;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
-  font-size: 15px;
+  opacity: 0.5;
   line-height: 2.13;
-  color: #000000;
 }
-.context {
+
+.search {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #000;
+  padding-left: 16px;
+  font-size: 15px;
+  outline: none;
+}
+
+.main_info {
   margin-left: 22px;
   position: relative;
 }
+.left_part_bar {
+  width: 148px;
+  position: relative;
+}
 .send_button {
-  width: 147px;
+  width: 100%;
   height: 32px;
   border-radius: 3px;
   position: absolute;
@@ -89,17 +100,20 @@ ul {
   font-family: HelveticaNeueCyrMedium;
   font-size: 12px;
   font-weight: 500;
-  pointer-events: none;
-  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
 }
+
 .bar {
   top: 40px;
-  width: 147px;
+  width: 100%;
   padding-left: 0px;
   margin: 0px;
   position: absolute;
   font-family: YandexSanBold;
 }
+
 .bar li {
   height: 22px;
   font-family: YandexSanBold;
@@ -110,160 +124,199 @@ ul {
   text-align: left;
   vertical-align: middle;
   line-height: 22px;
-  color: #555555;
+  color: #555;
 }
+
 .hovered-item,
 .bar li:hover {
   background-color: #cdd6e4;
 }
+
 .mail_box {
-  width: 589px;
+  width: 75%;
+  min-width: 589px;
   min-height: 530px;
   left: 169px;
   margin: 0px;
   border-radius: 3px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 14px;
   position: relative;
 }
-.mails_bar {
+
+.mails_action {
   width: 100%;
   height: 37px;
   position: relative;
   border-bottom: solid 1px #e2e2e2;
   border-bottom-width: 2px;
 }
-.mails_bar_items {
+
+.mails_action_items button {
   top: 15px;
   position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
   font-family: YandexSanBold;
   font-size: 13px;
   font-weight: 500;
-  color: #cccccc;
+  color: #ccc;
 }
-#chooce_all {
-  left: 20px;
-  top: 11px;
-  position: absolute;
-}
-#resend {
+
+.resend {
   left: 56px;
 }
-#delete {
+
+.delete {
   left: 150px;
 }
-#spam {
+
+.spam {
   left: 228px;
 }
-#read {
+
+.read {
   left: 315px;
 }
+
 .chooce {
+  left: 20px;
+  top: 11px;
   width: 16px;
   height: 16px;
+  position: absolute;
   border-radius: 3px;
   border: solid 1px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
 .mails {
-  min-height: 461.5px;
+  min-height: 462px;
   padding: 0px;
   margin: 0px;
 }
-#unread_mail .sender-name,
-#unread_mail .sender-title {
+
+.unread_mail .sender-name,
+.unread_mail .sender-title {
   font-weight: bold;
 }
+
 .mail {
   position: relative;
-  height: 38.5px;
+  display: table;
+  table-layout: fixed;
+  /* margin: auto; */
+  height: 40px;
   width: 100%;
   padding: 0px;
   font-size: 13px;
-  color: #000000;
+  color: #000;
   font-family: HelveticaNeueCyrLight;
   border-bottom: solid 1px #e2e2e2;
   border-bottom-width: 1px;
 }
-#chooce_item {
-  position: absolute;
-  top: 11px;
-  left: 20px;
+
+.unread_mail .mail_context {
+  display: table-cell;
+  text-align: center;
 }
-.oval-Ya {
+
+.sender_logo {
   left: 46px;
   width: 30px;
   height: 30px;
   top: 5px;
   position: absolute;
+  display: inline-block;
   border-radius: 50%;
   background-color: #ff3333;
   text-align: center;
   font-size: 30px;
   font-weight: 100;
-  color: #ffffff;
+  color: #fff;
 }
+
 .sender-name {
   top: 12px;
+  width: 25%;
   left: 86px;
   position: absolute;
+  display: inline-block;
 }
-.oval-unread {
+
+.unread_mail_flag {
   width: 10px;
   height: 10px;
   top: 14px;
   left: 261px;
+  display: inline-block;
   position: absolute;
   border-radius: 50%;
   background-color: #6287bd;
 }
+
 .sender-title {
   position: absolute;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   left: 281px;
+  width: 40%;
   top: 12px;
 }
+
 .sender-time {
   right: 20px;
   top: 13px;
   position: absolute;
 }
+
 .contacts {
   height: 30px;
   position: relative;
   border-top: solid 1px #e2e2e2;
 }
+
 .contacts_info {
-  top: 8.5px;
+  top: 9px;
   right: 20px;
   position: absolute;
   font-family: YandexSanBold;
   font-size: 11px;
   color: #9b9b9b;
 }
+
 #article_checkbox {
   display: none;
 }
-#article_checkbox:checked + #article {
+
+#article_checkbox:checked + .article {
   display: block;
 }
-#article {
+
+.article {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 1;
   font-size: 16px;
   margin: 5px;
   display: none;
 }
+
 label {
   cursor: pointer;
 }
-#close_item {
+
+.close_item {
   float: right;
   font-size: 20px;
   color: #708090;
 }
-img {
+
+.wine_img {
   float: right;
   width: 200px;
 }
