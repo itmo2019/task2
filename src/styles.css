@@ -20,7 +20,7 @@ body {
     width: 153px;
     height: 31px;
     float: left;
-    margin: 19px 20% 0 22px ;
+    margin: 19px 20% 0 22px;
 }
 
 
@@ -135,7 +135,7 @@ a {
 .Choose {
     margin-left: 20px;
     margin-right: 20px;
-    float: left;    
+    float: left;
 }
 
 .Checkbox {
@@ -330,7 +330,7 @@ a {
 }
 
 .ContentFooter {
-    width:100%;
+    width: 100%;
     bottom: 0;
     height: 5%;
     position: absolute;
@@ -394,58 +394,64 @@ li:hover {
     background-color: #cdd6e4;
 }
 
-
-.CloseEssay {
-    float: right;
+.Essay {
     position: fixed;
-}
-
-
-#PopupEssay {
-    float: left;
-    position: fixed;
+    margin-top: -9.5%;
+    background: rgba(0, 0, 0, 0.4);
     width: 69.2%;
-    height: 80%;
+    height: 82%;
     min-width: 730px;
     min-height: 500px;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 99999;
-    opacity:0;
-    transition: opacity 400ms linear;
-    pointer-events: none;
+    visibility: hidden;
+    z-index: 9999;
+    transition: opacity;
+    opacity: 0;
+    overflow-y: auto;
 }
 
-
-#PopupEssay:target {
-    opacity:1;
-    pointer-events: auto;
+.Essay:target {
+    visibility: visible;
+    opacity: 1;
 }
 
-#PopupEssay  > div {
-    float: right;
-    width: auto;
-    height: auto;
-    position: relative;
-    max-height: 99.9%;
-    margin: auto;
-    padding: auto;
+.EssayBlock {
+    width: 100%;
     border: 2px solid black;
     border-radius: 10px;
     background: #f5f5dc;
-    overflow-y: auto;
+    position: relative;
+
 }
+
+.EssayBlock .CloseEssay {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.EssayBlock .CloseEssay:hover {
+    color: #06D85F;
+}
+
 
 /*CSS block from previous task*/
 
 
 .paragraph .Avatar {
-    width: 33%; height: auto;
+    width: 33%;
+    height: auto;
     min-width: 150px;
     float: left;
-    margin-right:2rem;
+    margin-right: 2rem;
     border-radius: 50%;
-    shape-outside:circle();
+    shape-outside: circle();
 }
+
 .EssayHeader {
     font-style: italic;
 
@@ -499,8 +505,8 @@ address {
     margin-right: auto;
     width: 65%;
     text-align: justify;
-    font-family:  serif;
-    position:  relative;
+    font-family: serif;
+    position: relative;
 }
 
 abbr {
@@ -512,13 +518,12 @@ abbr {
 }
 
 
-
 .programming_language_link:link {
     color: blue;
     text-decoration: underline;
 }
 
-.programming_language_link:visited{
+.programming_language_link:visited {
     color: black;
     text-decoration: none;
 }
