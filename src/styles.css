@@ -118,12 +118,8 @@ a {
 }
 
 .HeaderOption {
-    font-family: HelveticaNeue;
-    font-size: 13px;
-    font-weight: 500;
-    font-style: normal;
+    font: normal 500 13px normal HelveticaNeue;
     font-stretch: normal;
-    line-height: normal;
     letter-spacing: normal;
     color: #cccccc;
 }
@@ -358,13 +354,9 @@ a {
 .ListElem {
     margin: 0;
     padding: 4px 67px 5px 10px;
-    font-family: HelveticaNeue;
+    font: normal 500 11px normal HelveticaNeue;
     width: 70px;
-    font-size: 11px;
-    font-weight: 500;
-    font-style: normal;
     font-stretch: normal;
-    line-height: normal;
     letter-spacing: normal;
 
 }
