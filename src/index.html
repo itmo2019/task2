@@ -20,25 +20,19 @@
                     Написать
                 </button>
             </a>
-            <a href="index.html">
-                <div class="CurrentItem">
-                    <p class="IncomingMessages">
-                        Входящие
-                    </p>
-                </div>
-            </a>
             <div class="AnotherItems">
                 <ul class="ItemsList">
-                    <li><a href="index.html"><p class="ListElem">Отправленные</p></a></li>
-                    <li><a href="index.html"><p class="ListElem">Удаленны</p></a></li>
-                    <li><a href="index.html"><p class="ListElem">Спам</p></a></li>
-                    <li><a href="index.html"><p class="ListElem">Черновики</p></a></li>
-                    <li><a href="index.html"><p class="ListElem">Создать папку</p></a></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem ActiveItem">Входящие</p></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem">Отправленные</p></a></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem">Удаленны</p></a></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem">Спам</p></a></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem">Черновики</p></a></li>
+                    <li class="ListItem"><a href="index.html"><p class="ListElem">Создать папку</p></a></li>
                 </ul>
             </div>
         </div>
         <div class="Content">
-            <header class="Actions">
+            <header class="Actions BottomSeparator">
                 <div class="Choose ActionElem HeaderOption">
                     <input class="Checkbox" type="checkbox">
                 </div>
@@ -55,9 +49,8 @@
                     Прочитано
                 </div>
             </header>
-            <hr class="SeparateLine">
             <main class="ContentMain">
-                <section class="FirstMail">
+                <section class="Mail BottomSeparator">
                     <div class="Choose MailElem">
                         <input class="Checkbox" type="checkbox">
                     </div>
@@ -75,8 +68,7 @@
                         </div>
                     </a>
                 </section>
-                <hr class="SeparateLine">
-                <section class="SecondMail">
+                <section class="Mail BottomSeparator">
                     <div class="Choose MailElem">
                         <input class="Checkbox" type="checkbox">
                     </div>
@@ -94,10 +86,7 @@
                         </div>
                     </a>
                 </section>
-                <hr class="SeparateLine">
-                <a href="index.html">
-                </a>
-                <section class="ThirdMail">
+                <section class="Mail BottomSeparator">
                     <div class="Choose MailElem">
                         <input class="Checkbox" type="checkbox">
                     </div>
@@ -115,8 +104,7 @@
                         </div>
                     </a>
                 </section>
-                <hr class="SeparateLine">
-                <section class="FourthMail">
+                <section class="Mail BottomSeparator">
                     <div class="Choose MailElem">
                         <input class="Checkbox" type="checkbox">
                     </div>
@@ -134,14 +122,13 @@
                         </div>
                     </a>
                 </section>
-                <hr class="SeparateLine">
                 <div id="PopupEssay" class="Essay">
                     <div class="EssayBlock">
                         <a class="CloseEssay" href="#">&times;</a><br>
                         <header class="EssayHeader">
                             <h1 class="EssayH1">Эссе на тему: "Чего я жду от курсов по фронтенду"</h1>
                         </header>
-                        <main class="EssayMain">
+                        <div class="EssayMain">
                             <article class="EssayArticle">
                                 <section class="EssaySection">
                                     <h2 class="EssayH2">Предыстория</h2>
@@ -190,7 +177,7 @@
                                     </div>
                                 </section>
                             </article>
-                        </main>
+                        </div>
                         <footer class="EssayFooter">
                             <hr class="EssayHr">
                             <p class="timestamp">Последнее изменение:<time>2019-02-21</time></p>
@@ -200,7 +187,6 @@
                 </div>
             </main>
             <footer class="ContentFooter">
-                <hr class="SeparateLine">
                 <p class="SiteInformation">
                     Помощь и обратная связь      Реклама      &copy; 2001 &mdash; 2018, Яндекс
                 </p>
