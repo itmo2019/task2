@@ -22,30 +22,33 @@ body {
     display: inline-block;
 }
 .headerRest {
+    width: max-content;
     overflow: auto;
     margin-top: 11px;
-    margin-left: 100px;
+    margin-left: 114px;
     display: inline-block;
     height: 32px;
     position: absolute;
 }
 .searchText {
+
+    width: max-content;
     background-color: #ffffff;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    width: 90%;
     display: inline-block;
     color: #000;
     font-family: mailFont, sans-serif;
     font-size: 15px;
     font-weight: 400;
     height: 100%;
-    border-width: 0px;
+    border-width: 0;
     padding-left: 16px;
     padding-top: 0;
     padding-bottom: 0;
 }
 .mainWindow {
     min-width: max-content;
+    position: relative;
 }
 .logo {
     height: 31px;
@@ -70,23 +73,32 @@ body {
     cursor: pointer;
 }
 .leftList{
-    width: 81px;
-    height: 14px;
+    width:147px;
+    height: 22px;
     font-weight: 500;
-    margin-left: 10px;
     position: relative;
     line-height: 30px;
-    /*display: block;*/
-    margin-top: 10px;
+    margin-top: 4px;
+    padding-left: 10px;
+    padding-bottom: 7px;
 }
 .leftLinks {
+    width: 56px;
+    height: 14px;
     color:#707070;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 11px;
     text-decoration: none;
+    cursor: pointer;
+}
+.leftList:hover {
+    font-weight: 700;
+    background-color: #cdd6e4;
 }
 .leftButtons {
+    width: 147px;
     margin-left: 22px;
+    position: relative;
     display: inline-block;
 }
 .ulCategories {
@@ -96,25 +108,8 @@ body {
     margin: 0;
     padding-left: 0;
 }
-.markedList {
-    position: relative;
-    top:8px;
-    width:147px;
-    height: 22px;
-    background-color: #cdd6e4;
-    padding-left: 0;
-}
-.markedText {
-    text-decoration: none;
-    width: 56px;
-    height: 14px;
-    color: #555555;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 4px 81px 4px 10px;
-}
 .checkbox {
+    cursor: pointer;
     float: left;
     margin-top: 11px;
     margin-left: 20px;
@@ -126,19 +121,22 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .messageBox {
+    vertical-align: top;
     display: inline-block;
     background-color: #ffffff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.34);
     border-radius: 3px;
     position: relative;
-    vertical-align: top;
     top:13px;
     left: 22px;
-    min-width: max-content;
-    width: 80%;
-    height: 40rem;
+    min-height: 500px;
+    max-height: 600px;
+    width: 70%;
+    min-width: 600px;
+    height: auto;
 }
 .messageBoxUl {
+    overflow-y: hidden;
     display: block;
     list-style-type: none;
     padding: 0;
@@ -148,8 +146,8 @@ body {
     height: 40px;
     border-bottom: solid 1px #e2e2e2;
 }
-.img1{
-    margin-left: 1em;
+.otherRows {
+    cursor: pointer;
 }
 .img2{
     float: left;
@@ -206,7 +204,6 @@ body {
     border-radius: 50%;
 }
 .date {
-    /*position: absolute;*/
     margin-top: 12px;
     margin-right: 20px;
     display:inline-block;
@@ -229,25 +226,18 @@ body {
     background-color: transparent;
     border: none;
 }
-/*.manulImg {*/
-    /*width: 65%;*/
-    /*height: 65%;*/
-    /*shape-margin: 10%;*/
-    /*shape-outside: url('manul.png');*/
-/*}*/
 .manulImgCirc {
     width: 300px;
     float: right;
     height: 300px;
-    shape-margin: 5px;
     margin-right: 10px;
-    shape-outside: url('manulCirc.png');
-    shape-image-threshold: 0.2;
+    shape-outside: circle();
+    shape-image-threshold: 0.5;
 }
 .manulText {
-    padding-left:2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
 }
 .kittenPage {
     z-index: 1;
@@ -255,10 +245,10 @@ body {
     position: absolute;
     display: none;
     width: 100%;
-    /*height: 80%;*/
     background-color: #fff;
 }
 .closePage {
+    cursor: pointer;
     font-size: 32px;
     font-family: Arial, sans-serif;
     text-align: right;
@@ -274,28 +264,22 @@ body {
     color:#9b9b9b;
     text-decoration: none;
     margin-right: 20px;
-    /*position: relative;*/
-    /*right: 20px;*/
 }
 .certificate {
     display: inline-block;
     margin-right: 20px;
     color:#9b9b9b;
-    /*position: relative;*/
-    /*right: 20px;*/
 }
-footer {
+.refs {
     position: absolute;
     bottom: 9px;
     display: block;
     border-top: solid 1px #e2e2e2;
-    /*position: absolute;*/
     text-align: right;
     width: 100%;
-    /*margin-top: 19em;*/
-    /*margin-bottom: 1em;*/
     font-family: "Helvetica Neue", sans-serif;
     font-size: 11px;
+    padding-top: 10px;
 }
 @font-face {
     font-family: yandexFont;
@@ -307,5 +291,5 @@ footer {
 }
 @font-face {
     font-family: Helvetica Neue;
-    src: url("HelveticaNeueCyr-Medium.woff");
+    src: local("Helvetica Neue"), url("HelveticaNeueCyr-Medium.woff");
 }
