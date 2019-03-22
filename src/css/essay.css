@@ -4,12 +4,10 @@ body {background-color: #fff}
 
 .intro {
   margin-left: 300px;
-  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
 
 .midsection {
-  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   width: 100%;
 }
@@ -92,4 +90,16 @@ body {background-color: #fff}
   top: 0;
   background: url(http://effects1.ru/png/kartinka/1/koty/1/kitten_cat_4-320.png) no-repeat left top;
   text-align: justify;
+}
+
+.header-style {
+  width: 100%;
+}
+
+.column-section {
+  flex-direction: column;
+}
+
+.main-title {
+  margin: auto;
 }

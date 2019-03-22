@@ -14,7 +14,7 @@
 
   <header id="main-header">
     <a href="#popup-menu" class="box-popup-menu"> </a>
-    <img src="images/logo.png" class="logo-picture">
+    <img src="images/logo.png" class="logo-picture" alt="Логотип Яндекс Почты">
 
     <input class="search-line" type="search" placeholder="Поиск">
   </header>
@@ -37,7 +37,7 @@
   <div class="mail-box">
 
     <div id="mail-box-action-list">
-      <input id="select-all" type="checkbox" style="width: 16px; height: 16px">
+      <input id="select-all" type="checkbox" class="mail-box-action-list_check-box-all">
       <ul class="mail-box-actions">
         <li id="resend">Переслать</li>
         <li id="delete">Удалить</li>
@@ -72,7 +72,7 @@
 
       <div class="message-item">
         <input id="select-message3" type="checkbox" class="checkbox">
-        <span class="circle" style="background: blue"> JB </span>
+        <span class="circle-jb"> JB </span>
         <p class="read-message-preview"> Команда Яндекс.Почты </p>
         <p class="read-message-content"> Как читать почту с мобильного </p>
         <time datetime="2019-08-06" class="message-time">6 авг</time>
@@ -86,6 +86,8 @@
         <time datetime="2019-08-06" class="message-time">6 авг</time>
       </div>
 
+      <!-- to allow increasing in height without overlapping with footer -->
+      <div class="help-div"> </div>
 
     </section>
 
@@ -107,5 +109,6 @@
     </footer>
 
   </div>
-
 </body>
+
+</html>
