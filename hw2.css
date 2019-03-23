@@ -250,7 +250,7 @@ body {
     margin-top: 10px;
     display: inline-block;
     margin-left: 10px;
-    width: 250px;
+    min-width: 250px;
 }
 
 .white-block__central-row_unread .central-row__msg-sender {
