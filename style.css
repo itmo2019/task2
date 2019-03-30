@@ -43,7 +43,7 @@
 	margin-top: 56px;
 	margin-left: 191px;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
-	background-color: #ffffff;
+	background-color: #fff;
 }
 .window__allright {
 	border-top: 1px solid #e2e2e2;
@@ -143,8 +143,8 @@ label {
 }
 
 .item {
-	background: #ffffff;
-	color: #cccccc;
+	background: #fff;
+	color: #ccc;
 	border:0 none;
 }
 .item1.authtor, .item2.authtor {
@@ -169,7 +169,7 @@ label {
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	color: #000000;
+	color: #000;
 }
 .item1.textletter, .item2.textletter {
 	font-weight: bold;
@@ -243,7 +243,7 @@ label {
 	background: #cdd6e4;
 	border-radius: 3px;
   	font-weight: bold;
-  	color: #555555;
+  	color: #555;
 }
 .oval.item1 {
 	display: inline-block;
@@ -256,11 +256,11 @@ label {
     width: 30px;
     height: 30px;
     font-family: Yandex Sans Text Thin, sans-serif;
-    background-color: #ff3333;
+    background-color: #f33;
     border-radius: 50%;
     font-size: 22px;
     font-weight: normal;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
 }
 body {
@@ -281,7 +281,7 @@ body {
 	height: 32px;
 	opacity: 0.5;
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-	background-color: #ffffff;
+	background-color: #fff;
 }
 .dot {
 	position: absolute;
@@ -305,7 +305,7 @@ body {
     margin-top: 10px;
     z-index: 100;
     display: none;
-    background: #ffffff;
+    background: #fff;
     height:491px; 
     width: 100%;
 }
@@ -323,7 +323,7 @@ body {
     font-size: 20px;
     margin-top: 0px;
     margin-left: 90%;
-    color: #cccccc;
+    color: #ccc;
 }
 
 #essay-action:checked ~ #letters {
