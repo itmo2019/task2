@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Яндекс Почта</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="yandex-mail">
+<header class="yandex-mail__header header">
+    <div class="burger-menu header__burger-menu">
+        <div class="stripe burger-menu__stripe">
+            <div class="stripe burger-menu__stripe">
+                <div class="stripe burger-menu__stripe"></div>
+            </div>
+        </div>
+    </div>
+    <img class="header__yandex-mail-logo" src="images/yandex-mail-logo.svg" alt="Лого - Яндекс Почта"/>
+    <form class="mail-search header__mail-search">
+        <input class="mail-search__input" type="text" placeholder="Поиск" onfocus="placeholder = ''"
+               onblur="placeholder = 'Поиск'"/>
+        <div class="mail-search__clear">×</div>
+    </form>
+</header>
+
+<main class="main-content">
+    <nav class="nav-menu main-content__nav-menu">
+        <button class="nav-menu__write-button">Написать</button>
+        <ul class="nav-menu__menu-list-tabs menu-list-tabs">
+            <li class="menu-list-tabs__tab menu-list-tabs__incoming-tab" onclick="location.href='#'">Входящие</li>
+            <li class="menu-list-tabs__tab" onclick="location.href='#'">Отправленные</li>
+            <li class="menu-list-tabs__tab" onclick="location.href='#'">Удалённые</li>
+            <li class="menu-list-tabs__tab" onclick="location.href='#'">Спам</li>
+            <li class="menu-list-tabs__tab" onclick="location.href='#'">Черновики</li>
+            <li class="menu-list-tabs__tab" onclick="location.href='#'">Создать папку</li>
+        </ul>
+    </nav>
+    <div class="mail-content__mail-box mail-box">
+        <ul class="mail-box__box-header box-header">
+            <li class="box-header__check-letter check-letter">
+                <label>
+                    <input class="check-letter_visually-hidden" type="checkbox">
+                    <span class="check-letter__box"></span>
+                </label>
+            </li>
+            <li class="box-header__button-wrapper extra-indent"><input type="button" class="box-header__button"
+                                                                       value="Переслать"></li>
+            <li class="box-header__button-wrapper"><input type="button" class="box-header__button"
+                                                          id="remove-letter" value="Удалить"></li>
+            <li class="box-header__button-wrapper"><input type="button" class="box-header__button"
+                                                          value="Это спам!"></li>
+            <li class="box-header__button-wrapper"><input type="button" class="box-header__button"
+                                                          value="Прочитано"></li>
+        </ul>
+        <div class="mail-box__hr-line"></div>
+        <div class="mail-box__letters-section-wrapper">
+            <section class="mail-box__letters-section letters-section">
+                <input type="checkbox" id="read-letter-check">
+                <div class="letters-section__readable-letter-body readable-letter-body">
+                    <label for="read-letter-check">
+                        <div class="readable-letter-body__close">×</div>
+                    </label>
+                    <div class="readable-letter-body__content main-content__distinguished">
+                        <img class="readable-letter-body__york-image" src="images/york-img.png"
+                             alt="Йоркширский терьер" width="370" height="370">
+                        Йоркширский терьер — небольшая собака, популярность которой значительно выросла в последние
+                        несколько десятилетий. Скромный размер и кукольная внешность покорили миллионы сердец во всем
+                        мире,
+                        и это неудивительно. Но за милой мордашкой скрывается настоящий охотник, жаждущий приключений.
+                        Несмотря на миниатюрный размер, йоркширский терьер обладает всеми качествами, которые присущи
+                        большим собакам: храбростью, любознательностью, преданностью и сообразительностью. Более того,
+                        это
+                        очень своенравная порода собак. Сделать что-то исподтишка, погрызть провода, погнаться за кошкой
+                        —
+                        все это можно ожидать от маленького питомца. Однако наличие в семье лидера и должная
+                        дрессировка,
+                        безусловно, помогут дисциплинировать проказника. Благодаря интеллекту и сообразительности йорки
+                        достаточно легко и быстро обучаются.
+                        <br>
+                        <br>
+                        Йоркширские терьеры отлично ладят с детьми. Главное, чтобы ребенок понимал, что это маленькая и
+                        хрупкая собака, которую легко травмировать. Йорки без проблем уживаются с другими животными в
+                        квартире, однако нередко пытаются доминировать даже над более крупными соседями.
+                    </div>
+                </div>
+
+                <div class="letters-section__unreadable-letter-body letter-body">
+                    <label for="read-letter-check">
+                        <ul class="letter-body__letter-list-item letter-list-item is-read_not-read">
+                            <li class="letter-list-item__check-letter check-letter">
+                                <label>
+                                    <input class="check-letter_visually-hidden" type="checkbox">
+                                    <span class="check-letter__box"></span>
+                                </label>
+                            </li>
+                            <li class="letter-list-item__mini-logo-wrapper letter-list-item__item">
+                                <img class="mini-logo" src="images/ya-mini-logo.png"
+                                     alt="Мини-лого отправителя - Яндекс">
+                            </li>
+                            <li class="letter-list-item__sender-name letter-list-item__item main-content__distinguished">
+                                Яндекс.Почта
+                            </li>
+                            <li class="letter-list-item__is-read-mark is-read-mark_not-read letter-list-item__item"></li>
+                            <li class="letter-list-item__title-text letter-list-item__item main-content__distinguished">
+                                Вы можете прочитать данное письмо.
+                            </li>
+                            <li class="letter-list-item__date-info letter-list-item__item main-content__distinguished">6
+                                авг
+                            </li>
+                        </ul>
+                    </label>
+                    <div class="mail-box__hr-line"></div>
+                </div>
+
+                <div class="letters-section__unreadable-letter-body">
+                    <ul class="letter-body__letter-list-item letter-list-item is-read_not-read">
+                        <li class="letter-list-item__check-letter check-letter">
+                            <label>
+                                <input class="check-letter_visually-hidden" type="checkbox">
+                                <span class="check-letter__box"></span>
+                            </label>
+                        </li>
+                        <li class="letter-list-item__mini-logo-wrapper letter-list-item__item">
+                            <img class="mini-logo" src="images/ya-mini-logo.png" alt="Мини-лого отправителя - Яндекс">
+                        </li>
+                        <li class="letter-list-item__sender-name letter-list-item__item main-content__distinguished">
+                            Команда Яндекс.Почты
+                        </li>
+                        <li class="letter-list-item__is-read-mark is-read-mark_not-read letter-list-item__item"></li>
+                        <li class="letter-list-item__title-text letter-list-item__item main-content__distinguished">
+                            Как читать почту с мобильного
+                        </li>
+                        <li class="letter-list-item__date-info letter-list-item__item main-content__distinguished">6
+                            июл
+                        </li>
+                    </ul>
+                    <div class="mail-box__hr-line"></div>
+                </div>
+                <div class="letters-section__unreadable-letter-body">
+                    <ul class="letter-body__letter-list-item letter-list-item is-read">
+                        <li class="letter-list-item__check-letter check-letter">
+                            <label>
+                                <input class="check-letter_visually-hidden" type="checkbox">
+                                <span class="check-letter__box"></span>
+                            </label>
+                        </li>
+                        <li class="letter-list-item__mini-logo-wrapper letter-list-item__item">
+                            <img class="mini-logo" src="images/ya-mini-logo.png" alt="Мини-лого отправителя - Яндекс">
+                        </li>
+                        <li class="letter-list-item__sender-name letter-list-item__item main-content__distinguished">
+                            Команда Яндекс.Почты
+                        </li>
+                        <li class="letter-list-item__is-read-mark letter-list-item__item"></li>
+                        <li class="letter-list-item__title-text letter-list-item__item main-content__distinguished">
+                            Как читать почту с мобильного
+                        </li>
+                        <li class="letter-list-item__date-info letter-list-item__item main-content__distinguished">6
+                            июл
+                        </li>
+                    </ul>
+                    <div class="mail-box__hr-line"></div>
+                </div>
+                <div class="letters-section__unreadable-letter-body">
+                    <ul class="letter-body__letter-list-item letter-list-item is-read">
+                        <li class="letter-list-item__check-letter check-letter">
+                            <label>
+                                <input class="check-letter_visually-hidden" type="checkbox">
+                                <span class="check-letter__box"></span>
+                            </label>
+                        </li>
+                        <li class="letter-list-item__mini-logo-wrapper letter-list-item__item">
+                            <img class="mini-logo" src="images/ya-mini-logo.png" alt="Мини-лого отправителя - Яндекс">
+                        </li>
+                        <li class="letter-list-item__sender-name letter-list-item__item main-content__distinguished">
+                            Яндекс
+                        </li>
+                        <li class="letter-list-item__is-read-mark letter-list-item__item"></li>
+                        <li class="letter-list-item__title-text letter-list-item__item main-content__distinguished">
+                            Соберите всю почту в этот ящик
+                        </li>
+                        <li class="letter-list-item__date-info letter-list-item__item main-content__distinguished">6
+                            июл
+                        </li>
+                    </ul>
+                    <div class="mail-box__hr-line"></div>
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="letters-section__footer">
+            <div class="mail-box__hr-line"></div>
+            <div class="letters-section__footer-info">
+                <a href="#" class="letters-section__footer-link">Помощь и обратная связь</a>
+                <a href="#" class="letters-section__footer-link">Реклама</a>
+                <div class="letters-section__footer-item">&copy 2001-2019,</div>
+                <div class="letters-section__footer-link">Яндекс</div>
+            </div>
+        </footer>
+    </div>
+
+</main>
+
+</body>
+
+</html>
