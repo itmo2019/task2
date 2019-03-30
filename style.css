@@ -5,9 +5,17 @@
 }
 @font-face {
 	font-family: Yandex Sans Text Bold;
-	src: url(./YandexSansText-Bold/YandexSansText-Bold.woff2) format('woff2');
+	src: url(YandexSansText-Bold/YandexSansText-Bold.woff2) format('woff2');
 	src: url(YandexSansText-Bold/YandexSansText-Bold.ttf) format('truetype');
 }
+@font-face {
+	font-family: 'Yandex Sans Text Regular';
+	src: url('YandexSansText-Regular/YandexSansText-Regular.woff') format('woff'),
+		 url('YandexSansText-Regular/YandexSansText-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .header {
 	margin-left: 20px; 
 	margin-top: 11px; 
@@ -29,33 +37,51 @@
 }
 .window {
 	position: absolute;
-	/*width: 589px;*/
 	min-width: 589px;
 	width: 73.625vw;
-  	height: 530px;
+  	min-height: 530px;
 	margin-top: 56px;
 	margin-left: 191px;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.34);
 	background-color: #ffffff;
 }
-.allright {
-	width: inherit;
+.window__allright {
+	border-top: 1px solid #e2e2e2;
+	width: 100%;
 	position: absolute;
-	margin-top: 498.5px;
+	margin-top: 10px;
+	bottom: 0;
 }
-.line3{
-	width: inherit;
- 	height: 1px;
-    border: solid 1px #e2e2e2;
+.letters__emptypart {
+	width: 100%;
+	height: 30.5px;
 }
-.foot {
-	margin-top: 8.5px;
+
+.allright__foot {
+	margin-top: 8px;
 	float: right;
 	margin-right: 20px; 
 	white-space: nowrap;
 	width: 345px;
 	height: 12px;
-	font-family: HelveticaNeue;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #9b9b9b;
+}
+
+.foot {
+	margin-top: 8px;
+	float: right;
+	margin-right: 20px; 
+	white-space: nowrap;
+	width: 345px;
+	height: 12px;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;
@@ -70,14 +96,14 @@
 	margin-top: 7px;
 	width: 56px; 
 	height: 15px;
-	font-family: HelveticaNeue;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	color: #ffffff; 
+	color: #fff; 
 }
 .newbox {
 	width: 147px;
@@ -89,48 +115,8 @@
 	margin-left: 22px;
 }
 
-.lines {
-	position: absolute;
-	margin-top: 19px;
-	margin-left: 22px;
-}
-.line {
-	margin-bottom: 4.8px;
-	width: 20px;
-  	height: 2.4px;
-  	background-color: #000000;
-}
 
-.menulist {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	position: absolute;
-	margin-top: 96px;
-	width: 100%;
-	margin-left: 22px;
-}
-.line1.firstline {
-	margin-top: 10px;
-}
-.line1 {
-	position: relative;
-	margin-top: 4px;
-	/*width: 590px;*/
-	width: 100%;
-	height: 2px;
-	border: solid 1px #e2e2e2;
-} 
-.inbox {
-	/*position: relative;*/
-	position: absolute;
-	margin-top: 96px;
-	margin-left: 22px;
-  	width: 147px;
-  	height: 22px;
-  	border-radius: 3px;
-  	background-color: #cdd6e4;
-}
+
 label {
 	display: inline-block;
 	width: inherit;
@@ -142,13 +128,17 @@ label {
 	margin-left: 20px;
 	margin-right: 10px;
 }
-.firstletter {
-	width: 100%;
-}
-.letter {
+
+.letter, .firstletter{
+	border-bottom: 1px solid #e2e2e2;
+	margin: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	width: 100%;
 }
 #letters {
+	border-top: 1px solid #e2e2e2;
+	margin-top: 10px;
 	width: 100%;
 }
 
@@ -161,7 +151,8 @@ label {
 	font-weight: bold;
 }
 #letters {
-	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 .authtor {
 	display: inline-block;
@@ -169,12 +160,9 @@ label {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	/*float: right;*/
-	/*position: absolute;*/
 	width: 155px;
-	margin-top: 12px;
 	margin-left: 10px;
-	font-family: HelveticaNeue;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	font-style: normal;
@@ -189,20 +177,13 @@ label {
 .textletter {
 	display: inline-block;
 	position: relative;
-	/*float: left;*/
-	/*position: absolute;*/
-	margin-top: 12px;
 	margin-left: 50px;
-	/*margin-right: 7.4%;*/
 	width: calc(100% - 376px);
-	/*max-width: 0.36vw;*/
-	/*min-width: 213px; */
-	/*todo изменить*/
 	height: 16px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	font-family: HelveticaNeue;
+	font-family: HelveticaNeue, Helvetica, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	font-style: normal;
@@ -214,20 +195,15 @@ label {
 
 .date {
 	display: inline-block;
-	
 	position: relative;
-	/*width: inherit;*/
-	/*position: absolute;*/
-	margin-top: 13px;
-	/*margin-left: 538px;*/
-	/*text-overflow: ellipsis;*/
+	margin-top: 9px;
 	overflow: hidden;
 	white-space: nowrap;
 	width: 40px;
 	margin-right: 10px;
 	margin-left: auto;
 	float: right;
- 	font-family: HelveticaNeue;
+ 	font-family: HelveticaNeue, Helvetica, sans-serif;
   	font-size: 13px;
   	font-weight: normal;
   	font-style: normal;
@@ -237,15 +213,24 @@ label {
   	text-align: right;
   	color: #9b9b9b;
 }
-li {
-	margin-bottom: 8px;
-	list-style-type: none;
-	width: 81px;
+.menu {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
- 	height: 13px;
-  	font-family: HelveticaNeue;
+	position: absolute;
+	margin-top: 96px;
+	width: 100%;
+	margin-left: 22px;
+}
+
+.menu_item {
+	width: 137px;
+  	height: 22px;
+  	padding-left: 10px;
+  	padding-top: 4px;
+  	list-style-type: none;
+	text-overflow: ellipsis;
+  	font-family: HelveticaNeue, Helvetica, sans-serif;
   	font-size: 11px;
   	font-weight: 500;
   	font-style: normal;
@@ -254,38 +239,23 @@ li {
   	letter-spacing: normal;
   	color: #707070;
 }
-.in {
-	margin-top: 4px;
-	margin-bottom: 11px;
-  	width: 56px;
-  	height: 13px;
-  	font-family: HelveticaNeue;
-  	font-size: 11px;
+.menu_item:hover {
+	background: #cdd6e4;
+	border-radius: 3px;
   	font-weight: bold;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
   	color: #555555;
 }
 .oval.item1 {
 	display: inline-block;
-	/*display: block;*/
-	/*position: absolute;*/
 	position: relative;
 }
 
 .oval {
 	display: inline-block;
-	/*display: block;*/
-	/*position: absolute;*/
 	position: relative;
     width: 30px;
     height: 30px;
-     /*margin-left: 100px;*/
-   /* margin-top: 0px;*/
-    margin-top: 10px;
-    font-family: Yandex Sans Text Thin;
+    font-family: Yandex Sans Text Thin, sans-serif;
     background-color: #ff3333;
     border-radius: 50%;
     font-size: 22px;
@@ -297,8 +267,13 @@ body {
 	position: relative;
 	background-color: #e5eaf0;
 }
+
 .find {
-	font-family: Yandex Sans Text Thin;
+	font-family: Yandex Sans Text Regular, sans-serif;
+	font-size: 15px;
+	padding-left: 16px;
+	border: none;
+
 	position: absolute;
 	margin-top: 11px;
 	margin-left: 320px;
@@ -310,9 +285,6 @@ body {
 }
 .dot {
 	position: absolute;
-	/*display: inline-block;*/
-	/*display: none;
-	position: relative;*/
 	margin-top: -20px;
 	margin-left: 261px;
 	border-radius: 50%;
@@ -328,25 +300,10 @@ body {
  	height: 9px;
 }
 
-.findname {
-	position: absolute;
-	margin-left: 16px; 
-  	width: 44px;
-  	height: 32px;
-  	opacity: 0.5;
-  	font-family: YSText;
- 	font-size: 15px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: 2.13;
-  	letter-spacing: normal;
-  	color: #000000;
-}
-
 #essay {
     position: absolute;
     margin-top: 10px;
+    z-index: 100;
     display: none;
     background: #ffffff;
     height:491px; 
@@ -361,6 +318,7 @@ body {
 }
 
 #krestik {
+	z-index: 200;
 	position: absolute;
     font-size: 20px;
     margin-top: 0px;
