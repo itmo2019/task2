@@ -1,5 +1,6 @@
 @font-face {
     font-family: YandexSansBold;
+    font-weight: 700;
     src: url("fonts/YandexSansDisplay-Bold.ttf");
 }
 
@@ -40,7 +41,7 @@ html, body{
 .page{
     position: relative;
     min-width: 800px;
-    width: 80%;
+    padding-right: 20px;
     min-height: 100%;
     margin: 0 auto;
 }
@@ -142,7 +143,7 @@ a, a:active, a:visited, a:hover {
 
 .page__ya-sidebar{
     position: relative;
-    display: inline-block;
+    float: left;
     width: 200px;
     vertical-align: top;
     font-family: HelveticaNeue, sans-serif;
@@ -153,8 +154,7 @@ a, a:active, a:visited, a:hover {
 
 .page__ya-mail{
     position: relative;
-    display: inline-block;
-    width: 74%;
+    overflow: hidden;
     min-width: 589;
     min-height: 530px;
     background-color: #ffffff;
@@ -322,7 +322,7 @@ a, a:active, a:visited, a:hover {
 }
 
 .message__message-subject{
-    width: 37%;
+    width: 75%;
 }
 
 .message__message-receive-time{
